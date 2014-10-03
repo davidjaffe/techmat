@@ -13,7 +13,7 @@ class photatt():
     def __init__(self):
 
         self.discRadius = 25./2.
-        self.pinhole = [2., 300.] # hole radius, distance from source
+        self.pinhole = [2.0, 300.] # hole radius, distance from source
         self.PMT     = [25.4, 700.-112.-220.] # PMT radius, distance - PMT height - base height
         D = self.pinhole[1]
         r = self.pinhole[0]+self.discRadius
@@ -61,8 +61,9 @@ class photatt():
 if __name__ == '__main__' :
     ph = photatt()
     fn = '/Users/djaffe/work/paw/TECHMAT/photatt'
+    pn = '_pinhole_' + str(int(ph.pinhole[0]*1000.+0.5)) + '_micron'
     unique = '_{0}'.format(datetime.datetime.now().strftime("%Y%m%d%H%M_%f"))
-    fn += unique + '.nt'
+    fn += pn + unique + '.nt'
     f = open(fn,'w')
     point = False
     n = 1000000
