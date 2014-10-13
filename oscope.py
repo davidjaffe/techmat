@@ -18,27 +18,35 @@ class oscope():
         
         return
     def test(self):
+        '''
+        process files in all input directories and make ntuples from each
+        '''
         dirs = self.getDirs(self.parentDir)
-        path = self.parentDir + dirs[0]
-        h, fl = self.getFileList(path)
-        allData = []
-        shortFileList = fl
-        for f in shortFileList:
-            print f
-            header,data = self.readFile(path + '/' + f)
-            allData.extend( data )
-            #for entry in data: print entry
-        print 'total files',len(shortFileList),'total data length',len(allData)
-        debugStuff = 0
-        if debugStuff :
-            t0 = allData[0][0]
-
-            print 't0',t0
-            for i,entry in enumerate(allData):
-                if i==0 or i%100==0:
-                    dt = entry[0]-t0
-                    print i,dt.total_seconds(),entry[1:]
-        self.makeNtuple(allData, outputFileName=dirs[0])
+        for onedir in dirs:
+            path = self.parentDir + onedir
+            print 'processing',path
+            h, fl = self.getFileList(path)
+            allData = []
+            shortFileList = fl
+            print '',
+            for f in shortFileList:
+                print '\r',f,
+                sys.stdout.flush()
+                header,data = self.readFile(path + '/' + f)
+                allData.extend( data )
+                #for entry in data: print entry
+            print ''
+            print 'total files',len(shortFileList),'total data length',len(allData),\
+                  'time span from',allData[0][0],'to',allData[-1][0]
+            debugStuff = 0
+            if debugStuff :
+                t0 = allData[0][0]
+                print 't0',t0
+                for i,entry in enumerate(allData):
+                    if i==0 or i%100==0:
+                        dt = entry[0]-t0
+                        print i,dt.total_seconds(),entry[1:]
+            self.makeNtuple(allData, outputFileName=onedir)
         return
     def makeNtuple(self,data,outputFileName='oscope'):
         fn = self.pawDir + outputFileName
