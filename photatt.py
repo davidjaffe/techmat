@@ -13,7 +13,7 @@ class photatt():
     def __init__(self):
 
         self.discRadius = 25./2.
-        self.pinhole = [2.0, 300.] # hole radius, distance from source
+        self.pinhole = [3.0, 300.] # hole radius, distance from source
         self.PMT     = [25.4, 700.-112.-220.] # PMT radius, distance - PMT height - base height
         D = self.pinhole[1]
         r = self.pinhole[0]+self.discRadius
