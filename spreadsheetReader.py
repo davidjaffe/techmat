@@ -91,16 +91,21 @@ class spreadsheetReader():
             val = r[datecol][:-7]
             title = unicode(val).encode('utf8')
         return title,date
+    def getRowColContents(self,sheet, row = None, col = None):
+        '''
+        return contents of row,column in sheet
+        '''
+        contents = None
+        if row<sheet.nrows:
+            r = sheet.row_values(row)
+            if col<len(r):
+                contents = r[col]
+        return contents
     def getTotalCounts(self, sheet, totalrow = 11, totalcountscol = 4):
         '''
         return total counts from sheet
         '''
-        totalCounts = None
-        if totalrow<sheet.nrows:
-            r = sheet.row_values(totalrow)
-            if totalcountscol<len(r):
-                totalCounts = r[totalcountscol]
-        return totalCounts
+        return self.getRowColContents(sheet, row=totalrow, col=totalcountscol)
     def getChannelContents(self, sheet, headrow = 14, chanCol = 0, countsCol = 1):
         '''
         return channel # and counts from sheet
@@ -134,7 +139,7 @@ class spreadsheetReader():
         title,date = self.getDate(s)
         if title is None and date is None:
             title,date = self.getDateInName(s)
-        totalCounts= self.getTotalCounts(s)
+        totalCounts= self.getTotalCounts(s,totalcountscol = 5)
         ADC = self.getChannelContents(s)
         # convert date extracted from file into datetime object
         if date is not None:
