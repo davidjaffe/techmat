@@ -63,6 +63,15 @@ class spreadsheetReader():
             s = self.getSheet(js)
             if s.name.lower()==sheetName.lower() :
                 return s
+        # did not get an exact match. see if sheetName is a unique string among all sheets
+        n = 0
+        unique = None
+        for js in range(self.nsheet):
+            s = self.getSheet(js)
+            if sheetName.lower() in s.name.lower() :
+                unique = s
+                n += 1
+        if n==1 : return unique
         return None
     def getDate(self, sheet, daterow = 1, titlecol = 0, datecol = 4):
         '''
