@@ -151,6 +151,7 @@ class spreadsheetReader():
         totalCounts= self.getTotalCounts(s,totalcountscol = 5)
         ADC = self.getChannelContents(s)
         # convert date extracted from file into datetime object
+        dt = None
         if date is not None:
             dt = datetime.datetime.strptime(date,self.fmt)
             
