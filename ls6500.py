@@ -16,32 +16,62 @@ from array import array
 class ls6500():
     def __init__(self,mode='NSRL'):
         self.headerFileName = '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/SampleInfo.xls'
-        self.headerSheetName = 'LS Measurement arrangement'
+        self.headerSheetName = 'LS Measurement arrangement' #OLD. See below
         self.headerSheet = None
 
-        if mode.lower()=='nsrl' or mode=='':
-            self.headerFirstRowName = u'Pre-irradiation measurements 141014 (actual)'
-            self.dataDir = '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_1_141014/'
-        elif mode.lower()=='gamma':
+        self.dataSubDir = None
+        # list of possible subdirectories
+        dD = ['/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_1_141014/',\
+              '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/',\
+               '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/',\
+               '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/' ]
+
+        ml = mode.lower()
         
-            self.headerFirstRowName = u'Pre-irradiation measurements 141017 (actual)'
-            self.dataDir = '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/'
+        # used for merging
+        self.listOfDataDirs = [ ] #
+        Merge = 'merge' in ml
+        if Merge:
+            if ml=='mergegamma':
+                for d in dD:
+                    suffix = d.split('/')[-2]
+                    if 'gamma' in suffix.lower(): 
+                        self.listOfDataDirs.append(d)
+                suffix = ml
         else:
-            w = 'ls6500: Invalid mode ' + str(mode)
-            sys.exit(w)
+            # assign data directory based on input mode
+            if ml=='nsrl' or mode=='':
+                self.headerFirstRowName = u'Pre-irradiation measurements 141014 (actual)'
+                self.dataDir = dD[0]
+            elif ml=='gamma' or ml=='gamma_pre-irradiation':
+                self.headerFirstRowName = u'Pre-irradiation measurements 141017 (actual)'
+                self.dataDir = dD[1]
+            elif ml=='gamma_1gy' or ml=='gamma_141020':
+                self.dataDir = dD[2]
+            elif ml=='gamma_all' or ml=='gamma_141021':
+                self.dataDir = dD[3]
+            else:
+                w = 'ls6500: Invalid mode ' + str(mode)
+                sys.exit(w)
 
-        suffix = self.dataDir.split('/')[-2]
+            # parsing of data directory into sub-directory, parent directory
+            suffix = self.dataDir.split('/')[-2]
+            self.dataSubDir = suffix + '/'
+            self.dataParentDir = self.dataDir.replace(self.dataSubDir,'')
+            # new system: subdirectory name is sheet name
+            self.headerFirstRowName = None
+            self.headerSheetName = suffix
 
+        # directories for input or output. make new output directory if needed
         self.outDir = 'Histograms/'
         self.histFile = self.outDir + suffix + '.root'
-        self.figuresDir = 'Figures/' + suffix + '/'
+        if self.dataSubDir is None: self.dataSubDir = suffix + '/'
+        self.figuresDir = 'Figures/' + self.dataSubDir
         self.picklesDir = 'Pickles/'
         for d in [self.outDir, self.figuresDir, self.picklesDir ]:
             if not os.path.isdir(d):
                 os.makedirs(d)
                 print 'Created',d
-                
-
 
         # these are initialized in processHeader
         self.vialPosition = {} # map(key=position, value=sample)
@@ -60,8 +90,11 @@ class ls6500():
         self.goodColors.extend( [x for x in range(28,50)] )
         self.goodMarkers = [x for x in range(20,31) ]
 
-        print "initialize ls6500"
-        self.ssr = spreadsheetReader.spreadsheetReader()
+        if Merge:
+            print 'initialize ls6500',mode
+        else:
+            print "initialize ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
+            self.ssr = spreadsheetReader.spreadsheetReader()
         return
     def processHeader(self,checkPrint=False):
         '''
@@ -85,9 +118,9 @@ class ls6500():
             row = self.headerSheet.row_values(r)
             if row[0]=='' and headerRowFound : done = True
             if not done:
-                if row[0]==self.headerFirstRowName :
+                if not headerRowFound and (row[0]==self.headerFirstRowName or (self.headerFirstRowName is None)):
                     headerRowFound = True
-                    r += 1
+                    if self.headerFirstRowName is not None: r += 1
                     row = self.headerSheet.row_values(r)
                     for c in row:
                         w = str(c).split()
@@ -108,7 +141,7 @@ class ls6500():
                         if i==slotColumn:
                             rowName = str(content)
                         else:
-                            sampleName = str(content)
+                            sampleName = str(content).replace(' ','_') # replace blanks with underscore
                             positionName = rowName + '_' + columnIDs[i]
                             if sampleName=='':
                                 print 'ls6500.processHeader:',positionName,'has no vial'
@@ -162,10 +195,10 @@ class ls6500():
         for fn in dataFileNames:
             #print 'fn',fn
             if '.xls' in fn:
-                if self.isSummaryFile(self.dataDir + fn) :
+                if self.isSummaryFile(self.dataParentDir + self.dataSubDir + fn) :
                     print 'ls6500.matchVialMeas: remove summary file',fn,'from list'
                 else:
-                    goodFiles.append(fn)
+                    goodFiles.append(self.dataSubDir + fn)
         dataFileNames = goodFiles 
         dataFileNames.sort()
         j = 0
@@ -479,6 +512,43 @@ class ls6500():
         canvas.Update()
         canvas.Print(pdf,'pdf')
         return
+    def merge(self):
+        '''
+        merge together the pickled results of multiple directories
+        '''
+        vP = {}
+        vM = {}
+        vD = {}
+        for dD in self.listOfDataDirs:
+            self.dataDir = dD
+            self.putOrGet(mode='get')
+            
+            # add all {filename:[data]} pairs
+            for fn in self.vialData:
+                vD[fn] = self.vialData[fn]
+            # establish position : sample : list of filenames relations
+            # First time, transfer vialPosition,vialMsmts dicts to local dicts
+            if len(vP)==0:
+                for pn in self.vialPosition:
+                    vP[pn] = self.vialPosition[pn]
+                    vM[pn] = self.vialMsmts[pn]
+            else:
+                for pn in self.vialPosition:
+                    if pn in vP:
+                        # this position already exits. check if same sample is in same position
+                        if self.vialPosition[pn]==vP[pn]:
+                            # same sample. add list of filenames of measurements
+                            vM[pn].extend(self.vialMsmts[pn])
+                    else:
+                        # new position
+                        vP[pn] = self.vialPosition[pn]
+                        vM[pn] = self.vialMsmts[pn]
+        # done transferring data to local dicts, now clear global dicts
+        # and fill them
+        self.vialPosition = vP
+        self.vialMsmts    = vM
+        self.vialData     = vD
+        return
     def putOrGet(self,mode='put'):
         '''
         mode = put = write info to pickle file
@@ -537,19 +607,21 @@ class ls6500():
                 if checkPrint: print 'Tray_Position',pn,'Number of `no vial` to this position',numNoVial
 
                 for fn in self.vialMsmts[pn]:
-                    fpath = self.dataDir + fn
+                    fpath = self.dataParentDir + fn
 
                     if checkPrint: print 'get measurement from',fpath
                     self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
             self.putOrGet(mode=pickMode)
         elif pickMode.lower()=='get':
             self.putOrGet(mode=pickMode)
+        elif pickMode.lower()=='merge':
+            self.merge()
         self.Analyze()
         return
             
 if __name__ == '__main__' :
     print '\n ---------'
-    pickMode = 'put'
+    pickMode = 'put' # 'get' 'merge'
     runMode = 'gamma'
     args = sys.argv
     if len(args)>1: pickMode = str(args[1])
