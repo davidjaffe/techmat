@@ -14,10 +14,22 @@ from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGr
 from array import array
 
 class ls6500():
-    def __init__(self,mode='NSRL'):
+    def __init__(self,mode='NSRL',redirect=False):
         self.headerFileName = '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/SampleInfo.xls'
         self.headerSheetName = 'LS Measurement arrangement' #OLD. See below
         self.headerSheet = None
+
+        # this avoids the annoying TCanvas::Print Info messages?
+        ROOT.gErrorIgnoreLevel = ROOT.kWarning
+
+        if redirect:
+            unique = '_{0}'.format(datetime.datetime.now().strftime("%Y%m%d%H%M_%f"))
+            lfn = 'Log/' + mode + unique + '.log'
+            print 'ls6500: direct stdout to',lfn
+            sys.stdout = open(lfn,'w',1)
+            print 'This file is',lfn
+            os.system("tail -f "+lfn + "&")
+
 
         self.dataSubDir = None
         # list of possible subdirectories
@@ -444,8 +456,11 @@ class ls6500():
             self.color(tg,ngraphs)
             Graphs.append( tg )
 
-            MultiGraphs[ 'n'+kind ].Add(ntg)
-            if debugMG: print 'Add graph',ntg.GetName(),'to MultiGraphs. kind=','n'+kind
+            kind = 'n' + kind
+            MultiGraphs[ kind ].Add(ntg)
+            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
+                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
+            if debugMG: print 'Add graph',ntg.GetName(),'to MultiGraphs. kind=',kind
             self.color(ntg,ngraphs)
             Graphs.append( ntg )
 
@@ -749,8 +764,10 @@ if __name__ == '__main__' :
     print '\n ---------'
     pickMode = 'put' # 'get' 'merge'
     runMode = 'gamma'
+    redirect = False
     args = sys.argv
     if len(args)>1: pickMode = str(args[1])
     if len(args)>2: runMode = str(args[2])
-    ls = ls6500(mode=runMode)
+    if len(args)>3: redirect = True
+    ls = ls6500(mode=runMode,redirect=redirect)
     ls.Main(checkPrint=True,pickMode=pickMode)
