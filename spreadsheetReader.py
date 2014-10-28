@@ -110,11 +110,15 @@ class spreadsheetReader():
             if col<len(r):
                 contents = r[col]
         return contents
-    def getTotalCounts(self, sheet, totalrow = 11, totalcountscol = 4):
+    def getTotalCounts(self, sheet, totalrow = 11, totalcountscol = 5):
         '''
         return total counts from sheet
+        20141027 Position of total counts varies. Use column 0 to override default
         '''
-        return self.getRowColContents(sheet, row=totalrow, col=totalcountscol)
+        col = totalcountscol
+        if self.getRowColContents(sheet,row=totalrow,col=0)==u'Total Counts:' : col = 4
+        totalCounts =  self.getRowColContents(sheet, row=totalrow, col=col)
+        return totalCounts
     def getChannelContents(self, sheet, headrow = 14, chanCol = 0, countsCol = 1):
         '''
         return channel # and counts from sheet
@@ -148,7 +152,7 @@ class spreadsheetReader():
         title,date = self.getDate(s)
         if title is None and date is None:
             title,date = self.getDateInName(s)
-        totalCounts= self.getTotalCounts(s,totalcountscol = 5)
+        totalCounts= self.getTotalCounts(s)
         ADC = self.getChannelContents(s)
         # convert date extracted from file into datetime object
         dt = None

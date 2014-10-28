@@ -21,10 +21,13 @@ class ls6500():
 
         self.dataSubDir = None
         # list of possible subdirectories
-        dD = ['/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_1_141014/',\
-              '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/',\
-               '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/',\
-               '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/' ]
+        maindir = '/Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/'
+        dD = []
+        for q in os.listdir(maindir):
+            if 'csv' not in q and q[0]!='.': dD.append(maindir + q + '/')
+        # sort by date in filename    
+        dD = sorted(dD, key=lambda word: word.split('/')[-2][-6:])
+        
 
         ml = mode.lower()
         
@@ -32,25 +35,24 @@ class ls6500():
         self.listOfDataDirs = [ ] #
         Merge = 'merge' in ml
         if Merge:
-            if ml=='mergegamma':
-                for d in dD:
-                    suffix = d.split('/')[-2]
-                    if 'gamma' in suffix.lower(): 
-                        self.listOfDataDirs.append(d)
-                suffix = ml
+            if ml=='mergegamma': firstWord = 'Gamma'
+            if ml=='mergensrl':  firstWord = 'Pre-irrad_'
+            for d in dD:
+                suffix = d.split('/')[-2]
+                if firstWord==suffix[:len(firstWord)]:
+                    self.listOfDataDirs.append(d)
+            suffix = ml
+
+                    
         else:
-            # assign data directory based on input mode
-            if ml=='nsrl' or mode=='':
-                self.headerFirstRowName = u'Pre-irradiation measurements 141014 (actual)'
-                self.dataDir = dD[0]
-            elif ml=='gamma' or ml=='gamma_pre-irradiation':
-                self.headerFirstRowName = u'Pre-irradiation measurements 141017 (actual)'
-                self.dataDir = dD[1]
-            elif ml=='gamma_1gy' or ml=='gamma_141020':
-                self.dataDir = dD[2]
-            elif ml=='gamma_all' or ml=='gamma_141021':
-                self.dataDir = dD[3]
-            else:
+            # assign data directory based on date
+            self.dataDir = None
+            for q in dD:
+                if ml in q or mode in q:
+                    self.dataDir = q
+                    break
+                
+            if self.dataDir is None:
                 w = 'ls6500: Invalid mode ' + str(mode)
                 sys.exit(w)
 
@@ -84,6 +86,9 @@ class ls6500():
         # initialized in Main
         self.vialData  = {} # map(filename, value = [data])
 
+        # introduce map from sample to list of measurements
+        self.sampleMsmts = {} # map(key=sample, value=[list of filenames of measurements])
+
         # use in color()
         self.goodColors = [x for x in range(1,10)]
         self.goodColors.extend( [11, 12, 18] )
@@ -91,15 +96,57 @@ class ls6500():
         self.goodMarkers = [x for x in range(20,31) ]
 
         if Merge:
-            print 'initialize ls6500',mode
+            print 'initialize ls6500',mode,'. Merging',
+            print ', '.join([d for d in self.listOfDataDirs])
         else:
             print "initialize ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
             self.ssr = spreadsheetReader.spreadsheetReader()
+        return
+    def readTempVar(self,checkPrint=False):
+        '''
+        read special sheet with temperature information
+        performs functions of both processHeader and matchVialMeas
+        '''
+        headerRowFound = False
+        done = False
+        r = 0
+        if checkPrint: self.ssr.printSheet(self.headerSheet) 
+        while (r<self.headerSheet.nrows) and not done:
+            row = self.headerSheet.row_values(r)
+            if row[0]=='' and headerRowFound: done = True
+            if not done:
+                if not headerRowFound:
+                    if str(row[0])=='Measurement Number':
+                        headerRowFound = True
+                else:
+                    measNo = int(row[0])
+                    content= str(row[1])
+                    sampleName = content.replace(' ','_')
+                    measNoFileName = self.dataSubDir + 'MeasurementNo' + str(measNo).zfill(5) + '.xls'
+                    if sampleName not in self.sampleMsmts: self.sampleMsmts[sampleName] = []
+                    self.sampleMsmts[sampleName].append(measNoFileName)
+            r += 1
+        if checkPrint: print 'ls6500.readTempVar: sampleMsmts',self.sampleMsmts
+
+        # now generate fake positions to fill vialPosition, vialPositionOrder and vialMsmts
+        prename = 'FAKE'
+        for posnum,sampleName in enumerate(self.sampleMsmts):
+            pn = prename + str(posnum).zfill(3)
+            self.vialPositionOrder.append(pn)
+            self.vialPosition[pn] = sampleName
+            self.vialMsmts[pn] = self.sampleMsmts[sampleName]
+        print 'ls6500.readTempVar: found',len(self.sampleMsmts),'unique sample measurements'
+        if checkPrint:
+            print 'ls6500.readTempVar: vialPosition',self.vialPosition
+            print 'ls6500.readTempVar: vialPositionOrder',self.vialPositionOrder
+            print 'ls6500.readTempVar: vialMsmts',self.vialMsmts
         return
     def processHeader(self,checkPrint=False):
         '''
         open header file, get sheet with vial positions, produce ordered list of vials
         '''
+        debug = False
+        
         f = self.ssr.open(self.headerFileName)
         ##self.ssr.listSheets()  # debug
         self.headerSheet = self.ssr.findNamedSheet(sheetName = self.headerSheetName)
@@ -107,6 +154,10 @@ class ls6500():
             w = 'ls6500.processHeader: ERROR could not find sheet named ' + self.headerSheetName
             sys.exit(w)
         ##self.ssr.printSheet( self.headerSheet ) # debug
+
+        if 'TempVariation' in self.headerSheetName:
+            self.readTempVar()
+            return False # not normal
 
         done = False
         headerRowFound = False
@@ -136,6 +187,7 @@ class ls6500():
                         w = 'ls6500.processHeader: ERROR length of row'+str(len(row))+'does not equal length of columnIDs'+str(len(columnIDs))
                         sys.exit(w)
                     rowName = None
+                    if debug: print 'ls6500.processHeader: row',row
                     for i,pair in enumerate(zip(row,columnIDs)):
                         content,ID = pair
                         if i==slotColumn:
@@ -143,6 +195,10 @@ class ls6500():
                         else:
                             sampleName = str(content).replace(' ','_') # replace blanks with underscore
                             positionName = rowName + '_' + columnIDs[i]
+                            if sampleName=='0.0':
+                                print 'ls6500.processHeader: WARNING Found sampleName',sampleName,'for positionName',positionName,\
+                                      '\nrow',row
+                            if debug: print 'ls6500.processHeader:i',i,'content',content,'sampleName',sampleName,'positionName',positionName
                             if sampleName=='':
                                 print 'ls6500.processHeader:',positionName,'has no vial'
                                 numNoVial += 1
@@ -174,7 +230,7 @@ class ls6500():
         print 'ls6500.processHeader: Found',len(self.vialOrder),'total samples'
             
             
-        return
+        return True
     def isSummaryFile(self,fn):
         self.ssr.open(fn)
         s = self.ssr.getSheet(0)
@@ -232,7 +288,7 @@ class ls6500():
         exposuretime = float(self.ssr.getRowColContents(s,row=rownum,col=6))
         return samnum, rackpos,exposuretime
         
-    def getMeasurement(self,fn,positionNumber=None,numNoVial=0):
+    def getMeasurement(self,fn,positionNumber=None,numNoVial=0,performChecks=True):
         '''
         return header info and list of bin,contents from sheet 0 in file name fn
         perform checks on sheet contents, file name and positionNumber
@@ -241,6 +297,7 @@ class ls6500():
         
         self.ssr.open(fn)
         name,date,totalCounts,ADC = self.ssr.unpackSheet(isheet)
+        #print 'ls6500.getMeasurement: name',name,'date',date,'totalCounts',totalCounts
         if name is None:
             w = 'ls6500.getMeasurement: ERROR Failure with file ' + fn
             sys.exit(w)
@@ -248,45 +305,61 @@ class ls6500():
         s = self.ssr.getSheet(isheet)
         samnum, rackpos, exposuretime = self.getSRpT(s)
 
-        # check measurement number in file name against sample number
-        # an adjustment is made for the existence of a summary file for each lap
-        measNo = int(fn.split('MeasurementNo')[1].replace('.xls',''))
-        L = len(self.vialOrder)
-        if samnum!=(measNo%(L+1))+numNoVial :
-            w = 'ls6500.getMeasurement: ERROR Msmt# ' + str(measNo) \
-                + '%(' + str(L+1) + ')' \
-                + ' in filename not equal to samplenumber in file ' + str(samnum) \
-                + ' for numNoVial ' + str(numNoVial)
-            sys.exit(w)
-
-        # check position number against rack-position number
-        if positionNumber is not None:
-            ipn =  int(positionNumber[-2:])
-            if ipn!=rackpos :
-                w = 'ls6500.getMeasurement: ERROR positionNumber'+str(ipn)+'not equal rack-position'+str(rackpos)
+        if performChecks:
+            # check measurement number in file name against sample number
+            # an adjustment is made for the existence of a summary file for each lap
+            measNo = int(fn.split('MeasurementNo')[1].replace('.xls',''))
+            L = len(self.vialOrder)
+            if samnum!=(measNo%(L+1))+numNoVial :
+                w = 'ls6500.getMeasurement: ERROR Msmt# ' + str(measNo) \
+                    + '%(' + str(L+1) + ')' \
+                    + ' in filename not equal to samplenumber in file ' + str(samnum) \
+                    + ' for numNoVial ' + str(numNoVial)
                 sys.exit(w)
+
+            # check position number against rack-position number
+            if positionNumber is not None:
+                ipn =  int(positionNumber[-2:])
+                if ipn!=rackpos :
+                    w = 'ls6500.getMeasurement: ERROR positionNumber'+str(ipn)+'not equal rack-position'+str(rackpos)
+                    sys.exit(w)
 
         return date, totalCounts, exposuretime, ADC
     def nameHist(self,fn,mode='_h1d'):
-        name = fn.replace('.xls',mode).replace('MeasurementNo','M')
+        name = fn.replace('.xls',mode).replace('MeasurementNo','M').replace('/','_').replace('-','_')
         return name
     def getTimeOfMeasurement(self,fn):
         return self.vialData[fn][0]
+    def setThres(self,sample,defaultThres=100.):
+        thres = defaultThres
+        if sample[0:3]=='STD': thres = 2000.
+        return thres
     def Analyze(self):
         '''
         produce histograms for each measurement
         '''
+        debugMG = False
+        plotKS  = False
+        
         print 'ls6500.Analyze'
         Hists = {}
         Graphs= []
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
+        part1, part2 = ['', 'n', 'c'], ['g', 'n', 'c']
+        if plotKS:
+            part1.append('k')
+            part2.append('k')
         for kind in kinds:
-            for pair in zip(['', 'n', 'c', 'k'], ['g', 'n', 'c', 'k']):
+            for pair in zip(part1,part2):
                 p1,p2 = pair
+                if p1+kind in MultiGraphs: # should not happen
+                    words = 'ls.Analyze: ERROR '+str(p1+kind)+' already exists as key in MultiGraphs. kind='+str(kind)+' p1='+str(p1)+' p2='+str(p2)
+                    sys.exit(words)
                 MultiGraphs[p1+kind] = TMultiGraph()
-                MultiGraphs[p1+kind].SetTitle(p2+kind)
+                MultiGraphs[p1+kind].SetTitle(p2+kind)  # may be changed below
                 MultiGraphs[p1+kind].SetName(p2+kind)
+                if debugMG: print 'MultiGraphs make map for kind',kind
 
 
         # make histograms of raw data (counts vs channel #) for each measurement
@@ -315,10 +388,12 @@ class ls6500():
             Graphs.append(g)
             kind = 'c' + self.getKind(title)
             MultiGraphs[ kind ].Add(g)
+            if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
             self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
 
                 
         # perform root's KS test to compare first msmt with others of same sample
+        # optionally plot results vs time difference
         for pn in self.vialPositionOrder:
             sample = self.vialPosition[pn]
             i = 0
@@ -336,42 +411,54 @@ class ls6500():
                 ks = h1.KolmogorovTest(h2)
                 T.append( (date2-date1).total_seconds()/60./60. )
                 KS.append( ks )
-                w = '{0} {1:4f}'.format(name2.split('_')[0],ks)
+                w = '{0:4f}'.format(ks)
                 print w,
             print ''
-            name = 'k' + sample
-            title = sample + ' ' + pn + 'KS test vs time difference in hours'
-            g = self.makeTGraph(T,KS,title,name)
-            Graphs.append(g)
-            kind = 'k' + self.getKind(title)
-            MultiGraphs[ kind ].Add(g)
-            self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
+            if plotKS:
+                name = 'k' + sample
+                title = sample + ' ' + pn + 'KS test vs time difference in hours'
+                g = self.makeTGraph(T,KS,title,name)
+                Graphs.append(g)
+                kind = 'k' + self.getKind(title)
+                MultiGraphs[ kind ].Add(g)
+                if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
+                self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
                                 
         # plot data from multiple hists or tgraphs
         for pn in self.vialPositionOrder:
+            sample = self.vialPosition[pn]
             hlist = []
             for fn in self.vialMsmts[pn]:
                 hlist.append( Hists[self.nameHist(fn)] )
             self.multiPlot(hlist) # overlay multiple hists
-            tg,ntg = self.xPoint(hlist) # crossing point from multiple hists vs time
+
+            thres = self.setThres(sample,defaultThres = 200.)
+            tg,ntg = self.xPoint(hlist,thres=thres) # crossing point from multiple hists vs time
             
             kind = self.getKind( tg.GetTitle() )
             MultiGraphs[ kind ].Add(tg)
+            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
+                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
+            if debugMG: print 'Add graph',tg.GetName(),'to MultiGraphs. kind=',kind
             ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
             self.color(tg,ngraphs)
             Graphs.append( tg )
 
-            MultiGraphs[ 'n'+kind ] .Add(ntg)
+            MultiGraphs[ 'n'+kind ].Add(ntg)
+            if debugMG: print 'Add graph',ntg.GetName(),'to MultiGraphs. kind=','n'+kind
             self.color(ntg,ngraphs)
             Graphs.append( ntg )
 
 
-        
+        # output of hists, graphs.
+        # processing of multigraphs
         outname = self.histFile
         outfile = TFile(outname,'RECREATE')
         for h in Hists: outfile.WriteTObject( Hists[h] )
         for tg in Graphs: outfile.WriteTObject( tg )
+        if debugMG: print 'MultiGraphs',MultiGraphs,'\n'
         for kind in MultiGraphs:
+            if debugMG: print 'kind',kind,'MultiGraphs[kind]',MultiGraphs[kind]
             self.multiGraph(MultiGraphs[kind])
             outfile.WriteTObject( MultiGraphs[kind] )
         outfile.Close()
@@ -402,13 +489,15 @@ class ls6500():
             obj.SetMarkerStyle( self.goodMarkers[m] )
         return
 
-    def xPoint(self,hlist):
+    def xPoint(self,hlist,thres=100., maxchan=1000):
         '''
-        return TGraph of crossing-point for multiple hists
-        return TGraph of crossing-point for multiple hists normalized to first point
+        Return TGraph of crossing-point for multiple hists.
+        Return TGraph of crossing-point for multiple hists normalized to first point.
+        Determine crossing-point by starting at maxchan channel and descending in
+        channel number until the threshold is crossed, then linearly interpolate
+        between two neighboring channels to calculate crosssing-point.
         '''
-        thres = 100.
-        maxchan = 1000
+        debugTime = False
         h0 = hlist[0]
         sample = self.setSamName(h0)
         title = sample + ' channel for threshold=' + str(int(thres))
@@ -416,7 +505,12 @@ class ls6500():
         for h in hlist:
             s = h.GetTitle().split()
             date = datetime.datetime.strptime(s[2]+' '+s[3],'%Y%m%d %H:%M:%S')
-            tdobj= TDatime( date.strftime('%Y-%m-%d %H:%M:%S') )
+            timestring = date.strftime('%Y-%m-%d %H:%M:%S')
+            if debugTime: print 'h.GetTitle()',h.GetTitle(),'timestring',timestring
+            tdobj= TDatime( timestring )
+            if debugTime: print 'TDatime',tdobj.AsString(),'as MySQL string',tdobj.AsSQLString(),'TDatime.Convert()',tdobj.Convert()
+
+            
             X.append( tdobj.Convert() )
             x = None
             for i in range(maxchan,0,-1):
@@ -437,7 +531,9 @@ class ls6500():
         set time axis to display nicely
         '''
         g.GetXaxis().SetTimeDisplay(1)
-        g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%m/%d}")
+        g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%y/%m/%d}")
+        g.GetXaxis().SetNdivisions(-409)
+        g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
         return
     def setSamName(self,h0):
         '''
@@ -453,11 +549,15 @@ class ls6500():
         Default is that abscissa is calendar time
         if truncT = True, then truncate title for legend
         '''
+        debugMG = False
+        if not TMG.GetListOfGraphs(): return  # empty
         title = TMG.GetTitle()
         name  = TMG.GetName()
+        if debugMG: print 'ls6500.multiGraph',title,name,'TMG.GetListOfGraphs()',TMG.GetListOfGraphs(),'TMG.GetListOfGraphs().GetSize()',TMG.GetListOfGraphs().GetSize()
+
         pdf = self.figuresDir + name + '.pdf'
-        ysize = 800.
-        xsize = 8.5/11.*ysize
+        ps  = self.figuresDir + name + '.ps'
+        xsize,ysize = 1100,850 # landscape style
         noPopUp = True
         if noPopUp : gROOT.ProcessLine("gROOT->SetBatch()")
         canvas = TCanvas(pdf,title,xsize,ysize)
@@ -468,13 +568,22 @@ class ls6500():
             lg.AddEntry(g, t, "l" )
         TMG.Draw("apl")
         if name[0]!='k': self.fixTimeDisplay( TMG )
+        lx = TMG.GetXaxis().GetLabelSize()
+        TMG.GetXaxis().SetLabelSize(0.75*lx)
+        TMG.GetXaxis().SetNdivisions(-409)
         lg.Draw()
         canvas.Draw()
         canvas.SetGrid(1)
+        canvas.SetTicks(1)
         canvas.cd()
         canvas.Modified()
         canvas.Update()
-        canvas.Print(pdf,'pdf')
+        if 0:
+            canvas.Print(pdf,'pdf')
+        else:
+            canvas.Print(ps,'Landscape')
+            os.system('ps2pdf ' + ps + ' ' + pdf)
+            if os.path.exists(pdf): os.system('rm ' + ps)
         return
     def multiPlot(self,hlist):
         '''
@@ -484,17 +593,19 @@ class ls6500():
         # sample name should include position for EMPTY samples
         sample = self.setSamName(h0)
         # upper limit of 1000. channels only for LS
-        xma = 200.
-        if sample[0]=='1': xma = 1000.
+        xma = 2000.
+        if sample[0:4]=='EMPT' : xma = 100.
+        if sample[0:3]=='STD'  : xma = 1500.
+        if sample[0]=='0': xma = 200.  #WbLS
+        if sample[0]=='1': xma = 1000. # LS
         pdf = self.figuresDir  + sample + '.pdf'
-        ysize = 800
-        xsize = 8.5/11.*ysize
+        xsize,ysize = 850,1000 # nominally portrait
         noPopUp = True
         if noPopUp : gROOT.ProcessLine("gROOT->SetBatch()")
         canvas = TCanvas(pdf,self.dataDir.split('/')[-2],xsize,ysize)
         canvas.SetLogy(1)
         h0.GetXaxis().SetRangeUser(0.,xma)
-        lg = TLegend(.2,.7, .6,.95)
+        lg = TLegend(.5,.7, .7,.95)
         for i,h in enumerate(hlist):
             #h.SetLineColor(i+1) # 0=white
             self.color(h,i)
@@ -521,6 +632,7 @@ class ls6500():
         vD = {}
         for dD in self.listOfDataDirs:
             self.dataDir = dD
+            #print 'ls6500.merge: dataDir',self.dataDir
             self.putOrGet(mode='get')
             
             # add all {filename:[data]} pairs
@@ -580,6 +692,11 @@ class ls6500():
         for sample in self.vialOrder:
             kind = sample[0:4]
             if kind not in kinds: kinds.append(kind)
+        if len(kinds)==0: # handles TempVariation
+            for pn in self.vialPosition:
+                sample = self.vialPosition[pn]
+                kind = sample[0:4]
+                if kind not in kinds: kinds.append(kind)
         return kinds
     def getKind(self,title):
         '''
@@ -601,16 +718,25 @@ class ls6500():
         '''
         if checkPrint: print 'ls6500.Main: pickMode',pickMode
         if pickMode.lower()=='put':
-            self.processHeader(checkPrint=False)
-            self.matchVialMeas(checkPrint=False)
-            for pn,numNoVial in zip(self.vialPositionOrder,self.noVial):
-                if checkPrint: print 'Tray_Position',pn,'Number of `no vial` to this position',numNoVial
+            Normal = self.processHeader(checkPrint=False)
+            if Normal:
+                # normal processing
+                self.matchVialMeas(checkPrint=False)
+                for pn,numNoVial in zip(self.vialPositionOrder,self.noVial):
+                    if checkPrint: print 'Tray_Position',pn,'Number of `no vial` to this position',numNoVial
 
-                for fn in self.vialMsmts[pn]:
-                    fpath = self.dataParentDir + fn
+                    for fn in self.vialMsmts[pn]:
+                        fpath = self.dataParentDir + fn
 
-                    if checkPrint: print 'get measurement from',fpath
-                    self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
+                        if checkPrint: print 'get measurement from',fpath
+                        self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
+            else:
+                # not normal processing. for temperature variation
+                for pn in self.vialPosition:
+                    for fn in self.vialMsmts[pn]:
+                        fpath = self.dataParentDir + fn
+                        self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,performChecks=False)
+                        
             self.putOrGet(mode=pickMode)
         elif pickMode.lower()=='get':
             self.putOrGet(mode=pickMode)
