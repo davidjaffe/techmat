@@ -24,3 +24,10 @@ for d in DirList:
     args = shlex.split(cmd)
     subprocess.call(args)
 
+mergelist = ['mergegamma', 'mergensrl']
+for d in mergelist:
+    cmd = 'python ls6500.py merge ' + d + ' redirect '
+    print cmd
+    args = shlex.split(cmd)
+    subprocess.call(args)
+    

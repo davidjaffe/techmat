@@ -10,7 +10,7 @@ import os
 import pickle
 import ROOT
 import datetime
-from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph
+from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph, gStyle
 from array import array
 
 class ls6500():
@@ -19,8 +19,9 @@ class ls6500():
         self.headerSheetName = 'LS Measurement arrangement' #OLD. See below
         self.headerSheet = None
 
-        # this avoids the annoying TCanvas::Print Info messages?
+        # this avoids the annoying TCanvas::Print Info messages
         ROOT.gErrorIgnoreLevel = ROOT.kWarning
+        gStyle.SetOptStat(1001111) # title,entries,mean,rms,integral
 
         if redirect:
             unique = '_{0}'.format(datetime.datetime.now().strftime("%Y%m%d%H%M_%f"))
@@ -358,7 +359,7 @@ class ls6500():
         Graphs= []
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
-        part1, part2 = ['', 'n', 'c'], ['g', 'n', 'c']
+        part1, part2 = ['', 'n', 'c', 'a'], ['g', 'n', 'c', 'a']
         if plotKS:
             part1.append('k')
             part2.append('k')
@@ -371,7 +372,7 @@ class ls6500():
                 MultiGraphs[p1+kind] = TMultiGraph()
                 MultiGraphs[p1+kind].SetTitle(p2+kind)  # may be changed below
                 MultiGraphs[p1+kind].SetName(p2+kind)
-                if debugMG: print 'MultiGraphs make map for kind',kind
+                if debugMG: print 'MultiGraphs make map for kind',kind,'p1',p1,'p2',p2
 
 
         # make histograms of raw data (counts vs channel #) for each measurement
@@ -393,7 +394,7 @@ class ls6500():
                 xma = xmi + float(nx)
                 Hists[name] = TH1D(name,title,nx,xmi,xma)
                 for x,y in ADC: Hists[name].Fill(x,y)
-            title = sample + ' ' + pn + 'total counts'
+            title = sample + ' ' + pn + ' total counts'
             name = 'c' + sample
             g = self.makeTGraph(T,C,title,name)
             self.fixTimeDisplay( g )
@@ -445,7 +446,9 @@ class ls6500():
             self.multiPlot(hlist) # overlay multiple hists
 
             thres = self.setThres(sample,defaultThres = 200.)
-            tg,ntg = self.xPoint(hlist,thres=thres) # crossing point from multiple hists vs time
+            tg,ntg,atg = self.xPoint(hlist,thres=thres) # crossing point from multiple hists vs time
+            htg = self.histGraph(tg)  # histogram of crossing points
+            Hists[htg.GetName()] = htg
             
             kind = self.getKind( tg.GetTitle() )
             MultiGraphs[ kind ].Add(tg)
@@ -464,6 +467,17 @@ class ls6500():
             self.color(ntg,ngraphs)
             Graphs.append( ntg )
 
+            if atg is not None:
+                kind = 'a' + self.getKind( atg.GetTitle() )
+                MultiGraphs[kind].Add(atg)
+                if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
+                    MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
+                if debugMG: print 'Add graph',atg.GetName(),'to MultiGraphs. kind=',kind
+                ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
+                self.color(atg,ngraphs)
+                Graphs.append( atg )
+                
+
 
         # output of hists, graphs.
         # processing of multigraphs
@@ -479,6 +493,33 @@ class ls6500():
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
         return
+    def histGraph(self,g):
+        '''
+        return gaussian-fitted histogram from ordinate values from graph g
+        '''
+        name = g.GetName()
+        title= g.GetTitle()
+        np   = g.GetN()
+        y = []
+        for i in range(np):
+            a,b = ROOT.Double(0),ROOT.Double(0)
+            OK = g.GetPoint(i,a,b)
+            if OK!=-1 : y.append(b)
+        if len(y)!=np: print 'ls.histGraph: WARNING length of obtained points',len(y),'not equal number of points',np,'for graph name',name,'title',title
+        ymi = min(y)
+        yma = max(y)
+        dy = (yma-ymi)/2
+        #print 'ymi',ymi,'yma',yma,'dy',dy,'y',y
+        ymi -= dy
+        yma += dy
+        n = max(10,int(len(y)/4))
+        #print 'ymi',ymi,'yma',yma,'n',n
+        name = 'H' + name
+        title= 'Hist of ordinate of ' + title
+        h = TH1D(name,title,n,ymi,yma)
+        for b in y: h.Fill(b)
+        h.Fit("gaus","LQ")
+        return h
     def xint(self,x1,y1,x2,y2,yt):
         dx = x2-x1
         if dx==0. : return x1
@@ -508,6 +549,7 @@ class ls6500():
         '''
         Return TGraph of crossing-point for multiple hists.
         Return TGraph of crossing-point for multiple hists normalized to first point.
+        Return Tgraph of crossing-point for multiple hists normalized by average.
         Determine crossing-point by starting at maxchan channel and descending in
         channel number until the threshold is crossed, then linearly interpolate
         between two neighboring channels to calculate crosssing-point.
@@ -537,10 +579,17 @@ class ls6500():
                     break
         tg = self.makeTGraph(X,Y,title,'g'+sample)
         ntg= self.makeTGraph(X,normY,title + ' normed','n'+sample)
-        for g in [tg, ntg]:
-            g.SetMarkerStyle(20)
-            self.fixTimeDisplay(g)
-        return tg,ntg
+        atg= None
+        if len(Y)>0:
+            ave = float(sum(Y))/float(len(Y))
+            if ave!=0.:
+                aY = [q/ave for q in Y]
+                atg = self.makeTGraph(X,aY,title + ' wrt average','a'+sample)
+        for g in [tg, ntg, atg]:
+            if g is not None:
+                g.SetMarkerStyle(20)
+                self.fixTimeDisplay(g)
+        return tg,ntg,atg
     def fixTimeDisplay(self,g):
         '''
         set time axis to display nicely
@@ -558,11 +607,11 @@ class ls6500():
         sample = w[0]
         if 'EMPTY' in sample: sample += '_' + w[1]
         return sample
-    def multiGraph(self,TMG,truncT=True):
+    def multiGraph(self,TMG,truncT=20):
         '''
         draw TMultiGraph with legend and output as pdf
-        Default is that abscissa is calendar time
-        if truncT = True, then truncate title for legend
+        Default is that abscissa is calendar time.
+        truncT is the number of initial characters in title to use in legend
         '''
         debugMG = False
         if not TMG.GetListOfGraphs(): return  # empty
@@ -579,7 +628,7 @@ class ls6500():
         lg = TLegend(.15,.15, .3,.35)
         for g in TMG.GetListOfGraphs():
             t = g.GetTitle()
-            if truncT: t = t.split()[0]
+            if truncT>0: t = t[:min(len(t),truncT)]
             lg.AddEntry(g, t, "l" )
         TMG.Draw("apl")
         if name[0]!='k': self.fixTimeDisplay( TMG )

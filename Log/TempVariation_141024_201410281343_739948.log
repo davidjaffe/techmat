@@ -1,0 +1,18 @@
+Log/TempVariation_141024_201410281343_739948.log
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/TempVariation_141024/ 
+dataSubDir TempVariation_141024/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.readTempVar: found 4 unique sample measurements
+ls6500.putOrGet: patience...writing pickled data to Pickles/TempVariation_141024.pickle
+ls6500.Analyze
+pn FAKE000 sample 1000_REF2
+pn FAKE001 sample 1002_REF1
+pn FAKE002 sample 1002_REF2
+pn FAKE003 sample 1000_REF1
+1000_REF2 TempVariation 0.174094 0.006523 0.000049 
+1002_REF1 TempVariation 0.000000 0.000000 0.000000 
+1002_REF2 TempVariation 0.734056 
+1000_REF1 TempVariation 0.001355 0.000130 0.000000 0.000000 0.000000 0.000000 0.000000 
+ls6500.Analyze: Wrote hists to Histograms/TempVariation_141024.root

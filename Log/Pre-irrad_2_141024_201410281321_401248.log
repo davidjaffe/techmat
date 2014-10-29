@@ -1,0 +1,1114 @@
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/ 
+dataSubDir Pre-irrad_2_141024/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: Found 192 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00193.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00386.xls from list
+Tray_Position S1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00001.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00194.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00387.xls
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00002.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00195.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00388.xls
+Tray_Position S1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00003.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00196.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00389.xls
+Tray_Position S1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00004.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00197.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00390.xls
+Tray_Position S1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00005.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00198.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00391.xls
+Tray_Position S1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00006.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00199.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00392.xls
+Tray_Position S1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00007.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00200.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00393.xls
+Tray_Position S1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00008.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00201.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00394.xls
+Tray_Position S1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00009.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00202.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00395.xls
+Tray_Position S1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00010.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00203.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00396.xls
+Tray_Position S1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00011.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00204.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00397.xls
+Tray_Position S1_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00012.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00205.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00398.xls
+Tray_Position S2_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00013.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00206.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00399.xls
+Tray_Position S2_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00014.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00207.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00400.xls
+Tray_Position S2_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00015.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00208.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00401.xls
+Tray_Position S2_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00016.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00209.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00402.xls
+Tray_Position S2_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00017.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00210.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00403.xls
+Tray_Position S2_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00018.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00211.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00404.xls
+Tray_Position S2_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00019.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00212.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00405.xls
+Tray_Position S2_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00020.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00213.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00406.xls
+Tray_Position S2_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00021.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00214.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00407.xls
+Tray_Position S2_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00022.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00215.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00408.xls
+Tray_Position S2_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00023.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00216.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00409.xls
+Tray_Position S2_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00024.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00217.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00410.xls
+Tray_Position S3_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00025.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00218.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00411.xls
+Tray_Position S3_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00026.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00219.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00412.xls
+Tray_Position S3_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00027.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00220.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00413.xls
+Tray_Position S3_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00028.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00221.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00414.xls
+Tray_Position S3_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00029.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00222.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00415.xls
+Tray_Position S3_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00030.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00223.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00416.xls
+Tray_Position S3_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00031.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00224.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00417.xls
+Tray_Position S3_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00032.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00225.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00418.xls
+Tray_Position S3_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00033.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00226.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00419.xls
+Tray_Position S3_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00034.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00227.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00420.xls
+Tray_Position S3_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00035.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00228.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00421.xls
+Tray_Position S3_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00036.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00229.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00422.xls
+Tray_Position S4_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00037.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00230.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00423.xls
+Tray_Position S4_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00038.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00231.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00424.xls
+Tray_Position S4_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00039.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00232.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00425.xls
+Tray_Position S4_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00040.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00233.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00426.xls
+Tray_Position S4_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00041.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00234.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00427.xls
+Tray_Position S4_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00042.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00235.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00428.xls
+Tray_Position S4_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00043.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00236.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00429.xls
+Tray_Position S4_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00044.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00237.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00430.xls
+Tray_Position S4_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00045.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00238.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00431.xls
+Tray_Position S4_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00046.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00239.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00432.xls
+Tray_Position S4_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00047.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00240.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00433.xls
+Tray_Position S4_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00048.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00241.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00434.xls
+Tray_Position S5_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00049.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00242.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00435.xls
+Tray_Position S5_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00050.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00243.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00436.xls
+Tray_Position S5_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00051.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00244.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00437.xls
+Tray_Position S5_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00052.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00245.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00438.xls
+Tray_Position S5_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00053.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00246.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00439.xls
+Tray_Position S5_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00054.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00247.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00440.xls
+Tray_Position S5_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00055.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00248.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00441.xls
+Tray_Position S5_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00056.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00249.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00442.xls
+Tray_Position S5_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00057.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00250.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00443.xls
+Tray_Position S5_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00058.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00251.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00444.xls
+Tray_Position S5_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00059.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00252.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00445.xls
+Tray_Position S5_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00060.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00253.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00446.xls
+Tray_Position S6_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00061.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00254.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00447.xls
+Tray_Position S6_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00062.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00255.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00448.xls
+Tray_Position S6_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00063.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00256.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00449.xls
+Tray_Position S6_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00064.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00257.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00450.xls
+Tray_Position S6_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00065.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00258.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00451.xls
+Tray_Position S6_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00066.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00259.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00452.xls
+Tray_Position S6_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00067.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00260.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00453.xls
+Tray_Position S6_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00068.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00261.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00454.xls
+Tray_Position S6_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00069.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00262.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00455.xls
+Tray_Position S6_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00070.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00263.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00456.xls
+Tray_Position S6_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00071.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00264.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00457.xls
+Tray_Position S6_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00072.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00265.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00458.xls
+Tray_Position S7_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00073.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00266.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00459.xls
+Tray_Position S7_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00074.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00267.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00460.xls
+Tray_Position S7_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00075.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00268.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00461.xls
+Tray_Position S7_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00076.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00269.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00462.xls
+Tray_Position S7_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00077.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00270.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00463.xls
+Tray_Position S7_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00078.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00271.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00464.xls
+Tray_Position S7_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00079.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00272.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00465.xls
+Tray_Position S7_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00080.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00273.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00466.xls
+Tray_Position S7_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00081.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00274.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00467.xls
+Tray_Position S7_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00082.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00275.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00468.xls
+Tray_Position S7_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00083.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00276.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00469.xls
+Tray_Position S7_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00084.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00277.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00470.xls
+Tray_Position S8_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00085.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00278.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00471.xls
+Tray_Position S8_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00086.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00279.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00472.xls
+Tray_Position S8_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00087.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00280.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00473.xls
+Tray_Position S8_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00088.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00281.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00474.xls
+Tray_Position S8_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00089.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00282.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00475.xls
+Tray_Position S8_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00090.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00283.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00476.xls
+Tray_Position S8_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00091.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00284.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00477.xls
+Tray_Position S8_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00092.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00285.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00478.xls
+Tray_Position S8_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00093.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00286.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00479.xls
+Tray_Position S8_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00094.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00287.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00480.xls
+Tray_Position S8_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00095.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00288.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00481.xls
+Tray_Position S8_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00096.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00289.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00482.xls
+Tray_Position S9_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00097.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00290.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00483.xls
+Tray_Position S9_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00098.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00291.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00484.xls
+Tray_Position S9_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00099.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00292.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00485.xls
+Tray_Position S9_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00100.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00293.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00486.xls
+Tray_Position S9_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00101.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00294.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00487.xls
+Tray_Position S9_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00102.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00295.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00488.xls
+Tray_Position S9_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00103.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00296.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00489.xls
+Tray_Position S9_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00104.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00297.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00490.xls
+Tray_Position S9_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00105.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00298.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00491.xls
+Tray_Position S9_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00106.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00299.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00492.xls
+Tray_Position S9_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00107.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00300.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00493.xls
+Tray_Position S9_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00108.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00301.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00494.xls
+Tray_Position S10_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00109.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00302.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00495.xls
+Tray_Position S10_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00110.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00303.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00496.xls
+Tray_Position S10_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00111.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00304.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00497.xls
+Tray_Position S10_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00112.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00305.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00498.xls
+Tray_Position S10_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00113.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00306.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00499.xls
+Tray_Position S10_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00114.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00307.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00500.xls
+Tray_Position S10_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00115.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00308.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00501.xls
+Tray_Position S10_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00116.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00309.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00502.xls
+Tray_Position S10_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00117.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00310.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00503.xls
+Tray_Position S10_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00118.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00311.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00504.xls
+Tray_Position S10_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00119.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00312.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00505.xls
+Tray_Position S10_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00120.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00313.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00506.xls
+Tray_Position S11_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00121.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00314.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00507.xls
+Tray_Position S11_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00122.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00315.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00508.xls
+Tray_Position S11_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00123.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00316.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00509.xls
+Tray_Position S11_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00124.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00317.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00510.xls
+Tray_Position S11_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00125.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00318.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00511.xls
+Tray_Position S11_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00126.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00319.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00512.xls
+Tray_Position S11_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00127.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00320.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00513.xls
+Tray_Position S11_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00128.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00321.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00514.xls
+Tray_Position S11_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00129.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00322.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00515.xls
+Tray_Position S11_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00130.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00323.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00516.xls
+Tray_Position S11_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00131.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00324.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00517.xls
+Tray_Position S11_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00132.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00325.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00518.xls
+Tray_Position S12_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00133.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00326.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00519.xls
+Tray_Position S12_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00134.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00327.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00520.xls
+Tray_Position S12_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00135.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00328.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00521.xls
+Tray_Position S12_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00136.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00329.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00522.xls
+Tray_Position S12_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00137.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00330.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00523.xls
+Tray_Position S12_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00138.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00331.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00524.xls
+Tray_Position S12_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00139.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00332.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00525.xls
+Tray_Position S12_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00140.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00333.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00526.xls
+Tray_Position S12_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00141.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00334.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00527.xls
+Tray_Position S12_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00142.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00335.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00528.xls
+Tray_Position S12_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00143.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00336.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00529.xls
+Tray_Position S12_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00144.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00337.xls
+Tray_Position S13_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00145.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00338.xls
+Tray_Position S13_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00146.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00339.xls
+Tray_Position S13_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00147.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00340.xls
+Tray_Position S13_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00148.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00341.xls
+Tray_Position S13_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00149.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00342.xls
+Tray_Position S13_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00150.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00343.xls
+Tray_Position S13_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00151.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00344.xls
+Tray_Position S13_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00152.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00345.xls
+Tray_Position S13_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00153.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00346.xls
+Tray_Position S13_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00154.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00347.xls
+Tray_Position S13_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00155.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00348.xls
+Tray_Position S13_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00156.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00349.xls
+Tray_Position S14_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00157.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00350.xls
+Tray_Position S14_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00158.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00351.xls
+Tray_Position S14_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00159.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00352.xls
+Tray_Position S14_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00160.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00353.xls
+Tray_Position S14_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00161.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00354.xls
+Tray_Position S14_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00162.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00355.xls
+Tray_Position S14_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00163.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00356.xls
+Tray_Position S14_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00164.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00357.xls
+Tray_Position S14_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00165.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00358.xls
+Tray_Position S14_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00166.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00359.xls
+Tray_Position S14_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00167.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00360.xls
+Tray_Position S14_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00168.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00361.xls
+Tray_Position S15_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00169.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00362.xls
+Tray_Position S15_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00170.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00363.xls
+Tray_Position S15_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00171.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00364.xls
+Tray_Position S15_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00172.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00365.xls
+Tray_Position S15_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00173.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00366.xls
+Tray_Position S15_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00174.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00367.xls
+Tray_Position S15_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00175.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00368.xls
+Tray_Position S15_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00176.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00369.xls
+Tray_Position S15_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00177.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00370.xls
+Tray_Position S15_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00178.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00371.xls
+Tray_Position S15_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00179.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00372.xls
+Tray_Position S15_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00180.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00373.xls
+Tray_Position R1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00181.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00374.xls
+Tray_Position R1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00182.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00375.xls
+Tray_Position R1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00183.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00376.xls
+Tray_Position R1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00184.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00377.xls
+Tray_Position R1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00185.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00378.xls
+Tray_Position R1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00186.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00379.xls
+Tray_Position R1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00187.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00380.xls
+Tray_Position R1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00188.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00381.xls
+Tray_Position R1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00189.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00382.xls
+Tray_Position R1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00190.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00383.xls
+Tray_Position R1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00191.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00384.xls
+Tray_Position R1_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00192.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_2_141024/MeasurementNo00385.xls
+ls6500.putOrGet: patience...writing pickled data to Pickles/Pre-irrad_2_141024.pickle
+ls6500.Analyze
+pn S1_Position01 sample STD_3_H
+pn S1_Position02 sample 0050_1F13
+pn S1_Position03 sample 0052_1F14
+pn S1_Position04 sample 0050_2F13
+pn S1_Position05 sample 0052_2F14
+pn S1_Position06 sample 0050_3F13
+pn S1_Position07 sample 0052_3F14
+pn S1_Position08 sample 0050_4F13
+pn S1_Position09 sample 0052_4F14
+pn S1_Position10 sample 0100_1F15
+pn S1_Position11 sample 0102_1F25
+pn S1_Position12 sample 0100_2F15
+pn S2_Position01 sample 0102_2F25
+pn S2_Position02 sample STD_14_C
+pn S2_Position03 sample 0100_3F15
+pn S2_Position04 sample 0102_3F25
+pn S2_Position05 sample 0100_4F15
+pn S2_Position06 sample 0102_4F25
+pn S2_Position07 sample 0140_1F23
+pn S2_Position08 sample 0142_1F33
+pn S2_Position09 sample 0140_2F23
+pn S2_Position10 sample 0142_2F33
+pn S2_Position11 sample 0140_3F23
+pn S2_Position12 sample 0142_3F33
+pn S3_Position01 sample 0140_4F23
+pn S3_Position02 sample 0142_4F33
+pn S3_Position03 sample EMPTY
+pn S3_Position04 sample 1000_1F34
+pn S3_Position05 sample 1002_1F35
+pn S3_Position06 sample 1000_2F34
+pn S3_Position07 sample 1002_2F35
+pn S3_Position08 sample 1000_3F34
+pn S3_Position09 sample 1002_3F35
+pn S3_Position10 sample 1000_4F34
+pn S3_Position11 sample 1002_4F35
+pn S3_Position12 sample 0050_1R13
+pn S4_Position01 sample 0052_1R14
+pn S4_Position02 sample 0050_2R13
+pn S4_Position03 sample 0052_2R14
+pn S4_Position04 sample EMPTY
+pn S4_Position05 sample 0050_3R13
+pn S4_Position06 sample 0052_3R14
+pn S4_Position07 sample 0050_4R13
+pn S4_Position08 sample 0052_4R14
+pn S4_Position09 sample 0100_1R15
+pn S4_Position10 sample 0102_1R25
+pn S4_Position11 sample 0100_2R15
+pn S4_Position12 sample 0102_2R25
+pn S5_Position01 sample 0100_3R15
+pn S5_Position02 sample 0102_3R25
+pn S5_Position03 sample 0100_4R15
+pn S5_Position04 sample 0102_4R25
+pn S5_Position05 sample EMPTY
+pn S5_Position06 sample 0140_1R23
+pn S5_Position07 sample 0142_1R33
+pn S5_Position08 sample 0140_2R23
+pn S5_Position09 sample 0142_2R33
+pn S5_Position10 sample 0140_3R23
+pn S5_Position11 sample 0142_3R33
+pn S5_Position12 sample 0140_4R23
+pn S6_Position01 sample 0142_4R33
+pn S6_Position02 sample 1000_1R34
+pn S6_Position03 sample 1002_1R35
+pn S6_Position04 sample 1000_2R34
+pn S6_Position05 sample 1002_2R35
+pn S6_Position06 sample EMPTY
+pn S6_Position07 sample 1000_3R34
+pn S6_Position08 sample 1002_3R35
+pn S6_Position09 sample 1000_4R34
+pn S6_Position10 sample 1002_4R35
+pn S6_Position11 sample 0050_FPMT
+pn S6_Position12 sample 0050_RPMT
+pn S7_Position01 sample 0050_1F11
+pn S7_Position02 sample 0052_1F12
+pn S7_Position03 sample 0050_2F11
+pn S7_Position04 sample 0052_2F12
+pn S7_Position05 sample 0050_3F11
+pn S7_Position06 sample 0052_3F12
+pn S7_Position07 sample EMPTY
+pn S7_Position08 sample 0050_4F11
+pn S7_Position09 sample 0052_4F12
+pn S7_Position10 sample 0100_1F22
+pn S7_Position11 sample 0102_1F21
+pn S7_Position12 sample 0100_2F22
+pn S8_Position01 sample 0102_2F21
+pn S8_Position02 sample 0100_3F22
+pn S8_Position03 sample 0102_3F21
+pn S8_Position04 sample 0100_4F22
+pn S8_Position05 sample 0102_4F21
+pn S8_Position06 sample 0140_1F31
+pn S8_Position07 sample 0142_1F26
+pn S8_Position08 sample EMPTY
+pn S8_Position09 sample 0140_2F31
+pn S8_Position10 sample 0142_2F26
+pn S8_Position11 sample 0140_3F31
+pn S8_Position12 sample 0142_3F26
+pn S9_Position01 sample 0140_4F31
+pn S9_Position02 sample 0142_4F26
+pn S9_Position03 sample 1000_1F36
+pn S9_Position04 sample 1002_1F32
+pn S9_Position05 sample 1000_2F36
+pn S9_Position06 sample 1002_2F32
+pn S9_Position07 sample 1000_3F36
+pn S9_Position08 sample 1002_3F32
+pn S9_Position09 sample EMPTY
+pn S9_Position10 sample 1000_4F36
+pn S9_Position11 sample 1002_4F32
+pn S9_Position12 sample 0050_1R11
+pn S10_Position01 sample 0052_1R12
+pn S10_Position02 sample 0050_2R11
+pn S10_Position03 sample 0052_2R12
+pn S10_Position04 sample 0050_3R11
+pn S10_Position05 sample 0052_3R12
+pn S10_Position06 sample 0050_4R11
+pn S10_Position07 sample 0052_4R12
+pn S10_Position08 sample 0100_1R22
+pn S10_Position09 sample 0102_1R21
+pn S10_Position10 sample EMPTY
+pn S10_Position11 sample 0100_2R22
+pn S10_Position12 sample 0102_2R21
+pn S11_Position01 sample 0100_3R22
+pn S11_Position02 sample 0102_3R21
+pn S11_Position03 sample 0100_4R22
+pn S11_Position04 sample 0102_4R21
+pn S11_Position05 sample 0140_1R31
+pn S11_Position06 sample 0142_1R26
+pn S11_Position07 sample 0140_2R31
+pn S11_Position08 sample 0142_2R26
+pn S11_Position09 sample 0140_3R31
+pn S11_Position10 sample 0142_3R26
+pn S11_Position11 sample EMPTY
+pn S11_Position12 sample 0140_4R31
+pn S12_Position01 sample 0142_4R26
+pn S12_Position02 sample 1000_1R36
+pn S12_Position03 sample 1002_1R32
+pn S12_Position04 sample 1000_2R36
+pn S12_Position05 sample 1002_2R32
+pn S12_Position06 sample 1000_3R36
+pn S12_Position07 sample 1002_3R32
+pn S12_Position08 sample 1000_4R36
+pn S12_Position09 sample 1002_4R32
+pn S12_Position10 sample 0050_1F16
+pn S12_Position11 sample 0052_1F17
+pn S12_Position12 sample EMPTY
+pn S13_Position01 sample EMPTY
+pn S13_Position02 sample 0050_2F16
+pn S13_Position03 sample EMPTY
+pn S13_Position04 sample 0052_2F17
+pn S13_Position05 sample 0050_3F16
+pn S13_Position06 sample 0052_3F17
+pn S13_Position07 sample 0050_4F16
+pn S13_Position08 sample 0052_4F17
+pn S13_Position09 sample 0100_1F27
+pn S13_Position10 sample 0100_2F27
+pn S13_Position11 sample 0100_3F27
+pn S13_Position12 sample 0100_4F27
+pn S14_Position01 sample EMPTY
+pn S14_Position02 sample 1000_1F37
+pn S14_Position03 sample 1000_2F37
+pn S14_Position04 sample EMPTY
+pn S14_Position05 sample 1000_3F37
+pn S14_Position06 sample 1000_4F37
+pn S14_Position07 sample 0050_1R16
+pn S14_Position08 sample 0052_1R17
+pn S14_Position09 sample 0050_2R16
+pn S14_Position10 sample 0052_2R17
+pn S14_Position11 sample 0050_3R16
+pn S14_Position12 sample 0052_3R17
+pn S15_Position01 sample EMPTY
+pn S15_Position02 sample 0050_4R16
+pn S15_Position03 sample 0052_4R17
+pn S15_Position04 sample 0100_1R27
+pn S15_Position05 sample EMPTY
+pn S15_Position06 sample 0100_2R27
+pn S15_Position07 sample 0100_3R27
+pn S15_Position08 sample 0100_4R27
+pn S15_Position09 sample 1000_1R37
+pn S15_Position10 sample 1000_2R37
+pn S15_Position11 sample 1000_3R37
+pn S15_Position12 sample 1000_4R37
+pn R1_Position01 sample 0050_REF1
+pn R1_Position02 sample 0052_REF1
+pn R1_Position03 sample 0100_REF1
+pn R1_Position04 sample 0102_REF1
+pn R1_Position05 sample 0140_REF1
+pn R1_Position06 sample 0142_REF1
+pn R1_Position07 sample 1000_REF1
+pn R1_Position08 sample 1002_REF1
+pn R1_Position09 sample 0050_REF2
+pn R1_Position10 sample 0052_REF2
+pn R1_Position11 sample 0100_REF2
+pn R1_Position12 sample 0102_REF2
+STD_3_H Pre 0.769711 0.017651 
+0050_1F13 Pre 0.515206 0.058196 
+0052_1F14 Pre 0.000000 0.000000 
+0050_2F13 Pre 0.095379 0.017683 
+0052_2F14 Pre 0.000005 0.000000 
+0050_3F13 Pre 0.830622 0.017232 
+0052_3F14 Pre 0.000023 0.000000 
+0050_4F13 Pre 0.718744 0.086593 
+0052_4F14 Pre 0.000016 0.000000 
+0100_1F15 Pre 0.550436 0.003229 
+0102_1F25 Pre 0.000000 0.000000 
+0100_2F15 Pre 0.015265 0.000116 
+0102_2F25 Pre 0.000000 0.000000 
+STD_14_C Pre 0.626592 0.000104 
+0100_3F15 Pre 0.516363 0.000915 
+0102_3F25 Pre 0.000000 0.000000 
+0100_4F15 Pre 0.700127 0.179366 
+0102_4F25 Pre 0.000000 0.000000 
+0140_1F23 Pre 0.295471 0.000000 
+0142_1F33 Pre 0.000000 0.000000 
+0140_2F23 Pre 0.213963 0.000001 
+0142_2F33 Pre 0.000000 0.000000 
+0140_3F23 Pre 0.053640 0.000004 
+0142_3F33 Pre 0.000000 0.000000 
+0140_4F23 Pre 0.771668 0.014037 
+0142_4F33 Pre 0.000000 0.000000 
+EMPTY Pre 0.445823 0.683653 
+1000_1F34 Pre 0.022123 0.000005 
+1002_1F35 Pre 0.000000 0.000000 
+1000_2F34 Pre 0.006979 0.000000 
+1002_2F35 Pre 0.000000 0.000000 
+1000_3F34 Pre 0.006695 0.000000 
+1002_3F35 Pre 0.000000 0.000000 
+1000_4F34 Pre 0.027320 0.000029 
+1002_4F35 Pre 0.000000 0.000000 
+0050_1R13 Pre 0.346830 0.000046 
+0052_1R14 Pre 0.000000 0.000000 
+0050_2R13 Pre 0.005476 0.001425 
+0052_2R14 Pre 0.000000 0.000000 
+EMPTY Pre 0.100621 0.062485 
+0050_3R13 Pre 0.914465 0.488714 
+0052_3R14 Pre 0.000001 0.000000 
+0050_4R13 Pre 0.145276 0.070082 
+0052_4R14 Pre 0.000000 0.000000 
+0100_1R15 Pre 0.000184 0.000000 
+0102_1R25 Pre 0.000000 0.000000 
+0100_2R15 Pre 0.652546 0.007959 
+0102_2R25 Pre 0.000000 0.000000 
+0100_3R15 Pre 0.123156 0.000023 
+0102_3R25 Pre 0.000000 0.000000 
+0100_4R15 Pre 0.558548 0.000346 
+0102_4R25 Pre 0.000000 0.000000 
+EMPTY Pre 0.172077 0.430867 
+0140_1R23 Pre 0.409093 0.025142 
+0142_1R33 Pre 0.000000 0.000000 
+0140_2R23 Pre 0.012991 0.000604 
+0142_2R33 Pre 0.000000 0.000000 
+0140_3R23 Pre 0.077360 0.000029 
+0142_3R33 Pre 0.000000 0.000000 
+0140_4R23 Pre 0.970347 0.000000 
+0142_4R33 Pre 0.000000 0.000000 
+1000_1R34 Pre 0.600057 0.000031 
+1002_1R35 Pre 0.000000 0.000000 
+1000_2R34 Pre 0.000000 0.000000 
+1002_2R35 Pre 0.000000 0.000000 
+EMPTY Pre 0.983228 0.892728 
+1000_3R34 Pre 0.030474 0.000011 
+1002_3R35 Pre 0.000000 0.000000 
+1000_4R34 Pre 0.000000 0.000000 
+1002_4R35 Pre 0.000000 0.000000 
+0050_FPMT Pre 0.834840 0.206186 
+0050_RPMT Pre 0.070071 0.086725 
+0050_1F11 Pre 0.007656 0.224824 
+0052_1F12 Pre 0.000000 0.000000 
+0050_2F11 Pre 0.049599 0.581132 
+0052_2F12 Pre 0.000000 0.000000 
+0050_3F11 Pre 0.062008 0.049697 
+0052_3F12 Pre 0.000000 0.000000 
+EMPTY Pre 0.999980 1.000000 
+0050_4F11 Pre 0.000107 0.044845 
+0052_4F12 Pre 0.000000 0.000000 
+0100_1F22 Pre 0.000001 0.000002 
+0102_1F21 Pre 0.000000 0.000000 
+0100_2F22 Pre 0.000023 0.000069 
+0102_2F21 Pre 0.000000 0.000000 
+0100_3F22 Pre 0.018551 0.692401 
+0102_3F21 Pre 0.000000 0.000000 
+0100_4F22 Pre 0.000062 0.002423 
+0102_4F21 Pre 0.000000 0.000000 
+0140_1F31 Pre 0.000603 0.006277 
+0142_1F26 Pre 0.000000 0.000000 
+EMPTY Pre 0.996725 0.218211 
+0140_2F31 Pre 0.001963 0.010492 
+0142_2F26 Pre 0.000000 0.000000 
+0140_3F31 Pre 0.001419 0.045794 
+0142_3F26 Pre 0.000000 0.000000 
+0140_4F31 Pre 0.020687 0.000099 
+0142_4F26 Pre 0.000000 0.000000 
+1000_1F36 Pre 0.002329 0.000032 
+1002_1F32 Pre 0.000000 0.000000 
+1000_2F36 Pre 0.000000 0.042699 
+1002_2F32 Pre 0.000000 0.000000 
+1000_3F36 Pre 0.000027 0.000022 
+1002_3F32 Pre 0.000000 0.000000 
+EMPTY Pre 0.987228 0.381125 
+1000_4F36 Pre 0.000023 0.000008 
+1002_4F32 Pre 0.000000 0.000000 
+0050_1R11 Pre 0.256593 0.305386 
+0052_1R12 Pre 0.000000 0.000000 
+0050_2R11 Pre 0.002920 0.011401 
+0052_2R12 Pre 0.000000 0.000000 
+0050_3R11 Pre 0.984393 0.646921 
+0052_3R12 Pre 0.000000 0.000000 
+0050_4R11 Pre 0.047395 0.027635 
+0052_4R12 Pre 0.000000 0.000000 
+0100_1R22 Pre 0.001376 0.000090 
+0102_1R21 Pre 0.000000 0.000000 
+EMPTY Pre 0.998903 0.998037 
+0100_2R22 Pre 0.147799 0.000717 
+0102_2R21 Pre 0.000000 0.000000 
+0100_3R22 Pre 0.106098 0.033752 
+0102_3R21 Pre 0.000000 0.000000 
+0100_4R22 Pre 0.999466 0.765241 
+0102_4R21 Pre 0.000000 0.000000 
+0140_1R31 Pre 0.351789 0.171351 
+0142_1R26 Pre 0.000000 0.000000 
+0140_2R31 Pre 0.003134 0.000014 
+0142_2R26 Pre 0.000000 0.000000 
+0140_3R31 Pre 0.062273 0.098520 
+0142_3R26 Pre 0.000000 0.000000 
+EMPTY Pre 0.580821 0.699643 
+0140_4R31 Pre 0.190138 0.000053 
+0142_4R26 Pre 0.000000 0.000000 
+1000_1R36 Pre 0.584079 0.037567 
+1002_1R32 Pre 0.000000 0.000000 
+1000_2R36 Pre 0.023892 0.001457 
+1002_2R32 Pre 0.000000 0.000000 
+1000_3R36 Pre 0.072725 0.001157 
+1002_3R32 Pre 0.000000 0.000000 
+1000_4R36 Pre 0.000243 0.002445 
+1002_4R32 Pre 0.000000 0.000000 
+0050_1F16 Pre 0.205444 0.314467 
+0052_1F17 Pre 0.000000 0.000000 
+EMPTY Pre 0.985664 
+EMPTY Pre 0.582666 
+0050_2F16 Pre 0.014399 
+EMPTY Pre 0.471201 
+0052_2F17 Pre 0.000000 
+0050_3F16 Pre 0.000417 
+0052_3F17 Pre 0.000000 
+0050_4F16 Pre 0.728523 
+0052_4F17 Pre 0.000000 
+0100_1F27 Pre 0.004568 
+0100_2F27 Pre 0.000402 
+0100_3F27 Pre 0.002344 
+0100_4F27 Pre 0.673308 
+EMPTY Pre 0.008058 
+1000_1F37 Pre 0.000003 
+1000_2F37 Pre 0.000050 
+EMPTY Pre 0.382229 
+1000_3F37 Pre 0.001489 
+1000_4F37 Pre 0.000002 
+0050_1R16 Pre 0.000015 
+0052_1R17 Pre 0.000000 
+0050_2R16 Pre 0.000819 
+0052_2R17 Pre 0.000078 
+0050_3R16 Pre 0.001743 
+0052_3R17 Pre 0.000000 
+EMPTY Pre 0.425911 
+0050_4R16 Pre 0.151136 
+0052_4R17 Pre 0.000000 
+0100_1R27 Pre 0.032196 
+EMPTY Pre 0.162118 
+0100_2R27 Pre 0.021366 
+0100_3R27 Pre 0.003540 
+0100_4R27 Pre 0.015343 
+1000_1R37 Pre 0.000012 
+1000_2R37 Pre 0.000001 
+1000_3R37 Pre 0.000001 
+1000_4R37 Pre 0.002158 
+0050_REF1 Pre 0.002242 
+0052_REF1 Pre 0.000000 
+0100_REF1 Pre 0.004375 
+0102_REF1 Pre 0.000000 
+0140_REF1 Pre 0.026741 
+0142_REF1 Pre 0.000000 
+1000_REF1 Pre 0.010633 
+1002_REF1 Pre 0.000000 
+0050_REF2 Pre 0.003308 
+0052_REF2 Pre 0.000000 
+0100_REF2 Pre 0.018422 
+0102_REF2 Pre 0.000000 
+ls6500.Analyze: Wrote hists to Histograms/Pre-irrad_2_141024.root
