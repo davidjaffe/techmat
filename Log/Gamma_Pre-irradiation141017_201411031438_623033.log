@@ -1,0 +1,1318 @@
+This file is Log/Gamma_Pre-irradiation141017_201411031438_623033.log
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/ 
+dataSubDir Gamma_Pre-irradiation141017/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: S1_Position12 has no vial
+ls6500.processHeader: S2_Position12 has no vial
+ls6500.processHeader: S3_Position12 has no vial
+ls6500.processHeader: S4_Position08 has no vial
+ls6500.processHeader: S4_Position09 has no vial
+ls6500.processHeader: S4_Position10 has no vial
+ls6500.processHeader: S4_Position11 has no vial
+ls6500.processHeader: S4_Position12 has no vial
+ls6500.processHeader: Found 40 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00041.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00082.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00123.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00164.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00205.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00246.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00287.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00328.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00369.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00410.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00451.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00492.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00533.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00574.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00597.xls from list
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 0052_0_1 0052_100_1 EMPTY_S2_Position02 0100_400_2 0100_400_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 0100_100_1 0052_100_2 0050_100_1 0050_100_2 0102_100_1 0102_100_2 0102_10_1 0100_1000_2 0102_1_2 0102_1_1 0102_400_1 0102_10_2 0102_400_2 0052_400_2 0052_400_1 EMPTY_S3_Position03 0102_1000_2 0100_10_1 0052_0_2 EMPTY_S4_Position04 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 Tray_Position S1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00001.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00042.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00083.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00124.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00165.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00206.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00247.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00288.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00329.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00370.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00411.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00452.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00493.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00534.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00575.xls
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00002.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00043.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00084.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00125.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00166.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00207.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00248.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00289.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00330.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00371.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00412.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00453.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00494.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00535.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00576.xls
+Tray_Position S1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00003.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00044.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00085.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00126.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00167.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00208.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00249.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00290.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00331.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00372.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00413.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00454.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00495.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00536.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00577.xls
+Tray_Position S1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00004.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00045.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00086.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00127.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00168.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00209.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00250.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00291.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00332.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00373.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00414.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00455.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00496.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00537.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00578.xls
+Tray_Position S1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00005.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00046.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00087.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00128.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00169.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00210.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00251.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00292.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00333.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00374.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00415.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00456.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00497.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00538.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00579.xls
+Tray_Position S1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00006.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00047.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00088.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00129.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00170.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00211.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00252.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00293.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00334.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00375.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00416.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00457.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00498.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00539.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00580.xls
+Tray_Position S1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00007.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00048.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00089.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00130.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00171.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00212.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00253.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00294.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00335.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00376.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00417.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00458.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00499.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00540.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00581.xls
+Tray_Position S1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00008.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00049.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00090.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00131.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00172.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00213.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00254.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00295.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00336.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00377.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00418.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00459.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00500.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00541.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00582.xls
+Tray_Position S1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00009.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00050.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00091.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00132.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00173.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00214.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00255.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00296.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00337.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00378.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00419.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00460.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00501.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00542.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00583.xls
+Tray_Position S1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00010.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00051.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00092.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00133.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00174.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00215.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00256.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00297.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00338.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00379.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00420.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00461.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00502.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00543.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00584.xls
+Tray_Position S1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00011.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00052.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00093.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00134.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00175.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00216.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00257.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00298.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00339.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00380.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00421.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00462.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00503.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00544.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00585.xls
+Tray_Position S2_Position01 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00012.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00053.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00094.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00135.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00176.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00217.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00258.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00299.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00340.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00381.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00422.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00463.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00504.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00545.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00586.xls
+Tray_Position S2_Position02 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00013.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00054.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00095.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00136.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00177.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00218.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00259.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00300.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00341.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00382.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00423.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00464.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00505.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00546.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00587.xls
+Tray_Position S2_Position03 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00014.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00055.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00096.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00137.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00178.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00219.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00260.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00301.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00342.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00383.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00424.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00465.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00506.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00547.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00588.xls
+Tray_Position S2_Position04 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00015.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00056.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00097.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00138.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00179.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00220.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00261.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00302.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00343.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00384.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00425.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00466.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00507.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00548.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00589.xls
+Tray_Position S2_Position05 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00016.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00057.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00098.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00139.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00180.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00221.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00262.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00303.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00344.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00385.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00426.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00467.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00508.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00549.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00590.xls
+Tray_Position S2_Position06 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00017.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00058.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00099.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00140.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00181.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00222.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00263.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00304.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00345.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00386.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00427.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00468.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00509.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00550.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00591.xls
+Tray_Position S2_Position07 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00018.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00059.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00100.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00141.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00182.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00223.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00264.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00305.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00346.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00387.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00428.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00469.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00510.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00551.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00592.xls
+Tray_Position S2_Position08 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00019.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00060.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00101.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00142.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00183.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00224.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00265.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00306.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00347.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00388.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00429.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00470.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00511.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00552.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00593.xls
+Tray_Position S2_Position09 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00020.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00061.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00102.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00143.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00184.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00225.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00266.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00307.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00348.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00389.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00430.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00471.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00512.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00553.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00594.xls
+Tray_Position S2_Position10 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00021.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00062.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00103.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00144.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00185.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00226.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00267.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00308.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00349.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00390.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00431.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00472.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00513.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00554.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00595.xls
+Tray_Position S2_Position11 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00022.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00063.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00104.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00145.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00186.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00227.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00268.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00309.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00350.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00391.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00432.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00473.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00514.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00555.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00596.xls
+Tray_Position S3_Position01 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00023.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00064.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00105.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00146.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00187.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00228.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00269.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00310.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00351.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00392.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00433.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00474.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00515.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00556.xls
+Tray_Position S3_Position02 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00024.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00065.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00106.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00147.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00188.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00229.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00270.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00311.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00352.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00393.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00434.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00475.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00516.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00557.xls
+Tray_Position S3_Position03 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00025.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00066.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00107.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00148.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00189.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00230.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00271.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00312.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00353.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00394.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00435.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00476.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00517.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00558.xls
+Tray_Position S3_Position04 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00026.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00067.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00108.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00149.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00190.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00231.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00272.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00313.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00354.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00395.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00436.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00477.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00518.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00559.xls
+Tray_Position S3_Position05 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00027.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00068.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00109.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00150.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00191.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00232.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00273.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00314.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00355.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00396.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00437.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00478.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00519.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00560.xls
+Tray_Position S3_Position06 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00028.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00069.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00110.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00151.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00192.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00233.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00274.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00315.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00356.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00397.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00438.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00479.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00520.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00561.xls
+Tray_Position S3_Position07 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00029.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00070.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00111.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00152.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00193.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00234.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00275.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00316.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00357.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00398.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00439.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00480.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00521.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00562.xls
+Tray_Position S3_Position08 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00030.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00071.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00112.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00153.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00194.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00235.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00276.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00317.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00358.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00399.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00440.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00481.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00522.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00563.xls
+Tray_Position S3_Position09 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00031.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00072.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00113.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00154.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00195.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00236.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00277.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00318.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00359.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00400.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00441.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00482.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00523.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00564.xls
+Tray_Position S3_Position10 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00032.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00073.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00114.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00155.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00196.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00237.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00278.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00319.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00360.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00401.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00442.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00483.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00524.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00565.xls
+Tray_Position S3_Position11 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00033.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00074.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00115.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00156.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00197.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00238.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00279.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00320.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00361.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00402.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00443.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00484.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00525.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00566.xls
+Tray_Position S4_Position01 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00034.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00075.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00116.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00157.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00198.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00239.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00280.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00321.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00362.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00403.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00444.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00485.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00526.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00567.xls
+Tray_Position S4_Position02 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00035.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00076.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00117.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00158.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00199.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00240.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00281.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00322.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00363.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00404.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00445.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00486.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00527.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00568.xls
+Tray_Position S4_Position03 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00036.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00077.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00118.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00159.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00200.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00241.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00282.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00323.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00364.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00405.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00446.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00487.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00528.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00569.xls
+Tray_Position S4_Position04 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00037.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00078.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00119.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00160.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00201.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00242.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00283.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00324.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00365.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00406.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00447.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00488.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00529.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00570.xls
+Tray_Position S4_Position05 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00038.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00079.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00120.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00161.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00202.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00243.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00284.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00325.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00366.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00407.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00448.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00489.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00530.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00571.xls
+Tray_Position S4_Position06 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00039.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00080.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00121.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00162.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00203.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00244.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00285.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00326.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00367.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00408.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00449.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00490.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00531.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00572.xls
+Tray_Position S4_Position07 Number of `no vial` to this position 3
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00040.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00081.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00122.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00163.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00204.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00245.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00286.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00327.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00368.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00409.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00450.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00491.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00532.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/MeasurementNo00573.xls
+ls6500.putOrGet: patience...writing pickled data to Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.Analyze
+sample 0100_1_1
+sample 0100_1_2
+sample 0052_0_1
+sample 0052_100_1
+sample EMPTY_S2_Position02
+sample 0100_400_2
+sample 0100_400_1
+sample 0050_400_1
+sample EMPTY_S1_Position01
+sample 0050_400_2
+sample 0100_10_2
+sample 0102_1000_1
+sample 0100_100_2
+sample 0100_100_1
+sample 0052_100_2
+sample 0050_100_1
+sample 0050_100_2
+sample 0102_100_1
+sample 0102_100_2
+sample 0102_10_1
+sample 0100_1000_2
+sample 0102_1_2
+sample 0102_1_1
+sample 0102_400_1
+sample 0102_10_2
+sample 0102_400_2
+sample 0052_400_2
+sample 0052_400_1
+sample EMPTY_S3_Position03
+sample 0102_1000_2
+sample 0100_10_1
+sample 0052_0_2
+sample EMPTY_S4_Position04
+sample 0100_0_1
+sample 0102_0_2
+sample 0102_0_1
+sample 0100_0_2
+sample 0050_0_2
+sample 0050_0_1
+sample 0100_1000_1
+0100_1_1 Gamma 0.050051 0.140642 0.058106 0.224236 0.016473 0.021678 0.741952 0.011292 0.001478 0.040515 0.000153 0.000092 0.001001 0.031497 
+0100_1_2 Gamma 0.076220 0.008848 0.342049 0.000015 0.000019 0.000030 0.530327 0.520671 0.190725 0.439189 0.104093 0.010997 0.865177 0.029186 
+0052_0_1 Gamma 0.402440 0.046425 0.330334 0.000022 0.000000 0.000000 0.000004 0.000001 0.008176 0.005452 0.000113 0.000000 0.000000 0.000000 
+0052_100_1 Gamma 0.632925 0.118976 0.049843 0.000015 0.000000 0.000000 0.000002 0.002038 0.000024 0.000001 0.000067 0.000105 0.000000 0.000000 
+EMPTY_S2_Position02 Gamma 0.981768 0.346061 0.602442 0.994491 0.601721 0.998954 0.998785 0.544005 0.986702 0.994450 0.228478 0.113026 0.962073 0.229164 
+0100_400_2 Gamma 0.015213 0.008502 0.133572 0.044827 0.056200 0.406018 0.004936 0.021187 0.000001 0.001884 0.000000 0.000181 0.000116 
+0100_400_1 Gamma 0.455079 0.382465 0.472711 0.000896 0.141914 0.909596 0.027048 0.146211 0.001371 0.012356 0.000012 0.005703 0.000208 
+0050_400_1 Gamma 0.944463 0.318947 0.131164 0.518251 0.050712 0.931217 0.001182 0.001032 0.000004 0.000063 0.000107 0.000124 0.000000 0.000000 
+EMPTY_S1_Position01 Gamma 0.922948 0.996378 0.004188 0.999388 0.402139 0.989469 0.891056 0.489310 0.283300 0.028860 0.999901 0.874109 0.018202 0.539151 
+0050_400_2 Gamma 0.844911 0.940184 0.107572 0.214789 0.126829 0.515783 0.006869 0.001946 0.000020 0.001090 0.000000 0.000000 0.000009 0.000005 
+0100_10_2 Gamma 0.581487 0.986311 0.960917 0.021528 0.093170 0.189196 0.696325 0.703769 0.062164 0.200493 0.000015 0.030189 0.153789 
+0102_1000_1 Gamma 0.216458 0.004306 0.000221 0.000007 0.000000 0.000000 0.000600 0.000001 0.000775 0.000143 0.003272 0.000000 0.000000 
+0100_100_2 Gamma 0.197795 0.890159 0.046381 0.006280 0.067380 0.000782 0.439764 0.030747 0.431601 0.217305 0.001075 0.019657 0.005090 
+0100_100_1 Gamma 0.901125 0.678702 0.010443 0.017426 0.083364 0.101252 0.248479 0.171340 0.009629 0.449283 0.000050 0.006895 0.001849 
+0052_100_2 Gamma 0.605790 0.465350 0.025072 0.000543 0.000000 0.000000 0.000000 0.000000 0.000008 0.000000 0.000012 0.000006 0.000000 0.000000 
+0050_100_1 Gamma 0.050713 0.002109 0.000001 0.058154 0.000014 0.004220 0.000058 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+0050_100_2 Gamma 0.703486 0.216461 0.437336 0.046335 0.002352 0.004247 0.379918 0.000596 0.003278 0.002048 0.000069 0.000001 0.000178 0.000001 
+0102_100_1 Gamma 0.811493 0.939070 0.588931 0.000000 0.000000 0.000249 0.005455 0.060769 0.027137 0.000550 0.143352 0.000501 0.003420 
+0102_100_2 Gamma 0.144609 0.653453 0.887166 0.000002 0.000000 0.000003 0.000014 0.000847 0.001109 0.000001 0.053385 0.000239 0.000000 
+0102_10_1 Gamma 0.081868 0.758046 0.481854 0.001102 0.000003 0.002208 0.015327 0.001315 0.306518 0.035366 0.044558 0.012816 0.000294 
+0100_1000_2 Gamma 0.204262 0.707959 0.007814 0.000009 0.000009 0.006787 0.162544 0.068542 0.489102 0.996858 0.076690 0.247010 0.146863 
+0102_1_2 Gamma 0.343222 0.000680 0.579242 0.002260 0.000138 0.000267 0.148702 0.002640 0.458386 0.450432 0.358532 0.045513 0.002733 0.007424 
+0102_1_1 Gamma 0.405254 0.003251 0.175274 0.000000 0.000000 0.000000 0.000175 0.001378 0.024531 0.000000 0.034093 0.000001 0.000000 0.000000 
+0102_400_1 Gamma 0.499574 0.442913 0.013874 0.000000 0.000000 0.000006 0.003735 0.027503 0.012115 0.000006 0.014951 0.000007 0.000000 
+0102_10_2 Gamma 0.707336 0.751890 0.107196 0.000001 0.000010 0.000000 0.133463 0.019170 0.061701 0.002840 0.034348 0.000119 0.000010 
+0102_400_2 Gamma 0.097933 0.018382 0.214906 0.486282 0.004368 0.396302 0.281482 0.254665 0.547071 0.230898 0.033838 0.838142 0.070733 
+0052_400_2 Gamma 0.620137 0.370026 0.025789 0.000070 0.000000 0.000000 0.000059 0.000015 0.006627 0.000350 0.000004 0.000000 0.000000 0.000000 
+0052_400_1 Gamma 0.195131 0.056957 0.075732 0.000003 0.000241 0.000000 0.000001 0.005031 0.001613 0.000001 0.000045 0.000340 0.000000 0.000000 
+EMPTY_S3_Position03 Gamma 0.995766 0.994777 0.999544 0.890862 0.535814 0.999794 0.999998 0.853040 0.999597 0.369221 0.979663 0.879309 0.291177 
+0102_1000_2 Gamma 0.431227 0.101628 0.027947 0.000000 0.000000 0.000000 0.002711 0.002097 0.000005 0.000063 0.007125 0.000134 0.000000 
+0100_10_1 Gamma 0.794515 0.874675 0.879041 0.104941 0.069439 0.097386 0.502207 0.081534 0.020536 0.002640 0.000271 0.272866 0.002104 
+0052_0_2 Gamma 0.000026 0.003985 0.000022 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 
+EMPTY_S4_Position04 Gamma 0.416431 0.985896 0.994967 0.814191 0.376809 0.891646 0.853304 0.490061 0.826854 0.999972 0.900536 0.546053 0.877977 
+0100_0_1 Gamma 0.795656 0.897904 0.563145 0.262789 0.016065 0.000088 0.686756 0.029795 0.872547 0.999759 0.020859 0.402470 0.003408 0.083296 
+0102_0_2 Gamma 0.192134 0.592386 0.359304 0.002836 0.000001 0.000001 0.000362 0.078478 0.079402 0.000135 0.205876 0.000269 0.000002 0.000003 
+0102_0_1 Gamma 0.298813 0.077071 0.003771 0.000005 0.000000 0.000000 0.018725 0.000034 0.000014 0.000022 0.044817 0.000015 0.000031 0.000000 
+0100_0_2 Gamma 0.938480 0.661032 0.568654 0.002972 0.001632 0.000252 0.933125 0.120415 0.182023 0.619373 0.063644 0.002467 0.167508 0.185770 
+0050_0_2 Gamma 0.999308 0.111467 0.303088 0.119396 0.012729 0.001038 0.000530 0.000000 0.000008 0.000000 0.000000 0.000000 0.000000 0.000000 
+0050_0_1 Gamma 0.446127 0.170153 0.012413 0.016629 0.009375 0.001601 0.019898 0.029021 0.000000 0.000006 0.000003 0.000000 0.000000 0.000000 
+0100_1000_1 Gamma 0.962660 0.999989 0.355918 0.000064 0.000011 0.016025 0.031804 0.801332 0.349852 0.000000 0.001183 0.115494 0.072982 
+keyTitle: ['0100_1_1', '20141017', '15:41:06'] 0100_1_1 20141017 15:41:06
+keyTitle: ['0100_1_1', '20141017', '20:35:46'] 0100_1_1 20141017 20:35:46
+keyTitle: ['0100_1_1', '20141018', '01:30:36'] 0100_1_1 20141018 01:30:36
+keyTitle: ['0100_1_1', '20141018', '06:25:34'] 0100_1_1 20141018 06:25:34
+keyTitle: ['0100_1_1', '20141018', '11:20:28'] 0100_1_1 20141018 11:20:28
+keyTitle: ['0100_1_1', '20141018', '16:15:24'] 0100_1_1 20141018 16:15:24
+keyTitle: ['0100_1_1', '20141018', '21:10:13'] 0100_1_1 20141018 21:10:13
+keyTitle: ['0100_1_1', '20141019', '02:05:06'] 0100_1_1 20141019 02:05:06
+keyTitle: ['0100_1_1', '20141019', '06:59:49'] 0100_1_1 20141019 06:59:49
+keyTitle: ['0100_1_1', '20141019', '11:54:34'] 0100_1_1 20141019 11:54:34
+keyTitle: ['0100_1_1', '20141019', '16:49:18'] 0100_1_1 20141019 16:49:18
+keyTitle: ['0100_1_1', '20141019', '21:44:15'] 0100_1_1 20141019 21:44:15
+keyTitle: ['0100_1_1', '20141020', '02:39:08'] 0100_1_1 20141020 02:39:08
+keyTitle: ['0100_1_1', '20141020', '07:33:59'] 0100_1_1 20141020 07:33:59
+keyTitle: ['0100_1_1', '20141020', '12:28:45'] 0100_1_1 20141020 12:28:45
+keyTitle: ['0100_1_2', '20141017', '15:48:30'] 0100_1_2 20141017 15:48:30
+keyTitle: ['0100_1_2', '20141017', '20:43:10'] 0100_1_2 20141017 20:43:10
+keyTitle: ['0100_1_2', '20141018', '01:38:00'] 0100_1_2 20141018 01:38:00
+keyTitle: ['0100_1_2', '20141018', '06:32:58'] 0100_1_2 20141018 06:32:58
+keyTitle: ['0100_1_2', '20141018', '11:27:52'] 0100_1_2 20141018 11:27:52
+keyTitle: ['0100_1_2', '20141018', '16:22:47'] 0100_1_2 20141018 16:22:47
+keyTitle: ['0100_1_2', '20141018', '21:17:37'] 0100_1_2 20141018 21:17:37
+keyTitle: ['0100_1_2', '20141019', '02:12:30'] 0100_1_2 20141019 02:12:30
+keyTitle: ['0100_1_2', '20141019', '07:07:13'] 0100_1_2 20141019 07:07:13
+keyTitle: ['0100_1_2', '20141019', '12:01:56'] 0100_1_2 20141019 12:01:56
+keyTitle: ['0100_1_2', '20141019', '16:56:41'] 0100_1_2 20141019 16:56:41
+keyTitle: ['0100_1_2', '20141019', '21:51:38'] 0100_1_2 20141019 21:51:38
+keyTitle: ['0100_1_2', '20141020', '02:46:29'] 0100_1_2 20141020 02:46:29
+keyTitle: ['0100_1_2', '20141020', '07:41:23'] 0100_1_2 20141020 07:41:23
+keyTitle: ['0100_1_2', '20141020', '12:36:08'] 0100_1_2 20141020 12:36:08
+keyTitle: ['0052_0_1', '20141017', '13:50:50'] 0052_0_1 20141017 13:50:50
+keyTitle: ['0052_0_1', '20141017', '18:45:26'] 0052_0_1 20141017 18:45:26
+keyTitle: ['0052_0_1', '20141017', '23:40:14'] 0052_0_1 20141017 23:40:14
+keyTitle: ['0052_0_1', '20141018', '04:35:09'] 0052_0_1 20141018 04:35:09
+keyTitle: ['0052_0_1', '20141018', '09:30:07'] 0052_0_1 20141018 09:30:07
+keyTitle: ['0052_0_1', '20141018', '14:25:04'] 0052_0_1 20141018 14:25:04
+keyTitle: ['0052_0_1', '20141018', '19:19:56'] 0052_0_1 20141018 19:19:56
+keyTitle: ['0052_0_1', '20141019', '00:14:47'] 0052_0_1 20141019 00:14:47
+keyTitle: ['0052_0_1', '20141019', '05:09:32'] 0052_0_1 20141019 05:09:32
+keyTitle: ['0052_0_1', '20141019', '10:04:16'] 0052_0_1 20141019 10:04:16
+keyTitle: ['0052_0_1', '20141019', '14:58:59'] 0052_0_1 20141019 14:58:59
+keyTitle: ['0052_0_1', '20141019', '19:53:47'] 0052_0_1 20141019 19:53:47
+keyTitle: ['0052_0_1', '20141020', '00:48:45'] 0052_0_1 20141020 00:48:45
+keyTitle: ['0052_0_1', '20141020', '05:43:39'] 0052_0_1 20141020 05:43:39
+keyTitle: ['0052_0_1', '20141020', '10:38:26'] 0052_0_1 20141020 10:38:26
+keyTitle: ['0052_100_1', '20141017', '14:20:10'] 0052_100_1 20141017 14:20:10
+keyTitle: ['0052_100_1', '20141017', '19:14:48'] 0052_100_1 20141017 19:14:48
+keyTitle: ['0052_100_1', '20141018', '00:09:35'] 0052_100_1 20141018 00:09:35
+keyTitle: ['0052_100_1', '20141018', '05:04:30'] 0052_100_1 20141018 05:04:30
+keyTitle: ['0052_100_1', '20141018', '09:59:29'] 0052_100_1 20141018 09:59:29
+keyTitle: ['0052_100_1', '20141018', '14:54:25'] 0052_100_1 20141018 14:54:25
+keyTitle: ['0052_100_1', '20141018', '19:49:15'] 0052_100_1 20141018 19:49:15
+keyTitle: ['0052_100_1', '20141019', '00:44:09'] 0052_100_1 20141019 00:44:09
+keyTitle: ['0052_100_1', '20141019', '05:38:52'] 0052_100_1 20141019 05:38:52
+keyTitle: ['0052_100_1', '20141019', '10:33:37'] 0052_100_1 20141019 10:33:37
+keyTitle: ['0052_100_1', '20141019', '15:28:22'] 0052_100_1 20141019 15:28:22
+keyTitle: ['0052_100_1', '20141019', '20:23:09'] 0052_100_1 20141019 20:23:09
+keyTitle: ['0052_100_1', '20141020', '01:18:08'] 0052_100_1 20141020 01:18:08
+keyTitle: ['0052_100_1', '20141020', '06:13:01'] 0052_100_1 20141020 06:13:01
+keyTitle: ['0052_100_1', '20141020', '11:07:46'] 0052_100_1 20141020 11:07:46
+keyTitle: ['EMPTY_S2_Position02', '20141017', '14:56:52'] EMPTY_S2_Position02 20141017 14:56:52
+keyTitle: ['EMPTY_S2_Position02', '20141017', '19:51:34'] EMPTY_S2_Position02 20141017 19:51:34
+keyTitle: ['EMPTY_S2_Position02', '20141018', '00:46:22'] EMPTY_S2_Position02 20141018 00:46:22
+keyTitle: ['EMPTY_S2_Position02', '20141018', '05:41:19'] EMPTY_S2_Position02 20141018 05:41:19
+keyTitle: ['EMPTY_S2_Position02', '20141018', '10:36:16'] EMPTY_S2_Position02 20141018 10:36:16
+keyTitle: ['EMPTY_S2_Position02', '20141018', '15:31:11'] EMPTY_S2_Position02 20141018 15:31:11
+keyTitle: ['EMPTY_S2_Position02', '20141018', '20:25:59'] EMPTY_S2_Position02 20141018 20:25:59
+keyTitle: ['EMPTY_S2_Position02', '20141019', '01:20:55'] EMPTY_S2_Position02 20141019 01:20:55
+keyTitle: ['EMPTY_S2_Position02', '20141019', '06:15:38'] EMPTY_S2_Position02 20141019 06:15:38
+keyTitle: ['EMPTY_S2_Position02', '20141019', '11:10:22'] EMPTY_S2_Position02 20141019 11:10:22
+keyTitle: ['EMPTY_S2_Position02', '20141019', '16:05:08'] EMPTY_S2_Position02 20141019 16:05:08
+keyTitle: ['EMPTY_S2_Position02', '20141019', '21:00:00'] EMPTY_S2_Position02 20141019 21:00:00
+keyTitle: ['EMPTY_S2_Position02', '20141020', '01:54:55'] EMPTY_S2_Position02 20141020 01:54:55
+keyTitle: ['EMPTY_S2_Position02', '20141020', '06:49:47'] EMPTY_S2_Position02 20141020 06:49:47
+keyTitle: ['EMPTY_S2_Position02', '20141020', '11:44:33'] EMPTY_S2_Position02 20141020 11:44:33
+keyTitle: ['0100_400_2', '20141017', '17:24:22'] 0100_400_2 20141017 17:24:22
+keyTitle: ['0100_400_2', '20141017', '22:19:06'] 0100_400_2 20141017 22:19:06
+keyTitle: ['0100_400_2', '20141018', '03:14:01'] 0100_400_2 20141018 03:14:01
+keyTitle: ['0100_400_2', '20141018', '08:08:56'] 0100_400_2 20141018 08:08:56
+keyTitle: ['0100_400_2', '20141018', '13:03:49'] 0100_400_2 20141018 13:03:49
+keyTitle: ['0100_400_2', '20141018', '17:58:48'] 0100_400_2 20141018 17:58:48
+keyTitle: ['0100_400_2', '20141018', '22:53:37'] 0100_400_2 20141018 22:53:37
+keyTitle: ['0100_400_2', '20141019', '03:48:24'] 0100_400_2 20141019 03:48:24
+keyTitle: ['0100_400_2', '20141019', '08:43:08'] 0100_400_2 20141019 08:43:08
+keyTitle: ['0100_400_2', '20141019', '13:37:51'] 0100_400_2 20141019 13:37:51
+keyTitle: ['0100_400_2', '20141019', '18:32:34'] 0100_400_2 20141019 18:32:34
+keyTitle: ['0100_400_2', '20141019', '23:27:33'] 0100_400_2 20141019 23:27:33
+keyTitle: ['0100_400_2', '20141020', '04:22:27'] 0100_400_2 20141020 04:22:27
+keyTitle: ['0100_400_2', '20141020', '09:17:17'] 0100_400_2 20141020 09:17:17
+keyTitle: ['0100_400_1', '20141017', '17:16:59'] 0100_400_1 20141017 17:16:59
+keyTitle: ['0100_400_1', '20141017', '22:11:42'] 0100_400_1 20141017 22:11:42
+keyTitle: ['0100_400_1', '20141018', '03:06:37'] 0100_400_1 20141018 03:06:37
+keyTitle: ['0100_400_1', '20141018', '08:01:33'] 0100_400_1 20141018 08:01:33
+keyTitle: ['0100_400_1', '20141018', '12:56:25'] 0100_400_1 20141018 12:56:25
+keyTitle: ['0100_400_1', '20141018', '17:51:24'] 0100_400_1 20141018 17:51:24
+keyTitle: ['0100_400_1', '20141018', '22:46:14'] 0100_400_1 20141018 22:46:14
+keyTitle: ['0100_400_1', '20141019', '03:41:01'] 0100_400_1 20141019 03:41:01
+keyTitle: ['0100_400_1', '20141019', '08:35:45'] 0100_400_1 20141019 08:35:45
+keyTitle: ['0100_400_1', '20141019', '13:30:28'] 0100_400_1 20141019 13:30:28
+keyTitle: ['0100_400_1', '20141019', '18:25:12'] 0100_400_1 20141019 18:25:12
+keyTitle: ['0100_400_1', '20141019', '23:20:11'] 0100_400_1 20141019 23:20:11
+keyTitle: ['0100_400_1', '20141020', '04:15:03'] 0100_400_1 20141020 04:15:03
+keyTitle: ['0100_400_1', '20141020', '09:09:55'] 0100_400_1 20141020 09:09:55
+keyTitle: ['0050_400_1', '20141017', '14:34:51'] 0050_400_1 20141017 14:34:51
+keyTitle: ['0050_400_1', '20141017', '19:29:29'] 0050_400_1 20141017 19:29:29
+keyTitle: ['0050_400_1', '20141018', '00:24:17'] 0050_400_1 20141018 00:24:17
+keyTitle: ['0050_400_1', '20141018', '05:19:13'] 0050_400_1 20141018 05:19:13
+keyTitle: ['0050_400_1', '20141018', '10:14:09'] 0050_400_1 20141018 10:14:09
+keyTitle: ['0050_400_1', '20141018', '15:09:05'] 0050_400_1 20141018 15:09:05
+keyTitle: ['0050_400_1', '20141018', '20:03:54'] 0050_400_1 20141018 20:03:54
+keyTitle: ['0050_400_1', '20141019', '00:58:49'] 0050_400_1 20141019 00:58:49
+keyTitle: ['0050_400_1', '20141019', '05:53:33'] 0050_400_1 20141019 05:53:33
+keyTitle: ['0050_400_1', '20141019', '10:48:17'] 0050_400_1 20141019 10:48:17
+keyTitle: ['0050_400_1', '20141019', '15:43:03'] 0050_400_1 20141019 15:43:03
+keyTitle: ['0050_400_1', '20141019', '20:37:51'] 0050_400_1 20141019 20:37:51
+keyTitle: ['0050_400_1', '20141020', '01:32:48'] 0050_400_1 20141020 01:32:48
+keyTitle: ['0050_400_1', '20141020', '06:27:41'] 0050_400_1 20141020 06:27:41
+keyTitle: ['0050_400_1', '20141020', '11:22:26'] 0050_400_1 20141020 11:22:26
+keyTitle: ['EMPTY_S1_Position01', '20141017', '13:28:52'] EMPTY_S1_Position01 20141017 13:28:52
+keyTitle: ['EMPTY_S1_Position01', '20141017', '18:23:27'] EMPTY_S1_Position01 20141017 18:23:27
+keyTitle: ['EMPTY_S1_Position01', '20141017', '23:18:17'] EMPTY_S1_Position01 20141017 23:18:17
+keyTitle: ['EMPTY_S1_Position01', '20141018', '04:13:12'] EMPTY_S1_Position01 20141018 04:13:12
+keyTitle: ['EMPTY_S1_Position01', '20141018', '09:08:09'] EMPTY_S1_Position01 20141018 09:08:09
+keyTitle: ['EMPTY_S1_Position01', '20141018', '14:03:04'] EMPTY_S1_Position01 20141018 14:03:04
+keyTitle: ['EMPTY_S1_Position01', '20141018', '18:57:58'] EMPTY_S1_Position01 20141018 18:57:58
+keyTitle: ['EMPTY_S1_Position01', '20141018', '23:52:48'] EMPTY_S1_Position01 20141018 23:52:48
+keyTitle: ['EMPTY_S1_Position01', '20141019', '04:47:34'] EMPTY_S1_Position01 20141019 04:47:34
+keyTitle: ['EMPTY_S1_Position01', '20141019', '09:42:18'] EMPTY_S1_Position01 20141019 09:42:18
+keyTitle: ['EMPTY_S1_Position01', '20141019', '14:37:01'] EMPTY_S1_Position01 20141019 14:37:01
+keyTitle: ['EMPTY_S1_Position01', '20141019', '19:31:47'] EMPTY_S1_Position01 20141019 19:31:47
+keyTitle: ['EMPTY_S1_Position01', '20141020', '00:26:47'] EMPTY_S1_Position01 20141020 00:26:47
+keyTitle: ['EMPTY_S1_Position01', '20141020', '05:21:41'] EMPTY_S1_Position01 20141020 05:21:41
+keyTitle: ['EMPTY_S1_Position01', '20141020', '10:16:28'] EMPTY_S1_Position01 20141020 10:16:28
+keyTitle: ['0050_400_2', '20141017', '14:42:13'] 0050_400_2 20141017 14:42:13
+keyTitle: ['0050_400_2', '20141017', '19:36:48'] 0050_400_2 20141017 19:36:48
+keyTitle: ['0050_400_2', '20141018', '00:31:37'] 0050_400_2 20141018 00:31:37
+keyTitle: ['0050_400_2', '20141018', '05:26:34'] 0050_400_2 20141018 05:26:34
+keyTitle: ['0050_400_2', '20141018', '10:21:30'] 0050_400_2 20141018 10:21:30
+keyTitle: ['0050_400_2', '20141018', '15:16:25'] 0050_400_2 20141018 15:16:25
+keyTitle: ['0050_400_2', '20141018', '20:11:14'] 0050_400_2 20141018 20:11:14
+keyTitle: ['0050_400_2', '20141019', '01:06:09'] 0050_400_2 20141019 01:06:09
+keyTitle: ['0050_400_2', '20141019', '06:00:52'] 0050_400_2 20141019 06:00:52
+keyTitle: ['0050_400_2', '20141019', '10:55:36'] 0050_400_2 20141019 10:55:36
+keyTitle: ['0050_400_2', '20141019', '15:50:23'] 0050_400_2 20141019 15:50:23
+keyTitle: ['0050_400_2', '20141019', '20:45:12'] 0050_400_2 20141019 20:45:12
+keyTitle: ['0050_400_2', '20141020', '01:40:08'] 0050_400_2 20141020 01:40:08
+keyTitle: ['0050_400_2', '20141020', '06:35:01'] 0050_400_2 20141020 06:35:01
+keyTitle: ['0050_400_2', '20141020', '11:29:47'] 0050_400_2 20141020 11:29:47
+keyTitle: ['0100_10_2', '20141017', '16:18:09'] 0100_10_2 20141017 16:18:09
+keyTitle: ['0100_10_2', '20141017', '21:12:56'] 0100_10_2 20141017 21:12:56
+keyTitle: ['0100_10_2', '20141018', '02:07:46'] 0100_10_2 20141018 02:07:46
+keyTitle: ['0100_10_2', '20141018', '07:02:42'] 0100_10_2 20141018 07:02:42
+keyTitle: ['0100_10_2', '20141018', '11:57:37'] 0100_10_2 20141018 11:57:37
+keyTitle: ['0100_10_2', '20141018', '16:52:34'] 0100_10_2 20141018 16:52:34
+keyTitle: ['0100_10_2', '20141018', '21:47:24'] 0100_10_2 20141018 21:47:24
+keyTitle: ['0100_10_2', '20141019', '02:42:14'] 0100_10_2 20141019 02:42:14
+keyTitle: ['0100_10_2', '20141019', '07:36:58'] 0100_10_2 20141019 07:36:58
+keyTitle: ['0100_10_2', '20141019', '12:31:41'] 0100_10_2 20141019 12:31:41
+keyTitle: ['0100_10_2', '20141019', '17:26:25'] 0100_10_2 20141019 17:26:25
+keyTitle: ['0100_10_2', '20141019', '22:21:24'] 0100_10_2 20141019 22:21:24
+keyTitle: ['0100_10_2', '20141020', '03:16:14'] 0100_10_2 20141020 03:16:14
+keyTitle: ['0100_10_2', '20141020', '08:11:07'] 0100_10_2 20141020 08:11:07
+keyTitle: ['0102_1000_1', '20141017', '18:08:32'] 0102_1000_1 20141017 18:08:32
+keyTitle: ['0102_1000_1', '20141017', '23:03:23'] 0102_1000_1 20141017 23:03:23
+keyTitle: ['0102_1000_1', '20141018', '03:58:16'] 0102_1000_1 20141018 03:58:16
+keyTitle: ['0102_1000_1', '20141018', '08:53:14'] 0102_1000_1 20141018 08:53:14
+keyTitle: ['0102_1000_1', '20141018', '13:48:09'] 0102_1000_1 20141018 13:48:09
+keyTitle: ['0102_1000_1', '20141018', '18:43:03'] 0102_1000_1 20141018 18:43:03
+keyTitle: ['0102_1000_1', '20141018', '23:37:53'] 0102_1000_1 20141018 23:37:53
+keyTitle: ['0102_1000_1', '20141019', '04:32:40'] 0102_1000_1 20141019 04:32:40
+keyTitle: ['0102_1000_1', '20141019', '09:27:23'] 0102_1000_1 20141019 09:27:23
+keyTitle: ['0102_1000_1', '20141019', '14:22:06'] 0102_1000_1 20141019 14:22:06
+keyTitle: ['0102_1000_1', '20141019', '19:16:52'] 0102_1000_1 20141019 19:16:52
+keyTitle: ['0102_1000_1', '20141020', '00:11:53'] 0102_1000_1 20141020 00:11:53
+keyTitle: ['0102_1000_1', '20141020', '05:06:47'] 0102_1000_1 20141020 05:06:47
+keyTitle: ['0102_1000_1', '20141020', '10:01:33'] 0102_1000_1 20141020 10:01:33
+keyTitle: ['0100_100_2', '20141017', '16:54:50'] 0100_100_2 20141017 16:54:50
+keyTitle: ['0100_100_2', '20141017', '21:49:35'] 0100_100_2 20141017 21:49:35
+keyTitle: ['0100_100_2', '20141018', '02:44:27'] 0100_100_2 20141018 02:44:27
+keyTitle: ['0100_100_2', '20141018', '07:39:23'] 0100_100_2 20141018 07:39:23
+keyTitle: ['0100_100_2', '20141018', '12:34:19'] 0100_100_2 20141018 12:34:19
+keyTitle: ['0100_100_2', '20141018', '17:29:15'] 0100_100_2 20141018 17:29:15
+keyTitle: ['0100_100_2', '20141018', '22:24:06'] 0100_100_2 20141018 22:24:06
+keyTitle: ['0100_100_2', '20141019', '03:18:53'] 0100_100_2 20141019 03:18:53
+keyTitle: ['0100_100_2', '20141019', '08:13:37'] 0100_100_2 20141019 08:13:37
+keyTitle: ['0100_100_2', '20141019', '13:08:20'] 0100_100_2 20141019 13:08:20
+keyTitle: ['0100_100_2', '20141019', '18:03:05'] 0100_100_2 20141019 18:03:05
+keyTitle: ['0100_100_2', '20141019', '22:58:03'] 0100_100_2 20141019 22:58:03
+keyTitle: ['0100_100_2', '20141020', '03:52:54'] 0100_100_2 20141020 03:52:54
+keyTitle: ['0100_100_2', '20141020', '08:47:48'] 0100_100_2 20141020 08:47:48
+keyTitle: ['0100_100_1', '20141017', '16:47:26'] 0100_100_1 20141017 16:47:26
+keyTitle: ['0100_100_1', '20141017', '21:42:11'] 0100_100_1 20141017 21:42:11
+keyTitle: ['0100_100_1', '20141018', '02:37:03'] 0100_100_1 20141018 02:37:03
+keyTitle: ['0100_100_1', '20141018', '07:31:59'] 0100_100_1 20141018 07:31:59
+keyTitle: ['0100_100_1', '20141018', '12:26:55'] 0100_100_1 20141018 12:26:55
+keyTitle: ['0100_100_1', '20141018', '17:21:51'] 0100_100_1 20141018 17:21:51
+keyTitle: ['0100_100_1', '20141018', '22:16:42'] 0100_100_1 20141018 22:16:42
+keyTitle: ['0100_100_1', '20141019', '03:11:29'] 0100_100_1 20141019 03:11:29
+keyTitle: ['0100_100_1', '20141019', '08:06:14'] 0100_100_1 20141019 08:06:14
+keyTitle: ['0100_100_1', '20141019', '13:00:57'] 0100_100_1 20141019 13:00:57
+keyTitle: ['0100_100_1', '20141019', '17:55:42'] 0100_100_1 20141019 17:55:42
+keyTitle: ['0100_100_1', '20141019', '22:50:40'] 0100_100_1 20141019 22:50:40
+keyTitle: ['0100_100_1', '20141020', '03:45:32'] 0100_100_1 20141020 03:45:32
+keyTitle: ['0100_100_1', '20141020', '08:40:24'] 0100_100_1 20141020 08:40:24
+keyTitle: ['0052_100_2', '20141017', '14:27:31'] 0052_100_2 20141017 14:27:31
+keyTitle: ['0052_100_2', '20141017', '19:22:08'] 0052_100_2 20141017 19:22:08
+keyTitle: ['0052_100_2', '20141018', '00:16:56'] 0052_100_2 20141018 00:16:56
+keyTitle: ['0052_100_2', '20141018', '05:11:51'] 0052_100_2 20141018 05:11:51
+keyTitle: ['0052_100_2', '20141018', '10:06:48'] 0052_100_2 20141018 10:06:48
+keyTitle: ['0052_100_2', '20141018', '15:01:45'] 0052_100_2 20141018 15:01:45
+keyTitle: ['0052_100_2', '20141018', '19:56:34'] 0052_100_2 20141018 19:56:34
+keyTitle: ['0052_100_2', '20141019', '00:51:29'] 0052_100_2 20141019 00:51:29
+keyTitle: ['0052_100_2', '20141019', '05:46:12'] 0052_100_2 20141019 05:46:12
+keyTitle: ['0052_100_2', '20141019', '10:40:56'] 0052_100_2 20141019 10:40:56
+keyTitle: ['0052_100_2', '20141019', '15:35:42'] 0052_100_2 20141019 15:35:42
+keyTitle: ['0052_100_2', '20141019', '20:30:29'] 0052_100_2 20141019 20:30:29
+keyTitle: ['0052_100_2', '20141020', '01:25:27'] 0052_100_2 20141020 01:25:27
+keyTitle: ['0052_100_2', '20141020', '06:20:21'] 0052_100_2 20141020 06:20:21
+keyTitle: ['0052_100_2', '20141020', '11:15:05'] 0052_100_2 20141020 11:15:05
+keyTitle: ['0050_100_1', '20141017', '14:05:29'] 0050_100_1 20141017 14:05:29
+keyTitle: ['0050_100_1', '20141017', '19:00:06'] 0050_100_1 20141017 19:00:06
+keyTitle: ['0050_100_1', '20141017', '23:54:54'] 0050_100_1 20141017 23:54:54
+keyTitle: ['0050_100_1', '20141018', '04:49:49'] 0050_100_1 20141018 04:49:49
+keyTitle: ['0050_100_1', '20141018', '09:44:47'] 0050_100_1 20141018 09:44:47
+keyTitle: ['0050_100_1', '20141018', '14:39:44'] 0050_100_1 20141018 14:39:44
+keyTitle: ['0050_100_1', '20141018', '19:34:35'] 0050_100_1 20141018 19:34:35
+keyTitle: ['0050_100_1', '20141019', '00:29:27'] 0050_100_1 20141019 00:29:27
+keyTitle: ['0050_100_1', '20141019', '05:24:11'] 0050_100_1 20141019 05:24:11
+keyTitle: ['0050_100_1', '20141019', '10:18:56'] 0050_100_1 20141019 10:18:56
+keyTitle: ['0050_100_1', '20141019', '15:13:40'] 0050_100_1 20141019 15:13:40
+keyTitle: ['0050_100_1', '20141019', '20:08:27'] 0050_100_1 20141019 20:08:27
+keyTitle: ['0050_100_1', '20141020', '01:03:27'] 0050_100_1 20141020 01:03:27
+keyTitle: ['0050_100_1', '20141020', '05:58:19'] 0050_100_1 20141020 05:58:19
+keyTitle: ['0050_100_1', '20141020', '10:53:06'] 0050_100_1 20141020 10:53:06
+keyTitle: ['0050_100_2', '20141017', '14:12:50'] 0050_100_2 20141017 14:12:50
+keyTitle: ['0050_100_2', '20141017', '19:07:28'] 0050_100_2 20141017 19:07:28
+keyTitle: ['0050_100_2', '20141018', '00:02:15'] 0050_100_2 20141018 00:02:15
+keyTitle: ['0050_100_2', '20141018', '04:57:10'] 0050_100_2 20141018 04:57:10
+keyTitle: ['0050_100_2', '20141018', '09:52:09'] 0050_100_2 20141018 09:52:09
+keyTitle: ['0050_100_2', '20141018', '14:47:05'] 0050_100_2 20141018 14:47:05
+keyTitle: ['0050_100_2', '20141018', '19:41:55'] 0050_100_2 20141018 19:41:55
+keyTitle: ['0050_100_2', '20141019', '00:36:48'] 0050_100_2 20141019 00:36:48
+keyTitle: ['0050_100_2', '20141019', '05:31:31'] 0050_100_2 20141019 05:31:31
+keyTitle: ['0050_100_2', '20141019', '10:26:17'] 0050_100_2 20141019 10:26:17
+keyTitle: ['0050_100_2', '20141019', '15:21:01'] 0050_100_2 20141019 15:21:01
+keyTitle: ['0050_100_2', '20141019', '20:15:48'] 0050_100_2 20141019 20:15:48
+keyTitle: ['0050_100_2', '20141020', '01:10:48'] 0050_100_2 20141020 01:10:48
+keyTitle: ['0050_100_2', '20141020', '06:05:41'] 0050_100_2 20141020 06:05:41
+keyTitle: ['0050_100_2', '20141020', '11:00:26'] 0050_100_2 20141020 11:00:26
+keyTitle: ['0102_100_1', '20141017', '17:02:14'] 0102_100_1 20141017 17:02:14
+keyTitle: ['0102_100_1', '20141017', '21:56:57'] 0102_100_1 20141017 21:56:57
+keyTitle: ['0102_100_1', '20141018', '02:51:50'] 0102_100_1 20141018 02:51:50
+keyTitle: ['0102_100_1', '20141018', '07:46:46'] 0102_100_1 20141018 07:46:46
+keyTitle: ['0102_100_1', '20141018', '12:41:41'] 0102_100_1 20141018 12:41:41
+keyTitle: ['0102_100_1', '20141018', '17:36:38'] 0102_100_1 20141018 17:36:38
+keyTitle: ['0102_100_1', '20141018', '22:31:28'] 0102_100_1 20141018 22:31:28
+keyTitle: ['0102_100_1', '20141019', '03:26:16'] 0102_100_1 20141019 03:26:16
+keyTitle: ['0102_100_1', '20141019', '08:21:00'] 0102_100_1 20141019 08:21:00
+keyTitle: ['0102_100_1', '20141019', '13:15:43'] 0102_100_1 20141019 13:15:43
+keyTitle: ['0102_100_1', '20141019', '18:10:27'] 0102_100_1 20141019 18:10:27
+keyTitle: ['0102_100_1', '20141019', '23:05:25'] 0102_100_1 20141019 23:05:25
+keyTitle: ['0102_100_1', '20141020', '04:00:17'] 0102_100_1 20141020 04:00:17
+keyTitle: ['0102_100_1', '20141020', '08:55:10'] 0102_100_1 20141020 08:55:10
+keyTitle: ['0102_100_2', '20141017', '17:09:36'] 0102_100_2 20141017 17:09:36
+keyTitle: ['0102_100_2', '20141017', '22:04:18'] 0102_100_2 20141017 22:04:18
+keyTitle: ['0102_100_2', '20141018', '02:59:13'] 0102_100_2 20141018 02:59:13
+keyTitle: ['0102_100_2', '20141018', '07:54:09'] 0102_100_2 20141018 07:54:09
+keyTitle: ['0102_100_2', '20141018', '12:49:03'] 0102_100_2 20141018 12:49:03
+keyTitle: ['0102_100_2', '20141018', '17:44:01'] 0102_100_2 20141018 17:44:01
+keyTitle: ['0102_100_2', '20141018', '22:38:51'] 0102_100_2 20141018 22:38:51
+keyTitle: ['0102_100_2', '20141019', '03:33:38'] 0102_100_2 20141019 03:33:38
+keyTitle: ['0102_100_2', '20141019', '08:28:22'] 0102_100_2 20141019 08:28:22
+keyTitle: ['0102_100_2', '20141019', '13:23:05'] 0102_100_2 20141019 13:23:05
+keyTitle: ['0102_100_2', '20141019', '18:17:50'] 0102_100_2 20141019 18:17:50
+keyTitle: ['0102_100_2', '20141019', '23:12:48'] 0102_100_2 20141019 23:12:48
+keyTitle: ['0102_100_2', '20141020', '04:07:39'] 0102_100_2 20141020 04:07:39
+keyTitle: ['0102_100_2', '20141020', '09:02:32'] 0102_100_2 20141020 09:02:32
+keyTitle: ['0102_10_1', '20141017', '16:32:41'] 0102_10_1 20141017 16:32:41
+keyTitle: ['0102_10_1', '20141017', '21:27:27'] 0102_10_1 20141017 21:27:27
+keyTitle: ['0102_10_1', '20141018', '02:22:18'] 0102_10_1 20141018 02:22:18
+keyTitle: ['0102_10_1', '20141018', '07:17:14'] 0102_10_1 20141018 07:17:14
+keyTitle: ['0102_10_1', '20141018', '12:12:10'] 0102_10_1 20141018 12:12:10
+keyTitle: ['0102_10_1', '20141018', '17:07:06'] 0102_10_1 20141018 17:07:06
+keyTitle: ['0102_10_1', '20141018', '22:01:56'] 0102_10_1 20141018 22:01:56
+keyTitle: ['0102_10_1', '20141019', '02:56:46'] 0102_10_1 20141019 02:56:46
+keyTitle: ['0102_10_1', '20141019', '07:51:30'] 0102_10_1 20141019 07:51:30
+keyTitle: ['0102_10_1', '20141019', '12:46:12'] 0102_10_1 20141019 12:46:12
+keyTitle: ['0102_10_1', '20141019', '17:40:57'] 0102_10_1 20141019 17:40:57
+keyTitle: ['0102_10_1', '20141019', '22:35:55'] 0102_10_1 20141019 22:35:55
+keyTitle: ['0102_10_1', '20141020', '03:30:46'] 0102_10_1 20141020 03:30:46
+keyTitle: ['0102_10_1', '20141020', '08:25:38'] 0102_10_1 20141020 08:25:38
+keyTitle: ['0100_1000_2', '20141017', '18:01:10'] 0100_1000_2 20141017 18:01:10
+keyTitle: ['0100_1000_2', '20141017', '22:56:01'] 0100_1000_2 20141017 22:56:01
+keyTitle: ['0100_1000_2', '20141018', '03:50:54'] 0100_1000_2 20141018 03:50:54
+keyTitle: ['0100_1000_2', '20141018', '08:45:51'] 0100_1000_2 20141018 08:45:51
+keyTitle: ['0100_1000_2', '20141018', '13:40:47'] 0100_1000_2 20141018 13:40:47
+keyTitle: ['0100_1000_2', '20141018', '18:35:41'] 0100_1000_2 20141018 18:35:41
+keyTitle: ['0100_1000_2', '20141018', '23:30:31'] 0100_1000_2 20141018 23:30:31
+keyTitle: ['0100_1000_2', '20141019', '04:25:19'] 0100_1000_2 20141019 04:25:19
+keyTitle: ['0100_1000_2', '20141019', '09:20:01'] 0100_1000_2 20141019 09:20:01
+keyTitle: ['0100_1000_2', '20141019', '14:14:44'] 0100_1000_2 20141019 14:14:44
+keyTitle: ['0100_1000_2', '20141019', '19:09:29'] 0100_1000_2 20141019 19:09:29
+keyTitle: ['0100_1000_2', '20141020', '00:04:30'] 0100_1000_2 20141020 00:04:30
+keyTitle: ['0100_1000_2', '20141020', '04:59:25'] 0100_1000_2 20141020 04:59:25
+keyTitle: ['0100_1000_2', '20141020', '09:54:11'] 0100_1000_2 20141020 09:54:11
+keyTitle: ['0102_1_2', '20141017', '16:03:16'] 0102_1_2 20141017 16:03:16
+keyTitle: ['0102_1_2', '20141017', '20:57:56'] 0102_1_2 20141017 20:57:56
+keyTitle: ['0102_1_2', '20141018', '01:52:45'] 0102_1_2 20141018 01:52:45
+keyTitle: ['0102_1_2', '20141018', '06:47:43'] 0102_1_2 20141018 06:47:43
+keyTitle: ['0102_1_2', '20141018', '11:42:37'] 0102_1_2 20141018 11:42:37
+keyTitle: ['0102_1_2', '20141018', '16:37:33'] 0102_1_2 20141018 16:37:33
+keyTitle: ['0102_1_2', '20141018', '21:32:23'] 0102_1_2 20141018 21:32:23
+keyTitle: ['0102_1_2', '20141019', '02:27:15'] 0102_1_2 20141019 02:27:15
+keyTitle: ['0102_1_2', '20141019', '07:21:59'] 0102_1_2 20141019 07:21:59
+keyTitle: ['0102_1_2', '20141019', '12:16:40'] 0102_1_2 20141019 12:16:40
+keyTitle: ['0102_1_2', '20141019', '17:11:25'] 0102_1_2 20141019 17:11:25
+keyTitle: ['0102_1_2', '20141019', '22:06:23'] 0102_1_2 20141019 22:06:23
+keyTitle: ['0102_1_2', '20141020', '03:01:15'] 0102_1_2 20141020 03:01:15
+keyTitle: ['0102_1_2', '20141020', '07:56:09'] 0102_1_2 20141020 07:56:09
+keyTitle: ['0102_1_2', '20141020', '12:50:53'] 0102_1_2 20141020 12:50:53
+keyTitle: ['0102_1_1', '20141017', '15:55:52'] 0102_1_1 20141017 15:55:52
+keyTitle: ['0102_1_1', '20141017', '20:50:33'] 0102_1_1 20141017 20:50:33
+keyTitle: ['0102_1_1', '20141018', '01:45:23'] 0102_1_1 20141018 01:45:23
+keyTitle: ['0102_1_1', '20141018', '06:40:21'] 0102_1_1 20141018 06:40:21
+keyTitle: ['0102_1_1', '20141018', '11:35:15'] 0102_1_1 20141018 11:35:15
+keyTitle: ['0102_1_1', '20141018', '16:30:11'] 0102_1_1 20141018 16:30:11
+keyTitle: ['0102_1_1', '20141018', '21:25:00'] 0102_1_1 20141018 21:25:00
+keyTitle: ['0102_1_1', '20141019', '02:19:52'] 0102_1_1 20141019 02:19:52
+keyTitle: ['0102_1_1', '20141019', '07:14:36'] 0102_1_1 20141019 07:14:36
+keyTitle: ['0102_1_1', '20141019', '12:09:18'] 0102_1_1 20141019 12:09:18
+keyTitle: ['0102_1_1', '20141019', '17:04:03'] 0102_1_1 20141019 17:04:03
+keyTitle: ['0102_1_1', '20141019', '21:59:01'] 0102_1_1 20141019 21:59:01
+keyTitle: ['0102_1_1', '20141020', '02:53:52'] 0102_1_1 20141020 02:53:52
+keyTitle: ['0102_1_1', '20141020', '07:48:46'] 0102_1_1 20141020 07:48:46
+keyTitle: ['0102_1_1', '20141020', '12:43:31'] 0102_1_1 20141020 12:43:31
+keyTitle: ['0102_400_1', '20141017', '17:31:50'] 0102_400_1 20141017 17:31:50
+keyTitle: ['0102_400_1', '20141017', '22:26:43'] 0102_400_1 20141017 22:26:43
+keyTitle: ['0102_400_1', '20141018', '03:21:37'] 0102_400_1 20141018 03:21:37
+keyTitle: ['0102_400_1', '20141018', '08:16:32'] 0102_400_1 20141018 08:16:32
+keyTitle: ['0102_400_1', '20141018', '13:11:25'] 0102_400_1 20141018 13:11:25
+keyTitle: ['0102_400_1', '20141018', '18:06:24'] 0102_400_1 20141018 18:06:24
+keyTitle: ['0102_400_1', '20141018', '23:01:14'] 0102_400_1 20141018 23:01:14
+keyTitle: ['0102_400_1', '20141019', '03:56:00'] 0102_400_1 20141019 03:56:00
+keyTitle: ['0102_400_1', '20141019', '08:50:45'] 0102_400_1 20141019 08:50:45
+keyTitle: ['0102_400_1', '20141019', '13:45:27'] 0102_400_1 20141019 13:45:27
+keyTitle: ['0102_400_1', '20141019', '18:40:11'] 0102_400_1 20141019 18:40:11
+keyTitle: ['0102_400_1', '20141019', '23:35:10'] 0102_400_1 20141019 23:35:10
+keyTitle: ['0102_400_1', '20141020', '04:30:04'] 0102_400_1 20141020 04:30:04
+keyTitle: ['0102_400_1', '20141020', '09:24:52'] 0102_400_1 20141020 09:24:52
+keyTitle: ['0102_10_2', '20141017', '16:40:03'] 0102_10_2 20141017 16:40:03
+keyTitle: ['0102_10_2', '20141017', '21:34:48'] 0102_10_2 20141017 21:34:48
+keyTitle: ['0102_10_2', '20141018', '02:29:40'] 0102_10_2 20141018 02:29:40
+keyTitle: ['0102_10_2', '20141018', '07:24:36'] 0102_10_2 20141018 07:24:36
+keyTitle: ['0102_10_2', '20141018', '12:19:32'] 0102_10_2 20141018 12:19:32
+keyTitle: ['0102_10_2', '20141018', '17:14:28'] 0102_10_2 20141018 17:14:28
+keyTitle: ['0102_10_2', '20141018', '22:09:19'] 0102_10_2 20141018 22:09:19
+keyTitle: ['0102_10_2', '20141019', '03:04:07'] 0102_10_2 20141019 03:04:07
+keyTitle: ['0102_10_2', '20141019', '07:58:52'] 0102_10_2 20141019 07:58:52
+keyTitle: ['0102_10_2', '20141019', '12:53:34'] 0102_10_2 20141019 12:53:34
+keyTitle: ['0102_10_2', '20141019', '17:48:19'] 0102_10_2 20141019 17:48:19
+keyTitle: ['0102_10_2', '20141019', '22:43:18'] 0102_10_2 20141019 22:43:18
+keyTitle: ['0102_10_2', '20141020', '03:38:09'] 0102_10_2 20141020 03:38:09
+keyTitle: ['0102_10_2', '20141020', '08:33:00'] 0102_10_2 20141020 08:33:00
+keyTitle: ['0102_400_2', '20141017', '17:39:13'] 0102_400_2 20141017 17:39:13
+keyTitle: ['0102_400_2', '20141017', '22:34:05'] 0102_400_2 20141017 22:34:05
+keyTitle: ['0102_400_2', '20141018', '03:28:59'] 0102_400_2 20141018 03:28:59
+keyTitle: ['0102_400_2', '20141018', '08:23:54'] 0102_400_2 20141018 08:23:54
+keyTitle: ['0102_400_2', '20141018', '13:18:48'] 0102_400_2 20141018 13:18:48
+keyTitle: ['0102_400_2', '20141018', '18:13:46'] 0102_400_2 20141018 18:13:46
+keyTitle: ['0102_400_2', '20141018', '23:08:36'] 0102_400_2 20141018 23:08:36
+keyTitle: ['0102_400_2', '20141019', '04:03:23'] 0102_400_2 20141019 04:03:23
+keyTitle: ['0102_400_2', '20141019', '08:58:07'] 0102_400_2 20141019 08:58:07
+keyTitle: ['0102_400_2', '20141019', '13:52:49'] 0102_400_2 20141019 13:52:49
+keyTitle: ['0102_400_2', '20141019', '18:47:34'] 0102_400_2 20141019 18:47:34
+keyTitle: ['0102_400_2', '20141019', '23:42:33'] 0102_400_2 20141019 23:42:33
+keyTitle: ['0102_400_2', '20141020', '04:37:28'] 0102_400_2 20141020 04:37:28
+keyTitle: ['0102_400_2', '20141020', '09:32:15'] 0102_400_2 20141020 09:32:15
+keyTitle: ['0052_400_2', '20141017', '15:04:11'] 0052_400_2 20141017 15:04:11
+keyTitle: ['0052_400_2', '20141017', '19:58:52'] 0052_400_2 20141017 19:58:52
+keyTitle: ['0052_400_2', '20141018', '00:53:40'] 0052_400_2 20141018 00:53:40
+keyTitle: ['0052_400_2', '20141018', '05:48:38'] 0052_400_2 20141018 05:48:38
+keyTitle: ['0052_400_2', '20141018', '10:43:35'] 0052_400_2 20141018 10:43:35
+keyTitle: ['0052_400_2', '20141018', '15:38:30'] 0052_400_2 20141018 15:38:30
+keyTitle: ['0052_400_2', '20141018', '20:33:18'] 0052_400_2 20141018 20:33:18
+keyTitle: ['0052_400_2', '20141019', '01:28:13'] 0052_400_2 20141019 01:28:13
+keyTitle: ['0052_400_2', '20141019', '06:22:57'] 0052_400_2 20141019 06:22:57
+keyTitle: ['0052_400_2', '20141019', '11:17:41'] 0052_400_2 20141019 11:17:41
+keyTitle: ['0052_400_2', '20141019', '16:12:27'] 0052_400_2 20141019 16:12:27
+keyTitle: ['0052_400_2', '20141019', '21:07:19'] 0052_400_2 20141019 21:07:19
+keyTitle: ['0052_400_2', '20141020', '02:02:14'] 0052_400_2 20141020 02:02:14
+keyTitle: ['0052_400_2', '20141020', '06:57:06'] 0052_400_2 20141020 06:57:06
+keyTitle: ['0052_400_2', '20141020', '11:51:52'] 0052_400_2 20141020 11:51:52
+keyTitle: ['0052_400_1', '20141017', '14:49:40'] 0052_400_1 20141017 14:49:40
+keyTitle: ['0052_400_1', '20141017', '19:44:23'] 0052_400_1 20141017 19:44:23
+keyTitle: ['0052_400_1', '20141018', '00:39:11'] 0052_400_1 20141018 00:39:11
+keyTitle: ['0052_400_1', '20141018', '05:34:08'] 0052_400_1 20141018 05:34:08
+keyTitle: ['0052_400_1', '20141018', '10:29:05'] 0052_400_1 20141018 10:29:05
+keyTitle: ['0052_400_1', '20141018', '15:24:00'] 0052_400_1 20141018 15:24:00
+keyTitle: ['0052_400_1', '20141018', '20:18:48'] 0052_400_1 20141018 20:18:48
+keyTitle: ['0052_400_1', '20141019', '01:13:43'] 0052_400_1 20141019 01:13:43
+keyTitle: ['0052_400_1', '20141019', '06:08:27'] 0052_400_1 20141019 06:08:27
+keyTitle: ['0052_400_1', '20141019', '11:03:11'] 0052_400_1 20141019 11:03:11
+keyTitle: ['0052_400_1', '20141019', '15:57:57'] 0052_400_1 20141019 15:57:57
+keyTitle: ['0052_400_1', '20141019', '20:52:48'] 0052_400_1 20141019 20:52:48
+keyTitle: ['0052_400_1', '20141020', '01:47:43'] 0052_400_1 20141020 01:47:43
+keyTitle: ['0052_400_1', '20141020', '06:42:36'] 0052_400_1 20141020 06:42:36
+keyTitle: ['0052_400_1', '20141020', '11:37:22'] 0052_400_1 20141020 11:37:22
+keyTitle: ['EMPTY_S3_Position03', '20141017', '16:25:21'] EMPTY_S3_Position03 20141017 16:25:21
+keyTitle: ['EMPTY_S3_Position03', '20141017', '21:20:08'] EMPTY_S3_Position03 20141017 21:20:08
+keyTitle: ['EMPTY_S3_Position03', '20141018', '02:14:58'] EMPTY_S3_Position03 20141018 02:14:58
+keyTitle: ['EMPTY_S3_Position03', '20141018', '07:09:54'] EMPTY_S3_Position03 20141018 07:09:54
+keyTitle: ['EMPTY_S3_Position03', '20141018', '12:04:49'] EMPTY_S3_Position03 20141018 12:04:49
+keyTitle: ['EMPTY_S3_Position03', '20141018', '16:59:47'] EMPTY_S3_Position03 20141018 16:59:47
+keyTitle: ['EMPTY_S3_Position03', '20141018', '21:54:36'] EMPTY_S3_Position03 20141018 21:54:36
+keyTitle: ['EMPTY_S3_Position03', '20141019', '02:49:25'] EMPTY_S3_Position03 20141019 02:49:25
+keyTitle: ['EMPTY_S3_Position03', '20141019', '07:44:10'] EMPTY_S3_Position03 20141019 07:44:10
+keyTitle: ['EMPTY_S3_Position03', '20141019', '12:38:53'] EMPTY_S3_Position03 20141019 12:38:53
+keyTitle: ['EMPTY_S3_Position03', '20141019', '17:33:37'] EMPTY_S3_Position03 20141019 17:33:37
+keyTitle: ['EMPTY_S3_Position03', '20141019', '22:28:36'] EMPTY_S3_Position03 20141019 22:28:36
+keyTitle: ['EMPTY_S3_Position03', '20141020', '03:23:26'] EMPTY_S3_Position03 20141020 03:23:26
+keyTitle: ['EMPTY_S3_Position03', '20141020', '08:18:19'] EMPTY_S3_Position03 20141020 08:18:19
+keyTitle: ['0102_1000_2', '20141017', '18:15:54'] 0102_1000_2 20141017 18:15:54
+keyTitle: ['0102_1000_2', '20141017', '23:10:45'] 0102_1000_2 20141017 23:10:45
+keyTitle: ['0102_1000_2', '20141018', '04:05:39'] 0102_1000_2 20141018 04:05:39
+keyTitle: ['0102_1000_2', '20141018', '09:00:36'] 0102_1000_2 20141018 09:00:36
+keyTitle: ['0102_1000_2', '20141018', '13:55:32'] 0102_1000_2 20141018 13:55:32
+keyTitle: ['0102_1000_2', '20141018', '18:50:26'] 0102_1000_2 20141018 18:50:26
+keyTitle: ['0102_1000_2', '20141018', '23:45:16'] 0102_1000_2 20141018 23:45:16
+keyTitle: ['0102_1000_2', '20141019', '04:40:01'] 0102_1000_2 20141019 04:40:01
+keyTitle: ['0102_1000_2', '20141019', '09:34:45'] 0102_1000_2 20141019 09:34:45
+keyTitle: ['0102_1000_2', '20141019', '14:29:28'] 0102_1000_2 20141019 14:29:28
+keyTitle: ['0102_1000_2', '20141019', '19:24:14'] 0102_1000_2 20141019 19:24:14
+keyTitle: ['0102_1000_2', '20141020', '00:19:15'] 0102_1000_2 20141020 00:19:15
+keyTitle: ['0102_1000_2', '20141020', '05:14:09'] 0102_1000_2 20141020 05:14:09
+keyTitle: ['0102_1000_2', '20141020', '10:08:55'] 0102_1000_2 20141020 10:08:55
+keyTitle: ['0100_10_1', '20141017', '16:10:46'] 0100_10_1 20141017 16:10:46
+keyTitle: ['0100_10_1', '20141017', '21:05:33'] 0100_10_1 20141017 21:05:33
+keyTitle: ['0100_10_1', '20141018', '02:00:23'] 0100_10_1 20141018 02:00:23
+keyTitle: ['0100_10_1', '20141018', '06:55:20'] 0100_10_1 20141018 06:55:20
+keyTitle: ['0100_10_1', '20141018', '11:50:14'] 0100_10_1 20141018 11:50:14
+keyTitle: ['0100_10_1', '20141018', '16:45:11'] 0100_10_1 20141018 16:45:11
+keyTitle: ['0100_10_1', '20141018', '21:40:01'] 0100_10_1 20141018 21:40:01
+keyTitle: ['0100_10_1', '20141019', '02:34:51'] 0100_10_1 20141019 02:34:51
+keyTitle: ['0100_10_1', '20141019', '07:29:35'] 0100_10_1 20141019 07:29:35
+keyTitle: ['0100_10_1', '20141019', '12:24:18'] 0100_10_1 20141019 12:24:18
+keyTitle: ['0100_10_1', '20141019', '17:19:02'] 0100_10_1 20141019 17:19:02
+keyTitle: ['0100_10_1', '20141019', '22:14:00'] 0100_10_1 20141019 22:14:00
+keyTitle: ['0100_10_1', '20141020', '03:08:51'] 0100_10_1 20141020 03:08:51
+keyTitle: ['0100_10_1', '20141020', '08:03:45'] 0100_10_1 20141020 08:03:45
+keyTitle: ['0052_0_2', '20141017', '13:58:09'] 0052_0_2 20141017 13:58:09
+keyTitle: ['0052_0_2', '20141017', '18:52:46'] 0052_0_2 20141017 18:52:46
+keyTitle: ['0052_0_2', '20141017', '23:47:34'] 0052_0_2 20141017 23:47:34
+keyTitle: ['0052_0_2', '20141018', '04:42:29'] 0052_0_2 20141018 04:42:29
+keyTitle: ['0052_0_2', '20141018', '09:37:27'] 0052_0_2 20141018 09:37:27
+keyTitle: ['0052_0_2', '20141018', '14:32:23'] 0052_0_2 20141018 14:32:23
+keyTitle: ['0052_0_2', '20141018', '19:27:15'] 0052_0_2 20141018 19:27:15
+keyTitle: ['0052_0_2', '20141019', '00:22:07'] 0052_0_2 20141019 00:22:07
+keyTitle: ['0052_0_2', '20141019', '05:16:52'] 0052_0_2 20141019 05:16:52
+keyTitle: ['0052_0_2', '20141019', '10:11:35'] 0052_0_2 20141019 10:11:35
+keyTitle: ['0052_0_2', '20141019', '15:06:19'] 0052_0_2 20141019 15:06:19
+keyTitle: ['0052_0_2', '20141019', '20:01:06'] 0052_0_2 20141019 20:01:06
+keyTitle: ['0052_0_2', '20141020', '00:56:06'] 0052_0_2 20141020 00:56:06
+keyTitle: ['0052_0_2', '20141020', '05:50:59'] 0052_0_2 20141020 05:50:59
+keyTitle: ['0052_0_2', '20141020', '10:45:46'] 0052_0_2 20141020 10:45:46
+keyTitle: ['EMPTY_S4_Position04', '20141017', '17:53:49'] EMPTY_S4_Position04 20141017 17:53:49
+keyTitle: ['EMPTY_S4_Position04', '20141017', '22:48:40'] EMPTY_S4_Position04 20141017 22:48:40
+keyTitle: ['EMPTY_S4_Position04', '20141018', '03:43:33'] EMPTY_S4_Position04 20141018 03:43:33
+keyTitle: ['EMPTY_S4_Position04', '20141018', '08:38:29'] EMPTY_S4_Position04 20141018 08:38:29
+keyTitle: ['EMPTY_S4_Position04', '20141018', '13:33:25'] EMPTY_S4_Position04 20141018 13:33:25
+keyTitle: ['EMPTY_S4_Position04', '20141018', '18:28:20'] EMPTY_S4_Position04 20141018 18:28:20
+keyTitle: ['EMPTY_S4_Position04', '20141018', '23:23:10'] EMPTY_S4_Position04 20141018 23:23:10
+keyTitle: ['EMPTY_S4_Position04', '20141019', '04:17:58'] EMPTY_S4_Position04 20141019 04:17:58
+keyTitle: ['EMPTY_S4_Position04', '20141019', '09:12:40'] EMPTY_S4_Position04 20141019 09:12:40
+keyTitle: ['EMPTY_S4_Position04', '20141019', '14:07:24'] EMPTY_S4_Position04 20141019 14:07:24
+keyTitle: ['EMPTY_S4_Position04', '20141019', '19:02:08'] EMPTY_S4_Position04 20141019 19:02:08
+keyTitle: ['EMPTY_S4_Position04', '20141019', '23:57:08'] EMPTY_S4_Position04 20141019 23:57:08
+keyTitle: ['EMPTY_S4_Position04', '20141020', '04:52:03'] EMPTY_S4_Position04 20141020 04:52:03
+keyTitle: ['EMPTY_S4_Position04', '20141020', '09:46:49'] EMPTY_S4_Position04 20141020 09:46:49
+keyTitle: ['0100_0_1', '20141017', '15:11:34'] 0100_0_1 20141017 15:11:34
+keyTitle: ['0100_0_1', '20141017', '20:06:14'] 0100_0_1 20141017 20:06:14
+keyTitle: ['0100_0_1', '20141018', '01:01:03'] 0100_0_1 20141018 01:01:03
+keyTitle: ['0100_0_1', '20141018', '05:56:01'] 0100_0_1 20141018 05:56:01
+keyTitle: ['0100_0_1', '20141018', '10:50:58'] 0100_0_1 20141018 10:50:58
+keyTitle: ['0100_0_1', '20141018', '15:45:52'] 0100_0_1 20141018 15:45:52
+keyTitle: ['0100_0_1', '20141018', '20:40:41'] 0100_0_1 20141018 20:40:41
+keyTitle: ['0100_0_1', '20141019', '01:35:35'] 0100_0_1 20141019 01:35:35
+keyTitle: ['0100_0_1', '20141019', '06:30:19'] 0100_0_1 20141019 06:30:19
+keyTitle: ['0100_0_1', '20141019', '11:25:03'] 0100_0_1 20141019 11:25:03
+keyTitle: ['0100_0_1', '20141019', '16:19:49'] 0100_0_1 20141019 16:19:49
+keyTitle: ['0100_0_1', '20141019', '21:14:43'] 0100_0_1 20141019 21:14:43
+keyTitle: ['0100_0_1', '20141020', '02:09:37'] 0100_0_1 20141020 02:09:37
+keyTitle: ['0100_0_1', '20141020', '07:04:29'] 0100_0_1 20141020 07:04:29
+keyTitle: ['0100_0_1', '20141020', '11:59:15'] 0100_0_1 20141020 11:59:15
+keyTitle: ['0102_0_2', '20141017', '15:33:43'] 0102_0_2 20141017 15:33:43
+keyTitle: ['0102_0_2', '20141017', '20:28:23'] 0102_0_2 20141017 20:28:23
+keyTitle: ['0102_0_2', '20141018', '01:23:13'] 0102_0_2 20141018 01:23:13
+keyTitle: ['0102_0_2', '20141018', '06:18:10'] 0102_0_2 20141018 06:18:10
+keyTitle: ['0102_0_2', '20141018', '11:13:05'] 0102_0_2 20141018 11:13:05
+keyTitle: ['0102_0_2', '20141018', '16:08:01'] 0102_0_2 20141018 16:08:01
+keyTitle: ['0102_0_2', '20141018', '21:02:51'] 0102_0_2 20141018 21:02:51
+keyTitle: ['0102_0_2', '20141019', '01:57:44'] 0102_0_2 20141019 01:57:44
+keyTitle: ['0102_0_2', '20141019', '06:52:26'] 0102_0_2 20141019 06:52:26
+keyTitle: ['0102_0_2', '20141019', '11:47:11'] 0102_0_2 20141019 11:47:11
+keyTitle: ['0102_0_2', '20141019', '16:41:55'] 0102_0_2 20141019 16:41:55
+keyTitle: ['0102_0_2', '20141019', '21:36:52'] 0102_0_2 20141019 21:36:52
+keyTitle: ['0102_0_2', '20141020', '02:31:47'] 0102_0_2 20141020 02:31:47
+keyTitle: ['0102_0_2', '20141020', '07:26:37'] 0102_0_2 20141020 07:26:37
+keyTitle: ['0102_0_2', '20141020', '12:21:22'] 0102_0_2 20141020 12:21:22
+keyTitle: ['0102_0_1', '20141017', '15:26:20'] 0102_0_1 20141017 15:26:20
+keyTitle: ['0102_0_1', '20141017', '20:21:00'] 0102_0_1 20141017 20:21:00
+keyTitle: ['0102_0_1', '20141018', '01:15:50'] 0102_0_1 20141018 01:15:50
+keyTitle: ['0102_0_1', '20141018', '06:10:48'] 0102_0_1 20141018 06:10:48
+keyTitle: ['0102_0_1', '20141018', '11:05:44'] 0102_0_1 20141018 11:05:44
+keyTitle: ['0102_0_1', '20141018', '16:00:39'] 0102_0_1 20141018 16:00:39
+keyTitle: ['0102_0_1', '20141018', '20:55:28'] 0102_0_1 20141018 20:55:28
+keyTitle: ['0102_0_1', '20141019', '01:50:20'] 0102_0_1 20141019 01:50:20
+keyTitle: ['0102_0_1', '20141019', '06:45:04'] 0102_0_1 20141019 06:45:04
+keyTitle: ['0102_0_1', '20141019', '11:39:48'] 0102_0_1 20141019 11:39:48
+keyTitle: ['0102_0_1', '20141019', '16:34:33'] 0102_0_1 20141019 16:34:33
+keyTitle: ['0102_0_1', '20141019', '21:29:29'] 0102_0_1 20141019 21:29:29
+keyTitle: ['0102_0_1', '20141020', '02:24:24'] 0102_0_1 20141020 02:24:24
+keyTitle: ['0102_0_1', '20141020', '07:19:15'] 0102_0_1 20141020 07:19:15
+keyTitle: ['0102_0_1', '20141020', '12:13:59'] 0102_0_1 20141020 12:13:59
+keyTitle: ['0100_0_2', '20141017', '15:18:57'] 0100_0_2 20141017 15:18:57
+keyTitle: ['0100_0_2', '20141017', '20:13:37'] 0100_0_2 20141017 20:13:37
+keyTitle: ['0100_0_2', '20141018', '01:08:28'] 0100_0_2 20141018 01:08:28
+keyTitle: ['0100_0_2', '20141018', '06:03:25'] 0100_0_2 20141018 06:03:25
+keyTitle: ['0100_0_2', '20141018', '10:58:22'] 0100_0_2 20141018 10:58:22
+keyTitle: ['0100_0_2', '20141018', '15:53:16'] 0100_0_2 20141018 15:53:16
+keyTitle: ['0100_0_2', '20141018', '20:48:05'] 0100_0_2 20141018 20:48:05
+keyTitle: ['0100_0_2', '20141019', '01:42:57'] 0100_0_2 20141019 01:42:57
+keyTitle: ['0100_0_2', '20141019', '06:37:41'] 0100_0_2 20141019 06:37:41
+keyTitle: ['0100_0_2', '20141019', '11:32:25'] 0100_0_2 20141019 11:32:25
+keyTitle: ['0100_0_2', '20141019', '16:27:11'] 0100_0_2 20141019 16:27:11
+keyTitle: ['0100_0_2', '20141019', '21:22:07'] 0100_0_2 20141019 21:22:07
+keyTitle: ['0100_0_2', '20141020', '02:17:00'] 0100_0_2 20141020 02:17:00
+keyTitle: ['0100_0_2', '20141020', '07:11:52'] 0100_0_2 20141020 07:11:52
+keyTitle: ['0100_0_2', '20141020', '12:06:37'] 0100_0_2 20141020 12:06:37
+keyTitle: ['0050_0_2', '20141017', '13:43:30'] 0050_0_2 20141017 13:43:30
+keyTitle: ['0050_0_2', '20141017', '18:38:06'] 0050_0_2 20141017 18:38:06
+keyTitle: ['0050_0_2', '20141017', '23:32:55'] 0050_0_2 20141017 23:32:55
+keyTitle: ['0050_0_2', '20141018', '04:27:50'] 0050_0_2 20141018 04:27:50
+keyTitle: ['0050_0_2', '20141018', '09:22:47'] 0050_0_2 20141018 09:22:47
+keyTitle: ['0050_0_2', '20141018', '14:17:44'] 0050_0_2 20141018 14:17:44
+keyTitle: ['0050_0_2', '20141018', '19:12:37'] 0050_0_2 20141018 19:12:37
+keyTitle: ['0050_0_2', '20141019', '00:07:27'] 0050_0_2 20141019 00:07:27
+keyTitle: ['0050_0_2', '20141019', '05:02:13'] 0050_0_2 20141019 05:02:13
+keyTitle: ['0050_0_2', '20141019', '09:56:56'] 0050_0_2 20141019 09:56:56
+keyTitle: ['0050_0_2', '20141019', '14:51:40'] 0050_0_2 20141019 14:51:40
+keyTitle: ['0050_0_2', '20141019', '19:46:27'] 0050_0_2 20141019 19:46:27
+keyTitle: ['0050_0_2', '20141020', '00:41:25'] 0050_0_2 20141020 00:41:25
+keyTitle: ['0050_0_2', '20141020', '05:36:20'] 0050_0_2 20141020 05:36:20
+keyTitle: ['0050_0_2', '20141020', '10:31:07'] 0050_0_2 20141020 10:31:07
+keyTitle: ['0050_0_1', '20141017', '13:36:10'] 0050_0_1 20141017 13:36:10
+keyTitle: ['0050_0_1', '20141017', '18:30:45'] 0050_0_1 20141017 18:30:45
+keyTitle: ['0050_0_1', '20141017', '23:25:35'] 0050_0_1 20141017 23:25:35
+keyTitle: ['0050_0_1', '20141018', '04:20:30'] 0050_0_1 20141018 04:20:30
+keyTitle: ['0050_0_1', '20141018', '09:15:27'] 0050_0_1 20141018 09:15:27
+keyTitle: ['0050_0_1', '20141018', '14:10:23'] 0050_0_1 20141018 14:10:23
+keyTitle: ['0050_0_1', '20141018', '19:05:16'] 0050_0_1 20141018 19:05:16
+keyTitle: ['0050_0_1', '20141019', '00:00:06'] 0050_0_1 20141019 00:00:06
+keyTitle: ['0050_0_1', '20141019', '04:54:52'] 0050_0_1 20141019 04:54:52
+keyTitle: ['0050_0_1', '20141019', '09:49:36'] 0050_0_1 20141019 09:49:36
+keyTitle: ['0050_0_1', '20141019', '14:44:19'] 0050_0_1 20141019 14:44:19
+keyTitle: ['0050_0_1', '20141019', '19:39:06'] 0050_0_1 20141019 19:39:06
+keyTitle: ['0050_0_1', '20141020', '00:34:06'] 0050_0_1 20141020 00:34:06
+keyTitle: ['0050_0_1', '20141020', '05:29:00'] 0050_0_1 20141020 05:29:00
+keyTitle: ['0050_0_1', '20141020', '10:23:46'] 0050_0_1 20141020 10:23:46
+keyTitle: ['0100_1000_1', '20141017', '17:46:36'] 0100_1000_1 20141017 17:46:36
+keyTitle: ['0100_1000_1', '20141017', '22:41:28'] 0100_1000_1 20141017 22:41:28
+keyTitle: ['0100_1000_1', '20141018', '03:36:21'] 0100_1000_1 20141018 03:36:21
+keyTitle: ['0100_1000_1', '20141018', '08:31:17'] 0100_1000_1 20141018 08:31:17
+keyTitle: ['0100_1000_1', '20141018', '13:26:12'] 0100_1000_1 20141018 13:26:12
+keyTitle: ['0100_1000_1', '20141018', '18:21:08'] 0100_1000_1 20141018 18:21:08
+keyTitle: ['0100_1000_1', '20141018', '23:15:58'] 0100_1000_1 20141018 23:15:58
+keyTitle: ['0100_1000_1', '20141019', '04:10:46'] 0100_1000_1 20141019 04:10:46
+keyTitle: ['0100_1000_1', '20141019', '09:05:29'] 0100_1000_1 20141019 09:05:29
+keyTitle: ['0100_1000_1', '20141019', '14:00:12'] 0100_1000_1 20141019 14:00:12
+keyTitle: ['0100_1000_1', '20141019', '18:54:56'] 0100_1000_1 20141019 18:54:56
+keyTitle: ['0100_1000_1', '20141019', '23:49:56'] 0100_1000_1 20141019 23:49:56
+keyTitle: ['0100_1000_1', '20141020', '04:44:51'] 0100_1000_1 20141020 04:44:51
+keyTitle: ['0100_1000_1', '20141020', '09:39:37'] 0100_1000_1 20141020 09:39:37
+ls6500.Analyze: Wrote hists to Histograms/Gamma_Pre-irradiation141017.root

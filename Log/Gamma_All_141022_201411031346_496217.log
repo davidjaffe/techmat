@@ -1,0 +1,213 @@
+This file is Log/Gamma_All_141022_201411031346_496217.log
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/ 
+dataSubDir Gamma_All_141022/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: S1_Position12 has no vial
+ls6500.processHeader: S2_Position12 has no vial
+ls6500.processHeader: S3_Position12 has no vial
+ls6500.processHeader: S4_Position12 has no vial
+ls6500.processHeader: S5_Position12 has no vial
+ls6500.processHeader: S7_Position11 has no vial
+ls6500.processHeader: S7_Position12 has no vial
+ls6500.processHeader: Found 65 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00066.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00132.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00198.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00264.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00330.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00364.xls from list
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 65
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 15%_WbLS_Vit._C 0100_1000_2 0052_0_1 0052_100_1 EMPTY_S2_Position02 0100_400_2 0100_400_1 GLASS_100_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 GLASS_400_2 GLASS_400_1 0100_100_1 0052_100_2 0050_100_1 LS_Vit._C 0050_100_2 EMPTY_S7_Position07 GLASS_1000_1 0102_100_1 0102_100_2 GLASS_1000_2 0102_10_1 5%_WbLS_Vit._C WbLS-5_10/20/14 0102_10_2 0102_1_2 EMPTY_S5_Position05 0102_1_1 10%_WbLS_Vit._C PP_100_1 GLASS_100_2 PP_100_2 PP_400_2 WbLS-10_10/20/14 0102_400_1 0102_400_2 0052_400_2 0052_400_1 PP_0_2 PP_400_1 EMPTY_S3_Position03 0102_1000_2 GLASS_0_1 LS_10/20/14 GLASS_0_2 0052_0_2 PP_0_1 HDPE_0_1 EMPTY_S4_Position04 0050_0_1 WbLS-15_10/20/14 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0100_10_1 0100_1000_1 Tray_Position S1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00001.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00067.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00133.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00199.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00265.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00331.xls
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00002.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00068.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00134.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00200.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00266.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00332.xls
+Tray_Position S1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00003.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00069.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00135.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00201.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00267.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00333.xls
+Tray_Position S1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00004.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00070.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00136.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00202.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00268.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00334.xls
+Tray_Position S1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00005.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00071.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00137.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00203.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00269.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00335.xls
+Tray_Position S1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00006.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00072.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00138.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00204.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00270.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00336.xls
+Tray_Position S1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00007.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00073.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00139.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00205.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00271.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00337.xls
+Tray_Position S1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00008.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00074.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00140.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00206.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00272.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00338.xls
+Tray_Position S1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00009.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00075.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00141.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00207.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00273.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00339.xls
+Tray_Position S1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00010.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00076.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00142.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00208.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00274.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00340.xls
+Tray_Position S1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00011.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00077.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00143.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00209.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00275.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00341.xls
+Tray_Position S2_Position01 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00012.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00078.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00144.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00210.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00276.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00342.xls
+Tray_Position S2_Position02 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00013.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00079.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00145.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00211.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00277.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00343.xls
+Tray_Position S2_Position03 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00014.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00080.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00146.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00212.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00278.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00344.xls
+Tray_Position S2_Position04 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00015.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00081.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00147.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00213.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00279.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00345.xls
+Tray_Position S2_Position05 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00016.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00082.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00148.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00214.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00280.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00346.xls
+Tray_Position S2_Position06 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00017.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00083.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00149.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00215.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00281.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00347.xls
+Tray_Position S2_Position07 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00018.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00084.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00150.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00216.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00282.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00348.xls
+Tray_Position S2_Position08 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00019.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00085.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00151.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00217.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00283.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00349.xls
+Tray_Position S2_Position09 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00020.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00086.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00152.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00218.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00284.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00350.xls
+Tray_Position S2_Position10 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00021.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00087.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00153.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00219.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00285.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00351.xls
+Tray_Position S2_Position11 Number of `no vial` to this position 1
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00022.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00088.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00154.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00220.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00286.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00352.xls
+Tray_Position S3_Position01 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00023.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00089.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00155.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00221.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00287.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00353.xls
+Tray_Position S3_Position02 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00024.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00090.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00156.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00222.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00288.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00354.xls
+Tray_Position S3_Position03 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00025.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00091.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00157.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00223.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00289.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00355.xls
+Tray_Position S3_Position04 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00026.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00092.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00158.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00224.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00290.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00356.xls
+Tray_Position S3_Position05 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00027.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00093.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00159.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00225.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00291.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00357.xls
+Tray_Position S3_Position06 Number of `no vial` to this position 2
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00028.xls
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/MeasurementNo00094.xls

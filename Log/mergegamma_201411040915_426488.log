@@ -1,0 +1,85 @@
+This file is Log/mergegamma_201411040915_426488.log
+initialize ls6500 mergegamma . Merging /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/
+ls6500.Main: pickMode merge
+ls6500.putOrGet: unpickling...be patient
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 0100_1000_2 0052_0_1 EMPTY_S2_Position02 0100_400_2 0100_400_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 0100_100_1 0052_100_2 0052_100_1 0050_100_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_2 0102_1_1 0102_400_1 0102_400_2 0052_400_2 0052_400_1 EMPTY_S3_Position03 0102_1000_2 0100_10_1 0050_100_1 0052_0_2 EMPTY_S4_Position04 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 ls6500.putOrGet: pickled data read from Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.putOrGet: unpickling...be patient
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 0100_1000_2 0052_0_1 EMPTY_S2_Position02 0100_400_2 0100_400_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 0100_100_1 0052_100_2 0052_100_1 0050_100_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_2 0102_1_1 0102_400_1 0102_400_2 0052_400_2 0052_400_1 EMPTY_S3_Position03 0102_1000_2 0100_10_1 0050_100_1 0052_0_2 EMPTY_S4_Position04 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 ls6500.putOrGet: pickled data read from Pickles/Gamma_1Gy_141020.pickle
+ls6500.putOrGet: unpickling...be patient
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 67
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 15%_WbLS_Vit._C 0100_1000_2 EMPTY_S6_Position06 0052_0_1 PP_1000_1 PP_1000_2 EMPTY_S2_Position02 0100_400_2 0100_400_1 GLASS_100_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 GLASS_400_2 GLASS_400_1 0100_100_1 0052_100_2 0052_100_1 LS_Vit._C 0050_100_2 EMPTY_S7_Position07 GLASS_1000_1 0102_100_1 0102_100_2 GLASS_1000_2 0102_10_1 5%_WbLS_Vit._C WbLS-5_10/20/14 0102_10_2 0102_1_2 EMPTY_S5_Position05 0102_1_1 10%_WbLS_Vit._C PP_100_1 GLASS_100_2 PP_100_2 PP_400_2 WbLS-10_10/20/14 0102_400_1 0102_400_2 0052_400_2 0052_400_1 PP_0_2 PP_400_1 EMPTY_S3_Position03 0102_1000_2 LS_10/20/14 GLASS_0_1 0100_10_1 GLASS_0_2 0050_100_1 0052_0_2 PP_0_1 EMPTY_S4_Position04 WbLS-15_10/20/14 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141021.pickle
+ls6500.putOrGet: unpickling...be patient
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 67 , 68
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0100_1_1 0100_1_2 15%_WbLS_Vit._C 0100_1000_2 EMPTY_S6_Position06 0052_0_1 PP_1000_1 PP_1000_2 EMPTY_S2_Position02 0100_400_2 0100_400_1 GLASS_100_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 GLASS_400_2 GLASS_400_1 0100_100_1 0052_100_2 0052_100_1 LS_Vit._C 0050_100_2 EMPTY_S7_Position07 GLASS_1000_1 0102_100_1 0102_100_2 GLASS_1000_2 0102_10_1 5%_WbLS_Vit._C WbLS-5_10/20/14 0102_10_2 0102_1_2 EMPTY_S5_Position05 0102_1_1 10%_WbLS_Vit._C PP_100_1 GLASS_100_2 PP_100_2 PP_400_2 WbLS-10_10/20/14 0102_400_1 0102_400_2 0052_400_2 0052_400_1 PP_0_2 PP_400_1 EMPTY_S3_Position03 0102_1000_2 LS_10/20/14 GLASS_0_1 0100_10_1 GLASS_0_2 0050_100_1 0052_0_2 PP_0_1 HDPE_0_1 EMPTY_S4_Position04 WbLS-15_10/20/14 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141022.pickle
+ls6500.Analyze
+sample 0100_1_1
+sample 0100_1_2
+sample 15%_WbLS_Vit._C
+sample 0100_1000_2
+sample EMPTY_S6_Position06
+sample 0052_0_1
+sample PP_1000_1
+sample PP_1000_2
+sample EMPTY_S2_Position02
+sample 0100_400_2
+sample 0100_400_1
+sample GLASS_100_1
+sample 0050_400_1
+sample EMPTY_S1_Position01
+sample 0050_400_2
+sample 0100_10_2
+sample 0102_1000_1
+sample 0100_100_2
+sample GLASS_400_2
+sample GLASS_400_1
+sample 0100_100_1
+sample 0052_100_2
+sample 0052_100_1
+sample LS_Vit._C
+sample 0050_100_2
+sample EMPTY_S7_Position07
+sample GLASS_1000_1
+sample 0102_100_1
+sample 0102_100_2
+sample GLASS_1000_2
+sample 0102_10_1
+sample 5%_WbLS_Vit._C
+sample WbLS-5_10/20/14
+sample 0102_10_2
+sample 0102_1_2
+sample EMPTY_S5_Position05
+sample 0102_1_1
+sample 10%_WbLS_Vit._C
+sample PP_100_1
+sample GLASS_100_2
+sample PP_100_2
+sample PP_400_2
+sample WbLS-10_10/20/14
+sample 0102_400_1
+sample 0102_400_2
+sample 0052_400_2
+sample 0052_400_1
+sample PP_0_2
+sample PP_400_1
+sample EMPTY_S3_Position03
+sample 0102_1000_2
+sample LS_10/20/14
+sample GLASS_0_1
+sample 0100_10_1
+sample GLASS_0_2
+sample 0050_100_1
+sample 0052_0_2
+sample PP_0_1
+sample HDPE_0_1
+sample EMPTY_S4_Position04
+sample WbLS-15_10/20/14
+sample 0100_0_1
+sample 0102_0_2
+sample 0102_0_1
+sample 0100_0_2
+sample 0050_0_2
+sample 0050_0_1
+sample 0100_1000_1
+ls6500.Analyze: Wrote hists to Histograms/mergegamma.root
