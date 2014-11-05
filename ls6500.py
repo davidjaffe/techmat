@@ -10,7 +10,9 @@ import os
 import pickle
 import ROOT
 import datetime
-from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph, gStyle
+import Logger
+import math
+from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph, gStyle, TGraphErrors
 from array import array
 
 class ls6500():
@@ -27,9 +29,9 @@ class ls6500():
             unique = '_{0}'.format(datetime.datetime.now().strftime("%Y%m%d%H%M_%f"))
             lfn = 'Log/' + mode + unique + '.log'
             print 'ls6500: direct stdout to',lfn
-            sys.stdout = open(lfn,'w',1)
-            print 'This file is',lfn
-            os.system("tail -f "+lfn + "&")
+            sys.stdout = Logger.Logger(fn=lfn)
+            print 'ls6500: Output directed to terminal and',lfn
+
 
 
         self.dataSubDir = None
@@ -45,11 +47,16 @@ class ls6500():
         ml = mode.lower()
         
         # used for merging
-        self.listOfDataDirs = [ ] #
+        self.listOfDataDirs = [ ]
+        self.mergeType = None
         Merge = 'merge' in ml
         if Merge:
-            if ml=='mergegamma': firstWord = 'Gamma'
-            if ml=='mergensrl':  firstWord = 'Pre-irrad_'
+            if ml=='mergegamma':
+                firstWord = 'Gamma'
+                self.mergeType = 'Gamma_1'
+            if ml=='mergensrl':
+                firstWord = 'Pre-irrad_'
+                self.mergeType = 'NSRL_1'
             for d in dD:
                 suffix = d.split('/')[-2]
                 if firstWord==suffix[:len(firstWord)]:
@@ -102,6 +109,9 @@ class ls6500():
         # introduce map from sample to list of measurements
         self.sampleMsmts = {} # map(key=sample, value=[list of filenames of measurements])
 
+        # filled in defineMatchingSamples
+        self.matchingSamples = {} # map(key=common sample name, value=[list of sample names])
+        
         # use in color()
         self.goodColors = [x for x in range(1,10)]
         self.goodColors.extend( [11, 12, 18] )
@@ -118,6 +128,67 @@ class ls6500():
             print "initialize ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
             self.ssr = spreadsheetReader.spreadsheetReader()
         return
+    def matchSamples(self,sample1,sample2):
+        '''
+        return True and common sample name, if sample1 and sample2 are a good match;
+        that is, if they are the same composition exposed to the same dose.
+        Gamma_1 : XXXA_DDD_n
+        NSRL_1  : XXXA_SPrc or XXXA_REFn or EMPTY_....
+        XXX = LS concentration in percent
+        A = antioxidant concentration
+        DDD = gamma dose in Gray
+        n = sample number
+        S = NSRL irradiation session
+        P = F or R for Front or Rear
+        rc = row,column in HDPE holder
+        REF = reference sample
+        Samples match if they share the same capitialized letters and underscores in same place
+        '''
+        s = None
+        if self.mergeType=='Gamma_1': s = 'XXXA_DDD'
+        if self.mergeType=='NSRL_1' : s = 'XXXA_SP'
+        if s is None: return False,''
+        
+        n = len(s)
+        u = s.find('_')
+        nMatch = sample1[:n]==sample2[:n]
+        uMatch = sample1[u]==sample2[u]
+
+        # define common sample name, taking into account special treatment
+        # for different exposures
+        commonSampleName = None
+        if nMatch and uMatch:
+            commonSampleName = sample1[:n]
+            if self.mergeType=='NSRL_1':
+                if sample1[5:8]=='REF' : commonSampleName = sample1[:8]
+                if sample1[:5]=='EMPTY': commonSampleName = 'EMPTY'
+        if 0: print 'ls6500.matchSamples: sample1,sample2',sample1,sample2,\
+           'nMatch,uMatch',nMatch,uMatch,'commonSampleName',commonSampleName
+        return (nMatch and uMatch),commonSampleName
+    def defineMatchingSamples(self):
+        '''
+        define map of common samples with key=common sample name and values=list of sample names
+        '''
+        debugDMS = True
+        listOfSamples = sorted( self.sampleMsmts.keys() )
+
+        for i1,sample1 in enumerate(listOfSamples):
+            i2 = i1+1
+            while i2<len(listOfSamples):
+                sample2 = listOfSamples[i2]
+                ok,name = self.matchSamples(sample1,sample2)
+                if ok:
+                    if name not in self.matchingSamples: self.matchingSamples[name] = []
+                    if sample1 not in self.matchingSamples[name]: self.matchingSamples[name].append(sample1)
+                    if sample2 not in self.matchingSamples[name]: self.matchingSamples[name].append(sample2)
+                i2 += 1
+        if debugDMS:
+            print 'ls6500.defineMatchingSamples','\nName : Samples'
+            namesOfSamples = sorted( self.matchingSamples.keys() )
+            for name in namesOfSamples:
+                l = self.matchingSamples[name]
+                print name,':',','.join(x for x in l)
+        return
     def fillSampleMsmts(self):
         '''
         fill sampleMsmts = map of samples to list of measurements
@@ -128,16 +199,17 @@ class ls6500():
             sample = samName = self.vialPosition[pn]
             if samName.upper()=='EMPTY' : sample = samName + '_' + pn.replace(' ','_')
             #print 'ls6500.fillSampleMsmts: pn',pn,'samName',samName,'sample',sample
-            lfm    = self.vialMsmts[pn]
-            if sample not in self.sampleMsmts:
-                self.sampleMsmts[sample] = []
-            self.sampleMsmts[sample].extend( lfm )
+            if pn in self.vialMsmts:
+                lfm    = self.vialMsmts[pn]
+                if sample not in self.sampleMsmts:
+                    self.sampleMsmts[sample] = []
+                self.sampleMsmts[sample].extend( lfm )
         l1 = len(self.sampleMsmts)
         print 'ls6500.fillSampleMsmts: initial,final sampleMsmts length',l0,',',l1
         if l1>0:
             print 'ls6500.fillSampleMsmts: Samples in fillSampleMsmts',
             for sample in self.sampleMsmts: print sample,
-
+            print ''
         return 
     def readTempVar(self,checkPrint=False):
         '''
@@ -316,7 +388,8 @@ class ls6500():
             print '{0:>20} {1:>15} {2}'.format('Position','Sample','Measurements')
             for pn in self.vialPositionOrder:
                 sn = self.vialPosition[pn]
-                dfn = self.vialMsmts[pn]
+                dfn = []
+                if pn in self.vialMsmts: dfn = self.vialMsmts[pn]
                 print '{0:>20} {1:>15} {2}'.format(pn,sn,dfn)
         return
     def getSRpT(self,sheet):
@@ -408,12 +481,14 @@ class ls6500():
                 MultiGraphs[p1+kind].SetName(p2+kind)
                 if debugMG: print 'MultiGraphs make map for kind',kind,'p1',p1,'p2',p2
 
+        self.dtHist = TH1D('dtHist','Time between common sample measurements in hours',1000,0.,1000.)
 
         # make histograms of raw data (counts vs channel #) for each measurement
         # and graphs of total counts vs time for each sample.
         # (datetime object 'date' must be converted to root-happy object)
+        print 'histogramming samples',
         for sample in self.sampleMsmts:
-            print 'sample',sample
+            print sample,
             T,C = [],[]
             for fn in self.sampleMsmts[sample]:
                 date,totalCounts,exposureTime,ADC = self.vialData[fn]
@@ -436,7 +511,7 @@ class ls6500():
             MultiGraphs[ kind ].Add(g)
             if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
             self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
-
+        print ''
                 
         # perform root's KS test to compare first msmt with others of same sample
         # optionally plot results vs time difference
@@ -509,12 +584,13 @@ class ls6500():
                 self.color(atg,ngraphs)
                 Graphs.append( atg )
                 
-
+        self.combineCommonSamples(Graphs)
 
         # output of hists, graphs.
         # processing of multigraphs
         outname = self.histFile
         outfile = TFile(outname,'RECREATE')
+        outfile.WriteTObject( self.dtHist )
         for h in Hists: outfile.WriteTObject( Hists[h] )
         for tg in Graphs: outfile.WriteTObject( tg )
         if debugMG: print 'MultiGraphs',MultiGraphs,'\n'
@@ -525,153 +601,103 @@ class ls6500():
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
         return
-    def OldAnalyze(self):
+    def combineCommonSamples(self,Graphs):
         '''
-        produce histograms for each measurement
-        Old method using position instead of sample name as index
+        make new graphs of averaged crossing point data from input list of
+        graphs.
+        The new graphs are appended to the end of the input list.
         '''
-        debugMG = False
-        plotKS  = False
-        
-        print 'ls6500.Analyze'
-        Hists = {}
-        Graphs= []
-        MultiGraphs = {}
-        kinds = self.kindsOfSamples()
-        part1, part2 = ['', 'n', 'c', 'a'], ['g', 'n', 'c', 'a']
-        if plotKS:
-            part1.append('k')
-            part2.append('k')
-        for kind in kinds:
-            for pair in zip(part1,part2):
-                p1,p2 = pair
-                if p1+kind in MultiGraphs: # should not happen
-                    words = 'ls.Analyze: ERROR '+str(p1+kind)+' already exists as key in MultiGraphs. kind='+str(kind)+' p1='+str(p1)+' p2='+str(p2)
-                    sys.exit(words)
-                MultiGraphs[p1+kind] = TMultiGraph()
-                MultiGraphs[p1+kind].SetTitle(p2+kind)  # may be changed below
-                MultiGraphs[p1+kind].SetName(p2+kind)
-                if debugMG: print 'MultiGraphs make map for kind',kind,'p1',p1,'p2',p2
+        debug = False
 
 
-        # make histograms of raw data (counts vs channel #) for each measurement
-        # and graphs of total counts vs time for each sample.
-        # (datetime object 'date' must be converted to root-happy object)
-        for pn in self.vialPositionOrder:
-            sample = self.vialPosition[pn]
-            print 'pn',pn,'sample',sample
-            T,C = [],[]
-            for fn in self.vialMsmts[pn]:
-                date,totalCounts,exposureTime,ADC = self.vialData[fn]
-                T.append ( TDatime( date.strftime('%Y-%m-%d %H:%M:%S') ).Convert() )
-                C.append( float(totalCounts) )
-                title = sample + ' ' + pn + ' ' + date.strftime('%Y%m%d %H:%M:%S')
-                name = self.nameHist(fn)
-                #print 'title',title,'name',name
-                nx = len(ADC)
-                xmi = -0.5
-                xma = xmi + float(nx)
-                Hists[name] = TH1D(name,title,nx,xmi,xma)
-                for x,y in ADC: Hists[name].Fill(x,y)
-            title = sample + ' ' + pn + ' total counts'
-            name = 'c' + sample
-            g = self.makeTGraph(T,C,title,name)
-            self.fixTimeDisplay( g )
-            Graphs.append(g)
-            kind = 'c' + self.getKind(title)
-            MultiGraphs[ kind ].Add(g)
-            if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
-            self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
+        for cSN in self.matchingSamples:
+            gList = []
+            for SN in self.matchingSamples[cSN]:
+                #print 'SN',SN
+                gSN = 'g'+SN
+                lgSN = len(gSN)
+                for tg in Graphs:
+                    #print 'tg.GetName()',tg.GetName()
+                    if tg.GetName()[:lgSN]==gSN:
+                        gList.append(tg)
+                        break
+            if len(gList)!=len(self.matchingSamples[cSN]):
+                print 'ls6500.combineCommonSamples: Could not find all graphs for',cSN,\
+                      '#graphs=',len(gList),'#samples',len(self.matchingSamples[cSN])
+            if len(gList)==0:
+                print 'ls6500.combineCommonSamples: No graphs found for',cSN,'samples are',', '.join([x for x in self.matchingSamples[cSN]])
+            else:
+                print 'ls6500.combineCommonSamples:',cSN,'graphs',', '.join([g.GetName() for g in gList])
+                # extract data points for all graphs, then sort them in time order
+                x,y = [],[]
+                for g in gList:
+                    u,v = self.getPoints(g)
+                    x.extend(u)
+                    y.extend(v)
 
-                
-        # perform root's KS test to compare first msmt with others of same sample
-        # optionally plot results vs time difference
-        for pn in self.vialPositionOrder:
-            sample = self.vialPosition[pn]
-            i = 0
-            fn1 = self.vialMsmts[pn][i]
-            name1 = self.nameHist(fn1)
-            date1 = self.getTimeOfMeasurement(fn1)
-            h1 = Hists[name1]
-            print sample,name1.split('_')[0],
-            T, KS = [], []
-            for j in range(i+1,len(self.vialMsmts[pn])):
-                fn2 = self.vialMsmts[pn][j]
-                date2 = self.getTimeOfMeasurement(fn2)
-                name2 = self.nameHist(fn2)
-                h2 = Hists[name2]
-                ks = h1.KolmogorovTest(h2)
-                T.append( (date2-date1).total_seconds()/60./60. )
-                KS.append( ks )
-                w = '{0:4f}'.format(ks)
-                print w,
-            print ''
-            if plotKS:
-                name = 'k' + sample
-                title = sample + ' ' + pn + 'KS test vs time difference in hours'
-                g = self.makeTGraph(T,KS,title,name)
-                Graphs.append(g)
-                kind = 'k' + self.getKind(title)
-                MultiGraphs[ kind ].Add(g)
-                if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
-                self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
-                                
-        # plot data from multiple hists or tgraphs
-        for pn in self.vialPositionOrder:
-            sample = self.vialPosition[pn]
-            hlist = []
-            for fn in self.vialMsmts[pn]:
-                hlist.append( Hists[self.nameHist(fn)] )
-            self.multiPlot(hlist) # overlay multiple hists
-
-            thres = self.setThres(sample,defaultThres = 200.)
-            tg,ntg,atg = self.xPoint(hlist,thres=thres) # crossing point from multiple hists vs time
-            htg = self.histGraph(tg)  # histogram of crossing points
-            Hists[htg.GetName()] = htg
-            
-            kind = self.getKind( tg.GetTitle() )
-            MultiGraphs[ kind ].Add(tg)
-            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-            if debugMG: print 'Add graph',tg.GetName(),'to MultiGraphs. kind=',kind
-            ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
-            self.color(tg,ngraphs)
-            Graphs.append( tg )
-
-            kind = 'n' + kind
-            MultiGraphs[ kind ].Add(ntg)
-            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-            if debugMG: print 'Add graph',ntg.GetName(),'to MultiGraphs. kind=',kind
-            self.color(ntg,ngraphs)
-            Graphs.append( ntg )
-
-            if atg is not None:
-                kind = 'a' + self.getKind( atg.GetTitle() )
-                MultiGraphs[kind].Add(atg)
-                if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                    MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-                if debugMG: print 'Add graph',atg.GetName(),'to MultiGraphs. kind=',kind
-                ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
-                self.color(atg,ngraphs)
-                Graphs.append( atg )
-                
-
-
-        # output of hists, graphs.
-        # processing of multigraphs
-        outname = self.histFile
-        outfile = TFile(outname,'RECREATE')
-        for h in Hists: outfile.WriteTObject( Hists[h] )
-        for tg in Graphs: outfile.WriteTObject( tg )
-        if debugMG: print 'MultiGraphs',MultiGraphs,'\n'
-        for kind in MultiGraphs:
-            if debugMG: print 'kind',kind,'MultiGraphs[kind]',MultiGraphs[kind]
-            self.multiGraph(MultiGraphs[kind])
-            outfile.WriteTObject( MultiGraphs[kind] )
-        outfile.Close()
-        print 'ls6500.Analyze: Wrote hists to',outname
+                Q = sorted(zip(x,y))
+                u = [a for a,b in Q]
+                v = [b for a,b in Q]
+                for i in range(len(u)-1): self.dtHist.Fill((u[i+1]-u[i])/60./60.)  # hours between measurements
+                hours = 18.
+                x,dx,y,dy = self.averagePoints(u,v,deltaT=hours*60.*60.)
+                if 0: print 'ls6500.combineCommonSamples: \nx=',', '.join([str(a) for a in x]),\
+                   'dx=',', '.join([str(a) for a in dx]),\
+                   '\ny=',', '.join([str(a) for a in y]),\
+                   'dy=',', '.join([str(a) for a in dy])
+                newg = self.makeTGraph(x,y,cSN + ' averaged over ' + str(hours)+ ' hours','A'+cSN,ex=dx,ey=dy)
+                newg.SetMarkerStyle(20)
+                self.fixTimeDisplay(newg)
+                Graphs.append(newg)
         return
+    def averagePoints(self,u,v,deltaT=24.*60.*60.):
+        '''
+        return average,RMS of ordinate and average,halfwidth of abscissa
+        given time-ordered abscissa in intervals of deltaT
+        '''
+        debug = False
+        x,dx,y,dy = [],[],[],[]
+        i1 = 0
+        t2 = u[0]+deltaT
+        ay,sy,ax = 0.,0.,0.
+        n = 0
+        for i in range(len(u)):
+            t = u[i]
+            if t>t2 or i==len(u)-1:
+                if n>0:
+                    ay = ay/float(n)
+                    ax = ax/float(n)
+                    if n>1: sy = math.sqrt(float(n)/float(n-1)*(sy/float(n) - ay*ay))
+                    else:   sy = 0.
+                    sx = (u[i2]-u[i1])/2.
+                    x.append(ax)
+                    dx.append(sx)
+                    y.append(ay)
+                    dy.append(sy)
+                    if debug: print 'ls6500.averagePoints:i,n,ax,ay',i,n,ax,ay
+                    ay,sy,ax = v[i],v[i]*v[i],u[i]
+                    i1 = i
+                    n = 1
+                t2 = max(t,t2+deltaT)
+            else:
+                ax += u[i]
+                ay += v[i]
+                sy += v[i]*v[i]
+                n  += 1
+                i2 = i
+        return x,dx,y,dy
+    def getPoints(self,g):
+        '''
+        return abscissa,ordinate values of input graph g
+        '''
+        x,y = [],[]
+        for i in range(g.GetN()):
+            a,b = ROOT.Double(0),ROOT.Double(0)
+            OK = g.GetPoint(i,a,b)
+            if OK!=-1:
+                x.append(a)
+                y.append(b)
+        return x,y
     def histGraph(self,g):
         '''
         return gaussian-fitted histogram from ordinate values from graph g
@@ -706,8 +732,13 @@ class ls6500():
         if m==0. : return (y1+y2)/2.
         b = y2 - m*x2
         return (yt-b)/m
-    def makeTGraph(self,u,v,title,name):
-        g = TGraph(len(u),array('d',u), array('d',v))
+    def makeTGraph(self,u,v,title,name,ex=None,ey=None):
+        if ex is None:
+            g = TGraph(len(u),array('d',u), array('d',v))
+        else:
+            dy = ey
+            if ey is None: dy = [0. for x in range(len(ex))]
+            g = TGraphErrors(len(u),array('d',u),array('d',v),array('d',ex),array('d',dy))
         g.SetTitle(title)
         g.SetName(name)
         return g
@@ -902,11 +933,12 @@ class ls6500():
                         # this position already exits. check if same sample is in same position
                         if self.vialPosition[pn]==vP[pn]:
                             # same sample. add list of filenames of measurements
-                            vM[pn].extend(self.vialMsmts[pn])
+                            if pn in self.vialMsmts: vM[pn].extend(self.vialMsmts[pn])
                     else:
-                        # new position
-                        vP[pn] = self.vialPosition[pn]
-                        vM[pn] = self.vialMsmts[pn]
+                        # new position. add to maps if measurements were actually made
+                        if pn in self.vialMsmts: 
+                            vP[pn] = self.vialPosition[pn]
+                            vM[pn] = self.vialMsmts[pn]
         # done transferring data to local dicts, now clear global dicts
         # and fill them
         self.vialPosition = vP
@@ -979,11 +1011,12 @@ class ls6500():
                 for pn,numNoVial in zip(self.vialPositionOrder,self.noVial):
                     if checkPrint: print 'Tray_Position',pn,'Number of `no vial` to this position',numNoVial
 
-                    for fn in self.vialMsmts[pn]:
-                        fpath = self.dataParentDir + fn
+                    if pn in self.vialMsmts:  # protect against case where vial was never measured
+                        for fn in self.vialMsmts[pn]:
+                            fpath = self.dataParentDir + fn
 
-                        if checkPrint: print 'get measurement from',fpath
-                        self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
+                            if checkPrint: print 'get measurement from',fpath
+                            self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
             else:
                 # not normal processing. for temperature variation
                 for pn in self.vialPosition:
@@ -996,6 +1029,8 @@ class ls6500():
             self.putOrGet(mode=pickMode)
         elif pickMode.lower()=='merge':
             self.merge()
+        
+        self.defineMatchingSamples()
         self.Analyze()
         return
             
