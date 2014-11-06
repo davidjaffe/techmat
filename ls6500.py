@@ -132,11 +132,11 @@ class ls6500():
         '''
         return True and common sample name, if sample1 and sample2 are a good match;
         that is, if they are the same composition exposed to the same dose.
-        Gamma_1 : XXXA_DDD_n
+        Gamma_1 : XXXA_DDDD_n or GLASS_DDDD_n or PP_DDDD_n or HDPE_DDDD_n
         NSRL_1  : XXXA_SPrc or XXXA_REFn or EMPTY_....
         XXX = LS concentration in percent
         A = antioxidant concentration
-        DDD = gamma dose in Gray
+        DDDD = gamma dose in Gray (variable length string)
         n = sample number
         S = NSRL irradiation session
         P = F or R for Front or Rear
@@ -145,7 +145,10 @@ class ls6500():
         Samples match if they share the same capitialized letters and underscores in same place
         '''
         s = None
-        if self.mergeType=='Gamma_1': s = 'XXXA_DDD'
+        if self.mergeType=='Gamma_1':
+            u1 = sample1.find('_')
+            s = 'XXXA_'
+            if u1>-1 : s = sample1[:u1+1]
         if self.mergeType=='NSRL_1' : s = 'XXXA_SP'
         if s is None: return False,''
         
@@ -155,16 +158,29 @@ class ls6500():
         uMatch = sample1[u]==sample2[u]
 
         # define common sample name, taking into account special treatment
-        # for different exposures
+        # for different exposures.
+        # Deal with variable length string in gamma exposure sample names
         commonSampleName = None
+        dMatch = False
+        d1 = d2 = None
         if nMatch and uMatch:
-            commonSampleName = sample1[:n]
             if self.mergeType=='NSRL_1':
+                commonSampleName = sample1[:n]
+                dMatch = True
                 if sample1[5:8]=='REF' : commonSampleName = sample1[:8]
                 if sample1[:5]=='EMPTY': commonSampleName = 'EMPTY'
+            if self.mergeType=='Gamma_1':
+                if sample1[:5]==sample2[:5]=='EMPTY':
+                    commonSampleName = 'EMPTY'
+                    dMatch = True
+                else:
+                    d1 = sample1.split('_')[1]
+                    d2 = sample2.split('_')[1]
+                    dMatch = d1==d2
+                    commonSampleName = sample1[:n] + d1
         if 0: print 'ls6500.matchSamples: sample1,sample2',sample1,sample2,\
-           'nMatch,uMatch',nMatch,uMatch,'commonSampleName',commonSampleName
-        return (nMatch and uMatch),commonSampleName
+           'nMatch,uMatch',nMatch,uMatch,dMatch,'d1,d2',d1,d2,'commonSampleName',commonSampleName,'mergeType',self.mergeType
+        return (nMatch and uMatch and dMatch),commonSampleName
     def defineMatchingSamples(self):
         '''
         define map of common samples with key=common sample name and values=list of sample names
@@ -208,7 +224,7 @@ class ls6500():
         print 'ls6500.fillSampleMsmts: initial,final sampleMsmts length',l0,',',l1
         if l1>0:
             print 'ls6500.fillSampleMsmts: Samples in fillSampleMsmts',
-            for sample in self.sampleMsmts: print sample,
+            for sample in sorted( self.sampleMsmts.keys() ): print sample,
             print ''
         return 
     def readTempVar(self,checkPrint=False):
@@ -466,7 +482,8 @@ class ls6500():
         Graphs= []
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
-        part1, part2 = ['', 'n', 'c', 'a'], ['g', 'n', 'c', 'a']
+        if 1 or debugMG: print 'ls.Analyze: kinds',kinds
+        part1, part2 = ['', 'n', 'c', 'a','Q'], ['g', 'n', 'c', 'a','Q']
         if plotKS:
             part1.append('k')
             part2.append('k')
@@ -482,6 +499,7 @@ class ls6500():
                 if debugMG: print 'MultiGraphs make map for kind',kind,'p1',p1,'p2',p2
 
         self.dtHist = TH1D('dtHist','Time between common sample measurements in hours',1000,0.,1000.)
+        self.dtNear = TH1D('dtNear','Nearest time between common sample measurements in hours',100,0.,100.)
 
         # make histograms of raw data (counts vs channel #) for each measurement
         # and graphs of total counts vs time for each sample.
@@ -584,13 +602,14 @@ class ls6500():
                 self.color(atg,ngraphs)
                 Graphs.append( atg )
                 
-        self.combineCommonSamples(Graphs)
+        self.combineCommonSamples(Graphs, MultiGraphs)
 
         # output of hists, graphs.
         # processing of multigraphs
         outname = self.histFile
         outfile = TFile(outname,'RECREATE')
         outfile.WriteTObject( self.dtHist )
+        outfile.WriteTObject( self.dtNear )
         for h in Hists: outfile.WriteTObject( Hists[h] )
         for tg in Graphs: outfile.WriteTObject( tg )
         if debugMG: print 'MultiGraphs',MultiGraphs,'\n'
@@ -601,17 +620,20 @@ class ls6500():
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
         return
-    def combineCommonSamples(self,Graphs):
+    def combineCommonSamples(self,Graphs, MultiGraphs):
         '''
         make new graphs of averaged crossing point data from input list of
         graphs.
         The new graphs are appended to the end of the input list.
+        New graphs are also added to multigraphs
         '''
         debug = False
+        oneHour = 60.*60. 
 
 
         for cSN in self.matchingSamples:
             gList = []
+            kind = 'Q' + self.parseSam(cSN)
             for SN in self.matchingSamples[cSN]:
                 #print 'SN',SN
                 gSN = 'g'+SN
@@ -638,18 +660,33 @@ class ls6500():
                 Q = sorted(zip(x,y))
                 u = [a for a,b in Q]
                 v = [b for a,b in Q]
-                for i in range(len(u)-1): self.dtHist.Fill((u[i+1]-u[i])/60./60.)  # hours between measurements
-                hours = 18.
-                x,dx,y,dy = self.averagePoints(u,v,deltaT=hours*60.*60.)
-                if 0: print 'ls6500.combineCommonSamples: \nx=',', '.join([str(a) for a in x]),\
-                   'dx=',', '.join([str(a) for a in dx]),\
-                   '\ny=',', '.join([str(a) for a in y]),\
-                   'dy=',', '.join([str(a) for a in dy])
+                for i in range(len(u)-1):
+                    dt = u[i+1]-u[i]
+                    self.dtHist.Fill(dt/oneHour)  # hours between measurements
+                    if i>0: dt = min(dt,u[i]-u[i-1])
+                    self.dtNear.Fill(dt/oneHour)  # smallest time (hours) between neighboring measurements
+                hours = 12.
+                x,dx,y,dy = self.averagePoints(u,v,deltaT=hours*oneHour)
+                if 0: print 'ls6500.combineCommonSamples: \nu-x[0](hours)=',self.pList(u,x[0],c=oneHour),'v=',self.pList(v,0.),\
+                   '\nx-x[0](hours)=',self.pList(x,x[0],c=oneHour),'dx=',self.pList(dx,0.,c=oneHour),\
+                   '\ny=',self.pList(y,0.),'dy=',self.pList(dy,0.)
                 newg = self.makeTGraph(x,y,cSN + ' averaged over ' + str(hours)+ ' hours','A'+cSN,ex=dx,ey=dy)
                 newg.SetMarkerStyle(20)
                 self.fixTimeDisplay(newg)
                 Graphs.append(newg)
+                
+                if kind in MultiGraphs:
+                    MultiGraphs[kind].Add(newg)
+                    if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
+                        MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' averaged over '+str(hours)+' hours' )
+                    if 1: print 'Add graph',newg.GetName(),'to MultiGraphs. kind=',kind
+                    ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
+                    self.color(newg,ngraphs)
+                 
         return
+    def pList(self,u,u0,c=1.):
+        ''' compact format for printing list of floats '''
+        return ', '.join(map('{0:.2f}'.format,[(a-u0)/c for a in u]))
     def averagePoints(self,u,v,deltaT=24.*60.*60.):
         '''
         return average,RMS of ordinate and average,halfwidth of abscissa
@@ -674,11 +711,11 @@ class ls6500():
                     dx.append(sx)
                     y.append(ay)
                     dy.append(sy)
-                    if debug: print 'ls6500.averagePoints:i,n,ax,ay',i,n,ax,ay
+                    if debug : print 'ls6500.averagePoints:i,n,ax,ay',i,n,ax,ay,'sx,i1,i2',sx,i1,i2
                     ay,sy,ax = v[i],v[i]*v[i],u[i]
-                    i1 = i
+                    i1 = i2 = i
                     n = 1
-                t2 = max(t,t2+deltaT)
+                t2 = t+deltaT
             else:
                 ax += u[i]
                 ay += v[i]
@@ -959,7 +996,7 @@ class ls6500():
             f.close()
         elif mode.lower()=='get':
             f = open(fn,'r')
-            print 'ls6500.putOrGet: unpickling...be patient'
+            print 'ls6500.putOrGet: unpickling...be patient. file',fn
             obj = pickle.load(f)
             self.vialPosition, self.vialOrder, self.vialPositionOrder, self.vialMsmts, self.vialData = obj
             self.fillSampleMsmts()
@@ -969,14 +1006,29 @@ class ls6500():
             w = 'ls6500.putOrGet: ERROR Invalid mode ' + str(mode)
             sys.exit(mode)
         return
+    def parseSam(self,sample):
+        '''
+        parse sample name to extract type of sample.
+        deal with non-numerical sample names eg. `GLASS`
+        '''
+        s = sample[:4]
+        try:
+            j = int(s)
+        except ValueError:
+            i = sample.find('_')
+            if i<0: i = 4
+            s = sample[:i]
+        return s
     def kindsOfSamples(self):
         '''
         fill list with kinds of samples
         '''
         kinds = []
-        for sample in self.vialOrder:
-            kind = sample[0:4]
-            if kind not in kinds: kinds.append(kind)
+        for sample in self.sampleMsmts: #self.vialOrder:
+            kind = self.parseSam(sample)
+            #print 'ls6500.kindsOfSamples: sample',sample,'kind',kind
+            if kind not in kinds:
+                kinds.append(kind)
         if len(kinds)==0: # handles TempVariation
             for pn in self.vialPosition:
                 sample = self.vialPosition[pn]
@@ -987,7 +1039,7 @@ class ls6500():
         '''
         get kind of sample from title
         '''
-        kind = title.split()[0][0:4]
+        kind = self.parseSam(title.split()[0])
         return kind
     def Main(self,checkPrint=False,pickMode='put'):
         '''
