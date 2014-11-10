@@ -25,6 +25,7 @@ class ls6500():
         ROOT.gErrorIgnoreLevel = ROOT.kWarning
         gStyle.SetOptStat(1001111) # title,entries,mean,rms,integral
 
+        # logging to terminal and to file
         if redirect:
             unique = '_{0}'.format(datetime.datetime.now().strftime("%Y%m%d%H%M_%f"))
             lfn = 'Log/' + mode + unique + '.log'
@@ -32,6 +33,8 @@ class ls6500():
             sys.stdout = Logger.Logger(fn=lfn)
             print 'ls6500: Output directed to terminal and',lfn
 
+        # default is no irradiation. Set to arbitrary date in future'
+        self.irradDate = '2020/04/01 01:23:45'
 
 
         self.dataSubDir = None
@@ -54,9 +57,11 @@ class ls6500():
             if ml=='mergegamma':
                 firstWord = 'Gamma'
                 self.mergeType = 'Gamma_1'
+                self.irradDate = '2014/10/20 16:00:00'
             if ml=='mergensrl':
                 firstWord = 'Pre-irrad_'
                 self.mergeType = 'NSRL_1'
+                self.irradDate = '2014/11/17 18:00:00'
             for d in dD:
                 suffix = d.split('/')[-2]
                 if firstWord==suffix[:len(firstWord)]:
@@ -83,6 +88,13 @@ class ls6500():
             # new system: subdirectory name is sheet name
             self.headerFirstRowName = None
             self.headerSheetName = suffix
+
+
+        # convert irradiation date to datetime and TDatime objects
+        self.irradDate_datetime = datetime.datetime.strptime(self.irradDate,'%Y/%m/%d %H:%M:%S')
+        self.irradDate_TDatime  = TDatime( self.irradDate_datetime.strftime('%Y-%m-%d %H:%M:%S') ).Convert()
+        print 'ls6500: Irradiation date is',self.irradDate
+
 
         # directories for input or output. make new output directory if needed
         self.outDir = 'Histograms/'
@@ -122,10 +134,10 @@ class ls6500():
         self.maxSizeForSummaryFile = 190000
 
         if Merge:
-            print 'initialize ls6500',mode,'. Merging',
+            print 'ls6500: initialization',mode,'. Merging',
             print ', '.join([d for d in self.listOfDataDirs])
         else:
-            print "initialize ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
+            print "ls6500: initialization ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
             self.ssr = spreadsheetReader.spreadsheetReader()
         return
     def matchSamples(self,sample1,sample2):
@@ -483,7 +495,7 @@ class ls6500():
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
         if 1 or debugMG: print 'ls.Analyze: kinds',kinds
-        part1, part2 = ['', 'n', 'c', 'a','Q'], ['g', 'n', 'c', 'a','Q']
+        part1, part2 = ['', 'n', 'c', 'a','Q','D'], ['g', 'n', 'c', 'a','Q','D']
         if plotKS:
             part1.append('k')
             part2.append('k')
@@ -603,6 +615,9 @@ class ls6500():
                 Graphs.append( atg )
                 
         self.combineCommonSamples(Graphs, MultiGraphs)
+        self.plotSampleVsDose(Graphs)
+        #self.doseGraphs(Graphs, MultiGraphs)
+
 
         # output of hists, graphs.
         # processing of multigraphs
@@ -615,11 +630,113 @@ class ls6500():
         if debugMG: print 'MultiGraphs',MultiGraphs,'\n'
         for kind in MultiGraphs:
             if debugMG: print 'kind',kind,'MultiGraphs[kind]',MultiGraphs[kind]
-            self.multiGraph(MultiGraphs[kind])
-            outfile.WriteTObject( MultiGraphs[kind] )
+            if MultiGraphs[kind].GetListOfGraphs():  # not empty
+                self.multiGraph(MultiGraphs[kind])
+                outfile.WriteTObject( MultiGraphs[kind] )
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
         return
+    def getGraph(self,name,gList):
+        '''
+        return graph from gList given name
+        '''
+        for g in gList:
+            if name==g.GetName(): return g
+        return None
+    def doseGraphs(self,Graphs,MultiGraphs):
+        '''
+        Compare normed dose of liquid samples with normed dose of PP vials
+        `D` =  prefix of multigraphs 
+        `e` = prefix for dose graphs
+        Only valid for Gamma_1 merged analysis
+        '''
+        if self.mergeType != 'Gamma_1' : return
+
+        sList = ['0050', '0052', '0100', '0102','GLASS']
+        A = ['PP']
+        A.extend(sList)
+        for i,sample in enumerate(A):
+            gname  = 'e' + sample
+            g = self.getGraph(gname,Graphs)
+            self.color(g,i)
+            c = g.GetLineColor()
+            g.SetMarkerColor(c)
+        # compare all dose graphs to PP
+        gpp = self.getGraph('ePP',Graphs)
+        for sample in sList:
+            mgname = 'D' + sample
+            mg = MultiGraphs[mgname]
+            mg.Add(gpp)
+            mg.Add(self.getGraph('e'+sample,Graphs))
+        return
+    def plotSampleVsDose(self,Graphs):
+        '''
+        plot sample light yield vs dose taking into account the irradiation date.
+        Treat measurements of samples prior to irradiation date as having received no dose
+        '''
+        for cSN in self.matchingSamples:
+            sam = self.parseSam(cSN)
+            kind = 'D' + sam
+            gSN = 'A' + sam
+            lgk = len(gSN)
+            x,y,dx,dy = [],[],[],[]
+            z,dz = [],[] # zero dose data
+            for g in Graphs:
+                if gSN==g.GetName()[:lgk] and ('_' in g.GetName()):
+                    d = g.GetName().split('_')[1]
+                    try:
+                        dose = float(d)
+                        u,v,du,dv = self.getPoints(g,getErrors=True)
+                        for i,t in enumerate(u):
+                            d = dose
+                            if t<self.irradDate_TDatime or dose<0.1:
+                                d = 0.
+                                z.append(v[i])
+                                dz.append(dv[i])
+                            x.append(d)
+                            dx.append(0.) # no uncertainty on dose
+                            y.append(v[i])
+                            dy.append(dv[i])
+                    except ValueError:
+                        print 'ls6500.plotSampleVsDose: WARNING No dose for graph',g.GetName()
+            if len(x)>0:
+                wtd_avg = self.getWeightedAvg(z,dz)
+                reorder = [a for b,a in sorted(zip(x,range(len(x))))] # sort by dose
+                u,v,du,dv = [],[],[],[]
+                vN,dvN = [],[]
+                R = float(len(reorder))
+                for j in reorder:
+                    d = max(1.,x[j])
+                    abit = (float(j)/R-0.5)*.05*d # displace points slightly
+                    u.append(x[j]+abit)
+                    du.append(dx[j])
+                    v.append(y[j])
+                    dv.append(dy[j])
+                    if wtd_avg>0:
+                        vN.append(y[j]/wtd_avg)
+                        dvN.append(dy[j]/wtd_avg)
+                name = 'd'+sam
+                newg = self.makeTGraph(u,v,sam+' vs dose',name,ex=du,ey=dv)
+                newg.SetMarkerStyle(20)
+                Graphs.append(newg)
+                name = 'e'+sam
+                if len(vN)>0:
+                    #print 'name',name,'#points',len(u)
+                    newg = self.makeTGraph(u,vN,sam+' vs dose (normed to 0 dose)',name,ex=du,ey=dvN)
+                    newg.SetMarkerStyle(20)
+                    Graphs.append(newg)
+            
+                
+        return
+    def getWeightedAvg(self,x,dx):
+        wsum,wxsum = 0., 0.
+        for a,da in zip(x,dx):
+            w = 1.
+            if da>0.: w = 1./da/da
+            wsum += w
+            wxsum += w*a
+        if wsum>0.: wxsum = wxsum/wsum
+        return wxsum
     def combineCommonSamples(self,Graphs, MultiGraphs):
         '''
         make new graphs of averaged crossing point data from input list of
@@ -670,7 +787,7 @@ class ls6500():
                 if 0: print 'ls6500.combineCommonSamples: \nu-x[0](hours)=',self.pList(u,x[0],c=oneHour),'v=',self.pList(v,0.),\
                    '\nx-x[0](hours)=',self.pList(x,x[0],c=oneHour),'dx=',self.pList(dx,0.,c=oneHour),\
                    '\ny=',self.pList(y,0.),'dy=',self.pList(dy,0.)
-                newg = self.makeTGraph(x,y,cSN + ' averaged over ' + str(hours)+ ' hours','A'+cSN,ex=dx,ey=dy)
+                newg = self.makeTGraph(x,y,cSN + ' ' + str(hours)+ ' hour avg','A'+cSN,ex=dx,ey=dy)
                 newg.SetMarkerStyle(20)
                 self.fixTimeDisplay(newg)
                 Graphs.append(newg)
@@ -723,17 +840,23 @@ class ls6500():
                 n  += 1
                 i2 = i
         return x,dx,y,dy
-    def getPoints(self,g):
+    def getPoints(self,g,getErrors=False):
         '''
         return abscissa,ordinate values of input graph g
+        also return errors if getErrors is True
         '''
         x,y = [],[]
+        if getErrors: dx,dy = [],[]
         for i in range(g.GetN()):
             a,b = ROOT.Double(0),ROOT.Double(0)
             OK = g.GetPoint(i,a,b)
             if OK!=-1:
                 x.append(a)
                 y.append(b)
+                if getErrors:
+                    dx.append(g.GetErrorX(i))
+                    dy.append(g.GetErrorY(i))
+        if getErrors: return x,y,dx,dy
         return x,y
     def histGraph(self,g):
         '''
@@ -846,10 +969,13 @@ class ls6500():
         '''
         set time axis to display nicely
         '''
-        g.GetXaxis().SetTimeDisplay(1)
-        g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%y/%m/%d}")
-        g.GetXaxis().SetNdivisions(-409)
-        g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
+        if g:
+            g.GetXaxis().SetTimeDisplay(1)
+            g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%y/%m/%d}")
+            g.GetXaxis().SetNdivisions(-409)
+            g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
+        else:
+            print 'ls6500.fixTimeDisplay: WARNING Null pointer passed to fixTimeDisplay?????'
         return
     def setSamName(self,h0):
         '''
@@ -859,7 +985,7 @@ class ls6500():
         sample = w[0]
         if 'EMPTY' in sample: sample += '_' + w[1]
         return sample
-    def multiGraph(self,TMG,truncT=20):
+    def multiGraph(self,TMG,truncT=30):
         '''
         draw TMultiGraph with legend and output as pdf
         Default is that abscissa is calendar time.
@@ -882,11 +1008,14 @@ class ls6500():
             t = g.GetTitle()
             if truncT>0: t = t[:min(len(t),truncT)]
             lg.AddEntry(g, t, "l" )
-        TMG.Draw("apl")
-        if name[0]!='k': self.fixTimeDisplay( TMG )
-        lx = TMG.GetXaxis().GetLabelSize()
-        TMG.GetXaxis().SetLabelSize(0.75*lx)
-        TMG.GetXaxis().SetNdivisions(-409)
+            if not (name[0]=='k' or name[0]=='D'):
+                self.fixTimeDisplay(g)
+                lx = g.GetXaxis().GetLabelSize()
+                g.GetXaxis().SetLabelSize(0.75*lx)
+                g.GetXaxis().SetNdivisions(-409)
+        dOption = "apl"
+        if name[0]=='D': dOption = "ap"
+        TMG.Draw(dOption)
         lg.Draw()
         canvas.Draw()
         canvas.SetGrid(1)
