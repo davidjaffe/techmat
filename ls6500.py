@@ -115,6 +115,7 @@ class ls6500():
 
         # initialized in matchVialMeas
         self.vialMsmts = {} # map(key=position, value=[list of filenames of measurements])
+        self.badFileAdjustment = {} # map(key=filename,value=adjustment=non-negative integer)
         # initialized in Main
         self.vialData  = {} # map(filename, value = [data])
 
@@ -374,34 +375,44 @@ class ls6500():
         Check filesize as a quick proxy.
         Verify by opening and reading files below max size for summary file
         '''
+        explanation = ''
         sz = os.path.getsize(fn)
-        if sz>self.maxSizeForSummaryFile: return False
+        if sz>self.maxSizeForSummaryFile: return False, explanation
 
+        explanation = 'zero-length'
+        if sz==0: return True, explanation
+
+        explanation = 'summary'
         self.ssr.open(fn)
         s = self.ssr.getSheet(0)
         words = self.ssr.getRowColContents(s,row=0,col=0)
         #print 'fn',fn,'words',words
-        if u'Instrument Type'==words: return True
-        return False
+        if u'Instrument Type'==words: return True, explanation
+        explanation = 'unknown'
+        return False, explanation
         
     def matchVialMeas(self,checkPrint=False):
         '''
         fill map(key=position,value= list of files with measurements of position)
         reject non-.xls files
         reject .xls files that are summary files
-        
+        reject and tally `bad` .xls files (bad = zero-length)
         '''
         dataFileNames = os.listdir(self.dataDir)
         goodFiles = [] # temporary list
+        badFiles  = []
         for fn in dataFileNames:
             #print 'fn',fn
             if '.xls' in fn:
-                if self.isSummaryFile(self.dataParentDir + self.dataSubDir + fn) :
-                    print 'ls6500.matchVialMeas: remove summary file',fn,'from list'
+                isSF, explanation = self.isSummaryFile(self.dataParentDir + self.dataSubDir + fn)
+                if isSF :
+                    print 'ls6500.matchVialMeas: remove',explanation,'file',fn,'from list'
+                    if explanation.lower()=='zero-length': badFiles.append(self.dataSubDir + fn)
                 else:
                     goodFiles.append(self.dataSubDir + fn)
         dataFileNames = goodFiles 
         dataFileNames.sort()
+        # assign file(s) to vial position
         j = 0
         for fn in dataFileNames:
             j = j%len(self.vialPositionOrder)
@@ -411,7 +422,25 @@ class ls6500():
             else:
                 self.vialMsmts[pn] = [fn]
             j += 1
+        # compute adjustment for bad files
+        badFiles.sort()
+        badFilesMeasNo = []
+        for bfn in badFiles: badFilesMeasNo.append( self.getMeasNo(bfn) )
+        for fn in dataFileNames:
+            measNo = self.getMeasNo(fn)
+            nbad = 0
+            for bmn in badFilesMeasNo:
+                if bmn<measNo: nbad += 1
+            self.badFileAdjustment[fn] = nbad
         # check what we did
+        print 'ls6500.matchVialMeas: number of bad files found',len(badFiles)
+        for nBad in range(len(badFiles)):
+            nAdj = nBad + 1
+            if nAdj>0:
+                fnList = []
+                for fn in self.badFileAdjustment:
+                    if self.badFileAdjustment[fn]==nAdj: fnList.append(fn)
+                print 'ls6500.matchVialMeas: adjustment=',nAdj,'for files',', '.join(map('{0}'.format,[a for a in fnList]))
         if checkPrint:
             print '{0:>20} {1:>15} {2}'.format('Position','Sample','Measurements')
             for pn in self.vialPositionOrder:
@@ -420,6 +449,8 @@ class ls6500():
                 if pn in self.vialMsmts: dfn = self.vialMsmts[pn]
                 print '{0:>20} {1:>15} {2}'.format(pn,sn,dfn)
         return
+    def getMeasNo(self,fn):
+        return int(fn.split('MeasurementNo')[1].replace('.xls',''))
     def getSRpT(self,sheet):
         '''
         extract the sample number, rack position, and programmed exposure time
@@ -434,33 +465,35 @@ class ls6500():
         exposuretime = float(self.ssr.getRowColContents(s,row=rownum,col=6))
         return samnum, rackpos,exposuretime
         
-    def getMeasurement(self,fn,positionNumber=None,numNoVial=0,performChecks=True):
+    def getMeasurement(self,fn,positionNumber=None,numNoVial=0,performChecks=True,badFileAdj=0):
         '''
         return header info and list of bin,contents from sheet 0 in file name fn
         perform checks on sheet contents, file name and positionNumber
         '''
         isheet = 0
+        debug = False
         
         self.ssr.open(fn)
         name,date,totalCounts,ADC = self.ssr.unpackSheet(isheet)
-        #print 'ls6500.getMeasurement: name',name,'date',date,'totalCounts',totalCounts
+        if debug: print 'ls6500.getMeasurement: name',name,'date',date,'totalCounts',totalCounts
         if name is None:
             w = 'ls6500.getMeasurement: ERROR Failure with file ' + fn
             sys.exit(w)
             
         s = self.ssr.getSheet(isheet)
         samnum, rackpos, exposuretime = self.getSRpT(s)
-
+        if debug: print 'ls6500.getMeasurement: samnum',samnum,'rackpos',rackpos,'exposuretime',exposuretime
         if performChecks:
             # check measurement number in file name against sample number
             # an adjustment is made for the existence of a summary file for each lap
+            # an adjustment may be made for bad files
             measNo = int(fn.split('MeasurementNo')[1].replace('.xls',''))
             L = len(self.vialOrder)
-            if samnum!=(measNo%(L+1))+numNoVial :
-                w = 'ls6500.getMeasurement: ERROR Msmt# ' + str(measNo) \
+            if samnum!=((measNo-badFileAdj)%(L+1))+numNoVial :
+                w = 'ls6500.getMeasurement: ERROR Msmt# ' + str(measNo-badFileAdj) \
                     + '%(' + str(L+1) + ')' \
                     + ' in filename not equal to samplenumber in file ' + str(samnum) \
-                    + ' for numNoVial ' + str(numNoVial)
+                    + ' for numNoVial ' + str(numNoVial) + ' for badFileAdj ' + str(badFileAdj)
                 sys.exit(w)
 
             # check position number against rack-position number
@@ -1195,9 +1228,9 @@ class ls6500():
                     if pn in self.vialMsmts:  # protect against case where vial was never measured
                         for fn in self.vialMsmts[pn]:
                             fpath = self.dataParentDir + fn
-
-                            if checkPrint: print 'get measurement from',fpath
-                            self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial)
+                            badFileAdj = self.badFileAdjustment[fn]
+                            if checkPrint: print 'ls6500.Main: get measurement from',fpath
+                            self.vialData[fn] = date,totalCounts,exposureTime,ADC = self.getMeasurement(fpath,positionNumber=pn,numNoVial=numNoVial,badFileAdj=badFileAdj)
             else:
                 # not normal processing. for temperature variation
                 for pn in self.vialPosition:
