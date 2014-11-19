@@ -1,0 +1,849 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_9_141110_201411141305_287257.log
+ls6500: Irradiation date is 2020/04/01 01:23:45
+ls6500: initialization ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/ 
+dataSubDir Pre-irrad_9_141110/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: S1_Position03 has no vial
+ls6500.processHeader: S1_Position05 has no vial
+ls6500.processHeader: S1_Position07 has no vial
+ls6500.processHeader: S1_Position09 has no vial
+ls6500.processHeader: S1_Position11 has no vial
+ls6500.processHeader: S2_Position01 has no vial
+ls6500.processHeader: S2_Position04 has no vial
+ls6500.processHeader: S2_Position06 has no vial
+ls6500.processHeader: S2_Position08 has no vial
+ls6500.processHeader: S2_Position10 has no vial
+ls6500.processHeader: S2_Position12 has no vial
+ls6500.processHeader: S3_Position02 has no vial
+ls6500.processHeader: S3_Position05 has no vial
+ls6500.processHeader: S3_Position07 has no vial
+ls6500.processHeader: S3_Position09 has no vial
+ls6500.processHeader: S3_Position11 has no vial
+ls6500.processHeader: S4_Position01 has no vial
+ls6500.processHeader: S4_Position03 has no vial
+ls6500.processHeader: S4_Position06 has no vial
+ls6500.processHeader: S4_Position08 has no vial
+ls6500.processHeader: S4_Position10 has no vial
+ls6500.processHeader: S4_Position12 has no vial
+ls6500.processHeader: S5_Position02 has no vial
+ls6500.processHeader: S5_Position04 has no vial
+ls6500.processHeader: S5_Position07 has no vial
+ls6500.processHeader: S5_Position09 has no vial
+ls6500.processHeader: S5_Position11 has no vial
+ls6500.processHeader: S6_Position01 has no vial
+ls6500.processHeader: S6_Position03 has no vial
+ls6500.processHeader: S6_Position05 has no vial
+ls6500.processHeader: S6_Position08 has no vial
+ls6500.processHeader: S6_Position10 has no vial
+ls6500.processHeader: S7_Position02 has no vial
+ls6500.processHeader: S7_Position04 has no vial
+ls6500.processHeader: S7_Position06 has no vial
+ls6500.processHeader: S7_Position09 has no vial
+ls6500.processHeader: S7_Position11 has no vial
+ls6500.processHeader: S8_Position01 has no vial
+ls6500.processHeader: S8_Position03 has no vial
+ls6500.processHeader: S8_Position05 has no vial
+ls6500.processHeader: S8_Position07 has no vial
+ls6500.processHeader: S8_Position10 has no vial
+ls6500.processHeader: S8_Position11 has no vial
+ls6500.processHeader: S8_Position12 has no vial
+ls6500.processHeader: S9_Position01 has no vial
+ls6500.processHeader: S9_Position02 has no vial
+ls6500.processHeader: S9_Position04 has no vial
+ls6500.processHeader: S9_Position06 has no vial
+ls6500.processHeader: S9_Position07 has no vial
+ls6500.processHeader: S9_Position08 has no vial
+ls6500.processHeader: S9_Position10 has no vial
+ls6500.processHeader: S9_Position11 has no vial
+ls6500.processHeader: S10_Position01 has no vial
+ls6500.processHeader: S10_Position03 has no vial
+ls6500.processHeader: S10_Position05 has no vial
+ls6500.processHeader: S10_Position07 has no vial
+ls6500.processHeader: S10_Position09 has no vial
+ls6500.processHeader: S10_Position12 has no vial
+ls6500.processHeader: S11_Position02 has no vial
+ls6500.processHeader: S11_Position04 has no vial
+ls6500.processHeader: S11_Position06 has no vial
+ls6500.processHeader: S11_Position08 has no vial
+ls6500.processHeader: S11_Position09 has no vial
+ls6500.processHeader: S11_Position10 has no vial
+ls6500.processHeader: S11_Position12 has no vial
+ls6500.processHeader: S12_Position01 has no vial
+ls6500.processHeader: S12_Position03 has no vial
+ls6500.processHeader: S12_Position05 has no vial
+ls6500.processHeader: S12_Position06 has no vial
+ls6500.processHeader: S12_Position07 has no vial
+ls6500.processHeader: S12_Position08 has no vial
+ls6500.processHeader: S12_Position09 has no vial
+ls6500.processHeader: S12_Position11 has no vial
+ls6500.processHeader: S13_Position04 has no vial
+ls6500.processHeader: S13_Position06 has no vial
+ls6500.processHeader: S13_Position08 has no vial
+ls6500.processHeader: S13_Position11 has no vial
+ls6500.processHeader: S13_Position12 has no vial
+ls6500.processHeader: S14_Position08 has no vial
+ls6500.processHeader: S14_Position10 has no vial
+ls6500.processHeader: S14_Position12 has no vial
+ls6500.processHeader: S15_Position03 has no vial
+ls6500.processHeader: S15_Position07 has no vial
+ls6500.processHeader: S15_Position08 has no vial
+ls6500.processHeader: R1_Position09 has no vial
+ls6500.processHeader: R1_Position10 has no vial
+ls6500.processHeader: R1_Position11 has no vial
+ls6500.processHeader: R1_Position12 has no vial
+ls6500.processHeader: Found 104 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00105.xls from list
+ls6500.matchVialMeas: remove zero-length file MeasurementNo00145.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00211.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00316.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00421.xls from list
+ls6500.matchVialMeas: remove summary file MeasurementNo00526.xls from list
+ls6500.matchVialMeas: number of bad files found 1
+ls6500.matchVialMeas: adjustment= 1 for files Pre-irrad_9_141110/MeasurementNo00517.xls, Pre-irrad_9_141110/MeasurementNo00246.xls, Pre-irrad_9_141110/MeasurementNo00352.xls, Pre-irrad_9_141110/MeasurementNo00249.xls, Pre-irrad_9_141110/MeasurementNo00286.xls, Pre-irrad_9_141110/MeasurementNo00513.xls, Pre-irrad_9_141110/MeasurementNo00291.xls, Pre-irrad_9_141110/MeasurementNo00274.xls, Pre-irrad_9_141110/MeasurementNo00193.xls, Pre-irrad_9_141110/MeasurementNo00367.xls, Pre-irrad_9_141110/MeasurementNo00328.xls, Pre-irrad_9_141110/MeasurementNo00393.xls, Pre-irrad_9_141110/MeasurementNo00223.xls, Pre-irrad_9_141110/MeasurementNo00539.xls, Pre-irrad_9_141110/MeasurementNo00460.xls, Pre-irrad_9_141110/MeasurementNo00497.xls, Pre-irrad_9_141110/MeasurementNo00255.xls, Pre-irrad_9_141110/MeasurementNo00357.xls, Pre-irrad_9_141110/MeasurementNo00365.xls, Pre-irrad_9_141110/MeasurementNo00202.xls, Pre-irrad_9_141110/MeasurementNo00420.xls, Pre-irrad_9_141110/MeasurementNo00530.xls, Pre-irrad_9_141110/MeasurementNo00312.xls, Pre-irrad_9_141110/MeasurementNo00454.xls, Pre-irrad_9_141110/MeasurementNo00258.xls, Pre-irrad_9_141110/MeasurementNo00389.xls, Pre-irrad_9_141110/MeasurementNo00299.xls, Pre-irrad_9_141110/MeasurementNo00548.xls, Pre-irrad_9_141110/MeasurementNo00369.xls, Pre-irrad_9_141110/MeasurementNo00509.xls, Pre-irrad_9_141110/MeasurementNo00453.xls, Pre-irrad_9_141110/MeasurementNo00149.xls, Pre-irrad_9_141110/MeasurementNo00214.xls, Pre-irrad_9_141110/MeasurementNo00545.xls, Pre-irrad_9_141110/MeasurementNo00346.xls, Pre-irrad_9_141110/MeasurementNo00362.xls, Pre-irrad_9_141110/MeasurementNo00319.xls, Pre-irrad_9_141110/MeasurementNo00532.xls, Pre-irrad_9_141110/MeasurementNo00505.xls, Pre-irrad_9_141110/MeasurementNo00302.xls, Pre-irrad_9_141110/MeasurementNo00472.xls, Pre-irrad_9_141110/MeasurementNo00482.xls, Pre-irrad_9_141110/MeasurementNo00313.xls, Pre-irrad_9_141110/MeasurementNo00368.xls, Pre-irrad_9_141110/MeasurementNo00208.xls, Pre-irrad_9_141110/MeasurementNo00437.xls, Pre-irrad_9_141110/MeasurementNo00323.xls, Pre-irrad_9_141110/MeasurementNo00304.xls, Pre-irrad_9_141110/MeasurementNo00164.xls, Pre-irrad_9_141110/MeasurementNo00183.xls, Pre-irrad_9_141110/MeasurementNo00212.xls, Pre-irrad_9_141110/MeasurementNo00380.xls, Pre-irrad_9_141110/MeasurementNo00170.xls, Pre-irrad_9_141110/MeasurementNo00463.xls, Pre-irrad_9_141110/MeasurementNo00353.xls, Pre-irrad_9_141110/MeasurementNo00402.xls, Pre-irrad_9_141110/MeasurementNo00488.xls, Pre-irrad_9_141110/MeasurementNo00418.xls, Pre-irrad_9_141110/MeasurementNo00376.xls, Pre-irrad_9_141110/MeasurementNo00455.xls, Pre-irrad_9_141110/MeasurementNo00315.xls, Pre-irrad_9_141110/MeasurementNo00466.xls, Pre-irrad_9_141110/MeasurementNo00204.xls, Pre-irrad_9_141110/MeasurementNo00355.xls, Pre-irrad_9_141110/MeasurementNo00429.xls, Pre-irrad_9_141110/MeasurementNo00370.xls, Pre-irrad_9_141110/MeasurementNo00456.xls, Pre-irrad_9_141110/MeasurementNo00415.xls, Pre-irrad_9_141110/MeasurementNo00296.xls, Pre-irrad_9_141110/MeasurementNo00169.xls, Pre-irrad_9_141110/MeasurementNo00382.xls, Pre-irrad_9_141110/MeasurementNo00515.xls, Pre-irrad_9_141110/MeasurementNo00206.xls, Pre-irrad_9_141110/MeasurementNo00265.xls, Pre-irrad_9_141110/MeasurementNo00475.xls, Pre-irrad_9_141110/MeasurementNo00217.xls, Pre-irrad_9_141110/MeasurementNo00392.xls, Pre-irrad_9_141110/MeasurementNo00521.xls, Pre-irrad_9_141110/MeasurementNo00461.xls, Pre-irrad_9_141110/MeasurementNo00446.xls, Pre-irrad_9_141110/MeasurementNo00399.xls, Pre-irrad_9_141110/MeasurementNo00189.xls, Pre-irrad_9_141110/MeasurementNo00366.xls, Pre-irrad_9_141110/MeasurementNo00408.xls, Pre-irrad_9_141110/MeasurementNo00533.xls, Pre-irrad_9_141110/MeasurementNo00330.xls, Pre-irrad_9_141110/MeasurementNo00174.xls, Pre-irrad_9_141110/MeasurementNo00221.xls, Pre-irrad_9_141110/MeasurementNo00201.xls, Pre-irrad_9_141110/MeasurementNo00387.xls, Pre-irrad_9_141110/MeasurementNo00477.xls, Pre-irrad_9_141110/MeasurementNo00308.xls, Pre-irrad_9_141110/MeasurementNo00416.xls, Pre-irrad_9_141110/MeasurementNo00216.xls, Pre-irrad_9_141110/MeasurementNo00528.xls, Pre-irrad_9_141110/MeasurementNo00181.xls, Pre-irrad_9_141110/MeasurementNo00403.xls, Pre-irrad_9_141110/MeasurementNo00240.xls, Pre-irrad_9_141110/MeasurementNo00519.xls, Pre-irrad_9_141110/MeasurementNo00285.xls, Pre-irrad_9_141110/MeasurementNo00422.xls, Pre-irrad_9_141110/MeasurementNo00338.xls, Pre-irrad_9_141110/MeasurementNo00439.xls, Pre-irrad_9_141110/MeasurementNo00469.xls, Pre-irrad_9_141110/MeasurementNo00391.xls, Pre-irrad_9_141110/MeasurementNo00529.xls, Pre-irrad_9_141110/MeasurementNo00289.xls, Pre-irrad_9_141110/MeasurementNo00450.xls, Pre-irrad_9_141110/MeasurementNo00452.xls, Pre-irrad_9_141110/MeasurementNo00210.xls, Pre-irrad_9_141110/MeasurementNo00259.xls, Pre-irrad_9_141110/MeasurementNo00457.xls, Pre-irrad_9_141110/MeasurementNo00306.xls, Pre-irrad_9_141110/MeasurementNo00268.xls, Pre-irrad_9_141110/MeasurementNo00166.xls, Pre-irrad_9_141110/MeasurementNo00491.xls, Pre-irrad_9_141110/MeasurementNo00503.xls, Pre-irrad_9_141110/MeasurementNo00349.xls, Pre-irrad_9_141110/MeasurementNo00229.xls, Pre-irrad_9_141110/MeasurementNo00534.xls, Pre-irrad_9_141110/MeasurementNo00218.xls, Pre-irrad_9_141110/MeasurementNo00297.xls, Pre-irrad_9_141110/MeasurementNo00432.xls, Pre-irrad_9_141110/MeasurementNo00494.xls, Pre-irrad_9_141110/MeasurementNo00254.xls, Pre-irrad_9_141110/MeasurementNo00381.xls, Pre-irrad_9_141110/MeasurementNo00205.xls, Pre-irrad_9_141110/MeasurementNo00426.xls, Pre-irrad_9_141110/MeasurementNo00332.xls, Pre-irrad_9_141110/MeasurementNo00146.xls, Pre-irrad_9_141110/MeasurementNo00231.xls, Pre-irrad_9_141110/MeasurementNo00447.xls, Pre-irrad_9_141110/MeasurementNo00476.xls, Pre-irrad_9_141110/MeasurementNo00490.xls, Pre-irrad_9_141110/MeasurementNo00275.xls, Pre-irrad_9_141110/MeasurementNo00334.xls, Pre-irrad_9_141110/MeasurementNo00187.xls, Pre-irrad_9_141110/MeasurementNo00531.xls, Pre-irrad_9_141110/MeasurementNo00173.xls, Pre-irrad_9_141110/MeasurementNo00508.xls, Pre-irrad_9_141110/MeasurementNo00326.xls, Pre-irrad_9_141110/MeasurementNo00287.xls, Pre-irrad_9_141110/MeasurementNo00321.xls, Pre-irrad_9_141110/MeasurementNo00525.xls, Pre-irrad_9_141110/MeasurementNo00185.xls, Pre-irrad_9_141110/MeasurementNo00339.xls, Pre-irrad_9_141110/MeasurementNo00413.xls, Pre-irrad_9_141110/MeasurementNo00327.xls, Pre-irrad_9_141110/MeasurementNo00266.xls, Pre-irrad_9_141110/MeasurementNo00401.xls, Pre-irrad_9_141110/MeasurementNo00502.xls, Pre-irrad_9_141110/MeasurementNo00504.xls, Pre-irrad_9_141110/MeasurementNo00250.xls, Pre-irrad_9_141110/MeasurementNo00298.xls, Pre-irrad_9_141110/MeasurementNo00256.xls, Pre-irrad_9_141110/MeasurementNo00294.xls, Pre-irrad_9_141110/MeasurementNo00516.xls, Pre-irrad_9_141110/MeasurementNo00434.xls, Pre-irrad_9_141110/MeasurementNo00496.xls, Pre-irrad_9_141110/MeasurementNo00372.xls, Pre-irrad_9_141110/MeasurementNo00498.xls, Pre-irrad_9_141110/MeasurementNo00543.xls, Pre-irrad_9_141110/MeasurementNo00462.xls, Pre-irrad_9_141110/MeasurementNo00182.xls, Pre-irrad_9_141110/MeasurementNo00542.xls, Pre-irrad_9_141110/MeasurementNo00411.xls, Pre-irrad_9_141110/MeasurementNo00224.xls, Pre-irrad_9_141110/MeasurementNo00150.xls, Pre-irrad_9_141110/MeasurementNo00148.xls, Pre-irrad_9_141110/MeasurementNo00350.xls, Pre-irrad_9_141110/MeasurementNo00364.xls, Pre-irrad_9_141110/MeasurementNo00471.xls, Pre-irrad_9_141110/MeasurementNo00480.xls, Pre-irrad_9_141110/MeasurementNo00396.xls, Pre-irrad_9_141110/MeasurementNo00233.xls, Pre-irrad_9_141110/MeasurementNo00347.xls, Pre-irrad_9_141110/MeasurementNo00486.xls, Pre-irrad_9_141110/MeasurementNo00277.xls, Pre-irrad_9_141110/MeasurementNo00303.xls, Pre-irrad_9_141110/MeasurementNo00378.xls, Pre-irrad_9_141110/MeasurementNo00492.xls, Pre-irrad_9_141110/MeasurementNo00196.xls, Pre-irrad_9_141110/MeasurementNo00252.xls, Pre-irrad_9_141110/MeasurementNo00271.xls, Pre-irrad_9_141110/MeasurementNo00190.xls, Pre-irrad_9_141110/MeasurementNo00441.xls, Pre-irrad_9_141110/MeasurementNo00474.xls, Pre-irrad_9_141110/MeasurementNo00209.xls, Pre-irrad_9_141110/MeasurementNo00383.xls, Pre-irrad_9_141110/MeasurementNo00406.xls, Pre-irrad_9_141110/MeasurementNo00237.xls, Pre-irrad_9_141110/MeasurementNo00162.xls, Pre-irrad_9_141110/MeasurementNo00245.xls, Pre-irrad_9_141110/MeasurementNo00520.xls, Pre-irrad_9_141110/MeasurementNo00242.xls, Pre-irrad_9_141110/MeasurementNo00489.xls, Pre-irrad_9_141110/MeasurementNo00336.xls, Pre-irrad_9_141110/MeasurementNo00397.xls, Pre-irrad_9_141110/MeasurementNo00264.xls, Pre-irrad_9_141110/MeasurementNo00361.xls, Pre-irrad_9_141110/MeasurementNo00433.xls, Pre-irrad_9_141110/MeasurementNo00282.xls, Pre-irrad_9_141110/MeasurementNo00244.xls, Pre-irrad_9_141110/MeasurementNo00487.xls, Pre-irrad_9_141110/MeasurementNo00172.xls, Pre-irrad_9_141110/MeasurementNo00501.xls, Pre-irrad_9_141110/MeasurementNo00423.xls, Pre-irrad_9_141110/MeasurementNo00179.xls, Pre-irrad_9_141110/MeasurementNo00348.xls, Pre-irrad_9_141110/MeasurementNo00186.xls, Pre-irrad_9_141110/MeasurementNo00377.xls, Pre-irrad_9_141110/MeasurementNo00280.xls, Pre-irrad_9_141110/MeasurementNo00535.xls, Pre-irrad_9_141110/MeasurementNo00167.xls, Pre-irrad_9_141110/MeasurementNo00324.xls, Pre-irrad_9_141110/MeasurementNo00424.xls, Pre-irrad_9_141110/MeasurementNo00388.xls, Pre-irrad_9_141110/MeasurementNo00161.xls, Pre-irrad_9_141110/MeasurementNo00155.xls, Pre-irrad_9_141110/MeasurementNo00345.xls, Pre-irrad_9_141110/MeasurementNo00390.xls, Pre-irrad_9_141110/MeasurementNo00207.xls, Pre-irrad_9_141110/MeasurementNo00322.xls, Pre-irrad_9_141110/MeasurementNo00371.xls, Pre-irrad_9_141110/MeasurementNo00293.xls, Pre-irrad_9_141110/MeasurementNo00405.xls, Pre-irrad_9_141110/MeasurementNo00152.xls, Pre-irrad_9_141110/MeasurementNo00379.xls, Pre-irrad_9_141110/MeasurementNo00536.xls, Pre-irrad_9_141110/MeasurementNo00220.xls, Pre-irrad_9_141110/MeasurementNo00171.xls, Pre-irrad_9_141110/MeasurementNo00154.xls, Pre-irrad_9_141110/MeasurementNo00522.xls, Pre-irrad_9_141110/MeasurementNo00235.xls, Pre-irrad_9_141110/MeasurementNo00310.xls, Pre-irrad_9_141110/MeasurementNo00168.xls, Pre-irrad_9_141110/MeasurementNo00359.xls, Pre-irrad_9_141110/MeasurementNo00400.xls, Pre-irrad_9_141110/MeasurementNo00262.xls, Pre-irrad_9_141110/MeasurementNo00541.xls, Pre-irrad_9_141110/MeasurementNo00547.xls, Pre-irrad_9_141110/MeasurementNo00444.xls, Pre-irrad_9_141110/MeasurementNo00436.xls, Pre-irrad_9_141110/MeasurementNo00273.xls, Pre-irrad_9_141110/MeasurementNo00230.xls, Pre-irrad_9_141110/MeasurementNo00260.xls, Pre-irrad_9_141110/MeasurementNo00292.xls, Pre-irrad_9_141110/MeasurementNo00228.xls, Pre-irrad_9_141110/MeasurementNo00284.xls, Pre-irrad_9_141110/MeasurementNo00374.xls, Pre-irrad_9_141110/MeasurementNo00527.xls, Pre-irrad_9_141110/MeasurementNo00514.xls, Pre-irrad_9_141110/MeasurementNo00407.xls, Pre-irrad_9_141110/MeasurementNo00451.xls, Pre-irrad_9_141110/MeasurementNo00412.xls, Pre-irrad_9_141110/MeasurementNo00360.xls, Pre-irrad_9_141110/MeasurementNo00267.xls, Pre-irrad_9_141110/MeasurementNo00495.xls, Pre-irrad_9_141110/MeasurementNo00343.xls, Pre-irrad_9_141110/MeasurementNo00470.xls, Pre-irrad_9_141110/MeasurementNo00247.xls, Pre-irrad_9_141110/MeasurementNo00428.xls, Pre-irrad_9_141110/MeasurementNo00375.xls, Pre-irrad_9_141110/MeasurementNo00395.xls, Pre-irrad_9_141110/MeasurementNo00538.xls, Pre-irrad_9_141110/MeasurementNo00222.xls, Pre-irrad_9_141110/MeasurementNo00358.xls, Pre-irrad_9_141110/MeasurementNo00485.xls, Pre-irrad_9_141110/MeasurementNo00295.xls, Pre-irrad_9_141110/MeasurementNo00305.xls, Pre-irrad_9_141110/MeasurementNo00241.xls, Pre-irrad_9_141110/MeasurementNo00414.xls, Pre-irrad_9_141110/MeasurementNo00449.xls, Pre-irrad_9_141110/MeasurementNo00234.xls, Pre-irrad_9_141110/MeasurementNo00464.xls, Pre-irrad_9_141110/MeasurementNo00409.xls, Pre-irrad_9_141110/MeasurementNo00156.xls, Pre-irrad_9_141110/MeasurementNo00473.xls, Pre-irrad_9_141110/MeasurementNo00512.xls, Pre-irrad_9_141110/MeasurementNo00178.xls, Pre-irrad_9_141110/MeasurementNo00385.xls, Pre-irrad_9_141110/MeasurementNo00215.xls, Pre-irrad_9_141110/MeasurementNo00192.xls, Pre-irrad_9_141110/MeasurementNo00373.xls, Pre-irrad_9_141110/MeasurementNo00232.xls, Pre-irrad_9_141110/MeasurementNo00213.xls, Pre-irrad_9_141110/MeasurementNo00320.xls, Pre-irrad_9_141110/MeasurementNo00279.xls, Pre-irrad_9_141110/MeasurementNo00184.xls, Pre-irrad_9_141110/MeasurementNo00203.xls, Pre-irrad_9_141110/MeasurementNo00329.xls, Pre-irrad_9_141110/MeasurementNo00239.xls, Pre-irrad_9_141110/MeasurementNo00518.xls, Pre-irrad_9_141110/MeasurementNo00524.xls, Pre-irrad_9_141110/MeasurementNo00176.xls, Pre-irrad_9_141110/MeasurementNo00500.xls, Pre-irrad_9_141110/MeasurementNo00337.xls, Pre-irrad_9_141110/MeasurementNo00318.xls, Pre-irrad_9_141110/MeasurementNo00263.xls, Pre-irrad_9_141110/MeasurementNo00435.xls, Pre-irrad_9_141110/MeasurementNo00283.xls, Pre-irrad_9_141110/MeasurementNo00356.xls, Pre-irrad_9_141110/MeasurementNo00198.xls, Pre-irrad_9_141110/MeasurementNo00253.xls, Pre-irrad_9_141110/MeasurementNo00468.xls, Pre-irrad_9_141110/MeasurementNo00159.xls, Pre-irrad_9_141110/MeasurementNo00342.xls, Pre-irrad_9_141110/MeasurementNo00459.xls, Pre-irrad_9_141110/MeasurementNo00163.xls, Pre-irrad_9_141110/MeasurementNo00438.xls, Pre-irrad_9_141110/MeasurementNo00493.xls, Pre-irrad_9_141110/MeasurementNo00238.xls, Pre-irrad_9_141110/MeasurementNo00419.xls, Pre-irrad_9_141110/MeasurementNo00290.xls, Pre-irrad_9_141110/MeasurementNo00351.xls, Pre-irrad_9_141110/MeasurementNo00341.xls, Pre-irrad_9_141110/MeasurementNo00549.xls, Pre-irrad_9_141110/MeasurementNo00177.xls, Pre-irrad_9_141110/MeasurementNo00465.xls, Pre-irrad_9_141110/MeasurementNo00544.xls, Pre-irrad_9_141110/MeasurementNo00269.xls, Pre-irrad_9_141110/MeasurementNo00384.xls, Pre-irrad_9_141110/MeasurementNo00363.xls, Pre-irrad_9_141110/MeasurementNo00398.xls, Pre-irrad_9_141110/MeasurementNo00333.xls, Pre-irrad_9_141110/MeasurementNo00309.xls, Pre-irrad_9_141110/MeasurementNo00335.xls, Pre-irrad_9_141110/MeasurementNo00340.xls, Pre-irrad_9_141110/MeasurementNo00445.xls, Pre-irrad_9_141110/MeasurementNo00410.xls, Pre-irrad_9_141110/MeasurementNo00314.xls, Pre-irrad_9_141110/MeasurementNo00197.xls, Pre-irrad_9_141110/MeasurementNo00404.xls, Pre-irrad_9_141110/MeasurementNo00440.xls, Pre-irrad_9_141110/MeasurementNo00188.xls, Pre-irrad_9_141110/MeasurementNo00243.xls, Pre-irrad_9_141110/MeasurementNo00425.xls, Pre-irrad_9_141110/MeasurementNo00506.xls, Pre-irrad_9_141110/MeasurementNo00481.xls, Pre-irrad_9_141110/MeasurementNo00443.xls, Pre-irrad_9_141110/MeasurementNo00236.xls, Pre-irrad_9_141110/MeasurementNo00191.xls, Pre-irrad_9_141110/MeasurementNo00199.xls, Pre-irrad_9_141110/MeasurementNo00507.xls, Pre-irrad_9_141110/MeasurementNo00272.xls, Pre-irrad_9_141110/MeasurementNo00354.xls, Pre-irrad_9_141110/MeasurementNo00278.xls, Pre-irrad_9_141110/MeasurementNo00251.xls, Pre-irrad_9_141110/MeasurementNo00160.xls, Pre-irrad_9_141110/MeasurementNo00325.xls, Pre-irrad_9_141110/MeasurementNo00458.xls, Pre-irrad_9_141110/MeasurementNo00417.xls, Pre-irrad_9_141110/MeasurementNo00394.xls, Pre-irrad_9_141110/MeasurementNo00331.xls, Pre-irrad_9_141110/MeasurementNo00257.xls, Pre-irrad_9_141110/MeasurementNo00151.xls, Pre-irrad_9_141110/MeasurementNo00479.xls, Pre-irrad_9_141110/MeasurementNo00344.xls, Pre-irrad_9_141110/MeasurementNo00248.xls, Pre-irrad_9_141110/MeasurementNo00219.xls, Pre-irrad_9_141110/MeasurementNo00300.xls, Pre-irrad_9_141110/MeasurementNo00288.xls, Pre-irrad_9_141110/MeasurementNo00307.xls, Pre-irrad_9_141110/MeasurementNo00226.xls, Pre-irrad_9_141110/MeasurementNo00301.xls, Pre-irrad_9_141110/MeasurementNo00180.xls, Pre-irrad_9_141110/MeasurementNo00194.xls, Pre-irrad_9_141110/MeasurementNo00225.xls, Pre-irrad_9_141110/MeasurementNo00200.xls, Pre-irrad_9_141110/MeasurementNo00510.xls, Pre-irrad_9_141110/MeasurementNo00158.xls, Pre-irrad_9_141110/MeasurementNo00467.xls, Pre-irrad_9_141110/MeasurementNo00511.xls, Pre-irrad_9_141110/MeasurementNo00431.xls, Pre-irrad_9_141110/MeasurementNo00430.xls, Pre-irrad_9_141110/MeasurementNo00276.xls, Pre-irrad_9_141110/MeasurementNo00540.xls, Pre-irrad_9_141110/MeasurementNo00153.xls, Pre-irrad_9_141110/MeasurementNo00270.xls, Pre-irrad_9_141110/MeasurementNo00523.xls, Pre-irrad_9_141110/MeasurementNo00427.xls, Pre-irrad_9_141110/MeasurementNo00227.xls, Pre-irrad_9_141110/MeasurementNo00281.xls, Pre-irrad_9_141110/MeasurementNo00442.xls, Pre-irrad_9_141110/MeasurementNo00311.xls, Pre-irrad_9_141110/MeasurementNo00448.xls, Pre-irrad_9_141110/MeasurementNo00484.xls, Pre-irrad_9_141110/MeasurementNo00478.xls, Pre-irrad_9_141110/MeasurementNo00537.xls, Pre-irrad_9_141110/MeasurementNo00386.xls, Pre-irrad_9_141110/MeasurementNo00499.xls, Pre-irrad_9_141110/MeasurementNo00195.xls, Pre-irrad_9_141110/MeasurementNo00147.xls, Pre-irrad_9_141110/MeasurementNo00175.xls, Pre-irrad_9_141110/MeasurementNo00261.xls, Pre-irrad_9_141110/MeasurementNo00546.xls, Pre-irrad_9_141110/MeasurementNo00317.xls, Pre-irrad_9_141110/MeasurementNo00483.xls, Pre-irrad_9_141110/MeasurementNo00157.xls, Pre-irrad_9_141110/MeasurementNo00165.xls
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 104
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_1F11 0050_1F13 0050_1F16 0050_1R11 0050_1R13 0050_1R16 0050_2F11 0050_2F13 0050_2F16 0050_2R11 0050_2R13 0050_2R16 0050_3F11 0050_3F13 0050_3F16 0050_3R11 0050_3R13 0050_3R16 0050_4F11 0050_4F13 0050_4F16 0050_4R11 0050_4R13 0050_4R16 0050_FPMT 0050_REF1 0050_REF2 0050_RPMT 0100_1F15 0100_1F22 0100_1F27 0100_1R15 0100_1R22 0100_1R27 0100_2F15 0100_2F22 0100_2F27 0100_2R15 0100_2R22 0100_2R27 0100_3F15 0100_3F22 0100_3R15 0100_3R22 0100_4F15 0100_4F22 0100_4R15 0100_4R22 0100_REF1 0100_REF2 0140_1F23 0140_1F31 0140_1R23 0140_1R31 0140_2F23 0140_2F31 0140_2R23 0140_2R31 0140_3F23 0140_3R23 0140_4F23 0140_4R23 0140_REF1 0140_REF2 1000_1F34 1000_1F36 1000_1F37 1000_1R34 1000_1R36 1000_1R37 1000_2F34 1000_2F36 1000_2F37 1000_2R34 1000_2R36 1000_2R37 1000_3F34 1000_3F37 1000_3R34 1000_3R37 1000_4F34 1000_4F37 1000_4R34 1000_4R37 1000_REF1 1000_REF2 EMPTY_S10_Position10 EMPTY_S11_Position11 EMPTY_S12_Position12 EMPTY_S13_Position01 EMPTY_S13_Position03 EMPTY_S14_Position01 EMPTY_S14_Position04 EMPTY_S15_Position01 EMPTY_S15_Position05 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 EMPTY_S8_Position08 EMPTY_S9_Position09 STD_14_C STD_3_H 
+Tray_Position S1_Position01 Number of `no vial` to this position 0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00001.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 16:44:27 totalCounts 710699.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00106.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 05:30:20 totalCounts 710005.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00212.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:16:12 totalCounts 709523.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00317.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:01:51 totalCounts 704486.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00422.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 19:47:41 totalCounts 707128.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00527.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 08:33:13 totalCounts 698129.0
+ls6500.getMeasurement: samnum 1 rackpos 1 exposuretime 5.0
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00002.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 16:51:53 totalCounts 398630.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00107.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 05:37:47 totalCounts 404367.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00213.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:23:40 totalCounts 410421.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00318.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:09:18 totalCounts 394078.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00423.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 19:55:09 totalCounts 407761.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00528.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 08:40:41 totalCounts 413052.0
+ls6500.getMeasurement: samnum 2 rackpos 2 exposuretime 5.0
+Tray_Position S1_Position04 Number of `no vial` to this position 1
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00003.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 16:59:11 totalCounts 420621.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00108.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 05:45:04 totalCounts 393617.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00214.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:30:57 totalCounts 405367.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00319.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:16:36 totalCounts 407753.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00424.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:02:26 totalCounts 407444.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00529.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 08:47:57 totalCounts 399365.0
+ls6500.getMeasurement: samnum 4 rackpos 4 exposuretime 5.0
+Tray_Position S1_Position06 Number of `no vial` to this position 2
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00004.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:06:28 totalCounts 405882.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00109.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 05:52:22 totalCounts 405343.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00215.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:38:13 totalCounts 385482.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00320.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:23:53 totalCounts 401864.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00425.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:09:42 totalCounts 404672.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00530.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 08:55:15 totalCounts 403517.0
+ls6500.getMeasurement: samnum 6 rackpos 6 exposuretime 5.0
+Tray_Position S1_Position08 Number of `no vial` to this position 3
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00005.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:13:45 totalCounts 406582.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00110.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 05:59:39 totalCounts 406659.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00216.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:45:30 totalCounts 404649.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00321.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:31:11 totalCounts 411106.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00426.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:16:59 totalCounts 404893.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00531.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:02:33 totalCounts 410889.0
+ls6500.getMeasurement: samnum 8 rackpos 8 exposuretime 5.0
+Tray_Position S1_Position10 Number of `no vial` to this position 4
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00006.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:21:03 totalCounts 449659.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00111.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:06:57 totalCounts 449182.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00217.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 18:52:49 totalCounts 445450.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00322.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:38:30 totalCounts 458331.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00427.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:24:17 totalCounts 450222.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00532.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:09:52 totalCounts 452170.0
+ls6500.getMeasurement: samnum 10 rackpos 10 exposuretime 5.0
+Tray_Position S1_Position12 Number of `no vial` to this position 5
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00007.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:28:21 totalCounts 439871.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00112.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:14:15 totalCounts 444449.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00218.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:00:06 totalCounts 442302.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00323.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:45:48 totalCounts 431309.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00428.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:31:35 totalCounts 438430.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00533.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:17:11 totalCounts 441363.0
+ls6500.getMeasurement: samnum 12 rackpos 12 exposuretime 5.0
+Tray_Position S2_Position02 Number of `no vial` to this position 6
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00008.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:36:20 totalCounts 1163294.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00113.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:22:14 totalCounts 1156409.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00219.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:08:05 totalCounts 1157966.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00324.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 07:53:48 totalCounts 1154230.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00429.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:39:33 totalCounts 1169024.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00534.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:25:11 totalCounts 1161599.0
+ls6500.getMeasurement: samnum 14 rackpos 2 exposuretime 5.0
+Tray_Position S2_Position03 Number of `no vial` to this position 6
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00009.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:43:50 totalCounts 439694.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00114.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:29:42 totalCounts 435101.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00220.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:15:34 totalCounts 439169.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00325.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:01:17 totalCounts 441480.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00430.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:47:02 totalCounts 438099.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00535.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:32:39 totalCounts 440543.0
+ls6500.getMeasurement: samnum 15 rackpos 3 exposuretime 5.0
+Tray_Position S2_Position05 Number of `no vial` to this position 7
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00010.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:51:09 totalCounts 421057.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00115.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:37:01 totalCounts 429193.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00221.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:22:53 totalCounts 449188.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00326.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:08:37 totalCounts 449106.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00431.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 20:54:22 totalCounts 448903.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00536.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:39:58 totalCounts 448909.0
+ls6500.getMeasurement: samnum 17 rackpos 5 exposuretime 5.0
+Tray_Position S2_Position07 Number of `no vial` to this position 8
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00011.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 17:58:29 totalCounts 455014.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00116.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:44:21 totalCounts 462899.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00222.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:30:14 totalCounts 466956.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00327.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:15:56 totalCounts 467119.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00432.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:01:42 totalCounts 463887.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00537.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:47:17 totalCounts 462218.0
+ls6500.getMeasurement: samnum 19 rackpos 7 exposuretime 5.0
+Tray_Position S2_Position09 Number of `no vial` to this position 9
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00012.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:05:48 totalCounts 455098.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00117.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:51:40 totalCounts 463844.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00223.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:37:34 totalCounts 462962.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00328.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:23:16 totalCounts 465481.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00433.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:09:03 totalCounts 462513.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00538.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 09:54:37 totalCounts 465434.0
+ls6500.getMeasurement: samnum 21 rackpos 9 exposuretime 5.0
+Tray_Position S2_Position11 Number of `no vial` to this position 10
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00013.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:13:07 totalCounts 458840.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00118.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 06:59:01 totalCounts 460424.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00224.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:44:54 totalCounts 452916.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00329.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:30:37 totalCounts 456631.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00434.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:16:23 totalCounts 458083.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00539.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:01:56 totalCounts 452570.0
+ls6500.getMeasurement: samnum 23 rackpos 11 exposuretime 5.0
+Tray_Position S3_Position01 Number of `no vial` to this position 11
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00014.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:20:34 totalCounts 471711.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00119.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:06:28 totalCounts 463695.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00225.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:52:20 totalCounts 460827.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00330.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:38:02 totalCounts 435485.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00435.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:23:51 totalCounts 459084.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00540.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:09:22 totalCounts 431398.0
+ls6500.getMeasurement: samnum 25 rackpos 1 exposuretime 5.0
+Tray_Position S3_Position03 Number of `no vial` to this position 12
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00015.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:27:41 totalCounts 44140.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00120.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:13:35 totalCounts 41871.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00226.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 19:59:29 totalCounts 44560.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00331.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:45:10 totalCounts 41561.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00436.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:30:59 totalCounts 45071.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00541.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:16:30 totalCounts 42821.0
+ls6500.getMeasurement: samnum 27 rackpos 3 exposuretime 5.0
+Tray_Position S3_Position04 Number of `no vial` to this position 12
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00016.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:35:06 totalCounts 482359.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00121.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:21:02 totalCounts 480179.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00227.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:06:53 totalCounts 452713.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00332.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 08:52:34 totalCounts 442701.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00437.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:38:25 totalCounts 487685.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00542.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:23:55 totalCounts 483023.0
+ls6500.getMeasurement: samnum 28 rackpos 4 exposuretime 5.0
+Tray_Position S3_Position06 Number of `no vial` to this position 13
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00017.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:42:43 totalCounts 496150.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00122.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:28:39 totalCounts 492900.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00228.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:14:28 totalCounts 492464.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00333.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:00:08 totalCounts 498293.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00438.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:46:01 totalCounts 494913.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00543.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:31:31 totalCounts 500798.0
+ls6500.getMeasurement: samnum 30 rackpos 6 exposuretime 5.0
+Tray_Position S3_Position08 Number of `no vial` to this position 14
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00018.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:50:19 totalCounts 485594.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00123.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:36:14 totalCounts 477508.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00229.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:22:05 totalCounts 498520.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00334.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:07:44 totalCounts 483331.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00439.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 21:53:36 totalCounts 484820.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00544.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:39:06 totalCounts 484703.0
+ls6500.getMeasurement: samnum 32 rackpos 8 exposuretime 5.0
+Tray_Position S3_Position10 Number of `no vial` to this position 15
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00019.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 18:57:55 totalCounts 478465.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00124.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:43:48 totalCounts 480944.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00230.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:29:40 totalCounts 491618.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00335.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:15:20 totalCounts 486882.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00440.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:01:12 totalCounts 484484.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00545.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:46:42 totalCounts 487651.0
+ls6500.getMeasurement: samnum 34 rackpos 10 exposuretime 5.0
+Tray_Position S3_Position12 Number of `no vial` to this position 16
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00020.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:05:21 totalCounts 402223.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00125.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:51:14 totalCounts 401680.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00231.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:37:05 totalCounts 400667.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00336.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:22:46 totalCounts 405582.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00441.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:08:37 totalCounts 373767.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00546.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 10:54:07 totalCounts 379421.0
+ls6500.getMeasurement: samnum 36 rackpos 12 exposuretime 5.0
+Tray_Position S4_Position02 Number of `no vial` to this position 17
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00021.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:12:45 totalCounts 408397.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00126.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 07:58:37 totalCounts 406114.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00232.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:44:28 totalCounts 407387.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00337.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:30:09 totalCounts 402069.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00442.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:16:01 totalCounts 408495.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00547.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 11:01:32 totalCounts 406097.0
+ls6500.getMeasurement: samnum 38 rackpos 2 exposuretime 5.0
+Tray_Position S4_Position04 Number of `no vial` to this position 18
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00022.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:19:52 totalCounts 44591.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00127.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:05:44 totalCounts 43471.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00233.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:51:35 totalCounts 43482.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00338.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:37:17 totalCounts 42666.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00443.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:23:08 totalCounts 41123.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00548.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 11:08:39 totalCounts 42429.0
+ls6500.getMeasurement: samnum 40 rackpos 4 exposuretime 5.0
+Tray_Position S4_Position05 Number of `no vial` to this position 18
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00023.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:27:07 totalCounts 404186.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00128.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:12:59 totalCounts 404052.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00234.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 20:58:50 totalCounts 406651.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00339.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:44:32 totalCounts 405654.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00444.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:30:23 totalCounts 391332.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00549.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 11:15:54 totalCounts 405935.0
+ls6500.getMeasurement: samnum 41 rackpos 5 exposuretime 5.0
+Tray_Position S4_Position07 Number of `no vial` to this position 19
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00024.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:34:24 totalCounts 398509.0
+ls6500.getMeasurement: samnum 43 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00129.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:20:17 totalCounts 404677.0
+ls6500.getMeasurement: samnum 43 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00235.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:06:08 totalCounts 389483.0
+ls6500.getMeasurement: samnum 43 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00340.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:51:50 totalCounts 387477.0
+ls6500.getMeasurement: samnum 43 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00445.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:37:41 totalCounts 401821.0
+ls6500.getMeasurement: samnum 43 rackpos 7 exposuretime 5.0
+Tray_Position S4_Position09 Number of `no vial` to this position 20
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00025.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:41:42 totalCounts 439666.0
+ls6500.getMeasurement: samnum 45 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00130.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:27:36 totalCounts 455927.0
+ls6500.getMeasurement: samnum 45 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00236.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:13:27 totalCounts 452512.0
+ls6500.getMeasurement: samnum 45 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00341.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 09:59:09 totalCounts 456433.0
+ls6500.getMeasurement: samnum 45 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00446.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:45:00 totalCounts 453457.0
+ls6500.getMeasurement: samnum 45 rackpos 9 exposuretime 5.0
+Tray_Position S4_Position11 Number of `no vial` to this position 21
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00026.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:49:00 totalCounts 449753.0
+ls6500.getMeasurement: samnum 47 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00131.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:34:56 totalCounts 449580.0
+ls6500.getMeasurement: samnum 47 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00237.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:20:47 totalCounts 440442.0
+ls6500.getMeasurement: samnum 47 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00342.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:06:28 totalCounts 429612.0
+ls6500.getMeasurement: samnum 47 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00447.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:52:18 totalCounts 449212.0
+ls6500.getMeasurement: samnum 47 rackpos 11 exposuretime 5.0
+Tray_Position S5_Position01 Number of `no vial` to this position 22
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00027.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 19:56:26 totalCounts 451057.0
+ls6500.getMeasurement: samnum 49 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00132.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:42:21 totalCounts 444881.0
+ls6500.getMeasurement: samnum 49 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00238.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:28:13 totalCounts 438717.0
+ls6500.getMeasurement: samnum 49 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00343.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:13:53 totalCounts 437055.0
+ls6500.getMeasurement: samnum 49 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00448.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 22:59:43 totalCounts 437953.0
+ls6500.getMeasurement: samnum 49 rackpos 1 exposuretime 5.0
+Tray_Position S5_Position03 Number of `no vial` to this position 23
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00028.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:03:45 totalCounts 437359.0
+ls6500.getMeasurement: samnum 51 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00133.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:49:39 totalCounts 406594.0
+ls6500.getMeasurement: samnum 51 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00239.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:35:32 totalCounts 412530.0
+ls6500.getMeasurement: samnum 51 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00344.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:21:11 totalCounts 409511.0
+ls6500.getMeasurement: samnum 51 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00449.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:07:01 totalCounts 411647.0
+ls6500.getMeasurement: samnum 51 rackpos 3 exposuretime 5.0
+Tray_Position S5_Position05 Number of `no vial` to this position 24
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00029.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:10:52 totalCounts 43422.0
+ls6500.getMeasurement: samnum 53 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00134.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 08:56:46 totalCounts 42370.0
+ls6500.getMeasurement: samnum 53 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00240.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:42:40 totalCounts 41618.0
+ls6500.getMeasurement: samnum 53 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00345.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:28:19 totalCounts 39735.0
+ls6500.getMeasurement: samnum 53 rackpos 5 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00450.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:14:08 totalCounts 41487.0
+ls6500.getMeasurement: samnum 53 rackpos 5 exposuretime 5.0
+Tray_Position S5_Position06 Number of `no vial` to this position 24
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00030.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:18:09 totalCounts 448445.0
+ls6500.getMeasurement: samnum 54 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00135.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:04:03 totalCounts 452351.0
+ls6500.getMeasurement: samnum 54 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00241.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:49:57 totalCounts 457625.0
+ls6500.getMeasurement: samnum 54 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00346.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:35:36 totalCounts 458420.0
+ls6500.getMeasurement: samnum 54 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00451.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:21:25 totalCounts 451666.0
+ls6500.getMeasurement: samnum 54 rackpos 6 exposuretime 5.0
+Tray_Position S5_Position08 Number of `no vial` to this position 25
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00031.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:25:28 totalCounts 429085.0
+ls6500.getMeasurement: samnum 56 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00136.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:11:23 totalCounts 462937.0
+ls6500.getMeasurement: samnum 56 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00242.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 21:57:17 totalCounts 459617.0
+ls6500.getMeasurement: samnum 56 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00347.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:42:57 totalCounts 455893.0
+ls6500.getMeasurement: samnum 56 rackpos 8 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00452.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:28:45 totalCounts 468433.0
+ls6500.getMeasurement: samnum 56 rackpos 8 exposuretime 5.0
+Tray_Position S5_Position10 Number of `no vial` to this position 26
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00032.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:32:48 totalCounts 460869.0
+ls6500.getMeasurement: samnum 58 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00137.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:18:43 totalCounts 452822.0
+ls6500.getMeasurement: samnum 58 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00243.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:04:37 totalCounts 459739.0
+ls6500.getMeasurement: samnum 58 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00348.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:50:18 totalCounts 464342.0
+ls6500.getMeasurement: samnum 58 rackpos 10 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00453.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:36:06 totalCounts 449338.0
+ls6500.getMeasurement: samnum 58 rackpos 10 exposuretime 5.0
+Tray_Position S5_Position12 Number of `no vial` to this position 27
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00033.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:40:09 totalCounts 468335.0
+ls6500.getMeasurement: samnum 60 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00138.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:26:04 totalCounts 472795.0
+ls6500.getMeasurement: samnum 60 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00244.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:11:57 totalCounts 470968.0
+ls6500.getMeasurement: samnum 60 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00349.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 10:57:38 totalCounts 470609.0
+ls6500.getMeasurement: samnum 60 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00454.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:43:26 totalCounts 464683.0
+ls6500.getMeasurement: samnum 60 rackpos 12 exposuretime 5.0
+Tray_Position S6_Position02 Number of `no vial` to this position 28
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00034.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:47:44 totalCounts 483493.0
+ls6500.getMeasurement: samnum 62 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00139.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:33:39 totalCounts 475987.0
+ls6500.getMeasurement: samnum 62 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00245.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:19:31 totalCounts 453510.0
+ls6500.getMeasurement: samnum 62 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00350.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:05:12 totalCounts 454935.0
+ls6500.getMeasurement: samnum 62 rackpos 2 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00455.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:51:00 totalCounts 468883.0
+ls6500.getMeasurement: samnum 62 rackpos 2 exposuretime 5.0
+Tray_Position S6_Position04 Number of `no vial` to this position 29
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00035.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 20:55:22 totalCounts 493455.0
+ls6500.getMeasurement: samnum 64 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00140.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:41:14 totalCounts 487882.0
+ls6500.getMeasurement: samnum 64 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00246.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:27:07 totalCounts 470984.0
+ls6500.getMeasurement: samnum 64 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00351.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:12:47 totalCounts 483794.0
+ls6500.getMeasurement: samnum 64 rackpos 4 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00456.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 23:58:35 totalCounts 503719.0
+ls6500.getMeasurement: samnum 64 rackpos 4 exposuretime 5.0
+Tray_Position S6_Position06 Number of `no vial` to this position 30
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00036.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:02:39 totalCounts 42348.0
+ls6500.getMeasurement: samnum 66 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00141.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:48:29 totalCounts 43789.0
+ls6500.getMeasurement: samnum 66 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00247.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:34:23 totalCounts 43946.0
+ls6500.getMeasurement: samnum 66 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00352.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:20:01 totalCounts 45383.0
+ls6500.getMeasurement: samnum 66 rackpos 6 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00457.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:05:49 totalCounts 43080.0
+ls6500.getMeasurement: samnum 66 rackpos 6 exposuretime 5.0
+Tray_Position S6_Position07 Number of `no vial` to this position 30
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00037.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:10:04 totalCounts 477856.0
+ls6500.getMeasurement: samnum 67 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00142.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 09:55:55 totalCounts 489282.0
+ls6500.getMeasurement: samnum 67 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00248.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:41:49 totalCounts 485027.0
+ls6500.getMeasurement: samnum 67 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00353.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:27:27 totalCounts 482130.0
+ls6500.getMeasurement: samnum 67 rackpos 7 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00458.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:13:14 totalCounts 487915.0
+ls6500.getMeasurement: samnum 67 rackpos 7 exposuretime 5.0
+Tray_Position S6_Position09 Number of `no vial` to this position 31
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00038.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:17:41 totalCounts 470649.0
+ls6500.getMeasurement: samnum 69 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00143.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 10:03:32 totalCounts 490901.0
+ls6500.getMeasurement: samnum 69 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00249.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:49:25 totalCounts 463894.0
+ls6500.getMeasurement: samnum 69 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00354.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:35:04 totalCounts 492971.0
+ls6500.getMeasurement: samnum 69 rackpos 9 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00459.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:20:51 totalCounts 492713.0
+ls6500.getMeasurement: samnum 69 rackpos 9 exposuretime 5.0
+Tray_Position S6_Position11 Number of `no vial` to this position 32
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00039.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:25:07 totalCounts 391841.0
+ls6500.getMeasurement: samnum 71 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00144.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 10:10:58 totalCounts 375577.0
+ls6500.getMeasurement: samnum 71 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00250.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 22:56:51 totalCounts 404396.0
+ls6500.getMeasurement: samnum 71 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00355.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:42:28 totalCounts 368813.0
+ls6500.getMeasurement: samnum 71 rackpos 11 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00460.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:28:18 totalCounts 408436.0
+ls6500.getMeasurement: samnum 71 rackpos 11 exposuretime 5.0
+Tray_Position S6_Position12 Number of `no vial` to this position 32
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00040.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:32:26 totalCounts 408036.0
+ls6500.getMeasurement: samnum 72 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00146.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 10:18:16 totalCounts 411030.0
+ls6500.getMeasurement: samnum 72 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00251.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 23:04:09 totalCounts 406815.0
+ls6500.getMeasurement: samnum 72 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00356.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:49:45 totalCounts 413324.0
+ls6500.getMeasurement: samnum 72 rackpos 12 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00461.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:35:35 totalCounts 414118.0
+ls6500.getMeasurement: samnum 72 rackpos 12 exposuretime 5.0
+Tray_Position S7_Position01 Number of `no vial` to this position 32
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00041.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:39:49 totalCounts 398498.0
+ls6500.getMeasurement: samnum 73 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00147.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 10:25:38 totalCounts 383126.0
+ls6500.getMeasurement: samnum 73 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00252.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 23:11:31 totalCounts 371630.0
+ls6500.getMeasurement: samnum 73 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00357.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 11:57:07 totalCounts 376047.0
+ls6500.getMeasurement: samnum 73 rackpos 1 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00462.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:42:57 totalCounts 380456.0
+ls6500.getMeasurement: samnum 73 rackpos 1 exposuretime 5.0
+Tray_Position S7_Position03 Number of `no vial` to this position 33
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00042.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-10 21:47:07 totalCounts 398171.0
+ls6500.getMeasurement: samnum 75 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00148.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 10:32:55 totalCounts 387171.0
+ls6500.getMeasurement: samnum 75 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00253.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-11 23:18:48 totalCounts 373638.0
+ls6500.getMeasurement: samnum 75 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00358.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-12 12:04:24 totalCounts 380505.0
+ls6500.getMeasurement: samnum 75 rackpos 3 exposuretime 5.0
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00463.xls
+ls6500.getMeasurement: name Sheet 1 date 2014-11-13 00:50:14 totalCounts 397459.0
+ls6500.getMeasurement: samnum 75 rackpos 3 exposuretime 5.0
+Tray_Position S7_Position05 Number of `no vial` to this position 34
+ls6500.Main: get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/MeasurementNo00043.xls

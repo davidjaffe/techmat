@@ -1,0 +1,240 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_7_141106_201411141033_672014.log
+ls6500: Irradiation date is 2020/04/01 01:23:45
+Created Figures/Pre-irrad_7_141106/
+ls6500: initialization ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/ 
+dataSubDir Pre-irrad_7_141106/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: Found 192 total samples
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 30
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_1F13 0050_2F13 0050_3F13 0050_4F13 0052_1F14 0052_2F14 0052_3F14 0052_4F14 0100_1F15 0100_2F15 0100_3F15 0100_4F15 0102_1F25 0102_2F25 0102_3F25 0102_4F25 0140_1F23 0140_2F23 0140_3F23 0140_4F23 0142_1F33 0142_2F33 0142_3F33 0142_4F33 1000_1F34 1000_2F34 1002_1F35 EMPTY_S3_Position03 STD_14_C STD_3_H 
+Tray_Position S1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00001.xls
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00002.xls
+Tray_Position S1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00003.xls
+Tray_Position S1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00004.xls
+Tray_Position S1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00005.xls
+Tray_Position S1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00006.xls
+Tray_Position S1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00007.xls
+Tray_Position S1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00008.xls
+Tray_Position S1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00009.xls
+Tray_Position S1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00010.xls
+Tray_Position S1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00011.xls
+Tray_Position S1_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00012.xls
+Tray_Position S2_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00013.xls
+Tray_Position S2_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00014.xls
+Tray_Position S2_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00015.xls
+Tray_Position S2_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00016.xls
+Tray_Position S2_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00017.xls
+Tray_Position S2_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00018.xls
+Tray_Position S2_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00019.xls
+Tray_Position S2_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00020.xls
+Tray_Position S2_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00021.xls
+Tray_Position S2_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00022.xls
+Tray_Position S2_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00023.xls
+Tray_Position S2_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00024.xls
+Tray_Position S3_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00025.xls
+Tray_Position S3_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00026.xls
+Tray_Position S3_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00027.xls
+Tray_Position S3_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00028.xls
+Tray_Position S3_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00029.xls
+Tray_Position S3_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_7_141106/MeasurementNo00030.xls
+Tray_Position S3_Position07 Number of `no vial` to this position 0
+Tray_Position S3_Position08 Number of `no vial` to this position 0
+Tray_Position S3_Position09 Number of `no vial` to this position 0
+Tray_Position S3_Position10 Number of `no vial` to this position 0
+Tray_Position S3_Position11 Number of `no vial` to this position 0
+Tray_Position S3_Position12 Number of `no vial` to this position 0
+Tray_Position S4_Position01 Number of `no vial` to this position 0
+Tray_Position S4_Position02 Number of `no vial` to this position 0
+Tray_Position S4_Position03 Number of `no vial` to this position 0
+Tray_Position S4_Position04 Number of `no vial` to this position 0
+Tray_Position S4_Position05 Number of `no vial` to this position 0
+Tray_Position S4_Position06 Number of `no vial` to this position 0
+Tray_Position S4_Position07 Number of `no vial` to this position 0
+Tray_Position S4_Position08 Number of `no vial` to this position 0
+Tray_Position S4_Position09 Number of `no vial` to this position 0
+Tray_Position S4_Position10 Number of `no vial` to this position 0
+Tray_Position S4_Position11 Number of `no vial` to this position 0
+Tray_Position S4_Position12 Number of `no vial` to this position 0
+Tray_Position S5_Position01 Number of `no vial` to this position 0
+Tray_Position S5_Position02 Number of `no vial` to this position 0
+Tray_Position S5_Position03 Number of `no vial` to this position 0
+Tray_Position S5_Position04 Number of `no vial` to this position 0
+Tray_Position S5_Position05 Number of `no vial` to this position 0
+Tray_Position S5_Position06 Number of `no vial` to this position 0
+Tray_Position S5_Position07 Number of `no vial` to this position 0
+Tray_Position S5_Position08 Number of `no vial` to this position 0
+Tray_Position S5_Position09 Number of `no vial` to this position 0
+Tray_Position S5_Position10 Number of `no vial` to this position 0
+Tray_Position S5_Position11 Number of `no vial` to this position 0
+Tray_Position S5_Position12 Number of `no vial` to this position 0
+Tray_Position S6_Position01 Number of `no vial` to this position 0
+Tray_Position S6_Position02 Number of `no vial` to this position 0
+Tray_Position S6_Position03 Number of `no vial` to this position 0
+Tray_Position S6_Position04 Number of `no vial` to this position 0
+Tray_Position S6_Position05 Number of `no vial` to this position 0
+Tray_Position S6_Position06 Number of `no vial` to this position 0
+Tray_Position S6_Position07 Number of `no vial` to this position 0
+Tray_Position S6_Position08 Number of `no vial` to this position 0
+Tray_Position S6_Position09 Number of `no vial` to this position 0
+Tray_Position S6_Position10 Number of `no vial` to this position 0
+Tray_Position S6_Position11 Number of `no vial` to this position 0
+Tray_Position S6_Position12 Number of `no vial` to this position 0
+Tray_Position S7_Position01 Number of `no vial` to this position 0
+Tray_Position S7_Position02 Number of `no vial` to this position 0
+Tray_Position S7_Position03 Number of `no vial` to this position 0
+Tray_Position S7_Position04 Number of `no vial` to this position 0
+Tray_Position S7_Position05 Number of `no vial` to this position 0
+Tray_Position S7_Position06 Number of `no vial` to this position 0
+Tray_Position S7_Position07 Number of `no vial` to this position 0
+Tray_Position S7_Position08 Number of `no vial` to this position 0
+Tray_Position S7_Position09 Number of `no vial` to this position 0
+Tray_Position S7_Position10 Number of `no vial` to this position 0
+Tray_Position S7_Position11 Number of `no vial` to this position 0
+Tray_Position S7_Position12 Number of `no vial` to this position 0
+Tray_Position S8_Position01 Number of `no vial` to this position 0
+Tray_Position S8_Position02 Number of `no vial` to this position 0
+Tray_Position S8_Position03 Number of `no vial` to this position 0
+Tray_Position S8_Position04 Number of `no vial` to this position 0
+Tray_Position S8_Position05 Number of `no vial` to this position 0
+Tray_Position S8_Position06 Number of `no vial` to this position 0
+Tray_Position S8_Position07 Number of `no vial` to this position 0
+Tray_Position S8_Position08 Number of `no vial` to this position 0
+Tray_Position S8_Position09 Number of `no vial` to this position 0
+Tray_Position S8_Position10 Number of `no vial` to this position 0
+Tray_Position S8_Position11 Number of `no vial` to this position 0
+Tray_Position S8_Position12 Number of `no vial` to this position 0
+Tray_Position S9_Position01 Number of `no vial` to this position 0
+Tray_Position S9_Position02 Number of `no vial` to this position 0
+Tray_Position S9_Position03 Number of `no vial` to this position 0
+Tray_Position S9_Position04 Number of `no vial` to this position 0
+Tray_Position S9_Position05 Number of `no vial` to this position 0
+Tray_Position S9_Position06 Number of `no vial` to this position 0
+Tray_Position S9_Position07 Number of `no vial` to this position 0
+Tray_Position S9_Position08 Number of `no vial` to this position 0
+Tray_Position S9_Position09 Number of `no vial` to this position 0
+Tray_Position S9_Position10 Number of `no vial` to this position 0
+Tray_Position S9_Position11 Number of `no vial` to this position 0
+Tray_Position S9_Position12 Number of `no vial` to this position 0
+Tray_Position S10_Position01 Number of `no vial` to this position 0
+Tray_Position S10_Position02 Number of `no vial` to this position 0
+Tray_Position S10_Position03 Number of `no vial` to this position 0
+Tray_Position S10_Position04 Number of `no vial` to this position 0
+Tray_Position S10_Position05 Number of `no vial` to this position 0
+Tray_Position S10_Position06 Number of `no vial` to this position 0
+Tray_Position S10_Position07 Number of `no vial` to this position 0
+Tray_Position S10_Position08 Number of `no vial` to this position 0
+Tray_Position S10_Position09 Number of `no vial` to this position 0
+Tray_Position S10_Position10 Number of `no vial` to this position 0
+Tray_Position S10_Position11 Number of `no vial` to this position 0
+Tray_Position S10_Position12 Number of `no vial` to this position 0
+Tray_Position S11_Position01 Number of `no vial` to this position 0
+Tray_Position S11_Position02 Number of `no vial` to this position 0
+Tray_Position S11_Position03 Number of `no vial` to this position 0
+Tray_Position S11_Position04 Number of `no vial` to this position 0
+Tray_Position S11_Position05 Number of `no vial` to this position 0
+Tray_Position S11_Position06 Number of `no vial` to this position 0
+Tray_Position S11_Position07 Number of `no vial` to this position 0
+Tray_Position S11_Position08 Number of `no vial` to this position 0
+Tray_Position S11_Position09 Number of `no vial` to this position 0
+Tray_Position S11_Position10 Number of `no vial` to this position 0
+Tray_Position S11_Position11 Number of `no vial` to this position 0
+Tray_Position S11_Position12 Number of `no vial` to this position 0
+Tray_Position S12_Position01 Number of `no vial` to this position 0
+Tray_Position S12_Position02 Number of `no vial` to this position 0
+Tray_Position S12_Position03 Number of `no vial` to this position 0
+Tray_Position S12_Position04 Number of `no vial` to this position 0
+Tray_Position S12_Position05 Number of `no vial` to this position 0
+Tray_Position S12_Position06 Number of `no vial` to this position 0
+Tray_Position S12_Position07 Number of `no vial` to this position 0
+Tray_Position S12_Position08 Number of `no vial` to this position 0
+Tray_Position S12_Position09 Number of `no vial` to this position 0
+Tray_Position S12_Position10 Number of `no vial` to this position 0
+Tray_Position S12_Position11 Number of `no vial` to this position 0
+Tray_Position S12_Position12 Number of `no vial` to this position 0
+Tray_Position S13_Position01 Number of `no vial` to this position 0
+Tray_Position S13_Position02 Number of `no vial` to this position 0
+Tray_Position S13_Position03 Number of `no vial` to this position 0
+Tray_Position S13_Position04 Number of `no vial` to this position 0
+Tray_Position S13_Position05 Number of `no vial` to this position 0
+Tray_Position S13_Position06 Number of `no vial` to this position 0
+Tray_Position S13_Position07 Number of `no vial` to this position 0
+Tray_Position S13_Position08 Number of `no vial` to this position 0
+Tray_Position S13_Position09 Number of `no vial` to this position 0
+Tray_Position S13_Position10 Number of `no vial` to this position 0
+Tray_Position S13_Position11 Number of `no vial` to this position 0
+Tray_Position S13_Position12 Number of `no vial` to this position 0
+Tray_Position S14_Position01 Number of `no vial` to this position 0
+Tray_Position S14_Position02 Number of `no vial` to this position 0
+Tray_Position S14_Position03 Number of `no vial` to this position 0
+Tray_Position S14_Position04 Number of `no vial` to this position 0
+Tray_Position S14_Position05 Number of `no vial` to this position 0
+Tray_Position S14_Position06 Number of `no vial` to this position 0
+Tray_Position S14_Position07 Number of `no vial` to this position 0
+Tray_Position S14_Position08 Number of `no vial` to this position 0
+Tray_Position S14_Position09 Number of `no vial` to this position 0
+Tray_Position S14_Position10 Number of `no vial` to this position 0
+Tray_Position S14_Position11 Number of `no vial` to this position 0
+Tray_Position S14_Position12 Number of `no vial` to this position 0
+Tray_Position S15_Position01 Number of `no vial` to this position 0
+Tray_Position S15_Position02 Number of `no vial` to this position 0
+Tray_Position S15_Position03 Number of `no vial` to this position 0
+Tray_Position S15_Position04 Number of `no vial` to this position 0
+Tray_Position S15_Position05 Number of `no vial` to this position 0
+Tray_Position S15_Position06 Number of `no vial` to this position 0
+Tray_Position S15_Position07 Number of `no vial` to this position 0
+Tray_Position S15_Position08 Number of `no vial` to this position 0
+Tray_Position S15_Position09 Number of `no vial` to this position 0
+Tray_Position S15_Position10 Number of `no vial` to this position 0
+Tray_Position S15_Position11 Number of `no vial` to this position 0
+Tray_Position S15_Position12 Number of `no vial` to this position 0
+Tray_Position R1_Position01 Number of `no vial` to this position 0
+Tray_Position R1_Position02 Number of `no vial` to this position 0
+Tray_Position R1_Position03 Number of `no vial` to this position 0
+Tray_Position R1_Position04 Number of `no vial` to this position 0
+Tray_Position R1_Position05 Number of `no vial` to this position 0
+Tray_Position R1_Position06 Number of `no vial` to this position 0
+Tray_Position R1_Position07 Number of `no vial` to this position 0
+Tray_Position R1_Position08 Number of `no vial` to this position 0
+Tray_Position R1_Position09 Number of `no vial` to this position 0
+Tray_Position R1_Position10 Number of `no vial` to this position 0
+Tray_Position R1_Position11 Number of `no vial` to this position 0
+Tray_Position R1_Position12 Number of `no vial` to this position 0
+ls6500.putOrGet: patience...writing pickled data to Pickles/Pre-irrad_7_141106.pickle
+ls6500.defineMatchingSamples 
+Name : Samples
+ls6500.Analyze
+ls.Analyze: kinds ['0102', '0052', '0050', '0140', '0142', '1002', '0100', 'STD', '1000', 'EMPTY']
+histogramming samples 0102_2F25 0052_2F14 0050_4F13 0140_4F23 0050_2F13 0142_1F33 0140_1F23 0102_4F25 0102_1F25 1002_1F35 0142_3F33 0100_3F15 0050_1F13 STD_14_C 0100_4F15 0102_3F25 1000_2F34 0100_1F15 EMPTY_S3_Position03 0052_3F14 0050_3F13 0052_4F14 STD_3_H 1000_1F34 0100_2F15 0142_2F33 0140_3F23 0142_4F33 0140_2F23 0052_1F14 
+ls6500.Analyze: Wrote hists to Histograms/Pre-irrad_7_141106.root

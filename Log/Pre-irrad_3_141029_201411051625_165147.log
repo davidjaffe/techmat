@@ -1,0 +1,8 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_3_141029_201411051625_165147.log
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_3_141029/ 
+dataSubDir Pre-irrad_3_141029/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: Found 192 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00187.xls from list

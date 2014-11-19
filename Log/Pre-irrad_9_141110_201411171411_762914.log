@@ -1,0 +1,7 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_9_141110_201411171411_762914.log
+ls6500: Irradiation date is 2020/04/01 01:23:45
+ls6500: initialization ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/ 
+dataSubDir Pre-irrad_9_141110/
+initialize spreadsheetReader
+ls6500.Main: pickMode put

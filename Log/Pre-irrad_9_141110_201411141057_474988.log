@@ -1,0 +1,98 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_9_141110_201411141057_474988.log
+ls6500: Irradiation date is 2020/04/01 01:23:45
+Created Figures/Pre-irrad_9_141110/
+ls6500: initialization ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_9_141110/ 
+dataSubDir Pre-irrad_9_141110/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: S1_Position03 has no vial
+ls6500.processHeader: S1_Position05 has no vial
+ls6500.processHeader: S1_Position07 has no vial
+ls6500.processHeader: S1_Position09 has no vial
+ls6500.processHeader: S1_Position11 has no vial
+ls6500.processHeader: S2_Position01 has no vial
+ls6500.processHeader: S2_Position04 has no vial
+ls6500.processHeader: S2_Position06 has no vial
+ls6500.processHeader: S2_Position08 has no vial
+ls6500.processHeader: S2_Position10 has no vial
+ls6500.processHeader: S2_Position12 has no vial
+ls6500.processHeader: S3_Position02 has no vial
+ls6500.processHeader: S3_Position05 has no vial
+ls6500.processHeader: S3_Position07 has no vial
+ls6500.processHeader: S3_Position09 has no vial
+ls6500.processHeader: S3_Position11 has no vial
+ls6500.processHeader: S4_Position01 has no vial
+ls6500.processHeader: S4_Position03 has no vial
+ls6500.processHeader: S4_Position06 has no vial
+ls6500.processHeader: S4_Position08 has no vial
+ls6500.processHeader: S4_Position10 has no vial
+ls6500.processHeader: S4_Position12 has no vial
+ls6500.processHeader: S5_Position02 has no vial
+ls6500.processHeader: S5_Position04 has no vial
+ls6500.processHeader: S5_Position07 has no vial
+ls6500.processHeader: S5_Position09 has no vial
+ls6500.processHeader: S5_Position11 has no vial
+ls6500.processHeader: S6_Position01 has no vial
+ls6500.processHeader: S6_Position03 has no vial
+ls6500.processHeader: S6_Position05 has no vial
+ls6500.processHeader: S6_Position08 has no vial
+ls6500.processHeader: S6_Position10 has no vial
+ls6500.processHeader: S7_Position02 has no vial
+ls6500.processHeader: S7_Position04 has no vial
+ls6500.processHeader: S7_Position06 has no vial
+ls6500.processHeader: S7_Position09 has no vial
+ls6500.processHeader: S7_Position11 has no vial
+ls6500.processHeader: S8_Position01 has no vial
+ls6500.processHeader: S8_Position03 has no vial
+ls6500.processHeader: S8_Position05 has no vial
+ls6500.processHeader: S8_Position07 has no vial
+ls6500.processHeader: S8_Position10 has no vial
+ls6500.processHeader: S8_Position11 has no vial
+ls6500.processHeader: S8_Position12 has no vial
+ls6500.processHeader: S9_Position01 has no vial
+ls6500.processHeader: S9_Position02 has no vial
+ls6500.processHeader: S9_Position04 has no vial
+ls6500.processHeader: S9_Position06 has no vial
+ls6500.processHeader: S9_Position07 has no vial
+ls6500.processHeader: S9_Position08 has no vial
+ls6500.processHeader: S9_Position10 has no vial
+ls6500.processHeader: S9_Position11 has no vial
+ls6500.processHeader: S10_Position01 has no vial
+ls6500.processHeader: S10_Position03 has no vial
+ls6500.processHeader: S10_Position05 has no vial
+ls6500.processHeader: S10_Position07 has no vial
+ls6500.processHeader: S10_Position09 has no vial
+ls6500.processHeader: S10_Position12 has no vial
+ls6500.processHeader: S11_Position02 has no vial
+ls6500.processHeader: S11_Position04 has no vial
+ls6500.processHeader: S11_Position06 has no vial
+ls6500.processHeader: S11_Position08 has no vial
+ls6500.processHeader: S11_Position09 has no vial
+ls6500.processHeader: S11_Position10 has no vial
+ls6500.processHeader: S11_Position12 has no vial
+ls6500.processHeader: S12_Position01 has no vial
+ls6500.processHeader: S12_Position03 has no vial
+ls6500.processHeader: S12_Position05 has no vial
+ls6500.processHeader: S12_Position06 has no vial
+ls6500.processHeader: S12_Position07 has no vial
+ls6500.processHeader: S12_Position08 has no vial
+ls6500.processHeader: S12_Position09 has no vial
+ls6500.processHeader: S12_Position11 has no vial
+ls6500.processHeader: S13_Position04 has no vial
+ls6500.processHeader: S13_Position06 has no vial
+ls6500.processHeader: S13_Position08 has no vial
+ls6500.processHeader: S13_Position11 has no vial
+ls6500.processHeader: S13_Position12 has no vial
+ls6500.processHeader: S14_Position08 has no vial
+ls6500.processHeader: S14_Position10 has no vial
+ls6500.processHeader: S14_Position12 has no vial
+ls6500.processHeader: S15_Position03 has no vial
+ls6500.processHeader: S15_Position07 has no vial
+ls6500.processHeader: S15_Position08 has no vial
+ls6500.processHeader: R1_Position09 has no vial
+ls6500.processHeader: R1_Position10 has no vial
+ls6500.processHeader: R1_Position11 has no vial
+ls6500.processHeader: R1_Position12 has no vial
+ls6500.processHeader: Found 104 total samples
+ls6500.matchVialMeas: remove summary file MeasurementNo00105.xls from list

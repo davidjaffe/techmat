@@ -1,0 +1,131 @@
+ls6500: Output directed to terminal and Log/mergegamma_201411100905_383701.log
+ls6500: Irradiation date is 2014/10/20 16:00:00
+ls6500: initialization mergegamma . Merging /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/
+ls6500.Main: pickMode merge
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_1Gy_141020.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_1Gy_141020.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141021.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 67
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141021.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141022.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 67 , 68
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 HDPE_0_1 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141022.pickle
+ls6500.defineMatchingSamples 
+Name : Samples
+0050_0 : 0050_0_1,0050_0_2
+0050_100 : 0050_100_1,0050_100_2
+0050_400 : 0050_400_1,0050_400_2
+0052_0 : 0052_0_1,0052_0_2
+0052_100 : 0052_100_1,0052_100_2
+0052_400 : 0052_400_1,0052_400_2
+0100_0 : 0100_0_1,0100_0_2
+0100_1 : 0100_1_1,0100_1_2
+0100_10 : 0100_10_1,0100_10_2
+0100_100 : 0100_100_1,0100_100_2
+0100_1000 : 0100_1000_1,0100_1000_2
+0100_400 : 0100_400_1,0100_400_2
+0102_0 : 0102_0_1,0102_0_2
+0102_1 : 0102_1_1,0102_1_2
+0102_10 : 0102_10_1,0102_10_2
+0102_100 : 0102_100_1,0102_100_2
+0102_1000 : 0102_1000_1,0102_1000_2
+0102_400 : 0102_400_1,0102_400_2
+EMPTY : EMPTY_S1_Position01,EMPTY_S2_Position02,EMPTY_S3_Position03,EMPTY_S4_Position04,EMPTY_S5_Position05,EMPTY_S6_Position06,EMPTY_S7_Position07
+GLASS_0 : GLASS_0_1,GLASS_0_2
+GLASS_100 : GLASS_100_1,GLASS_100_2
+GLASS_1000 : GLASS_1000_1,GLASS_1000_2
+GLASS_400 : GLASS_400_1,GLASS_400_2
+PP_0 : PP_0_1,PP_0_2
+PP_100 : PP_100_1,PP_100_2
+PP_1000 : PP_1000_1,PP_1000_2
+PP_400 : PP_400_1,PP_400_2
+ls6500.Analyze
+ls.Analyze: kinds ['0100', '15%', 'EMPTY', '0052', 'PP', 'GLASS', '0050', '0102', 'LS', '5%', 'WbLS-5', '10%', 'WbLS-10', 'HDPE', 'WbLS-15']
+histogramming samples 0100_1_1 0100_1_2 15%_WbLS_Vit._C 0100_1000_2 EMPTY_S6_Position06 0052_0_1 PP_1000_1 PP_1000_2 EMPTY_S2_Position02 0100_400_2 0100_400_1 GLASS_100_1 0050_400_1 EMPTY_S1_Position01 0050_400_2 0100_10_2 0102_1000_1 0100_100_2 GLASS_400_2 GLASS_400_1 0100_100_1 0052_100_2 0052_100_1 LS_Vit._C 0050_100_2 EMPTY_S7_Position07 GLASS_1000_1 0102_100_1 0102_100_2 GLASS_1000_2 0102_10_1 5%_WbLS_Vit._C WbLS-5_10/20/14 0102_10_2 0102_1_2 EMPTY_S5_Position05 0102_1_1 10%_WbLS_Vit._C PP_100_1 GLASS_100_2 PP_100_2 PP_400_2 WbLS-10_10/20/14 0102_400_1 0102_400_2 0052_400_2 0052_400_1 PP_0_2 PP_400_1 EMPTY_S3_Position03 0102_1000_2 LS_10/20/14 GLASS_0_1 0100_10_1 GLASS_0_2 0050_100_1 0052_0_2 PP_0_1 HDPE_0_1 EMPTY_S4_Position04 WbLS-15_10/20/14 0100_0_1 0102_0_2 0102_0_1 0100_0_2 0050_0_2 0050_0_1 0100_1000_1 
+ls6500.combineCommonSamples: 0100_10 graphs g0100_10_1, g0100_10_2
+Add graph A0100_10 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_1000 graphs gGLASS_1000_1, gGLASS_1000_2
+Add graph AGLASS_1000 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_400 graphs g0052_400_1, g0052_400_2
+Add graph A0052_400 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_10 graphs g0102_10_1, g0102_10_2
+Add graph A0102_10 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: EMPTY graphs gEMPTY_S1_Position01_20141017, gEMPTY_S2_Position02_20141017, gEMPTY_S3_Position03_20141017, gEMPTY_S4_Position04_20141017, gEMPTY_S5_Position05_20141021, gEMPTY_S6_Position06_20141021, gEMPTY_S7_Position07_20141021
+ls6500.combineCommonSamples: 0050_0 graphs g0050_0_1, g0050_0_2
+Add graph A0050_0 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0102_1000 graphs g0102_1000_1, g0102_1000_2
+Add graph A0102_1000 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0100_400 graphs g0100_400_1, g0100_400_2
+Add graph A0100_400 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_100 graphs gGLASS_100_1, gGLASS_100_2
+Add graph AGLASS_100 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_0 graphs g0052_0_1, g0052_0_2
+Add graph A0052_0 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_400 graphs g0102_400_1, g0102_400_2
+Add graph A0102_400 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_0 graphs gPP_0_1, gPP_0_2
+Add graph APP_0 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0050_400 graphs g0050_400_1, g0050_400_2
+Add graph A0050_400 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0052_100 graphs g0052_100_1, g0052_100_2
+Add graph A0052_100 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: PP_100 graphs gPP_100_1, gPP_100_2
+Add graph APP_100 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0102_100 graphs g0102_100_1, g0102_100_2
+Add graph A0102_100 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_0 graphs g0102_0_1, g0102_0_2
+Add graph A0102_0 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_1 graphs g0102_1_1, g0102_1_2
+Add graph A0102_1 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_400 graphs gPP_400_1, gPP_400_2
+Add graph APP_400 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: PP_1000 graphs gPP_1000_1, gPP_1000_2
+Add graph APP_1000 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0100_1000 graphs g0100_1000_1, g0100_1000_2
+Add graph A0100_1000 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_400 graphs gGLASS_400_1, gGLASS_400_2
+Add graph AGLASS_400 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0100_100 graphs g0100_100_1, g0100_100_2
+Add graph A0100_100 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0050_100 graphs g0050_100_1, g0050_100_2
+Add graph A0050_100 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0100_0 graphs g0100_0_1, g0100_0_2
+Add graph A0100_0 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0100_1 graphs g0100_1_1, g0100_1_2
+Add graph A0100_1 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_0 graphs gGLASS_0_1, gGLASS_0_2
+Add graph AGLASS_0 to MultiGraphs. kind= QGLASS
+name e0100 #points 62
+name eGLASS #points 20
+name e0052 #points 30
+name e0102 #points 62
+name e0050 #points 30
+name e0102 #points 62
+name e0100 #points 62
+name eGLASS #points 20
+name e0052 #points 30
+name e0102 #points 62
+name ePP #points 17
+name e0050 #points 30
+name e0052 #points 30
+name ePP #points 17
+name e0102 #points 62
+name e0102 #points 62
+name e0102 #points 62
+name ePP #points 17
+name ePP #points 17
+name e0100 #points 62
+name eGLASS #points 20
+name e0100 #points 62
+name e0050 #points 30
+name e0100 #points 62
+name e0100 #points 62
+name eGLASS #points 20

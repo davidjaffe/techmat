@@ -1,0 +1,771 @@
+ls6500: Output directed to terminal and Log/mergegamma_201411101314_024286.log
+ls6500: Irradiation date is 2014/10/20 16:00:00
+ls6500: initialization mergegamma . Merging /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/
+ls6500.Main: pickMode merge
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_1Gy_141020.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_1Gy_141020.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141021.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 67
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141021.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141022.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 67 , 68
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 HDPE_0_1 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141022.pickle
+ls6500.defineMatchingSamples 
+Name : Samples
+0050_0 : 0050_0_1,0050_0_2
+0050_100 : 0050_100_1,0050_100_2
+0050_400 : 0050_400_1,0050_400_2
+0052_0 : 0052_0_1,0052_0_2
+0052_100 : 0052_100_1,0052_100_2
+0052_400 : 0052_400_1,0052_400_2
+0100_0 : 0100_0_1,0100_0_2
+0100_1 : 0100_1_1,0100_1_2
+0100_10 : 0100_10_1,0100_10_2
+0100_100 : 0100_100_1,0100_100_2
+0100_1000 : 0100_1000_1,0100_1000_2
+0100_400 : 0100_400_1,0100_400_2
+0102_0 : 0102_0_1,0102_0_2
+0102_1 : 0102_1_1,0102_1_2
+0102_10 : 0102_10_1,0102_10_2
+0102_100 : 0102_100_1,0102_100_2
+0102_1000 : 0102_1000_1,0102_1000_2
+0102_400 : 0102_400_1,0102_400_2
+EMPTY : EMPTY_S1_Position01,EMPTY_S2_Position02,EMPTY_S3_Position03,EMPTY_S4_Position04,EMPTY_S5_Position05,EMPTY_S6_Position06,EMPTY_S7_Position07
+GLASS_0 : GLASS_0_1,GLASS_0_2
+GLASS_100 : GLASS_100_1,GLASS_100_2
+GLASS_1000 : GLASS_1000_1,GLASS_1000_2
+GLASS_400 : GLASS_400_1,GLASS_400_2
+PP_0 : PP_0_1,PP_0_2
+PP_100 : PP_100_1,PP_100_2
+PP_1000 : PP_1000_1,PP_1000_2
+PP_400 : PP_400_1,PP_400_2
+ls6500.Analyze
+ls.Analyze: kinds ['0100', '15%', 'EMPTY', '0052', 'PP', 'GLASS', '0050', '0102', 'LS', '5%', 'WbLS-5', '10%', 'WbLS-10', 'HDPE', 'WbLS-15']
+MultiGraphs make map for kind 0100 p1  p2 g
+MultiGraphs make map for kind 0100 p1 n p2 n
+MultiGraphs make map for kind 0100 p1 c p2 c
+MultiGraphs make map for kind 0100 p1 a p2 a
+MultiGraphs make map for kind 0100 p1 Q p2 Q
+MultiGraphs make map for kind 0100 p1 D p2 D
+MultiGraphs make map for kind 15% p1  p2 g
+MultiGraphs make map for kind 15% p1 n p2 n
+MultiGraphs make map for kind 15% p1 c p2 c
+MultiGraphs make map for kind 15% p1 a p2 a
+MultiGraphs make map for kind 15% p1 Q p2 Q
+MultiGraphs make map for kind 15% p1 D p2 D
+MultiGraphs make map for kind EMPTY p1  p2 g
+MultiGraphs make map for kind EMPTY p1 n p2 n
+MultiGraphs make map for kind EMPTY p1 c p2 c
+MultiGraphs make map for kind EMPTY p1 a p2 a
+MultiGraphs make map for kind EMPTY p1 Q p2 Q
+MultiGraphs make map for kind EMPTY p1 D p2 D
+MultiGraphs make map for kind 0052 p1  p2 g
+MultiGraphs make map for kind 0052 p1 n p2 n
+MultiGraphs make map for kind 0052 p1 c p2 c
+MultiGraphs make map for kind 0052 p1 a p2 a
+MultiGraphs make map for kind 0052 p1 Q p2 Q
+MultiGraphs make map for kind 0052 p1 D p2 D
+MultiGraphs make map for kind PP p1  p2 g
+MultiGraphs make map for kind PP p1 n p2 n
+MultiGraphs make map for kind PP p1 c p2 c
+MultiGraphs make map for kind PP p1 a p2 a
+MultiGraphs make map for kind PP p1 Q p2 Q
+MultiGraphs make map for kind PP p1 D p2 D
+MultiGraphs make map for kind GLASS p1  p2 g
+MultiGraphs make map for kind GLASS p1 n p2 n
+MultiGraphs make map for kind GLASS p1 c p2 c
+MultiGraphs make map for kind GLASS p1 a p2 a
+MultiGraphs make map for kind GLASS p1 Q p2 Q
+MultiGraphs make map for kind GLASS p1 D p2 D
+MultiGraphs make map for kind 0050 p1  p2 g
+MultiGraphs make map for kind 0050 p1 n p2 n
+MultiGraphs make map for kind 0050 p1 c p2 c
+MultiGraphs make map for kind 0050 p1 a p2 a
+MultiGraphs make map for kind 0050 p1 Q p2 Q
+MultiGraphs make map for kind 0050 p1 D p2 D
+MultiGraphs make map for kind 0102 p1  p2 g
+MultiGraphs make map for kind 0102 p1 n p2 n
+MultiGraphs make map for kind 0102 p1 c p2 c
+MultiGraphs make map for kind 0102 p1 a p2 a
+MultiGraphs make map for kind 0102 p1 Q p2 Q
+MultiGraphs make map for kind 0102 p1 D p2 D
+MultiGraphs make map for kind LS p1  p2 g
+MultiGraphs make map for kind LS p1 n p2 n
+MultiGraphs make map for kind LS p1 c p2 c
+MultiGraphs make map for kind LS p1 a p2 a
+MultiGraphs make map for kind LS p1 Q p2 Q
+MultiGraphs make map for kind LS p1 D p2 D
+MultiGraphs make map for kind 5% p1  p2 g
+MultiGraphs make map for kind 5% p1 n p2 n
+MultiGraphs make map for kind 5% p1 c p2 c
+MultiGraphs make map for kind 5% p1 a p2 a
+MultiGraphs make map for kind 5% p1 Q p2 Q
+MultiGraphs make map for kind 5% p1 D p2 D
+MultiGraphs make map for kind WbLS-5 p1  p2 g
+MultiGraphs make map for kind WbLS-5 p1 n p2 n
+MultiGraphs make map for kind WbLS-5 p1 c p2 c
+MultiGraphs make map for kind WbLS-5 p1 a p2 a
+MultiGraphs make map for kind WbLS-5 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-5 p1 D p2 D
+MultiGraphs make map for kind 10% p1  p2 g
+MultiGraphs make map for kind 10% p1 n p2 n
+MultiGraphs make map for kind 10% p1 c p2 c
+MultiGraphs make map for kind 10% p1 a p2 a
+MultiGraphs make map for kind 10% p1 Q p2 Q
+MultiGraphs make map for kind 10% p1 D p2 D
+MultiGraphs make map for kind WbLS-10 p1  p2 g
+MultiGraphs make map for kind WbLS-10 p1 n p2 n
+MultiGraphs make map for kind WbLS-10 p1 c p2 c
+MultiGraphs make map for kind WbLS-10 p1 a p2 a
+MultiGraphs make map for kind WbLS-10 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-10 p1 D p2 D
+MultiGraphs make map for kind HDPE p1  p2 g
+MultiGraphs make map for kind HDPE p1 n p2 n
+MultiGraphs make map for kind HDPE p1 c p2 c
+MultiGraphs make map for kind HDPE p1 a p2 a
+MultiGraphs make map for kind HDPE p1 Q p2 Q
+MultiGraphs make map for kind HDPE p1 D p2 D
+MultiGraphs make map for kind WbLS-15 p1  p2 g
+MultiGraphs make map for kind WbLS-15 p1 n p2 n
+MultiGraphs make map for kind WbLS-15 p1 c p2 c
+MultiGraphs make map for kind WbLS-15 p1 a p2 a
+MultiGraphs make map for kind WbLS-15 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-15 p1 D p2 D
+histogramming samples 0100_1_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_1_1") at 0x111bc1920>
+Add graph c0100_1_1 to MultiGraphs. kind= c0100
+0100_1_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_1_2") at 0x14741ce70>
+Add graph c0100_1_2 to MultiGraphs. kind= c0100
+15%_WbLS_Vit._C ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c15%_WbLS_Vit._C") at 0x14741fff0>
+Add graph c15%_WbLS_Vit._C to MultiGraphs. kind= c15%
+0100_1000_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_1000_2") at 0x147437020>
+Add graph c0100_1000_2 to MultiGraphs. kind= c0100
+EMPTY_S6_Position06 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S6_Position06") at 0x147438870>
+Add graph cEMPTY_S6_Position06 to MultiGraphs. kind= cEMPTY
+0052_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_0_1") at 0x147441f50>
+Add graph c0052_0_1 to MultiGraphs. kind= c0052
+PP_1000_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_1000_1") at 0x1474437a0>
+Add graph cPP_1000_1 to MultiGraphs. kind= cPP
+PP_1000_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_1000_2") at 0x147445170>
+Add graph cPP_1000_2 to MultiGraphs. kind= cPP
+EMPTY_S2_Position02 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S2_Position02") at 0x14744d650>
+Add graph cEMPTY_S2_Position02 to MultiGraphs. kind= cEMPTY
+0100_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_400_2") at 0x147455f40>
+Add graph c0100_400_2 to MultiGraphs. kind= c0100
+0100_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_400_1") at 0x14745e7e0>
+Add graph c0100_400_1 to MultiGraphs. kind= c0100
+GLASS_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_100_1") at 0x147461c20>
+Add graph cGLASS_100_1 to MultiGraphs. kind= cGLASS
+0050_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_400_1") at 0x1471fa5e0>
+Add graph c0050_400_1 to MultiGraphs. kind= c0050
+EMPTY_S1_Position01 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S1_Position01") at 0x1471c0c20>
+Add graph cEMPTY_S1_Position01 to MultiGraphs. kind= cEMPTY
+0050_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_400_2") at 0x1471c98d0>
+Add graph c0050_400_2 to MultiGraphs. kind= c0050
+0100_10_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_10_2") at 0x1471d1f90>
+Add graph c0100_10_2 to MultiGraphs. kind= c0100
+0102_1000_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_1000_1") at 0x10a28c920>
+Add graph c0102_1000_1 to MultiGraphs. kind= c0102
+0100_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_100_2") at 0x10a291dd0>
+Add graph c0100_100_2 to MultiGraphs. kind= c0100
+GLASS_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_400_2") at 0x10a284820>
+Add graph cGLASS_400_2 to MultiGraphs. kind= cGLASS
+GLASS_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_400_1") at 0x1339fbec0>
+Add graph cGLASS_400_1 to MultiGraphs. kind= cGLASS
+0100_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_100_1") at 0x143cfbfc0>
+Add graph c0100_100_1 to MultiGraphs. kind= c0100
+0052_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_100_2") at 0x147660ed0>
+Add graph c0052_100_2 to MultiGraphs. kind= c0052
+0052_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_100_1") at 0x14766a230>
+Add graph c0052_100_1 to MultiGraphs. kind= c0052
+LS_Vit._C ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cLS_Vit._C") at 0x10a262eb0>
+Add graph cLS_Vit._C to MultiGraphs. kind= cLS
+0050_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_100_2") at 0x10b06e980>
+Add graph c0050_100_2 to MultiGraphs. kind= c0050
+EMPTY_S7_Position07 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S7_Position07") at 0x10b071b90>
+Add graph cEMPTY_S7_Position07 to MultiGraphs. kind= cEMPTY
+GLASS_1000_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_1000_1") at 0x10b074e90>
+Add graph cGLASS_1000_1 to MultiGraphs. kind= cGLASS
+0102_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_100_1") at 0x10b078220>
+Add graph c0102_100_1 to MultiGraphs. kind= c0102
+0102_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_100_2") at 0x10a29cd20>
+Add graph c0102_100_2 to MultiGraphs. kind= c0102
+GLASS_1000_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_1000_2") at 0x10a26f670>
+Add graph cGLASS_1000_2 to MultiGraphs. kind= cGLASS
+0102_10_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_10_1") at 0x13b9fbfe0>
+Add graph c0102_10_1 to MultiGraphs. kind= c0102
+5%_WbLS_Vit._C ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c5%_WbLS_Vit._C") at 0x12d4fbf70>
+Add graph c5%_WbLS_Vit._C to MultiGraphs. kind= c5%
+WbLS-5_10/20/14 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cWbLS-5_10/20/14") at 0x13a6fbe50>
+Add graph cWbLS-5_10/20/14 to MultiGraphs. kind= cWbLS-5
+0102_10_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_10_2") at 0x10a26bcf0>
+Add graph c0102_10_2 to MultiGraphs. kind= c0102
+0102_1_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_1_2") at 0x146e9e060>
+Add graph c0102_1_2 to MultiGraphs. kind= c0102
+EMPTY_S5_Position05 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S5_Position05") at 0x146ea1300>
+Add graph cEMPTY_S5_Position05 to MultiGraphs. kind= cEMPTY
+0102_1_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_1_1") at 0x10a259e20>
+Add graph c0102_1_1 to MultiGraphs. kind= c0102
+10%_WbLS_Vit._C ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c10%_WbLS_Vit._C") at 0x10a2810b0>
+Add graph c10%_WbLS_Vit._C to MultiGraphs. kind= c10%
+PP_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_100_1") at 0x1471ddba0>
+Add graph cPP_100_1 to MultiGraphs. kind= cPP
+GLASS_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_100_2") at 0x10a25b260>
+Add graph cGLASS_100_2 to MultiGraphs. kind= cGLASS
+PP_100_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_100_2") at 0x10a271050>
+Add graph cPP_100_2 to MultiGraphs. kind= cPP
+PP_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_400_2") at 0x147673f40>
+Add graph cPP_400_2 to MultiGraphs. kind= cPP
+WbLS-10_10/20/14 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cWbLS-10_10/20/14") at 0x10a272300>
+Add graph cWbLS-10_10/20/14 to MultiGraphs. kind= cWbLS-10
+0102_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_400_1") at 0x10a269190>
+Add graph c0102_400_1 to MultiGraphs. kind= c0102
+0102_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_400_2") at 0x145edf780>
+Add graph c0102_400_2 to MultiGraphs. kind= c0102
+0052_400_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_400_2") at 0x146eb4330>
+Add graph c0052_400_2 to MultiGraphs. kind= c0052
+0052_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_400_1") at 0x146ebd340>
+Add graph c0052_400_1 to MultiGraphs. kind= c0052
+PP_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_0_2") at 0x146ec06c0>
+Add graph cPP_0_2 to MultiGraphs. kind= cPP
+PP_400_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_400_1") at 0x146ec3b10>
+Add graph cPP_400_1 to MultiGraphs. kind= cPP
+EMPTY_S3_Position03 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S3_Position03") at 0x145ee3340>
+Add graph cEMPTY_S3_Position03 to MultiGraphs. kind= cEMPTY
+0102_1000_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_1000_2") at 0x146ec7a40>
+Add graph c0102_1000_2 to MultiGraphs. kind= c0102
+LS_10/20/14 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cLS_10/20/14") at 0x146ecaf50>
+Add graph cLS_10/20/14 to MultiGraphs. kind= cLS
+GLASS_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_0_1") at 0x146ece340>
+Add graph cGLASS_0_1 to MultiGraphs. kind= cGLASS
+0100_10_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_10_1") at 0x1471e13e0>
+Add graph c0100_10_1 to MultiGraphs. kind= c0100
+GLASS_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cGLASS_0_2") at 0x1471e4830>
+Add graph cGLASS_0_2 to MultiGraphs. kind= cGLASS
+0050_100_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_100_1") at 0x146ed4d70>
+Add graph c0050_100_1 to MultiGraphs. kind= c0050
+0052_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0052_0_2") at 0x147468720>
+Add graph c0052_0_2 to MultiGraphs. kind= c0052
+PP_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cPP_0_1") at 0x14767a420>
+Add graph cPP_0_1 to MultiGraphs. kind= cPP
+HDPE_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cHDPE_0_1") at 0x14767c870>
+Add graph cHDPE_0_1 to MultiGraphs. kind= cHDPE
+EMPTY_S4_Position04 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cEMPTY_S4_Position04") at 0x145ee9c90>
+Add graph cEMPTY_S4_Position04 to MultiGraphs. kind= cEMPTY
+WbLS-15_10/20/14 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("cWbLS-15_10/20/14") at 0x1476baec0>
+Add graph cWbLS-15_10/20/14 to MultiGraphs. kind= cWbLS-15
+0100_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_0_1") at 0x146ed92c0>
+Add graph c0100_0_1 to MultiGraphs. kind= c0100
+0102_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_0_2") at 0x146ee7af0>
+Add graph c0102_0_2 to MultiGraphs. kind= c0102
+0102_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0102_0_1") at 0x1474746b0>
+Add graph c0102_0_1 to MultiGraphs. kind= c0102
+0100_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_0_2") at 0x14747ce20>
+Add graph c0100_0_2 to MultiGraphs. kind= c0100
+0050_0_2 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_0_2") at 0x146ef3d10>
+Add graph c0050_0_2 to MultiGraphs. kind= c0050
+0050_0_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0050_0_1") at 0x1476ca8a0>
+Add graph c0050_0_1 to MultiGraphs. kind= c0050
+0100_1000_1 ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("c0100_1000_1") at 0x145ef4e30>
+Add graph c0100_1000_1 to MultiGraphs. kind= c0100
+
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_1_1") at 0x14a207600>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_1_1") at 0x14a2082d0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_1_1") at 0x14a208cb0>
+Add graph g0100_1_1 to MultiGraphs. kind= 0100
+Add graph n0100_1_1 to MultiGraphs. kind= n0100
+Add graph a0100_1_1 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_1_2") at 0x146ef7630>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_1_2") at 0x146ef88d0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_1_2") at 0x14a20d410>
+Add graph g0100_1_2 to MultiGraphs. kind= 0100
+Add graph n0100_1_2 to MultiGraphs. kind= n0100
+Add graph a0100_1_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g15%_WbLS_Vit._C") at 0x14a21e710>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n15%_WbLS_Vit._C") at 0x14a20a4a0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a15%_WbLS_Vit._C") at 0x14a21f620>
+Add graph g15%_WbLS_Vit._C to MultiGraphs. kind= 15%
+Add graph n15%_WbLS_Vit._C to MultiGraphs. kind= n15%
+Add graph a15%_WbLS_Vit._C to MultiGraphs. kind= a15%
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_1000_2") at 0x14a225a70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_1000_2") at 0x14a2222a0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_1000_2") at 0x146ef83d0>
+Add graph g0100_1000_2 to MultiGraphs. kind= 0100
+Add graph n0100_1000_2 to MultiGraphs. kind= n0100
+Add graph a0100_1000_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S6_Position06_20141021") at 0x14a09e170>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S6_Position06_20141021") at 0x145ef8c60>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S6_Position06_20141021") at 0x145ef5a40>
+Add graph gEMPTY_S6_Position06_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S6_Position06_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S6_Position06_20141021 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_0_1") at 0x146ef81a0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_0_1") at 0x14a223970>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_0_1") at 0x14a22d0b0>
+Add graph g0052_0_1 to MultiGraphs. kind= 0052
+Add graph n0052_0_1 to MultiGraphs. kind= n0052
+Add graph a0052_0_1 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_1000_1") at 0x14748d420>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_1000_1") at 0x14748ddd0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_1000_1") at 0x147493b50>
+Add graph gPP_1000_1 to MultiGraphs. kind= PP
+Add graph nPP_1000_1 to MultiGraphs. kind= nPP
+Add graph aPP_1000_1 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_1000_2") at 0x14a0a2e90>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_1000_2") at 0x14a09fc20>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_1000_2") at 0x14a0a2de0>
+Add graph gPP_1000_2 to MultiGraphs. kind= PP
+Add graph nPP_1000_2 to MultiGraphs. kind= nPP
+Add graph aPP_1000_2 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S2_Position02_20141017") at 0x14a22d180>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S2_Position02_20141017") at 0x14a22cae0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S2_Position02_20141017") at 0x14a21eeb0>
+Add graph gEMPTY_S2_Position02_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S2_Position02_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S2_Position02_20141017 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_400_2") at 0x1474996e0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_400_2") at 0x1474b3150>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_400_2") at 0x147497a80>
+Add graph g0100_400_2 to MultiGraphs. kind= 0100
+Add graph n0100_400_2 to MultiGraphs. kind= n0100
+Add graph a0100_400_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_400_1") at 0x1474b4fc0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_400_1") at 0x1474b51e0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_400_1") at 0x1474b56e0>
+Add graph g0100_400_1 to MultiGraphs. kind= 0100
+Add graph n0100_400_1 to MultiGraphs. kind= n0100
+Add graph a0100_400_1 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_100_1") at 0x14767d190>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_100_1") at 0x14769c9c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_100_1") at 0x14769cba0>
+Add graph gGLASS_100_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_100_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_100_1 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_400_1") at 0x14a0a3260>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_400_1") at 0x14a0a8450>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_400_1") at 0x14a0b2a90>
+Add graph g0050_400_1 to MultiGraphs. kind= 0050
+Add graph n0050_400_1 to MultiGraphs. kind= n0050
+Add graph a0050_400_1 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S1_Position01_20141017") at 0x1474b4e30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S1_Position01_20141017") at 0x147497910>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S1_Position01_20141017") at 0x1474bd950>
+Add graph gEMPTY_S1_Position01_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S1_Position01_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S1_Position01_20141017 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_400_2") at 0x14769fed0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_400_2") at 0x1476a05b0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_400_2") at 0x14769f0e0>
+Add graph g0050_400_2 to MultiGraphs. kind= 0050
+Add graph n0050_400_2 to MultiGraphs. kind= n0050
+Add graph a0050_400_2 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_10_2") at 0x1476a3a20>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_10_2") at 0x1476a3ff0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_10_2") at 0x1476a44b0>
+Add graph g0100_10_2 to MultiGraphs. kind= 0100
+Add graph n0100_10_2 to MultiGraphs. kind= n0100
+Add graph a0100_10_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_1000_1") at 0x1476ad300>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_1000_1") at 0x1476aa100>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_1000_1") at 0x1476a37d0>
+Add graph g0102_1000_1 to MultiGraphs. kind= 0102
+Add graph n0102_1000_1 to MultiGraphs. kind= n0102
+Add graph a0102_1000_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_100_2") at 0x14a0af6b0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_100_2") at 0x14a0ae650>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_100_2") at 0x14a0a2d30>
+Add graph g0100_100_2 to MultiGraphs. kind= 0100
+Add graph n0100_100_2 to MultiGraphs. kind= n0100
+Add graph a0100_100_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_400_2") at 0x14a0a7e40>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_400_2") at 0x14a0a2f30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_400_2") at 0x14a0a89d0>
+Add graph gGLASS_400_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_400_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_400_2 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_400_1") at 0x14a232540>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_400_1") at 0x14a233370>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_400_1") at 0x14a230be0>
+Add graph gGLASS_400_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_400_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_400_1 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_100_1") at 0x1474b8680>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_100_1") at 0x1474ba720>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_100_1") at 0x1474bf780>
+Add graph g0100_100_1 to MultiGraphs. kind= 0100
+Add graph n0100_100_1 to MultiGraphs. kind= n0100
+Add graph a0100_100_1 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_100_2") at 0x1474ca170>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_100_2") at 0x1474c6470>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_100_2") at 0x1474c6780>
+Add graph g0052_100_2 to MultiGraphs. kind= 0052
+Add graph n0052_100_2 to MultiGraphs. kind= n0052
+Add graph a0052_100_2 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_100_1") at 0x1474c1cf0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_100_1") at 0x1474d0300>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_100_1") at 0x1474d0690>
+Add graph g0052_100_1 to MultiGraphs. kind= 0052
+Add graph n0052_100_1 to MultiGraphs. kind= n0052
+Add graph a0052_100_1 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gLS_Vit._C") at 0x1474c7a70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nLS_Vit._C") at 0x1474c1840>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aLS_Vit._C") at 0x1474be3c0>
+Add graph gLS_Vit._C to MultiGraphs. kind= LS
+Add graph nLS_Vit._C to MultiGraphs. kind= nLS
+Add graph aLS_Vit._C to MultiGraphs. kind= aLS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_100_2") at 0x1476a6050>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_100_2") at 0x1476a6200>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_100_2") at 0x1476a8d10>
+Add graph g0050_100_2 to MultiGraphs. kind= 0050
+Add graph n0050_100_2 to MultiGraphs. kind= n0050
+Add graph a0050_100_2 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S7_Position07_20141021") at 0x1474d14e0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S7_Position07_20141021") at 0x1474d65c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S7_Position07_20141021") at 0x1474cb6e0>
+Add graph gEMPTY_S7_Position07_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S7_Position07_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S7_Position07_20141021 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_1000_1") at 0x1474c8a00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_1000_1") at 0x1474c9360>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_1000_1") at 0x1474d7790>
+Add graph gGLASS_1000_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_1000_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_1000_1 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_100_1") at 0x1474daf90>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_100_1") at 0x1474c8ec0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_100_1") at 0x1474df1d0>
+Add graph g0102_100_1 to MultiGraphs. kind= 0102
+Add graph n0102_100_1 to MultiGraphs. kind= n0102
+Add graph a0102_100_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_100_2") at 0x1474df580>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_100_2") at 0x1474daed0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_100_2") at 0x1474daac0>
+Add graph g0102_100_2 to MultiGraphs. kind= 0102
+Add graph n0102_100_2 to MultiGraphs. kind= n0102
+Add graph a0102_100_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_1000_2") at 0x1474dae10>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_1000_2") at 0x1474e8640>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_1000_2") at 0x1474ee030>
+Add graph gGLASS_1000_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_1000_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_1000_2 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_10_1") at 0x1474ee590>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_10_1") at 0x1474e8580>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_10_1") at 0x1474ef9e0>
+Add graph g0102_10_1 to MultiGraphs. kind= 0102
+Add graph n0102_10_1 to MultiGraphs. kind= n0102
+Add graph a0102_10_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g5%_WbLS_Vit._C") at 0x1474e4e70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n5%_WbLS_Vit._C") at 0x1474f1590>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a5%_WbLS_Vit._C") at 0x1474f2060>
+Add graph g5%_WbLS_Vit._C to MultiGraphs. kind= 5%
+Add graph n5%_WbLS_Vit._C to MultiGraphs. kind= n5%
+Add graph a5%_WbLS_Vit._C to MultiGraphs. kind= a5%
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gWbLS-5_10/20/14") at 0x14a0afd40>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nWbLS-5_10/20/14") at 0x14a0aca30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aWbLS-5_10/20/14") at 0x14a0a8110>
+Add graph gWbLS-5_10/20/14 to MultiGraphs. kind= WbLS-5
+Add graph nWbLS-5_10/20/14 to MultiGraphs. kind= nWbLS-5
+Add graph aWbLS-5_10/20/14 to MultiGraphs. kind= aWbLS-5
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_10_2") at 0x14a0c1e70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_10_2") at 0x14a0b5f00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_10_2") at 0x14a0b35c0>
+Add graph g0102_10_2 to MultiGraphs. kind= 0102
+Add graph n0102_10_2 to MultiGraphs. kind= n0102
+Add graph a0102_10_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_1_2") at 0x1476a8ed0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_1_2") at 0x1476a4260>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_1_2") at 0x1476b1aa0>
+Add graph g0102_1_2 to MultiGraphs. kind= 0102
+Add graph n0102_1_2 to MultiGraphs. kind= n0102
+Add graph a0102_1_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S5_Position05_20141021") at 0x1476a8090>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S5_Position05_20141021") at 0x1476b72c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S5_Position05_20141021") at 0x1476b64f0>
+Add graph gEMPTY_S5_Position05_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S5_Position05_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S5_Position05_20141021 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_1_1") at 0x1476b5d10>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_1_1") at 0x1476b7930>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_1_1") at 0x1476b61a0>
+Add graph g0102_1_1 to MultiGraphs. kind= 0102
+Add graph n0102_1_1 to MultiGraphs. kind= n0102
+Add graph a0102_1_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g10%_WbLS_Vit._C") at 0x14a0b5b70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n10%_WbLS_Vit._C") at 0x14a0b6a30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a10%_WbLS_Vit._C") at 0x14a0b4bc0>
+Add graph g10%_WbLS_Vit._C to MultiGraphs. kind= 10%
+Add graph n10%_WbLS_Vit._C to MultiGraphs. kind= n10%
+Add graph a10%_WbLS_Vit._C to MultiGraphs. kind= a10%
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_100_1") at 0x14a0b3e50>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_100_1") at 0x14a0bfad0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_100_1") at 0x14a0c2f40>
+Add graph gPP_100_1 to MultiGraphs. kind= PP
+Add graph nPP_100_1 to MultiGraphs. kind= nPP
+Add graph aPP_100_1 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_100_2") at 0x14a0c2c00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_100_2") at 0x14a0b7f20>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_100_2") at 0x14a0c4bc0>
+Add graph gGLASS_100_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_100_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_100_2 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_100_2") at 0x14a22f320>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_100_2") at 0x14a224d30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_100_2") at 0x14a23ad40>
+Add graph gPP_100_2 to MultiGraphs. kind= PP
+Add graph nPP_100_2 to MultiGraphs. kind= nPP
+Add graph aPP_100_2 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_400_2") at 0x14a0c88f0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_400_2") at 0x14a0b43a0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_400_2") at 0x14a0b5280>
+Add graph gPP_400_2 to MultiGraphs. kind= PP
+Add graph nPP_400_2 to MultiGraphs. kind= nPP
+Add graph aPP_400_2 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gWbLS-10_10/20/14") at 0x14a0cad80>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nWbLS-10_10/20/14") at 0x14a0cc1f0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aWbLS-10_10/20/14") at 0x14a0c7650>
+Add graph gWbLS-10_10/20/14 to MultiGraphs. kind= WbLS-10
+Add graph nWbLS-10_10/20/14 to MultiGraphs. kind= nWbLS-10
+Add graph aWbLS-10_10/20/14 to MultiGraphs. kind= aWbLS-10
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_400_1") at 0x14a0d1190>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_400_1") at 0x14a0c9630>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_400_1") at 0x14a0b50c0>
+Add graph g0102_400_1 to MultiGraphs. kind= 0102
+Add graph n0102_400_1 to MultiGraphs. kind= n0102
+Add graph a0102_400_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_400_2") at 0x14a0b8510>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_400_2") at 0x14a0b4720>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_400_2") at 0x14a0b47c0>
+Add graph g0102_400_2 to MultiGraphs. kind= 0102
+Add graph n0102_400_2 to MultiGraphs. kind= n0102
+Add graph a0102_400_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_400_2") at 0x14a0cf0b0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_400_2") at 0x14a0daeb0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_400_2") at 0x14a0ca700>
+Add graph g0052_400_2 to MultiGraphs. kind= 0052
+Add graph n0052_400_2 to MultiGraphs. kind= n0052
+Add graph a0052_400_2 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_400_1") at 0x14a0d9510>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_400_1") at 0x14a0bf980>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_400_1") at 0x14a0d6610>
+Add graph g0052_400_1 to MultiGraphs. kind= 0052
+Add graph n0052_400_1 to MultiGraphs. kind= n0052
+Add graph a0052_400_1 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_0_2") at 0x14a238810>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_0_2") at 0x14a23ca50>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_0_2") at 0x14a23a4c0>
+Add graph gPP_0_2 to MultiGraphs. kind= PP
+Add graph nPP_0_2 to MultiGraphs. kind= nPP
+Add graph aPP_0_2 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_400_1") at 0x14a0cc740>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_400_1") at 0x14a0caa00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_400_1") at 0x14a0cb240>
+Add graph gPP_400_1 to MultiGraphs. kind= PP
+Add graph nPP_400_1 to MultiGraphs. kind= nPP
+Add graph aPP_400_1 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S3_Position03_20141017") at 0x1474f6050>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S3_Position03_20141017") at 0x1474c9e40>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S3_Position03_20141017") at 0x1474fb370>
+Add graph gEMPTY_S3_Position03_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S3_Position03_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S3_Position03_20141017 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_1000_2") at 0x14a808e60>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_1000_2") at 0x1474f9f30>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_1000_2") at 0x1474e3830>
+Add graph g0102_1000_2 to MultiGraphs. kind= 0102
+Add graph n0102_1000_2 to MultiGraphs. kind= n0102
+Add graph a0102_1000_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gLS_10/20/14") at 0x14a801910>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nLS_10/20/14") at 0x1474f1340>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aLS_10/20/14") at 0x14a800860>
+Add graph gLS_10/20/14 to MultiGraphs. kind= LS
+Add graph nLS_10/20/14 to MultiGraphs. kind= nLS
+Add graph aLS_10/20/14 to MultiGraphs. kind= aLS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_0_1") at 0x14a808050>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_0_1") at 0x14a802990>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_0_1") at 0x14a810a30>
+Add graph gGLASS_0_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_0_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_0_1 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_10_1") at 0x1476b7cb0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_10_1") at 0x1476b6b70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_10_1") at 0x1476b7090>
+Add graph g0100_10_1 to MultiGraphs. kind= 0100
+Add graph n0100_10_1 to MultiGraphs. kind= n0100
+Add graph a0100_10_1 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gGLASS_0_2") at 0x1109c2ed0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nGLASS_0_2") at 0x1109c02c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aGLASS_0_2") at 0x1109c04e0>
+Add graph gGLASS_0_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_0_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_0_2 to MultiGraphs. kind= aGLASS
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_100_1") at 0x14a243a80>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_100_1") at 0x14a244be0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_100_1") at 0x14a2454c0>
+Add graph g0050_100_1 to MultiGraphs. kind= 0050
+Add graph n0050_100_1 to MultiGraphs. kind= n0050
+Add graph a0050_100_1 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0052_0_2") at 0x14a24dc00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0052_0_2") at 0x14a246df0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0052_0_2") at 0x14a24fac0>
+Add graph g0052_0_2 to MultiGraphs. kind= 0052
+Add graph n0052_0_2 to MultiGraphs. kind= n0052
+Add graph a0052_0_2 to MultiGraphs. kind= a0052
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gPP_0_1") at 0x14a252a70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nPP_0_1") at 0x14a2447a0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aPP_0_1") at 0x14a235a00>
+Add graph gPP_0_1 to MultiGraphs. kind= PP
+Add graph nPP_0_1 to MultiGraphs. kind= nPP
+Add graph aPP_0_1 to MultiGraphs. kind= aPP
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gHDPE_0_1") at 0x14a8148c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nHDPE_0_1") at 0x14a8171f0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aHDPE_0_1") at 0x14a80eb20>
+Add graph gHDPE_0_1 to MultiGraphs. kind= HDPE
+Add graph nHDPE_0_1 to MultiGraphs. kind= nHDPE
+Add graph aHDPE_0_1 to MultiGraphs. kind= aHDPE
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gEMPTY_S4_Position04_20141017") at 0x1476b7440>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nEMPTY_S4_Position04_20141017") at 0x1476d3da0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aEMPTY_S4_Position04_20141017") at 0x1476db1e0>
+Add graph gEMPTY_S4_Position04_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S4_Position04_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S4_Position04_20141017 to MultiGraphs. kind= aEMPTY
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("gWbLS-15_10/20/14") at 0x1476e22c0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("nWbLS-15_10/20/14") at 0x1476d3c40>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("aWbLS-15_10/20/14") at 0x1476e06f0>
+Add graph gWbLS-15_10/20/14 to MultiGraphs. kind= WbLS-15
+Add graph nWbLS-15_10/20/14 to MultiGraphs. kind= nWbLS-15
+Add graph aWbLS-15_10/20/14 to MultiGraphs. kind= aWbLS-15
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_0_1") at 0x14a0cd8d0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_0_1") at 0x14a0e34b0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_0_1") at 0x14a0e8400>
+Add graph g0100_0_1 to MultiGraphs. kind= 0100
+Add graph n0100_0_1 to MultiGraphs. kind= n0100
+Add graph a0100_0_1 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_0_2") at 0x14a24e900>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_0_2") at 0x14a24c190>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_0_2") at 0x14a24d3f0>
+Add graph g0102_0_2 to MultiGraphs. kind= 0102
+Add graph n0102_0_2 to MultiGraphs. kind= n0102
+Add graph a0102_0_2 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0102_0_1") at 0x14a2564b0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0102_0_1") at 0x14a25ed70>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0102_0_1") at 0x14a258190>
+Add graph g0102_0_1 to MultiGraphs. kind= 0102
+Add graph n0102_0_1 to MultiGraphs. kind= n0102
+Add graph a0102_0_1 to MultiGraphs. kind= a0102
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_0_2") at 0x1474f0fe0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_0_2") at 0x14a813040>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_0_2") at 0x14a808190>
+Add graph g0100_0_2 to MultiGraphs. kind= 0100
+Add graph n0100_0_2 to MultiGraphs. kind= n0100
+Add graph a0100_0_2 to MultiGraphs. kind= a0100
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_0_2") at 0x14a819320>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_0_2") at 0x14a820140>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_0_2") at 0x14a815ab0>
+Add graph g0050_0_2 to MultiGraphs. kind= 0050
+Add graph n0050_0_2 to MultiGraphs. kind= n0050
+Add graph a0050_0_2 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0050_0_1") at 0x14a81c860>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0050_0_1") at 0x14a811bf0>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0050_0_1") at 0x14a826570>
+Add graph g0050_0_1 to MultiGraphs. kind= 0050
+Add graph n0050_0_1 to MultiGraphs. kind= n0050
+Add graph a0050_0_1 to MultiGraphs. kind= a0050
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("g0100_1000_1") at 0x14a23af00>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("n0100_1000_1") at 0x14a256550>
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraph object ("a0100_1000_1") at 0x14a245250>
+Add graph g0100_1000_1 to MultiGraphs. kind= 0100
+Add graph n0100_1000_1 to MultiGraphs. kind= n0100
+Add graph a0100_1000_1 to MultiGraphs. kind= a0100
+ls6500.combineCommonSamples: 0100_10 graphs g0100_10_1, g0100_10_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_10") at 0x14a2542a0>
+Add graph A0100_10 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_1000 graphs gGLASS_1000_1, gGLASS_1000_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("AGLASS_1000") at 0x14a257dc0>
+Add graph AGLASS_1000 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_400 graphs g0052_400_1, g0052_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0052_400") at 0x14a2594b0>
+Add graph A0052_400 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_10 graphs g0102_10_1, g0102_10_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_10") at 0x14a244df0>
+Add graph A0102_10 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: EMPTY graphs gEMPTY_S1_Position01_20141017, gEMPTY_S2_Position02_20141017, gEMPTY_S3_Position03_20141017, gEMPTY_S4_Position04_20141017, gEMPTY_S5_Position05_20141021, gEMPTY_S6_Position06_20141021, gEMPTY_S7_Position07_20141021
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("AEMPTY") at 0x14a2651a0>
+ls6500.combineCommonSamples: 0050_0 graphs g0050_0_1, g0050_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0050_0") at 0x14a265de0>
+Add graph A0050_0 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0102_1000 graphs g0102_1000_1, g0102_1000_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_1000") at 0x14a261560>
+Add graph A0102_1000 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0100_400 graphs g0100_400_1, g0100_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_400") at 0x14a261230>
+Add graph A0100_400 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_100 graphs gGLASS_100_1, gGLASS_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("AGLASS_100") at 0x14a2608d0>
+Add graph AGLASS_100 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_0 graphs g0052_0_1, g0052_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0052_0") at 0x14a267ea0>
+Add graph A0052_0 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_400 graphs g0102_400_1, g0102_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_400") at 0x14a260e30>
+Add graph A0102_400 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_0 graphs gPP_0_1, gPP_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("APP_0") at 0x14a268180>
+Add graph APP_0 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0050_400 graphs g0050_400_1, g0050_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0050_400") at 0x14a269830>
+Add graph A0050_400 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0052_100 graphs g0052_100_1, g0052_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0052_100") at 0x14a269710>
+Add graph A0052_100 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: PP_100 graphs gPP_100_1, gPP_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("APP_100") at 0x14a2695c0>
+Add graph APP_100 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0102_100 graphs g0102_100_1, g0102_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_100") at 0x1109c0720>
+Add graph A0102_100 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_0 graphs g0102_0_1, g0102_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_0") at 0x1109c1990>
+Add graph A0102_0 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_1 graphs g0102_1_1, g0102_1_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0102_1") at 0x1109c0e70>
+Add graph A0102_1 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_400 graphs gPP_400_1, gPP_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("APP_400") at 0x1109c17b0>
+Add graph APP_400 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: PP_1000 graphs gPP_1000_1, gPP_1000_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("APP_1000") at 0x1109c18e0>
+Add graph APP_1000 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0100_1000 graphs g0100_1000_1, g0100_1000_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_1000") at 0x14a0d8610>
+Add graph A0100_1000 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_400 graphs gGLASS_400_1, gGLASS_400_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("AGLASS_400") at 0x14a0cb5c0>
+Add graph AGLASS_400 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0100_100 graphs g0100_100_1, g0100_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_100") at 0x14a0e1ab0>
+Add graph A0100_100 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0050_100 graphs g0050_100_1, g0050_100_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0050_100") at 0x14a0d27d0>
+Add graph A0050_100 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0100_0 graphs g0100_0_1, g0100_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_0") at 0x14a0e4cf0>
+Add graph A0100_0 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0100_1 graphs g0100_1_1, g0100_1_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("A0100_1") at 0x14a0ef770>
+Add graph A0100_1 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_0 graphs gGLASS_0_1, gGLASS_0_2
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TGraphErrors object ("AGLASS_0") at 0x1476dd9e0>
+Add graph AGLASS_0 to MultiGraphs. kind= QGLASS
+MultiGraphs {'aWbLS-5': <ROOT.TMultiGraph object ("aWbLS-5") at 0x12f4fbfc0>, 'D5%': <ROOT.TMultiGraph object ("D5%") at 0x136cfbe40>, 'cWbLS-5': <ROOT.TMultiGraph object ("cWbLS-5") at 0x12f4fbed0>, 'a15%': <ROOT.TMultiGraph object ("a15%") at 0x1345fbf40>, 'QWbLS-10': <ROOT.TMultiGraph object ("QWbLS-10") at 0x10b20b410>, 'QWbLS-15': <ROOT.TMultiGraph object ("QWbLS-15") at 0x10a07b320>, 'n0102': <ROOT.TMultiGraph object ("n0102") at 0x10fefbe80>, 'n0100': <ROOT.TMultiGraph object ("n0100") at 0x135afc000>, 'Q5%': <ROOT.TMultiGraph object ("Q5%") at 0x141cfbf90>, 'QPP': <ROOT.TMultiGraph object ("QPP") at 0x11f1fbee0>, 'LS': <ROOT.TMultiGraph object ("gLS") at 0x10eafbf10>, 'nLS': <ROOT.TMultiGraph object ("nLS") at 0x10eafc000>, 'nWbLS-5': <ROOT.TMultiGraph object ("nWbLS-5") at 0x136cfc020>, 'a0100': <ROOT.TMultiGraph object ("a0100") at 0x1353fbfd0>, 'a0102': <ROOT.TMultiGraph object ("a0102") at 0x10edfbe50>, 'DGLASS': <ROOT.TMultiGraph object ("DGLASS") at 0x11c1fbf40>, '5%': <ROOT.TMultiGraph object ("g5%") at 0x1432fbe40>, 'DEMPTY': <ROOT.TMultiGraph object ("DEMPTY") at 0x130cfbee0>, '0052': <ROOT.TMultiGraph object ("g0052") at 0x130cfbfd0>, '0050': <ROOT.TMultiGraph object ("g0050") at 0x11b8fbe50>, 'QGLASS': <ROOT.TMultiGraph object ("QGLASS") at 0x11c1fbe50>, 'cWbLS-10': <ROOT.TMultiGraph object ("cWbLS-10") at 0x10b20b230>, 'D0052': <ROOT.TMultiGraph object ("D0052") at 0x12affbe50>, 'aLS': <ROOT.TMultiGraph object ("aLS") at 0x1340fbfc0>, 'EMPTY': <ROOT.TMultiGraph object ("gEMPTY") at 0x133cfc000>, 'PP': <ROOT.TMultiGraph object ("gPP") at 0x12affbf40>, 'n15%': <ROOT.TMultiGraph object ("n15%") at 0x134bfbf70>, 'WbLS-5': <ROOT.TMultiGraph object ("gWbLS-5") at 0x136cfbf30>, 'D0100': <ROOT.TMultiGraph object ("D0100") at 0x1350fbfa0>, 'DWbLS-5': <ROOT.TMultiGraph object ("DWbLS-5") at 0x12abfbf60>, 'D0102': <ROOT.TMultiGraph object ("D0102") at 0x10eafbe50>, 'HDPE': <ROOT.TMultiGraph object ("gHDPE") at 0x10b20b9f0>, '0100': <ROOT.TMultiGraph object ("g0100") at 0x139bfc000>, 'DLS': <ROOT.TMultiGraph object ("DLS") at 0x144afbf60>, 'Q15%': <ROOT.TMultiGraph object ("Q15%") at 0x133cfbe50>, 'aWbLS-10': <ROOT.TMultiGraph object ("aWbLS-10") at 0x10b20b320>, '10%': <ROOT.TMultiGraph object ("g10%") at 0x1150fbe40>, 'aWbLS-15': <ROOT.TMultiGraph object ("aWbLS-15") at 0x10a0776b0>, 'aHDPE': <ROOT.TMultiGraph object ("aHDPE") at 0x1003ec180>, '0102': <ROOT.TMultiGraph object ("g0102") at 0x1118fbfa0>, 'nWbLS-10': <ROOT.TMultiGraph object ("nWbLS-10") at 0x10b20a790>, 'DWbLS-15': <ROOT.TMultiGraph object ("DWbLS-15") at 0x104a74540>, 'nWbLS-15': <ROOT.TMultiGraph object ("nWbLS-15") at 0x104935ab0>, 'DWbLS-10': <ROOT.TMultiGraph object ("DWbLS-10") at 0x10b20b900>, 'QHDPE': <ROOT.TMultiGraph object ("QHDPE") at 0x10490ffc0>, 'cHDPE': <ROOT.TMultiGraph object ("cHDPE") at 0x10490f800>, 'GLASS': <ROOT.TMultiGraph object ("gGLASS") at 0x11eefbeb0>, 'a10%': <ROOT.TMultiGraph object ("a10%") at 0x13d8fbe90>, 'D10%': <ROOT.TMultiGraph object ("D10%") at 0x10b20a5b0>, 'a0052': <ROOT.TMultiGraph object ("a0052") at 0x12c9fbe80>, 'cLS': <ROOT.TMultiGraph object ("cLS") at 0x1340fbed0>, 'Q10%': <ROOT.TMultiGraph object ("Q10%") at 0x13d8fbf80>, 'aGLASS': <ROOT.TMultiGraph object ("aGLASS") at 0x11c4fbf70>, 'nEMPTY': <ROOT.TMultiGraph object ("nEMPTY") at 0x133afbf40>, 'QWbLS-5': <ROOT.TMultiGraph object ("QWbLS-5") at 0x12abfbe70>, 'nPP': <ROOT.TMultiGraph object ("nPP") at 0x1210fbe50>, 'a5%': <ROOT.TMultiGraph object ("a5%") at 0x141cfbea0>, 'aEMPTY': <ROOT.TMultiGraph object ("aEMPTY") at 0x1310fbf10>, 'cGLASS': <ROOT.TMultiGraph object ("cGLASS") at 0x11c4fbe80>, 'c0102': <ROOT.TMultiGraph object ("c0102") at 0x10fefbf70>, 'c0100': <ROOT.TMultiGraph object ("c0100") at 0x1353fbee0>, 'c5%': <ROOT.TMultiGraph object ("c5%") at 0x1432fbff0>, 'c10%': <ROOT.TMultiGraph object ("c10%") at 0x1150fbff0>, 'c0050': <ROOT.TMultiGraph object ("c0050") at 0x11b8fc000>, 'c0052': <ROOT.TMultiGraph object ("c0052") at 0x12d1fbfa0>, 'Q0100': <ROOT.TMultiGraph object ("Q0100") at 0x1350fbeb0>, 'Q0102': <ROOT.TMultiGraph object ("Q0102") at 0x10edfbf40>, 'QEMPTY': <ROOT.TMultiGraph object ("QEMPTY") at 0x1310fc000>, 'DHDPE': <ROOT.TMultiGraph object ("DHDPE") at 0x1003e8940>, 'nGLASS': <ROOT.TMultiGraph object ("nGLASS") at 0x11eefbfa0>, 'Q0052': <ROOT.TMultiGraph object ("Q0052") at 0x12c9fbf70>, 'Q0050': <ROOT.TMultiGraph object ("Q0050") at 0x1179fbfd0>, 'nHDPE': <ROOT.TMultiGraph object ("nHDPE") at 0x10b20bae0>, 'DPP': <ROOT.TMultiGraph object ("DPP") at 0x11f1fbfd0>, 'WbLS-15': <ROOT.TMultiGraph object ("gWbLS-15") at 0x10493baf0>, 'aPP': <ROOT.TMultiGraph object ("aPP") at 0x1210fc000>, 'WbLS-10': <ROOT.TMultiGraph object ("gWbLS-10") at 0x10b20a6a0>, '15%': <ROOT.TMultiGraph object ("g15%") at 0x134bfbe80>, 'n5%': <ROOT.TMultiGraph object ("n5%") at 0x1432fbf00>, 'D15%': <ROOT.TMultiGraph object ("D15%") at 0x133cfbf10>, 'D0050': <ROOT.TMultiGraph object ("D0050") at 0x1118fbeb0>, 'cPP': <ROOT.TMultiGraph object ("cPP") at 0x1210fbf10>, 'cWbLS-15': <ROOT.TMultiGraph object ("cWbLS-15") at 0x104869740>, 'cEMPTY': <ROOT.TMultiGraph object ("cEMPTY") at 0x1310fbe50>, 'c15%': <ROOT.TMultiGraph object ("c15%") at 0x1345fbe50>, 'n10%': <ROOT.TMultiGraph object ("n10%") at 0x1150fbf00>, 'QLS': <ROOT.TMultiGraph object ("QLS") at 0x144afbe70>, 'n0050': <ROOT.TMultiGraph object ("n0050") at 0x11b8fbf10>, 'n0052': <ROOT.TMultiGraph object ("n0052") at 0x12d1fbeb0>, 'a0050': <ROOT.TMultiGraph object ("a0050") at 0x1179fbee0>} 
+
+kind aWbLS-5 MultiGraphs[kind] <ROOT.TMultiGraph object ("aWbLS-5") at 0x12f4fbfc0>
+ls6500.multiGraph aWbLS-5 threshold=200.0 aWbLS-5 TMG.GetListOfGraphs() <ROOT.TList object ("TList") at 0x14a0b8270> TMG.GetListOfGraphs().GetSize() 1
+ls6500.fixTimeDisplay: pointer to graph <ROOT.TMultiGraph object ("aWbLS-5") at 0x12f4fbfc0>

@@ -1,0 +1,624 @@
+ls6500: Output directed to terminal and Log/Pre-irrad_4_141031_201411051643_762619.log
+Created Figures/Pre-irrad_4_141031/
+initialize ls6500
+dataDir /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/ 
+dataSubDir Pre-irrad_4_141031/
+initialize spreadsheetReader
+ls6500.Main: pickMode put
+ls6500.processHeader: columnIDs ['TrayID', 'Position01', 'Position02', 'Position03', 'Position04', 'Position05', 'Position06', 'Position07', 'Position08', 'Position09', 'Position10', 'Position11', 'Position12']
+vial#   sampleName     position check of sample name Number of `no vial` slots to this slot
+    0      STD_3_H S1_Position01 STD_3_H 0
+    1    0050_1F13 S1_Position02 0050_1F13 0
+    2    0052_1F14 S1_Position03 0052_1F14 0
+    3    0050_2F13 S1_Position04 0050_2F13 0
+    4    0052_2F14 S1_Position05 0052_2F14 0
+    5    0050_3F13 S1_Position06 0050_3F13 0
+    6    0052_3F14 S1_Position07 0052_3F14 0
+    7    0050_4F13 S1_Position08 0050_4F13 0
+    8    0052_4F14 S1_Position09 0052_4F14 0
+    9    0100_1F15 S1_Position10 0100_1F15 0
+   10    0102_1F25 S1_Position11 0102_1F25 0
+   11    0100_2F15 S1_Position12 0100_2F15 0
+   12    0102_2F25 S2_Position01 0102_2F25 0
+   13     STD_14_C S2_Position02 STD_14_C 0
+   14    0100_3F15 S2_Position03 0100_3F15 0
+   15    0102_3F25 S2_Position04 0102_3F25 0
+   16    0100_4F15 S2_Position05 0100_4F15 0
+   17    0102_4F25 S2_Position06 0102_4F25 0
+   18    0140_1F23 S2_Position07 0140_1F23 0
+   19    0142_1F33 S2_Position08 0142_1F33 0
+   20    0140_2F23 S2_Position09 0140_2F23 0
+   21    0142_2F33 S2_Position10 0142_2F33 0
+   22    0140_3F23 S2_Position11 0140_3F23 0
+   23    0142_3F33 S2_Position12 0142_3F33 0
+   24    0140_4F23 S3_Position01 0140_4F23 0
+   25    0142_4F33 S3_Position02 0142_4F33 0
+   26        EMPTY S3_Position03 EMPTY 0
+   27    1000_1F34 S3_Position04 1000_1F34 0
+   28    1002_1F35 S3_Position05 1002_1F35 0
+   29    1000_2F34 S3_Position06 1000_2F34 0
+   30    1002_2F35 S3_Position07 1002_2F35 0
+   31    1000_3F34 S3_Position08 1000_3F34 0
+   32    1002_3F35 S3_Position09 1002_3F35 0
+   33    1000_4F34 S3_Position10 1000_4F34 0
+   34    1002_4F35 S3_Position11 1002_4F35 0
+   35    0050_1R13 S3_Position12 0050_1R13 0
+   36    0052_1R14 S4_Position01 0052_1R14 0
+   37    0050_2R13 S4_Position02 0050_2R13 0
+   38    0052_2R14 S4_Position03 0052_2R14 0
+   39        EMPTY S4_Position04 EMPTY 0
+   40    0050_3R13 S4_Position05 0050_3R13 0
+   41    0052_3R14 S4_Position06 0052_3R14 0
+   42    0050_4R13 S4_Position07 0050_4R13 0
+   43    0052_4R14 S4_Position08 0052_4R14 0
+   44    0100_1R15 S4_Position09 0100_1R15 0
+   45    0102_1R25 S4_Position10 0102_1R25 0
+   46    0100_2R15 S4_Position11 0100_2R15 0
+   47    0102_2R25 S4_Position12 0102_2R25 0
+   48    0100_3R15 S5_Position01 0100_3R15 0
+   49    0102_3R25 S5_Position02 0102_3R25 0
+   50    0100_4R15 S5_Position03 0100_4R15 0
+   51    0102_4R25 S5_Position04 0102_4R25 0
+   52        EMPTY S5_Position05 EMPTY 0
+   53    0140_1R23 S5_Position06 0140_1R23 0
+   54    0142_1R33 S5_Position07 0142_1R33 0
+   55    0140_2R23 S5_Position08 0140_2R23 0
+   56    0142_2R33 S5_Position09 0142_2R33 0
+   57    0140_3R23 S5_Position10 0140_3R23 0
+   58    0142_3R33 S5_Position11 0142_3R33 0
+   59    0140_4R23 S5_Position12 0140_4R23 0
+   60    0142_4R33 S6_Position01 0142_4R33 0
+   61    1000_1R34 S6_Position02 1000_1R34 0
+   62    1002_1R35 S6_Position03 1002_1R35 0
+   63    1000_2R34 S6_Position04 1000_2R34 0
+   64    1002_2R35 S6_Position05 1002_2R35 0
+   65        EMPTY S6_Position06 EMPTY 0
+   66    1000_3R34 S6_Position07 1000_3R34 0
+   67    1002_3R35 S6_Position08 1002_3R35 0
+   68    1000_4R34 S6_Position09 1000_4R34 0
+   69    1002_4R35 S6_Position10 1002_4R35 0
+   70    0050_FPMT S6_Position11 0050_FPMT 0
+   71    0050_RPMT S6_Position12 0050_RPMT 0
+   72    0050_1F11 S7_Position01 0050_1F11 0
+   73    0052_1F12 S7_Position02 0052_1F12 0
+   74    0050_2F11 S7_Position03 0050_2F11 0
+   75    0052_2F12 S7_Position04 0052_2F12 0
+   76    0050_3F11 S7_Position05 0050_3F11 0
+   77    0052_3F12 S7_Position06 0052_3F12 0
+   78        EMPTY S7_Position07 EMPTY 0
+   79    0050_4F11 S7_Position08 0050_4F11 0
+   80    0052_4F12 S7_Position09 0052_4F12 0
+   81    0100_1F22 S7_Position10 0100_1F22 0
+   82    0102_1F21 S7_Position11 0102_1F21 0
+   83    0100_2F22 S7_Position12 0100_2F22 0
+   84    0102_2F21 S8_Position01 0102_2F21 0
+   85    0100_3F22 S8_Position02 0100_3F22 0
+   86    0102_3F21 S8_Position03 0102_3F21 0
+   87    0100_4F22 S8_Position04 0100_4F22 0
+   88    0102_4F21 S8_Position05 0102_4F21 0
+   89    0140_1F31 S8_Position06 0140_1F31 0
+   90    0142_1F26 S8_Position07 0142_1F26 0
+   91        EMPTY S8_Position08 EMPTY 0
+   92    0140_2F31 S8_Position09 0140_2F31 0
+   93    0142_2F26 S8_Position10 0142_2F26 0
+   94    0140_3F31 S8_Position11 0140_3F31 0
+   95    0142_3F26 S8_Position12 0142_3F26 0
+   96    0140_4F31 S9_Position01 0140_4F31 0
+   97    0142_4F26 S9_Position02 0142_4F26 0
+   98    1000_1F36 S9_Position03 1000_1F36 0
+   99    1002_1F32 S9_Position04 1002_1F32 0
+  100    1000_2F36 S9_Position05 1000_2F36 0
+  101    1002_2F32 S9_Position06 1002_2F32 0
+  102    1000_3F36 S9_Position07 1000_3F36 0
+  103    1002_3F32 S9_Position08 1002_3F32 0
+  104        EMPTY S9_Position09 EMPTY 0
+  105    1000_4F36 S9_Position10 1000_4F36 0
+  106    1002_4F32 S9_Position11 1002_4F32 0
+  107    0050_1R11 S9_Position12 0050_1R11 0
+  108    0052_1R12 S10_Position01 0052_1R12 0
+  109    0050_2R11 S10_Position02 0050_2R11 0
+  110    0052_2R12 S10_Position03 0052_2R12 0
+  111    0050_3R11 S10_Position04 0050_3R11 0
+  112    0052_3R12 S10_Position05 0052_3R12 0
+  113    0050_4R11 S10_Position06 0050_4R11 0
+  114    0052_4R12 S10_Position07 0052_4R12 0
+  115    0100_1R22 S10_Position08 0100_1R22 0
+  116    0102_1R21 S10_Position09 0102_1R21 0
+  117        EMPTY S10_Position10 EMPTY 0
+  118    0100_2R22 S10_Position11 0100_2R22 0
+  119    0102_2R21 S10_Position12 0102_2R21 0
+  120    0100_3R22 S11_Position01 0100_3R22 0
+  121    0102_3R21 S11_Position02 0102_3R21 0
+  122    0100_4R22 S11_Position03 0100_4R22 0
+  123    0102_4R21 S11_Position04 0102_4R21 0
+  124    0140_1R31 S11_Position05 0140_1R31 0
+  125    0142_1R26 S11_Position06 0142_1R26 0
+  126    0140_2R31 S11_Position07 0140_2R31 0
+  127    0142_2R26 S11_Position08 0142_2R26 0
+  128    0140_3R31 S11_Position09 0140_3R31 0
+  129    0142_3R26 S11_Position10 0142_3R26 0
+  130        EMPTY S11_Position11 EMPTY 0
+  131    0140_4R31 S11_Position12 0140_4R31 0
+  132    0142_4R26 S12_Position01 0142_4R26 0
+  133    1000_1R36 S12_Position02 1000_1R36 0
+  134    1002_1R32 S12_Position03 1002_1R32 0
+  135    1000_2R36 S12_Position04 1000_2R36 0
+  136    1002_2R32 S12_Position05 1002_2R32 0
+  137    1000_3R36 S12_Position06 1000_3R36 0
+  138    1002_3R32 S12_Position07 1002_3R32 0
+  139    1000_4R36 S12_Position08 1000_4R36 0
+  140    1002_4R32 S12_Position09 1002_4R32 0
+  141    0050_1F16 S12_Position10 0050_1F16 0
+  142    0052_1F17 S12_Position11 0052_1F17 0
+  143        EMPTY S12_Position12 EMPTY 0
+  144        EMPTY S13_Position01 EMPTY 0
+  145    0050_2F16 S13_Position02 0050_2F16 0
+  146        EMPTY S13_Position03 EMPTY 0
+  147    0052_2F17 S13_Position04 0052_2F17 0
+  148    0050_3F16 S13_Position05 0050_3F16 0
+  149    0052_3F17 S13_Position06 0052_3F17 0
+  150    0050_4F16 S13_Position07 0050_4F16 0
+  151    0052_4F17 S13_Position08 0052_4F17 0
+  152    0100_1F27 S13_Position09 0100_1F27 0
+  153    0100_2F27 S13_Position10 0100_2F27 0
+  154    0100_3F27 S13_Position11 0100_3F27 0
+  155    0100_4F27 S13_Position12 0100_4F27 0
+  156        EMPTY S14_Position01 EMPTY 0
+  157    1000_1F37 S14_Position02 1000_1F37 0
+  158    1000_2F37 S14_Position03 1000_2F37 0
+  159        EMPTY S14_Position04 EMPTY 0
+  160    1000_3F37 S14_Position05 1000_3F37 0
+  161    1000_4F37 S14_Position06 1000_4F37 0
+  162    0050_1R16 S14_Position07 0050_1R16 0
+  163    0052_1R17 S14_Position08 0052_1R17 0
+  164    0050_2R16 S14_Position09 0050_2R16 0
+  165    0052_2R17 S14_Position10 0052_2R17 0
+  166    0050_3R16 S14_Position11 0050_3R16 0
+  167    0052_3R17 S14_Position12 0052_3R17 0
+  168        EMPTY S15_Position01 EMPTY 0
+  169    0050_4R16 S15_Position02 0050_4R16 0
+  170    0052_4R17 S15_Position03 0052_4R17 0
+  171    0100_1R27 S15_Position04 0100_1R27 0
+  172        EMPTY S15_Position05 EMPTY 0
+  173    0100_2R27 S15_Position06 0100_2R27 0
+  174    0100_3R27 S15_Position07 0100_3R27 0
+  175    0100_4R27 S15_Position08 0100_4R27 0
+  176    1000_1R37 S15_Position09 1000_1R37 0
+  177    1000_2R37 S15_Position10 1000_2R37 0
+  178    1000_3R37 S15_Position11 1000_3R37 0
+  179    1000_4R37 S15_Position12 1000_4R37 0
+  180    0050_REF1 R1_Position01 0050_REF1 0
+  181    0052_REF1 R1_Position02 0052_REF1 0
+  182    0100_REF1 R1_Position03 0100_REF1 0
+  183    0102_REF1 R1_Position04 0102_REF1 0
+  184    0140_REF1 R1_Position05 0140_REF1 0
+  185    0142_REF1 R1_Position06 0142_REF1 0
+  186    1000_REF1 R1_Position07 1000_REF1 0
+  187    1002_REF1 R1_Position08 1002_REF1 0
+  188    0050_REF2 R1_Position09 0050_REF2 0
+  189    0052_REF2 R1_Position10 0052_REF2 0
+  190    0100_REF2 R1_Position11 0100_REF2 0
+  191    0102_REF2 R1_Position12 0102_REF2 0
+ls6500.processHeader: Found 192 total samples
+            Position          Sample Measurements
+       S1_Position01         STD_3_H ['Pre-irrad_4_141031/MeasurementNo00001.xls']
+       S1_Position02       0050_1F13 ['Pre-irrad_4_141031/MeasurementNo00002.xls']
+       S1_Position03       0052_1F14 ['Pre-irrad_4_141031/MeasurementNo00003.xls']
+       S1_Position04       0050_2F13 ['Pre-irrad_4_141031/MeasurementNo00004.xls']
+       S1_Position05       0052_2F14 ['Pre-irrad_4_141031/MeasurementNo00005.xls']
+       S1_Position06       0050_3F13 ['Pre-irrad_4_141031/MeasurementNo00006.xls']
+       S1_Position07       0052_3F14 ['Pre-irrad_4_141031/MeasurementNo00007.xls']
+       S1_Position08       0050_4F13 ['Pre-irrad_4_141031/MeasurementNo00008.xls']
+       S1_Position09       0052_4F14 ['Pre-irrad_4_141031/MeasurementNo00009.xls']
+       S1_Position10       0100_1F15 ['Pre-irrad_4_141031/MeasurementNo00010.xls']
+       S1_Position11       0102_1F25 ['Pre-irrad_4_141031/MeasurementNo00011.xls']
+       S1_Position12       0100_2F15 ['Pre-irrad_4_141031/MeasurementNo00012.xls']
+       S2_Position01       0102_2F25 ['Pre-irrad_4_141031/MeasurementNo00013.xls']
+       S2_Position02        STD_14_C ['Pre-irrad_4_141031/MeasurementNo00014.xls']
+       S2_Position03       0100_3F15 ['Pre-irrad_4_141031/MeasurementNo00015.xls']
+       S2_Position04       0102_3F25 ['Pre-irrad_4_141031/MeasurementNo00016.xls']
+       S2_Position05       0100_4F15 ['Pre-irrad_4_141031/MeasurementNo00017.xls']
+       S2_Position06       0102_4F25 ['Pre-irrad_4_141031/MeasurementNo00018.xls']
+       S2_Position07       0140_1F23 ['Pre-irrad_4_141031/MeasurementNo00019.xls']
+       S2_Position08       0142_1F33 ['Pre-irrad_4_141031/MeasurementNo00020.xls']
+       S2_Position09       0140_2F23 ['Pre-irrad_4_141031/MeasurementNo00021.xls']
+       S2_Position10       0142_2F33 ['Pre-irrad_4_141031/MeasurementNo00022.xls']
+       S2_Position11       0140_3F23 ['Pre-irrad_4_141031/MeasurementNo00023.xls']
+       S2_Position12       0142_3F33 ['Pre-irrad_4_141031/MeasurementNo00024.xls']
+       S3_Position01       0140_4F23 ['Pre-irrad_4_141031/MeasurementNo00025.xls']
+       S3_Position02       0142_4F33 ['Pre-irrad_4_141031/MeasurementNo00026.xls']
+       S3_Position03           EMPTY ['Pre-irrad_4_141031/MeasurementNo00027.xls']
+       S3_Position04       1000_1F34 ['Pre-irrad_4_141031/MeasurementNo00028.xls']
+       S3_Position05       1002_1F35 ['Pre-irrad_4_141031/MeasurementNo00029.xls']
+       S3_Position06       1000_2F34 []
+       S3_Position07       1002_2F35 []
+       S3_Position08       1000_3F34 []
+       S3_Position09       1002_3F35 []
+       S3_Position10       1000_4F34 []
+       S3_Position11       1002_4F35 []
+       S3_Position12       0050_1R13 []
+       S4_Position01       0052_1R14 []
+       S4_Position02       0050_2R13 []
+       S4_Position03       0052_2R14 []
+       S4_Position04           EMPTY []
+       S4_Position05       0050_3R13 []
+       S4_Position06       0052_3R14 []
+       S4_Position07       0050_4R13 []
+       S4_Position08       0052_4R14 []
+       S4_Position09       0100_1R15 []
+       S4_Position10       0102_1R25 []
+       S4_Position11       0100_2R15 []
+       S4_Position12       0102_2R25 []
+       S5_Position01       0100_3R15 []
+       S5_Position02       0102_3R25 []
+       S5_Position03       0100_4R15 []
+       S5_Position04       0102_4R25 []
+       S5_Position05           EMPTY []
+       S5_Position06       0140_1R23 []
+       S5_Position07       0142_1R33 []
+       S5_Position08       0140_2R23 []
+       S5_Position09       0142_2R33 []
+       S5_Position10       0140_3R23 []
+       S5_Position11       0142_3R33 []
+       S5_Position12       0140_4R23 []
+       S6_Position01       0142_4R33 []
+       S6_Position02       1000_1R34 []
+       S6_Position03       1002_1R35 []
+       S6_Position04       1000_2R34 []
+       S6_Position05       1002_2R35 []
+       S6_Position06           EMPTY []
+       S6_Position07       1000_3R34 []
+       S6_Position08       1002_3R35 []
+       S6_Position09       1000_4R34 []
+       S6_Position10       1002_4R35 []
+       S6_Position11       0050_FPMT []
+       S6_Position12       0050_RPMT []
+       S7_Position01       0050_1F11 []
+       S7_Position02       0052_1F12 []
+       S7_Position03       0050_2F11 []
+       S7_Position04       0052_2F12 []
+       S7_Position05       0050_3F11 []
+       S7_Position06       0052_3F12 []
+       S7_Position07           EMPTY []
+       S7_Position08       0050_4F11 []
+       S7_Position09       0052_4F12 []
+       S7_Position10       0100_1F22 []
+       S7_Position11       0102_1F21 []
+       S7_Position12       0100_2F22 []
+       S8_Position01       0102_2F21 []
+       S8_Position02       0100_3F22 []
+       S8_Position03       0102_3F21 []
+       S8_Position04       0100_4F22 []
+       S8_Position05       0102_4F21 []
+       S8_Position06       0140_1F31 []
+       S8_Position07       0142_1F26 []
+       S8_Position08           EMPTY []
+       S8_Position09       0140_2F31 []
+       S8_Position10       0142_2F26 []
+       S8_Position11       0140_3F31 []
+       S8_Position12       0142_3F26 []
+       S9_Position01       0140_4F31 []
+       S9_Position02       0142_4F26 []
+       S9_Position03       1000_1F36 []
+       S9_Position04       1002_1F32 []
+       S9_Position05       1000_2F36 []
+       S9_Position06       1002_2F32 []
+       S9_Position07       1000_3F36 []
+       S9_Position08       1002_3F32 []
+       S9_Position09           EMPTY []
+       S9_Position10       1000_4F36 []
+       S9_Position11       1002_4F32 []
+       S9_Position12       0050_1R11 []
+      S10_Position01       0052_1R12 []
+      S10_Position02       0050_2R11 []
+      S10_Position03       0052_2R12 []
+      S10_Position04       0050_3R11 []
+      S10_Position05       0052_3R12 []
+      S10_Position06       0050_4R11 []
+      S10_Position07       0052_4R12 []
+      S10_Position08       0100_1R22 []
+      S10_Position09       0102_1R21 []
+      S10_Position10           EMPTY []
+      S10_Position11       0100_2R22 []
+      S10_Position12       0102_2R21 []
+      S11_Position01       0100_3R22 []
+      S11_Position02       0102_3R21 []
+      S11_Position03       0100_4R22 []
+      S11_Position04       0102_4R21 []
+      S11_Position05       0140_1R31 []
+      S11_Position06       0142_1R26 []
+      S11_Position07       0140_2R31 []
+      S11_Position08       0142_2R26 []
+      S11_Position09       0140_3R31 []
+      S11_Position10       0142_3R26 []
+      S11_Position11           EMPTY []
+      S11_Position12       0140_4R31 []
+      S12_Position01       0142_4R26 []
+      S12_Position02       1000_1R36 []
+      S12_Position03       1002_1R32 []
+      S12_Position04       1000_2R36 []
+      S12_Position05       1002_2R32 []
+      S12_Position06       1000_3R36 []
+      S12_Position07       1002_3R32 []
+      S12_Position08       1000_4R36 []
+      S12_Position09       1002_4R32 []
+      S12_Position10       0050_1F16 []
+      S12_Position11       0052_1F17 []
+      S12_Position12           EMPTY []
+      S13_Position01           EMPTY []
+      S13_Position02       0050_2F16 []
+      S13_Position03           EMPTY []
+      S13_Position04       0052_2F17 []
+      S13_Position05       0050_3F16 []
+      S13_Position06       0052_3F17 []
+      S13_Position07       0050_4F16 []
+      S13_Position08       0052_4F17 []
+      S13_Position09       0100_1F27 []
+      S13_Position10       0100_2F27 []
+      S13_Position11       0100_3F27 []
+      S13_Position12       0100_4F27 []
+      S14_Position01           EMPTY []
+      S14_Position02       1000_1F37 []
+      S14_Position03       1000_2F37 []
+      S14_Position04           EMPTY []
+      S14_Position05       1000_3F37 []
+      S14_Position06       1000_4F37 []
+      S14_Position07       0050_1R16 []
+      S14_Position08       0052_1R17 []
+      S14_Position09       0050_2R16 []
+      S14_Position10       0052_2R17 []
+      S14_Position11       0050_3R16 []
+      S14_Position12       0052_3R17 []
+      S15_Position01           EMPTY []
+      S15_Position02       0050_4R16 []
+      S15_Position03       0052_4R17 []
+      S15_Position04       0100_1R27 []
+      S15_Position05           EMPTY []
+      S15_Position06       0100_2R27 []
+      S15_Position07       0100_3R27 []
+      S15_Position08       0100_4R27 []
+      S15_Position09       1000_1R37 []
+      S15_Position10       1000_2R37 []
+      S15_Position11       1000_3R37 []
+      S15_Position12       1000_4R37 []
+       R1_Position01       0050_REF1 []
+       R1_Position02       0052_REF1 []
+       R1_Position03       0100_REF1 []
+       R1_Position04       0102_REF1 []
+       R1_Position05       0140_REF1 []
+       R1_Position06       0142_REF1 []
+       R1_Position07       1000_REF1 []
+       R1_Position08       1002_REF1 []
+       R1_Position09       0050_REF2 []
+       R1_Position10       0052_REF2 []
+       R1_Position11       0100_REF2 []
+       R1_Position12       0102_REF2 []
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 29
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0102_2F25 0052_2F14 0050_4F13 0140_4F23 0050_2F13 0052_1F14 0142_1F33 0140_1F23 0102_4F25 0102_1F25 1002_1F35 0142_3F33 0100_3F15 0050_1F13 STD_14_C 0100_4F15 0102_3F25 0100_1F15 EMPTY_S3_Position03 0052_3F14 0050_3F13 0052_4F14 STD_3_H 0100_2F15 0142_2F33 0140_3F23 0142_4F33 0140_2F23 1000_1F34 
+Tray_Position S1_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00001.xls
+Tray_Position S1_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00002.xls
+Tray_Position S1_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00003.xls
+Tray_Position S1_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00004.xls
+Tray_Position S1_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00005.xls
+Tray_Position S1_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00006.xls
+Tray_Position S1_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00007.xls
+Tray_Position S1_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00008.xls
+Tray_Position S1_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00009.xls
+Tray_Position S1_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00010.xls
+Tray_Position S1_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00011.xls
+Tray_Position S1_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00012.xls
+Tray_Position S2_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00013.xls
+Tray_Position S2_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00014.xls
+Tray_Position S2_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00015.xls
+Tray_Position S2_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00016.xls
+Tray_Position S2_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00017.xls
+Tray_Position S2_Position06 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00018.xls
+Tray_Position S2_Position07 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00019.xls
+Tray_Position S2_Position08 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00020.xls
+Tray_Position S2_Position09 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00021.xls
+Tray_Position S2_Position10 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00022.xls
+Tray_Position S2_Position11 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00023.xls
+Tray_Position S2_Position12 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00024.xls
+Tray_Position S3_Position01 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00025.xls
+Tray_Position S3_Position02 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00026.xls
+Tray_Position S3_Position03 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00027.xls
+Tray_Position S3_Position04 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00028.xls
+Tray_Position S3_Position05 Number of `no vial` to this position 0
+get measurement from /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Pre-irrad_4_141031/MeasurementNo00029.xls
+Tray_Position S3_Position06 Number of `no vial` to this position 0
+Tray_Position S3_Position07 Number of `no vial` to this position 0
+Tray_Position S3_Position08 Number of `no vial` to this position 0
+Tray_Position S3_Position09 Number of `no vial` to this position 0
+Tray_Position S3_Position10 Number of `no vial` to this position 0
+Tray_Position S3_Position11 Number of `no vial` to this position 0
+Tray_Position S3_Position12 Number of `no vial` to this position 0
+Tray_Position S4_Position01 Number of `no vial` to this position 0
+Tray_Position S4_Position02 Number of `no vial` to this position 0
+Tray_Position S4_Position03 Number of `no vial` to this position 0
+Tray_Position S4_Position04 Number of `no vial` to this position 0
+Tray_Position S4_Position05 Number of `no vial` to this position 0
+Tray_Position S4_Position06 Number of `no vial` to this position 0
+Tray_Position S4_Position07 Number of `no vial` to this position 0
+Tray_Position S4_Position08 Number of `no vial` to this position 0
+Tray_Position S4_Position09 Number of `no vial` to this position 0
+Tray_Position S4_Position10 Number of `no vial` to this position 0
+Tray_Position S4_Position11 Number of `no vial` to this position 0
+Tray_Position S4_Position12 Number of `no vial` to this position 0
+Tray_Position S5_Position01 Number of `no vial` to this position 0
+Tray_Position S5_Position02 Number of `no vial` to this position 0
+Tray_Position S5_Position03 Number of `no vial` to this position 0
+Tray_Position S5_Position04 Number of `no vial` to this position 0
+Tray_Position S5_Position05 Number of `no vial` to this position 0
+Tray_Position S5_Position06 Number of `no vial` to this position 0
+Tray_Position S5_Position07 Number of `no vial` to this position 0
+Tray_Position S5_Position08 Number of `no vial` to this position 0
+Tray_Position S5_Position09 Number of `no vial` to this position 0
+Tray_Position S5_Position10 Number of `no vial` to this position 0
+Tray_Position S5_Position11 Number of `no vial` to this position 0
+Tray_Position S5_Position12 Number of `no vial` to this position 0
+Tray_Position S6_Position01 Number of `no vial` to this position 0
+Tray_Position S6_Position02 Number of `no vial` to this position 0
+Tray_Position S6_Position03 Number of `no vial` to this position 0
+Tray_Position S6_Position04 Number of `no vial` to this position 0
+Tray_Position S6_Position05 Number of `no vial` to this position 0
+Tray_Position S6_Position06 Number of `no vial` to this position 0
+Tray_Position S6_Position07 Number of `no vial` to this position 0
+Tray_Position S6_Position08 Number of `no vial` to this position 0
+Tray_Position S6_Position09 Number of `no vial` to this position 0
+Tray_Position S6_Position10 Number of `no vial` to this position 0
+Tray_Position S6_Position11 Number of `no vial` to this position 0
+Tray_Position S6_Position12 Number of `no vial` to this position 0
+Tray_Position S7_Position01 Number of `no vial` to this position 0
+Tray_Position S7_Position02 Number of `no vial` to this position 0
+Tray_Position S7_Position03 Number of `no vial` to this position 0
+Tray_Position S7_Position04 Number of `no vial` to this position 0
+Tray_Position S7_Position05 Number of `no vial` to this position 0
+Tray_Position S7_Position06 Number of `no vial` to this position 0
+Tray_Position S7_Position07 Number of `no vial` to this position 0
+Tray_Position S7_Position08 Number of `no vial` to this position 0
+Tray_Position S7_Position09 Number of `no vial` to this position 0
+Tray_Position S7_Position10 Number of `no vial` to this position 0
+Tray_Position S7_Position11 Number of `no vial` to this position 0
+Tray_Position S7_Position12 Number of `no vial` to this position 0
+Tray_Position S8_Position01 Number of `no vial` to this position 0
+Tray_Position S8_Position02 Number of `no vial` to this position 0
+Tray_Position S8_Position03 Number of `no vial` to this position 0
+Tray_Position S8_Position04 Number of `no vial` to this position 0
+Tray_Position S8_Position05 Number of `no vial` to this position 0
+Tray_Position S8_Position06 Number of `no vial` to this position 0
+Tray_Position S8_Position07 Number of `no vial` to this position 0
+Tray_Position S8_Position08 Number of `no vial` to this position 0
+Tray_Position S8_Position09 Number of `no vial` to this position 0
+Tray_Position S8_Position10 Number of `no vial` to this position 0
+Tray_Position S8_Position11 Number of `no vial` to this position 0
+Tray_Position S8_Position12 Number of `no vial` to this position 0
+Tray_Position S9_Position01 Number of `no vial` to this position 0
+Tray_Position S9_Position02 Number of `no vial` to this position 0
+Tray_Position S9_Position03 Number of `no vial` to this position 0
+Tray_Position S9_Position04 Number of `no vial` to this position 0
+Tray_Position S9_Position05 Number of `no vial` to this position 0
+Tray_Position S9_Position06 Number of `no vial` to this position 0
+Tray_Position S9_Position07 Number of `no vial` to this position 0
+Tray_Position S9_Position08 Number of `no vial` to this position 0
+Tray_Position S9_Position09 Number of `no vial` to this position 0
+Tray_Position S9_Position10 Number of `no vial` to this position 0
+Tray_Position S9_Position11 Number of `no vial` to this position 0
+Tray_Position S9_Position12 Number of `no vial` to this position 0
+Tray_Position S10_Position01 Number of `no vial` to this position 0
+Tray_Position S10_Position02 Number of `no vial` to this position 0
+Tray_Position S10_Position03 Number of `no vial` to this position 0
+Tray_Position S10_Position04 Number of `no vial` to this position 0
+Tray_Position S10_Position05 Number of `no vial` to this position 0
+Tray_Position S10_Position06 Number of `no vial` to this position 0
+Tray_Position S10_Position07 Number of `no vial` to this position 0
+Tray_Position S10_Position08 Number of `no vial` to this position 0
+Tray_Position S10_Position09 Number of `no vial` to this position 0
+Tray_Position S10_Position10 Number of `no vial` to this position 0
+Tray_Position S10_Position11 Number of `no vial` to this position 0
+Tray_Position S10_Position12 Number of `no vial` to this position 0
+Tray_Position S11_Position01 Number of `no vial` to this position 0
+Tray_Position S11_Position02 Number of `no vial` to this position 0
+Tray_Position S11_Position03 Number of `no vial` to this position 0
+Tray_Position S11_Position04 Number of `no vial` to this position 0
+Tray_Position S11_Position05 Number of `no vial` to this position 0
+Tray_Position S11_Position06 Number of `no vial` to this position 0
+Tray_Position S11_Position07 Number of `no vial` to this position 0
+Tray_Position S11_Position08 Number of `no vial` to this position 0
+Tray_Position S11_Position09 Number of `no vial` to this position 0
+Tray_Position S11_Position10 Number of `no vial` to this position 0
+Tray_Position S11_Position11 Number of `no vial` to this position 0
+Tray_Position S11_Position12 Number of `no vial` to this position 0
+Tray_Position S12_Position01 Number of `no vial` to this position 0
+Tray_Position S12_Position02 Number of `no vial` to this position 0
+Tray_Position S12_Position03 Number of `no vial` to this position 0
+Tray_Position S12_Position04 Number of `no vial` to this position 0
+Tray_Position S12_Position05 Number of `no vial` to this position 0
+Tray_Position S12_Position06 Number of `no vial` to this position 0
+Tray_Position S12_Position07 Number of `no vial` to this position 0
+Tray_Position S12_Position08 Number of `no vial` to this position 0
+Tray_Position S12_Position09 Number of `no vial` to this position 0
+Tray_Position S12_Position10 Number of `no vial` to this position 0
+Tray_Position S12_Position11 Number of `no vial` to this position 0
+Tray_Position S12_Position12 Number of `no vial` to this position 0
+Tray_Position S13_Position01 Number of `no vial` to this position 0
+Tray_Position S13_Position02 Number of `no vial` to this position 0
+Tray_Position S13_Position03 Number of `no vial` to this position 0
+Tray_Position S13_Position04 Number of `no vial` to this position 0
+Tray_Position S13_Position05 Number of `no vial` to this position 0
+Tray_Position S13_Position06 Number of `no vial` to this position 0
+Tray_Position S13_Position07 Number of `no vial` to this position 0
+Tray_Position S13_Position08 Number of `no vial` to this position 0
+Tray_Position S13_Position09 Number of `no vial` to this position 0
+Tray_Position S13_Position10 Number of `no vial` to this position 0
+Tray_Position S13_Position11 Number of `no vial` to this position 0
+Tray_Position S13_Position12 Number of `no vial` to this position 0
+Tray_Position S14_Position01 Number of `no vial` to this position 0
+Tray_Position S14_Position02 Number of `no vial` to this position 0
+Tray_Position S14_Position03 Number of `no vial` to this position 0
+Tray_Position S14_Position04 Number of `no vial` to this position 0
+Tray_Position S14_Position05 Number of `no vial` to this position 0
+Tray_Position S14_Position06 Number of `no vial` to this position 0
+Tray_Position S14_Position07 Number of `no vial` to this position 0
+Tray_Position S14_Position08 Number of `no vial` to this position 0
+Tray_Position S14_Position09 Number of `no vial` to this position 0
+Tray_Position S14_Position10 Number of `no vial` to this position 0
+Tray_Position S14_Position11 Number of `no vial` to this position 0
+Tray_Position S14_Position12 Number of `no vial` to this position 0
+Tray_Position S15_Position01 Number of `no vial` to this position 0
+Tray_Position S15_Position02 Number of `no vial` to this position 0
+Tray_Position S15_Position03 Number of `no vial` to this position 0
+Tray_Position S15_Position04 Number of `no vial` to this position 0
+Tray_Position S15_Position05 Number of `no vial` to this position 0
+Tray_Position S15_Position06 Number of `no vial` to this position 0
+Tray_Position S15_Position07 Number of `no vial` to this position 0
+Tray_Position S15_Position08 Number of `no vial` to this position 0
+Tray_Position S15_Position09 Number of `no vial` to this position 0
+Tray_Position S15_Position10 Number of `no vial` to this position 0
+Tray_Position S15_Position11 Number of `no vial` to this position 0
+Tray_Position S15_Position12 Number of `no vial` to this position 0
+Tray_Position R1_Position01 Number of `no vial` to this position 0
+Tray_Position R1_Position02 Number of `no vial` to this position 0
+Tray_Position R1_Position03 Number of `no vial` to this position 0
+Tray_Position R1_Position04 Number of `no vial` to this position 0
+Tray_Position R1_Position05 Number of `no vial` to this position 0
+Tray_Position R1_Position06 Number of `no vial` to this position 0
+Tray_Position R1_Position07 Number of `no vial` to this position 0
+Tray_Position R1_Position08 Number of `no vial` to this position 0
+Tray_Position R1_Position09 Number of `no vial` to this position 0
+Tray_Position R1_Position10 Number of `no vial` to this position 0
+Tray_Position R1_Position11 Number of `no vial` to this position 0
+Tray_Position R1_Position12 Number of `no vial` to this position 0
+ls6500.putOrGet: patience...writing pickled data to Pickles/Pre-irrad_4_141031.pickle
+ls6500.defineMatchingSamples 
+Name : Samples
+ls6500.Analyze
+histogramming samples 0102_2F25 0052_2F14 0050_4F13 0140_4F23 0050_2F13 0052_1F14 0142_1F33 0140_1F23 0102_4F25 0102_1F25 1002_1F35 0142_3F33 0100_3F15 0050_1F13 STD_14_C 0100_4F15 0102_3F25 0100_1F15 EMPTY_S3_Position03 0052_3F14 0050_3F13 0052_4F14 STD_3_H 0100_2F15 0142_2F33 0140_3F23 0142_4F33 0140_2F23 1000_1F34 
+ls6500.Analyze: Wrote hists to Histograms/Pre-irrad_4_141031.root

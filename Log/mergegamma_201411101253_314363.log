@@ -1,0 +1,471 @@
+ls6500: Output directed to terminal and Log/mergegamma_201411101253_314363.log
+ls6500: Irradiation date is 2014/10/20 16:00:00
+ls6500: initialization mergegamma . Merging /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_Pre-irradiation141017/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_1Gy_141020/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141021/, /Users/djaffe/work/GIT/LINDSEY/TechMaturation2014/LS6500/Gamma_All_141022/
+ls6500.Main: pickMode merge
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 0 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_Pre-irradiation141017.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_1Gy_141020.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 40
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_1Gy_141020.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141021.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 40 , 67
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141021.pickle
+ls6500.putOrGet: unpickling...be patient. file Pickles/Gamma_All_141022.pickle
+ls6500.fillSampleMsmts: initial,final sampleMsmts length 67 , 68
+ls6500.fillSampleMsmts: Samples in fillSampleMsmts 0050_0_1 0050_0_2 0050_100_1 0050_100_2 0050_400_1 0050_400_2 0052_0_1 0052_0_2 0052_100_1 0052_100_2 0052_400_1 0052_400_2 0100_0_1 0100_0_2 0100_1000_1 0100_1000_2 0100_100_1 0100_100_2 0100_10_1 0100_10_2 0100_1_1 0100_1_2 0100_400_1 0100_400_2 0102_0_1 0102_0_2 0102_1000_1 0102_1000_2 0102_100_1 0102_100_2 0102_10_1 0102_10_2 0102_1_1 0102_1_2 0102_400_1 0102_400_2 10%_WbLS_Vit._C 15%_WbLS_Vit._C 5%_WbLS_Vit._C EMPTY_S1_Position01 EMPTY_S2_Position02 EMPTY_S3_Position03 EMPTY_S4_Position04 EMPTY_S5_Position05 EMPTY_S6_Position06 EMPTY_S7_Position07 GLASS_0_1 GLASS_0_2 GLASS_1000_1 GLASS_1000_2 GLASS_100_1 GLASS_100_2 GLASS_400_1 GLASS_400_2 HDPE_0_1 LS_10/20/14 LS_Vit._C PP_0_1 PP_0_2 PP_1000_1 PP_1000_2 PP_100_1 PP_100_2 PP_400_1 PP_400_2 WbLS-10_10/20/14 WbLS-15_10/20/14 WbLS-5_10/20/14 
+ls6500.putOrGet: pickled data read from Pickles/Gamma_All_141022.pickle
+ls6500.defineMatchingSamples 
+Name : Samples
+0050_0 : 0050_0_1,0050_0_2
+0050_100 : 0050_100_1,0050_100_2
+0050_400 : 0050_400_1,0050_400_2
+0052_0 : 0052_0_1,0052_0_2
+0052_100 : 0052_100_1,0052_100_2
+0052_400 : 0052_400_1,0052_400_2
+0100_0 : 0100_0_1,0100_0_2
+0100_1 : 0100_1_1,0100_1_2
+0100_10 : 0100_10_1,0100_10_2
+0100_100 : 0100_100_1,0100_100_2
+0100_1000 : 0100_1000_1,0100_1000_2
+0100_400 : 0100_400_1,0100_400_2
+0102_0 : 0102_0_1,0102_0_2
+0102_1 : 0102_1_1,0102_1_2
+0102_10 : 0102_10_1,0102_10_2
+0102_100 : 0102_100_1,0102_100_2
+0102_1000 : 0102_1000_1,0102_1000_2
+0102_400 : 0102_400_1,0102_400_2
+EMPTY : EMPTY_S1_Position01,EMPTY_S2_Position02,EMPTY_S3_Position03,EMPTY_S4_Position04,EMPTY_S5_Position05,EMPTY_S6_Position06,EMPTY_S7_Position07
+GLASS_0 : GLASS_0_1,GLASS_0_2
+GLASS_100 : GLASS_100_1,GLASS_100_2
+GLASS_1000 : GLASS_1000_1,GLASS_1000_2
+GLASS_400 : GLASS_400_1,GLASS_400_2
+PP_0 : PP_0_1,PP_0_2
+PP_100 : PP_100_1,PP_100_2
+PP_1000 : PP_1000_1,PP_1000_2
+PP_400 : PP_400_1,PP_400_2
+ls6500.Analyze
+ls.Analyze: kinds ['0100', '15%', 'EMPTY', '0052', 'PP', 'GLASS', '0050', '0102', 'LS', '5%', 'WbLS-5', '10%', 'WbLS-10', 'HDPE', 'WbLS-15']
+MultiGraphs make map for kind 0100 p1  p2 g
+MultiGraphs make map for kind 0100 p1 n p2 n
+MultiGraphs make map for kind 0100 p1 c p2 c
+MultiGraphs make map for kind 0100 p1 a p2 a
+MultiGraphs make map for kind 0100 p1 Q p2 Q
+MultiGraphs make map for kind 0100 p1 D p2 D
+MultiGraphs make map for kind 15% p1  p2 g
+MultiGraphs make map for kind 15% p1 n p2 n
+MultiGraphs make map for kind 15% p1 c p2 c
+MultiGraphs make map for kind 15% p1 a p2 a
+MultiGraphs make map for kind 15% p1 Q p2 Q
+MultiGraphs make map for kind 15% p1 D p2 D
+MultiGraphs make map for kind EMPTY p1  p2 g
+MultiGraphs make map for kind EMPTY p1 n p2 n
+MultiGraphs make map for kind EMPTY p1 c p2 c
+MultiGraphs make map for kind EMPTY p1 a p2 a
+MultiGraphs make map for kind EMPTY p1 Q p2 Q
+MultiGraphs make map for kind EMPTY p1 D p2 D
+MultiGraphs make map for kind 0052 p1  p2 g
+MultiGraphs make map for kind 0052 p1 n p2 n
+MultiGraphs make map for kind 0052 p1 c p2 c
+MultiGraphs make map for kind 0052 p1 a p2 a
+MultiGraphs make map for kind 0052 p1 Q p2 Q
+MultiGraphs make map for kind 0052 p1 D p2 D
+MultiGraphs make map for kind PP p1  p2 g
+MultiGraphs make map for kind PP p1 n p2 n
+MultiGraphs make map for kind PP p1 c p2 c
+MultiGraphs make map for kind PP p1 a p2 a
+MultiGraphs make map for kind PP p1 Q p2 Q
+MultiGraphs make map for kind PP p1 D p2 D
+MultiGraphs make map for kind GLASS p1  p2 g
+MultiGraphs make map for kind GLASS p1 n p2 n
+MultiGraphs make map for kind GLASS p1 c p2 c
+MultiGraphs make map for kind GLASS p1 a p2 a
+MultiGraphs make map for kind GLASS p1 Q p2 Q
+MultiGraphs make map for kind GLASS p1 D p2 D
+MultiGraphs make map for kind 0050 p1  p2 g
+MultiGraphs make map for kind 0050 p1 n p2 n
+MultiGraphs make map for kind 0050 p1 c p2 c
+MultiGraphs make map for kind 0050 p1 a p2 a
+MultiGraphs make map for kind 0050 p1 Q p2 Q
+MultiGraphs make map for kind 0050 p1 D p2 D
+MultiGraphs make map for kind 0102 p1  p2 g
+MultiGraphs make map for kind 0102 p1 n p2 n
+MultiGraphs make map for kind 0102 p1 c p2 c
+MultiGraphs make map for kind 0102 p1 a p2 a
+MultiGraphs make map for kind 0102 p1 Q p2 Q
+MultiGraphs make map for kind 0102 p1 D p2 D
+MultiGraphs make map for kind LS p1  p2 g
+MultiGraphs make map for kind LS p1 n p2 n
+MultiGraphs make map for kind LS p1 c p2 c
+MultiGraphs make map for kind LS p1 a p2 a
+MultiGraphs make map for kind LS p1 Q p2 Q
+MultiGraphs make map for kind LS p1 D p2 D
+MultiGraphs make map for kind 5% p1  p2 g
+MultiGraphs make map for kind 5% p1 n p2 n
+MultiGraphs make map for kind 5% p1 c p2 c
+MultiGraphs make map for kind 5% p1 a p2 a
+MultiGraphs make map for kind 5% p1 Q p2 Q
+MultiGraphs make map for kind 5% p1 D p2 D
+MultiGraphs make map for kind WbLS-5 p1  p2 g
+MultiGraphs make map for kind WbLS-5 p1 n p2 n
+MultiGraphs make map for kind WbLS-5 p1 c p2 c
+MultiGraphs make map for kind WbLS-5 p1 a p2 a
+MultiGraphs make map for kind WbLS-5 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-5 p1 D p2 D
+MultiGraphs make map for kind 10% p1  p2 g
+MultiGraphs make map for kind 10% p1 n p2 n
+MultiGraphs make map for kind 10% p1 c p2 c
+MultiGraphs make map for kind 10% p1 a p2 a
+MultiGraphs make map for kind 10% p1 Q p2 Q
+MultiGraphs make map for kind 10% p1 D p2 D
+MultiGraphs make map for kind WbLS-10 p1  p2 g
+MultiGraphs make map for kind WbLS-10 p1 n p2 n
+MultiGraphs make map for kind WbLS-10 p1 c p2 c
+MultiGraphs make map for kind WbLS-10 p1 a p2 a
+MultiGraphs make map for kind WbLS-10 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-10 p1 D p2 D
+MultiGraphs make map for kind HDPE p1  p2 g
+MultiGraphs make map for kind HDPE p1 n p2 n
+MultiGraphs make map for kind HDPE p1 c p2 c
+MultiGraphs make map for kind HDPE p1 a p2 a
+MultiGraphs make map for kind HDPE p1 Q p2 Q
+MultiGraphs make map for kind HDPE p1 D p2 D
+MultiGraphs make map for kind WbLS-15 p1  p2 g
+MultiGraphs make map for kind WbLS-15 p1 n p2 n
+MultiGraphs make map for kind WbLS-15 p1 c p2 c
+MultiGraphs make map for kind WbLS-15 p1 a p2 a
+MultiGraphs make map for kind WbLS-15 p1 Q p2 Q
+MultiGraphs make map for kind WbLS-15 p1 D p2 D
+histogramming samples 0100_1_1 Add graph c0100_1_1 to MultiGraphs. kind= c0100
+0100_1_2 Add graph c0100_1_2 to MultiGraphs. kind= c0100
+15%_WbLS_Vit._C Add graph c15%_WbLS_Vit._C to MultiGraphs. kind= c15%
+0100_1000_2 Add graph c0100_1000_2 to MultiGraphs. kind= c0100
+EMPTY_S6_Position06 Add graph cEMPTY_S6_Position06 to MultiGraphs. kind= cEMPTY
+0052_0_1 Add graph c0052_0_1 to MultiGraphs. kind= c0052
+PP_1000_1 Add graph cPP_1000_1 to MultiGraphs. kind= cPP
+PP_1000_2 Add graph cPP_1000_2 to MultiGraphs. kind= cPP
+EMPTY_S2_Position02 Add graph cEMPTY_S2_Position02 to MultiGraphs. kind= cEMPTY
+0100_400_2 Add graph c0100_400_2 to MultiGraphs. kind= c0100
+0100_400_1 Add graph c0100_400_1 to MultiGraphs. kind= c0100
+GLASS_100_1 Add graph cGLASS_100_1 to MultiGraphs. kind= cGLASS
+0050_400_1 Add graph c0050_400_1 to MultiGraphs. kind= c0050
+EMPTY_S1_Position01 Add graph cEMPTY_S1_Position01 to MultiGraphs. kind= cEMPTY
+0050_400_2 Add graph c0050_400_2 to MultiGraphs. kind= c0050
+0100_10_2 Add graph c0100_10_2 to MultiGraphs. kind= c0100
+0102_1000_1 Add graph c0102_1000_1 to MultiGraphs. kind= c0102
+0100_100_2 Add graph c0100_100_2 to MultiGraphs. kind= c0100
+GLASS_400_2 Add graph cGLASS_400_2 to MultiGraphs. kind= cGLASS
+GLASS_400_1 Add graph cGLASS_400_1 to MultiGraphs. kind= cGLASS
+0100_100_1 Add graph c0100_100_1 to MultiGraphs. kind= c0100
+0052_100_2 Add graph c0052_100_2 to MultiGraphs. kind= c0052
+0052_100_1 Add graph c0052_100_1 to MultiGraphs. kind= c0052
+LS_Vit._C Add graph cLS_Vit._C to MultiGraphs. kind= cLS
+0050_100_2 Add graph c0050_100_2 to MultiGraphs. kind= c0050
+EMPTY_S7_Position07 Add graph cEMPTY_S7_Position07 to MultiGraphs. kind= cEMPTY
+GLASS_1000_1 Add graph cGLASS_1000_1 to MultiGraphs. kind= cGLASS
+0102_100_1 Add graph c0102_100_1 to MultiGraphs. kind= c0102
+0102_100_2 Add graph c0102_100_2 to MultiGraphs. kind= c0102
+GLASS_1000_2 Add graph cGLASS_1000_2 to MultiGraphs. kind= cGLASS
+0102_10_1 Add graph c0102_10_1 to MultiGraphs. kind= c0102
+5%_WbLS_Vit._C Add graph c5%_WbLS_Vit._C to MultiGraphs. kind= c5%
+WbLS-5_10/20/14 Add graph cWbLS-5_10/20/14 to MultiGraphs. kind= cWbLS-5
+0102_10_2 Add graph c0102_10_2 to MultiGraphs. kind= c0102
+0102_1_2 Add graph c0102_1_2 to MultiGraphs. kind= c0102
+EMPTY_S5_Position05 Add graph cEMPTY_S5_Position05 to MultiGraphs. kind= cEMPTY
+0102_1_1 Add graph c0102_1_1 to MultiGraphs. kind= c0102
+10%_WbLS_Vit._C Add graph c10%_WbLS_Vit._C to MultiGraphs. kind= c10%
+PP_100_1 Add graph cPP_100_1 to MultiGraphs. kind= cPP
+GLASS_100_2 Add graph cGLASS_100_2 to MultiGraphs. kind= cGLASS
+PP_100_2 Add graph cPP_100_2 to MultiGraphs. kind= cPP
+PP_400_2 Add graph cPP_400_2 to MultiGraphs. kind= cPP
+WbLS-10_10/20/14 Add graph cWbLS-10_10/20/14 to MultiGraphs. kind= cWbLS-10
+0102_400_1 Add graph c0102_400_1 to MultiGraphs. kind= c0102
+0102_400_2 Add graph c0102_400_2 to MultiGraphs. kind= c0102
+0052_400_2 Add graph c0052_400_2 to MultiGraphs. kind= c0052
+0052_400_1 Add graph c0052_400_1 to MultiGraphs. kind= c0052
+PP_0_2 Add graph cPP_0_2 to MultiGraphs. kind= cPP
+PP_400_1 Add graph cPP_400_1 to MultiGraphs. kind= cPP
+EMPTY_S3_Position03 Add graph cEMPTY_S3_Position03 to MultiGraphs. kind= cEMPTY
+0102_1000_2 Add graph c0102_1000_2 to MultiGraphs. kind= c0102
+LS_10/20/14 Add graph cLS_10/20/14 to MultiGraphs. kind= cLS
+GLASS_0_1 Add graph cGLASS_0_1 to MultiGraphs. kind= cGLASS
+0100_10_1 Add graph c0100_10_1 to MultiGraphs. kind= c0100
+GLASS_0_2 Add graph cGLASS_0_2 to MultiGraphs. kind= cGLASS
+0050_100_1 Add graph c0050_100_1 to MultiGraphs. kind= c0050
+0052_0_2 Add graph c0052_0_2 to MultiGraphs. kind= c0052
+PP_0_1 Add graph cPP_0_1 to MultiGraphs. kind= cPP
+HDPE_0_1 Add graph cHDPE_0_1 to MultiGraphs. kind= cHDPE
+EMPTY_S4_Position04 Add graph cEMPTY_S4_Position04 to MultiGraphs. kind= cEMPTY
+WbLS-15_10/20/14 Add graph cWbLS-15_10/20/14 to MultiGraphs. kind= cWbLS-15
+0100_0_1 Add graph c0100_0_1 to MultiGraphs. kind= c0100
+0102_0_2 Add graph c0102_0_2 to MultiGraphs. kind= c0102
+0102_0_1 Add graph c0102_0_1 to MultiGraphs. kind= c0102
+0100_0_2 Add graph c0100_0_2 to MultiGraphs. kind= c0100
+0050_0_2 Add graph c0050_0_2 to MultiGraphs. kind= c0050
+0050_0_1 Add graph c0050_0_1 to MultiGraphs. kind= c0050
+0100_1000_1 Add graph c0100_1000_1 to MultiGraphs. kind= c0100
+
+Add graph g0100_1_1 to MultiGraphs. kind= 0100
+Add graph n0100_1_1 to MultiGraphs. kind= n0100
+Add graph a0100_1_1 to MultiGraphs. kind= a0100
+Add graph g0100_1_2 to MultiGraphs. kind= 0100
+Add graph n0100_1_2 to MultiGraphs. kind= n0100
+Add graph a0100_1_2 to MultiGraphs. kind= a0100
+Add graph g15%_WbLS_Vit._C to MultiGraphs. kind= 15%
+Add graph n15%_WbLS_Vit._C to MultiGraphs. kind= n15%
+Add graph a15%_WbLS_Vit._C to MultiGraphs. kind= a15%
+Add graph g0100_1000_2 to MultiGraphs. kind= 0100
+Add graph n0100_1000_2 to MultiGraphs. kind= n0100
+Add graph a0100_1000_2 to MultiGraphs. kind= a0100
+Add graph gEMPTY_S6_Position06_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S6_Position06_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S6_Position06_20141021 to MultiGraphs. kind= aEMPTY
+Add graph g0052_0_1 to MultiGraphs. kind= 0052
+Add graph n0052_0_1 to MultiGraphs. kind= n0052
+Add graph a0052_0_1 to MultiGraphs. kind= a0052
+Add graph gPP_1000_1 to MultiGraphs. kind= PP
+Add graph nPP_1000_1 to MultiGraphs. kind= nPP
+Add graph aPP_1000_1 to MultiGraphs. kind= aPP
+Add graph gPP_1000_2 to MultiGraphs. kind= PP
+Add graph nPP_1000_2 to MultiGraphs. kind= nPP
+Add graph aPP_1000_2 to MultiGraphs. kind= aPP
+Add graph gEMPTY_S2_Position02_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S2_Position02_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S2_Position02_20141017 to MultiGraphs. kind= aEMPTY
+Add graph g0100_400_2 to MultiGraphs. kind= 0100
+Add graph n0100_400_2 to MultiGraphs. kind= n0100
+Add graph a0100_400_2 to MultiGraphs. kind= a0100
+Add graph g0100_400_1 to MultiGraphs. kind= 0100
+Add graph n0100_400_1 to MultiGraphs. kind= n0100
+Add graph a0100_400_1 to MultiGraphs. kind= a0100
+Add graph gGLASS_100_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_100_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_100_1 to MultiGraphs. kind= aGLASS
+Add graph g0050_400_1 to MultiGraphs. kind= 0050
+Add graph n0050_400_1 to MultiGraphs. kind= n0050
+Add graph a0050_400_1 to MultiGraphs. kind= a0050
+Add graph gEMPTY_S1_Position01_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S1_Position01_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S1_Position01_20141017 to MultiGraphs. kind= aEMPTY
+Add graph g0050_400_2 to MultiGraphs. kind= 0050
+Add graph n0050_400_2 to MultiGraphs. kind= n0050
+Add graph a0050_400_2 to MultiGraphs. kind= a0050
+Add graph g0100_10_2 to MultiGraphs. kind= 0100
+Add graph n0100_10_2 to MultiGraphs. kind= n0100
+Add graph a0100_10_2 to MultiGraphs. kind= a0100
+Add graph g0102_1000_1 to MultiGraphs. kind= 0102
+Add graph n0102_1000_1 to MultiGraphs. kind= n0102
+Add graph a0102_1000_1 to MultiGraphs. kind= a0102
+Add graph g0100_100_2 to MultiGraphs. kind= 0100
+Add graph n0100_100_2 to MultiGraphs. kind= n0100
+Add graph a0100_100_2 to MultiGraphs. kind= a0100
+Add graph gGLASS_400_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_400_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_400_2 to MultiGraphs. kind= aGLASS
+Add graph gGLASS_400_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_400_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_400_1 to MultiGraphs. kind= aGLASS
+Add graph g0100_100_1 to MultiGraphs. kind= 0100
+Add graph n0100_100_1 to MultiGraphs. kind= n0100
+Add graph a0100_100_1 to MultiGraphs. kind= a0100
+Add graph g0052_100_2 to MultiGraphs. kind= 0052
+Add graph n0052_100_2 to MultiGraphs. kind= n0052
+Add graph a0052_100_2 to MultiGraphs. kind= a0052
+Add graph g0052_100_1 to MultiGraphs. kind= 0052
+Add graph n0052_100_1 to MultiGraphs. kind= n0052
+Add graph a0052_100_1 to MultiGraphs. kind= a0052
+Add graph gLS_Vit._C to MultiGraphs. kind= LS
+Add graph nLS_Vit._C to MultiGraphs. kind= nLS
+Add graph aLS_Vit._C to MultiGraphs. kind= aLS
+Add graph g0050_100_2 to MultiGraphs. kind= 0050
+Add graph n0050_100_2 to MultiGraphs. kind= n0050
+Add graph a0050_100_2 to MultiGraphs. kind= a0050
+Add graph gEMPTY_S7_Position07_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S7_Position07_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S7_Position07_20141021 to MultiGraphs. kind= aEMPTY
+Add graph gGLASS_1000_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_1000_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_1000_1 to MultiGraphs. kind= aGLASS
+Add graph g0102_100_1 to MultiGraphs. kind= 0102
+Add graph n0102_100_1 to MultiGraphs. kind= n0102
+Add graph a0102_100_1 to MultiGraphs. kind= a0102
+Add graph g0102_100_2 to MultiGraphs. kind= 0102
+Add graph n0102_100_2 to MultiGraphs. kind= n0102
+Add graph a0102_100_2 to MultiGraphs. kind= a0102
+Add graph gGLASS_1000_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_1000_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_1000_2 to MultiGraphs. kind= aGLASS
+Add graph g0102_10_1 to MultiGraphs. kind= 0102
+Add graph n0102_10_1 to MultiGraphs. kind= n0102
+Add graph a0102_10_1 to MultiGraphs. kind= a0102
+Add graph g5%_WbLS_Vit._C to MultiGraphs. kind= 5%
+Add graph n5%_WbLS_Vit._C to MultiGraphs. kind= n5%
+Add graph a5%_WbLS_Vit._C to MultiGraphs. kind= a5%
+Add graph gWbLS-5_10/20/14 to MultiGraphs. kind= WbLS-5
+Add graph nWbLS-5_10/20/14 to MultiGraphs. kind= nWbLS-5
+Add graph aWbLS-5_10/20/14 to MultiGraphs. kind= aWbLS-5
+Add graph g0102_10_2 to MultiGraphs. kind= 0102
+Add graph n0102_10_2 to MultiGraphs. kind= n0102
+Add graph a0102_10_2 to MultiGraphs. kind= a0102
+Add graph g0102_1_2 to MultiGraphs. kind= 0102
+Add graph n0102_1_2 to MultiGraphs. kind= n0102
+Add graph a0102_1_2 to MultiGraphs. kind= a0102
+Add graph gEMPTY_S5_Position05_20141021 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S5_Position05_20141021 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S5_Position05_20141021 to MultiGraphs. kind= aEMPTY
+Add graph g0102_1_1 to MultiGraphs. kind= 0102
+Add graph n0102_1_1 to MultiGraphs. kind= n0102
+Add graph a0102_1_1 to MultiGraphs. kind= a0102
+Add graph g10%_WbLS_Vit._C to MultiGraphs. kind= 10%
+Add graph n10%_WbLS_Vit._C to MultiGraphs. kind= n10%
+Add graph a10%_WbLS_Vit._C to MultiGraphs. kind= a10%
+Add graph gPP_100_1 to MultiGraphs. kind= PP
+Add graph nPP_100_1 to MultiGraphs. kind= nPP
+Add graph aPP_100_1 to MultiGraphs. kind= aPP
+Add graph gGLASS_100_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_100_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_100_2 to MultiGraphs. kind= aGLASS
+Add graph gPP_100_2 to MultiGraphs. kind= PP
+Add graph nPP_100_2 to MultiGraphs. kind= nPP
+Add graph aPP_100_2 to MultiGraphs. kind= aPP
+Add graph gPP_400_2 to MultiGraphs. kind= PP
+Add graph nPP_400_2 to MultiGraphs. kind= nPP
+Add graph aPP_400_2 to MultiGraphs. kind= aPP
+Add graph gWbLS-10_10/20/14 to MultiGraphs. kind= WbLS-10
+Add graph nWbLS-10_10/20/14 to MultiGraphs. kind= nWbLS-10
+Add graph aWbLS-10_10/20/14 to MultiGraphs. kind= aWbLS-10
+Add graph g0102_400_1 to MultiGraphs. kind= 0102
+Add graph n0102_400_1 to MultiGraphs. kind= n0102
+Add graph a0102_400_1 to MultiGraphs. kind= a0102
+Add graph g0102_400_2 to MultiGraphs. kind= 0102
+Add graph n0102_400_2 to MultiGraphs. kind= n0102
+Add graph a0102_400_2 to MultiGraphs. kind= a0102
+Add graph g0052_400_2 to MultiGraphs. kind= 0052
+Add graph n0052_400_2 to MultiGraphs. kind= n0052
+Add graph a0052_400_2 to MultiGraphs. kind= a0052
+Add graph g0052_400_1 to MultiGraphs. kind= 0052
+Add graph n0052_400_1 to MultiGraphs. kind= n0052
+Add graph a0052_400_1 to MultiGraphs. kind= a0052
+Add graph gPP_0_2 to MultiGraphs. kind= PP
+Add graph nPP_0_2 to MultiGraphs. kind= nPP
+Add graph aPP_0_2 to MultiGraphs. kind= aPP
+Add graph gPP_400_1 to MultiGraphs. kind= PP
+Add graph nPP_400_1 to MultiGraphs. kind= nPP
+Add graph aPP_400_1 to MultiGraphs. kind= aPP
+Add graph gEMPTY_S3_Position03_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S3_Position03_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S3_Position03_20141017 to MultiGraphs. kind= aEMPTY
+Add graph g0102_1000_2 to MultiGraphs. kind= 0102
+Add graph n0102_1000_2 to MultiGraphs. kind= n0102
+Add graph a0102_1000_2 to MultiGraphs. kind= a0102
+Add graph gLS_10/20/14 to MultiGraphs. kind= LS
+Add graph nLS_10/20/14 to MultiGraphs. kind= nLS
+Add graph aLS_10/20/14 to MultiGraphs. kind= aLS
+Add graph gGLASS_0_1 to MultiGraphs. kind= GLASS
+Add graph nGLASS_0_1 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_0_1 to MultiGraphs. kind= aGLASS
+Add graph g0100_10_1 to MultiGraphs. kind= 0100
+Add graph n0100_10_1 to MultiGraphs. kind= n0100
+Add graph a0100_10_1 to MultiGraphs. kind= a0100
+Add graph gGLASS_0_2 to MultiGraphs. kind= GLASS
+Add graph nGLASS_0_2 to MultiGraphs. kind= nGLASS
+Add graph aGLASS_0_2 to MultiGraphs. kind= aGLASS
+Add graph g0050_100_1 to MultiGraphs. kind= 0050
+Add graph n0050_100_1 to MultiGraphs. kind= n0050
+Add graph a0050_100_1 to MultiGraphs. kind= a0050
+Add graph g0052_0_2 to MultiGraphs. kind= 0052
+Add graph n0052_0_2 to MultiGraphs. kind= n0052
+Add graph a0052_0_2 to MultiGraphs. kind= a0052
+Add graph gPP_0_1 to MultiGraphs. kind= PP
+Add graph nPP_0_1 to MultiGraphs. kind= nPP
+Add graph aPP_0_1 to MultiGraphs. kind= aPP
+Add graph gHDPE_0_1 to MultiGraphs. kind= HDPE
+Add graph nHDPE_0_1 to MultiGraphs. kind= nHDPE
+Add graph aHDPE_0_1 to MultiGraphs. kind= aHDPE
+Add graph gEMPTY_S4_Position04_20141017 to MultiGraphs. kind= EMPTY
+Add graph nEMPTY_S4_Position04_20141017 to MultiGraphs. kind= nEMPTY
+Add graph aEMPTY_S4_Position04_20141017 to MultiGraphs. kind= aEMPTY
+Add graph gWbLS-15_10/20/14 to MultiGraphs. kind= WbLS-15
+Add graph nWbLS-15_10/20/14 to MultiGraphs. kind= nWbLS-15
+Add graph aWbLS-15_10/20/14 to MultiGraphs. kind= aWbLS-15
+Add graph g0100_0_1 to MultiGraphs. kind= 0100
+Add graph n0100_0_1 to MultiGraphs. kind= n0100
+Add graph a0100_0_1 to MultiGraphs. kind= a0100
+Add graph g0102_0_2 to MultiGraphs. kind= 0102
+Add graph n0102_0_2 to MultiGraphs. kind= n0102
+Add graph a0102_0_2 to MultiGraphs. kind= a0102
+Add graph g0102_0_1 to MultiGraphs. kind= 0102
+Add graph n0102_0_1 to MultiGraphs. kind= n0102
+Add graph a0102_0_1 to MultiGraphs. kind= a0102
+Add graph g0100_0_2 to MultiGraphs. kind= 0100
+Add graph n0100_0_2 to MultiGraphs. kind= n0100
+Add graph a0100_0_2 to MultiGraphs. kind= a0100
+Add graph g0050_0_2 to MultiGraphs. kind= 0050
+Add graph n0050_0_2 to MultiGraphs. kind= n0050
+Add graph a0050_0_2 to MultiGraphs. kind= a0050
+Add graph g0050_0_1 to MultiGraphs. kind= 0050
+Add graph n0050_0_1 to MultiGraphs. kind= n0050
+Add graph a0050_0_1 to MultiGraphs. kind= a0050
+Add graph g0100_1000_1 to MultiGraphs. kind= 0100
+Add graph n0100_1000_1 to MultiGraphs. kind= n0100
+Add graph a0100_1000_1 to MultiGraphs. kind= a0100
+ls6500.combineCommonSamples: 0100_10 graphs g0100_10_1, g0100_10_2
+Add graph A0100_10 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_1000 graphs gGLASS_1000_1, gGLASS_1000_2
+Add graph AGLASS_1000 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_400 graphs g0052_400_1, g0052_400_2
+Add graph A0052_400 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_10 graphs g0102_10_1, g0102_10_2
+Add graph A0102_10 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: EMPTY graphs gEMPTY_S1_Position01_20141017, gEMPTY_S2_Position02_20141017, gEMPTY_S3_Position03_20141017, gEMPTY_S4_Position04_20141017, gEMPTY_S5_Position05_20141021, gEMPTY_S6_Position06_20141021, gEMPTY_S7_Position07_20141021
+ls6500.combineCommonSamples: 0050_0 graphs g0050_0_1, g0050_0_2
+Add graph A0050_0 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0102_1000 graphs g0102_1000_1, g0102_1000_2
+Add graph A0102_1000 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0100_400 graphs g0100_400_1, g0100_400_2
+Add graph A0100_400 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_100 graphs gGLASS_100_1, gGLASS_100_2
+Add graph AGLASS_100 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0052_0 graphs g0052_0_1, g0052_0_2
+Add graph A0052_0 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: 0102_400 graphs g0102_400_1, g0102_400_2
+Add graph A0102_400 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_0 graphs gPP_0_1, gPP_0_2
+Add graph APP_0 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0050_400 graphs g0050_400_1, g0050_400_2
+Add graph A0050_400 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0052_100 graphs g0052_100_1, g0052_100_2
+Add graph A0052_100 to MultiGraphs. kind= Q0052
+ls6500.combineCommonSamples: PP_100 graphs gPP_100_1, gPP_100_2
+Add graph APP_100 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0102_100 graphs g0102_100_1, g0102_100_2
+Add graph A0102_100 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_0 graphs g0102_0_1, g0102_0_2
+Add graph A0102_0 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: 0102_1 graphs g0102_1_1, g0102_1_2
+Add graph A0102_1 to MultiGraphs. kind= Q0102
+ls6500.combineCommonSamples: PP_400 graphs gPP_400_1, gPP_400_2
+Add graph APP_400 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: PP_1000 graphs gPP_1000_1, gPP_1000_2
+Add graph APP_1000 to MultiGraphs. kind= QPP
+ls6500.combineCommonSamples: 0100_1000 graphs g0100_1000_1, g0100_1000_2
+Add graph A0100_1000 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_400 graphs gGLASS_400_1, gGLASS_400_2
+Add graph AGLASS_400 to MultiGraphs. kind= QGLASS
+ls6500.combineCommonSamples: 0100_100 graphs g0100_100_1, g0100_100_2
+Add graph A0100_100 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0050_100 graphs g0050_100_1, g0050_100_2
+Add graph A0050_100 to MultiGraphs. kind= Q0050
+ls6500.combineCommonSamples: 0100_0 graphs g0100_0_1, g0100_0_2
+Add graph A0100_0 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: 0100_1 graphs g0100_1_1, g0100_1_2
+Add graph A0100_1 to MultiGraphs. kind= Q0100
+ls6500.combineCommonSamples: GLASS_0 graphs gGLASS_0_1, gGLASS_0_2
+Add graph AGLASS_0 to MultiGraphs. kind= QGLASS
+MultiGraphs {'aWbLS-5': <ROOT.TMultiGraph object ("aWbLS-5") at 0x1399fbf40>, 'D5%': <ROOT.TMultiGraph object ("D5%") at 0x139ffbfa0>, 'cWbLS-5': <ROOT.TMultiGraph object ("cWbLS-5") at 0x1399fbe50>, 'a15%': <ROOT.TMultiGraph object ("a15%") at 0x1003b32f0>, 'QWbLS-10': <ROOT.TMultiGraph object ("QWbLS-10") at 0x1379fbf10>, 'QWbLS-15': <ROOT.TMultiGraph object ("QWbLS-15") at 0x10a286260>, 'n0102': <ROOT.TMultiGraph object ("n0102") at 0x13a8fbf10>, 'n0100': <ROOT.TMultiGraph object ("n0100") at 0x10488ccc0>, 'Q5%': <ROOT.TMultiGraph object ("Q5%") at 0x139ffbeb0>, 'QPP': <ROOT.TMultiGraph object ("QPP") at 0x13b6fbf70>, 'LS': <ROOT.TMultiGraph object ("gLS") at 0x13a5fbfa0>, 'nLS': <ROOT.TMultiGraph object ("nLS") at 0x13a4fbe80>, 'nWbLS-5': <ROOT.TMultiGraph object ("nWbLS-5") at 0x139cfbf70>, 'a0100': <ROOT.TMultiGraph object ("a0100") at 0x10493baf0>, 'a0102': <ROOT.TMultiGraph object ("a0102") at 0x13a7fbee0>, 'DGLASS': <ROOT.TMultiGraph object ("DGLASS") at 0x13adfbfd0>, '5%': <ROOT.TMultiGraph object ("g5%") at 0x13a2fbf10>, 'DEMPTY': <ROOT.TMultiGraph object ("DEMPTY") at 0x13cbfbf70>, '0052': <ROOT.TMultiGraph object ("g0052") at 0x13c7fbe50>, '0050': <ROOT.TMultiGraph object ("g0050") at 0x13acfbeb0>, 'QGLASS': <ROOT.TMultiGraph object ("QGLASS") at 0x13adfbee0>, 'cWbLS-10': <ROOT.TMultiGraph object ("cWbLS-10") at 0x137cfbf40>, 'D0052': <ROOT.TMultiGraph object ("D0052") at 0x13bdfbee0>, 'aLS': <ROOT.TMultiGraph object ("aLS") at 0x13a3fbe50>, 'EMPTY': <ROOT.TMultiGraph object ("gEMPTY") at 0x1114fc010>, 'PP': <ROOT.TMultiGraph object ("gPP") at 0x13bdfbfd0>, 'n15%': <ROOT.TMultiGraph object ("n15%") at 0x1203fc000>, 'WbLS-5': <ROOT.TMultiGraph object ("gWbLS-5") at 0x139cfbe80>, 'D0100': <ROOT.TMultiGraph object ("D0100") at 0x1395fc000>, 'DWbLS-5': <ROOT.TMultiGraph object ("DWbLS-5") at 0x1392fbf10>, 'D0102': <ROOT.TMultiGraph object ("D0102") at 0x13a5fbeb0>, 'HDPE': <ROOT.TMultiGraph object ("gHDPE") at 0x1375fbee0>, '0100': <ROOT.TMultiGraph object ("g0100") at 0x1149fc020>, 'DLS': <ROOT.TMultiGraph object ("DLS") at 0x13a2fbe50>, 'Q15%': <ROOT.TMultiGraph object ("Q15%") at 0x104a31f30>, 'aWbLS-10': <ROOT.TMultiGraph object ("aWbLS-10") at 0x1379fbe50>, '10%': <ROOT.TMultiGraph object ("g10%") at 0x1392fc000>, 'aWbLS-15': <ROOT.TMultiGraph object ("aWbLS-15") at 0x10a4f74c0>, 'aHDPE': <ROOT.TMultiGraph object ("aHDPE") at 0x1372fbfa0>, '0102': <ROOT.TMultiGraph object ("g0102") at 0x13a8fbe50>, 'nWbLS-10': <ROOT.TMultiGraph object ("nWbLS-10") at 0x137cfbe50>, 'DWbLS-15': <ROOT.TMultiGraph object ("DWbLS-15") at 0x10a28d240>, 'nWbLS-15': <ROOT.TMultiGraph object ("nWbLS-15") at 0x136afbf40>, 'DWbLS-10': <ROOT.TMultiGraph object ("DWbLS-10") at 0x1379fc000>, 'QHDPE': <ROOT.TMultiGraph object ("QHDPE") at 0x136dfbe80>, 'cHDPE': <ROOT.TMultiGraph object ("cHDPE") at 0x1372fbeb0>, 'GLASS': <ROOT.TMultiGraph object ("gGLASS") at 0x13affbf40>, 'a10%': <ROOT.TMultiGraph object ("a10%") at 0x1383fbeb0>, 'D10%': <ROOT.TMultiGraph object ("D10%") at 0x1380fbe80>, 'a0052': <ROOT.TMultiGraph object ("a0052") at 0x13c0fbf10>, 'cLS': <ROOT.TMultiGraph object ("cLS") at 0x13a4fbf70>, 'Q10%': <ROOT.TMultiGraph object ("Q10%") at 0x1383fbfa0>, 'aGLASS': <ROOT.TMultiGraph object ("aGLASS") at 0x13aefc000>, 'nEMPTY': <ROOT.TMultiGraph object ("nEMPTY") at 0x10d8fbf50>, 'QWbLS-5': <ROOT.TMultiGraph object ("QWbLS-5") at 0x1392fbe50>, 'nPP': <ROOT.TMultiGraph object ("nPP") at 0x13b9fbeb0>, 'a5%': <ROOT.TMultiGraph object ("a5%") at 0x13a0fbfd0>, 'aEMPTY': <ROOT.TMultiGraph object ("aEMPTY") at 0x13cefbfa0>, 'cGLASS': <ROOT.TMultiGraph object ("cGLASS") at 0x13aefbf10>, 'c0102': <ROOT.TMultiGraph object ("c0102") at 0x13a8fc000>, 'c0100': <ROOT.TMultiGraph object ("c0100") at 0x11ccfc020>, 'c5%': <ROOT.TMultiGraph object ("c5%") at 0x13a0fbee0>, 'c10%': <ROOT.TMultiGraph object ("c10%") at 0x1386fbfd0>, 'c0050': <ROOT.TMultiGraph object ("c0050") at 0x13aafbe80>, 'c0052': <ROOT.TMultiGraph object ("c0052") at 0x13c0fbe50>, 'Q0100': <ROOT.TMultiGraph object ("Q0100") at 0x12f7fc010>, 'Q0102': <ROOT.TMultiGraph object ("Q0102") at 0x13a7fbfd0>, 'QEMPTY': <ROOT.TMultiGraph object ("QEMPTY") at 0x13cbfbe80>, 'DHDPE': <ROOT.TMultiGraph object ("DHDPE") at 0x136dfbf70>, 'nGLASS': <ROOT.TMultiGraph object ("nGLASS") at 0x13aefbe50>, 'Q0052': <ROOT.TMultiGraph object ("Q0052") at 0x13c0fc000>, 'Q0050': <ROOT.TMultiGraph object ("Q0050") at 0x13a9fbe50>, 'nHDPE': <ROOT.TMultiGraph object ("nHDPE") at 0x1375fbfd0>, 'DPP': <ROOT.TMultiGraph object ("DPP") at 0x13affbe50>, 'WbLS-15': <ROOT.TMultiGraph object ("gWbLS-15") at 0x136afbe50>, 'aPP': <ROOT.TMultiGraph object ("aPP") at 0x13b6fbe80>, 'WbLS-10': <ROOT.TMultiGraph object ("gWbLS-10") at 0x1380fbf70>, '15%': <ROOT.TMultiGraph object ("g15%") at 0x1222fc000>, 'n5%': <ROOT.TMultiGraph object ("n5%") at 0x13a2fc000>, 'D15%': <ROOT.TMultiGraph object ("D15%") at 0x1114fbf20>, 'D0050': <ROOT.TMultiGraph object ("D0050") at 0x13a9fbf40>, 'cPP': <ROOT.TMultiGraph object ("cPP") at 0x13b9fbfa0>, 'cWbLS-15': <ROOT.TMultiGraph object ("cWbLS-15") at 0x10a27a250>, 'cEMPTY': <ROOT.TMultiGraph object ("cEMPTY") at 0x13cefbeb0>, 'c15%': <ROOT.TMultiGraph object ("c15%") at 0x10a07b320>, 'n10%': <ROOT.TMultiGraph object ("n10%") at 0x1386fbee0>, 'QLS': <ROOT.TMultiGraph object ("QLS") at 0x13a3fbf40>, 'n0050': <ROOT.TMultiGraph object ("n0050") at 0x13acfbfa0>, 'n0052': <ROOT.TMultiGraph object ("n0052") at 0x13c7fbf40>, 'a0050': <ROOT.TMultiGraph object ("a0050") at 0x13aafbf70>} 
+
+kind aWbLS-5 MultiGraphs[kind] <ROOT.TMultiGraph object ("aWbLS-5") at 0x1399fbf40>
+ls6500.multiGraph aWbLS-5 threshold=200.0 aWbLS-5 TMG.GetListOfGraphs() <ROOT.TList object ("TList") at 0x1483c3ec0> TMG.GetListOfGraphs().GetSize() 1

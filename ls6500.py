@@ -511,6 +511,7 @@ class ls6500():
         return self.vialData[fn][0]
     def setThres(self,sample,defaultThres=100.):
         thres = defaultThres
+        if sample[0:3] in ['005','010','014']: thres = 1000.
         if sample[0:3]=='STD': thres = 2000.
         return thres
     def Analyze(self):
@@ -815,7 +816,7 @@ class ls6500():
                     self.dtHist.Fill(dt/oneHour)  # hours between measurements
                     if i>0: dt = min(dt,u[i]-u[i-1])
                     self.dtNear.Fill(dt/oneHour)  # smallest time (hours) between neighboring measurements
-                hours = 12.
+                hours = 24.
                 x,dx,y,dy = self.averagePoints(u,v,deltaT=hours*oneHour)
                 if 0: print 'ls6500.combineCommonSamples: \nu-x[0](hours)=',self.pList(u,x[0],c=oneHour),'v=',self.pList(v,0.),\
                    '\nx-x[0](hours)=',self.pList(x,x[0],c=oneHour),'dx=',self.pList(dx,0.,c=oneHour),\
@@ -1006,6 +1007,8 @@ class ls6500():
             g.GetXaxis().SetTimeDisplay(1)
             g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%y/%m/%d}")
             g.GetXaxis().SetNdivisions(-409)
+            lx = g.GetXaxis().GetLabelSize()
+            g.GetXaxis().SetLabelSize(0.5*lx)
             g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
         else:
             print 'ls6500.fixTimeDisplay: WARNING Null pointer passed to fixTimeDisplay?????'
@@ -1030,6 +1033,7 @@ class ls6500():
         name  = TMG.GetName()
         if debugMG: print 'ls6500.multiGraph',title,name,'TMG.GetListOfGraphs()',TMG.GetListOfGraphs(),'TMG.GetListOfGraphs().GetSize()',TMG.GetListOfGraphs().GetSize()
 
+
         pdf = self.figuresDir + name + '.pdf'
         ps  = self.figuresDir + name + '.ps'
         xsize,ysize = 1100,850 # landscape style
@@ -1043,12 +1047,10 @@ class ls6500():
             lg.AddEntry(g, t, "l" )
             if not (name[0]=='k' or name[0]=='D'):
                 self.fixTimeDisplay(g)
-                lx = g.GetXaxis().GetLabelSize()
-                g.GetXaxis().SetLabelSize(0.75*lx)
-                g.GetXaxis().SetNdivisions(-409)
         dOption = "apl"
         if name[0]=='D': dOption = "ap"
         TMG.Draw(dOption)
+        if not (name[0]=='k' or name[0]=='D'): self.fixTimeDisplay(TMG) 
         lg.Draw()
         canvas.Draw()
         canvas.SetGrid(1)
