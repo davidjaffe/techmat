@@ -12,7 +12,7 @@ import ROOT
 import datetime
 import Logger
 import math
-from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph, gStyle, TGraphErrors
+from ROOT import TH1D, TFile, gROOT, TCanvas, TLegend, TGraph, TDatime, TMultiGraph, gStyle, TGraphErrors, TLine
 from array import array
 
 class ls6500():
@@ -33,9 +33,10 @@ class ls6500():
             sys.stdout = Logger.Logger(fn=lfn)
             print 'ls6500: Output directed to terminal and',lfn
 
-        # default is no irradiation. Set to arbitrary date in future'
+        # default is no irradiation. Set to arbitrary date in future
         self.irradDate = '2020/04/01 01:23:45'
-
+        self.irradInterval = ['2020/04/01 01:23:44', '2020/04/01 01:23:46']
+        self.irradIntervalTDatime = None
 
         self.dataSubDir = None
         # list of possible subdirectories
@@ -55,17 +56,20 @@ class ls6500():
         Merge = 'merge' in ml
         if Merge:
             if ml=='mergegamma':
-                firstWord = 'Gamma'
+                firstWord = ['Gamma']
                 self.mergeType = 'Gamma_1'
                 self.irradDate = '2014/10/20 16:00:00'
+                self.irradInterval = ['2014/10/20 16:00:00', '2014/10/21 10:00:00']
             if ml=='mergensrl':
-                firstWord = 'Pre-irrad_'
+                firstWord = ['Pre-irrad_','Post-irrad']
                 self.mergeType = 'NSRL_1'
                 self.irradDate = '2014/11/17 18:00:00'
+                self.irradInterval = ['2014/11/17 18:54:00', '2014/11/17 20:11:00']
             for d in dD:
                 suffix = d.split('/')[-2]
-                if firstWord==suffix[:len(firstWord)]:
-                    self.listOfDataDirs.append(d)
+                for fw in firstWord:
+                    if fw==suffix[:len(fw)]:
+                        self.listOfDataDirs.append(d)
             suffix = ml
 
                     
@@ -91,9 +95,11 @@ class ls6500():
 
 
         # convert irradiation date to datetime and TDatime objects
-        self.irradDate_datetime = datetime.datetime.strptime(self.irradDate,'%Y/%m/%d %H:%M:%S')
-        self.irradDate_TDatime  = TDatime( self.irradDate_datetime.strftime('%Y-%m-%d %H:%M:%S') ).Convert()
-        print 'ls6500: Irradiation date is',self.irradDate
+        #self.irradDate_datetime = datetime.datetime.strptime(self.irradDate,'%Y/%m/%d %H:%M:%S')
+        #self.irradDate_TDatime  = TDatime( self.irradDate_datetime.strftime('%Y-%m-%d %H:%M:%S') ).Convert()
+        self.irradDate_datetime = self.getdatetime(self.irradDate,fmt='%Y/%m/%d %H:%M:%S')
+        self.irradDate_TDatime  = self.getTDatime( self.irradDate,fmt='%Y/%m/%d %H:%M:%S' )
+        print 'ls6500: Irradiation date is',self.irradDate,'irradiation interval is',self.irradInterval[0],self.irradInterval[1]
 
 
         # directories for input or output. make new output directory if needed
@@ -124,6 +130,11 @@ class ls6500():
 
         # filled in defineMatchingSamples
         self.matchingSamples = {} # map(key=common sample name, value=[list of sample names])
+
+        # intialized in setNSRL14Cdoses
+        # campaign = e.g. 'Irr1_Front', 'Irr2_Rear', etc.
+        self.NSRL14Cdoses = {} # map(key = sample, value = dose in gray)
+        self.NSRL14Ccampaign = {} # map(key = campaign, value = list of samples)
         
         # use in color()
         self.goodColors = [x for x in range(1,10)]
@@ -141,6 +152,97 @@ class ls6500():
             print "ls6500: initialization ls6500\ndataDir",self.dataDir,'\ndataSubDir',self.dataSubDir
             self.ssr = spreadsheetReader.spreadsheetReader()
         return
+    def getTDatime(self,dt,fmt='%Y/%m/%d %H:%M:%S'):
+        '''
+        convert date/time text to TDatime object
+        '''
+        datetimeObj = self.getdatetime(dt,fmt)
+        return TDatime( datetimeObj.strftime('%Y-%m-%d %H:%M:%S') ).Convert()
+    def getdatetime(self,dt,fmt='%Y/%m/%d %H:%M:%S'):
+        return datetime.datetime.strptime(dt,fmt)
+    
+    def setNSRL14Cdoses(self):
+        '''
+        set doses for samples from NSRL run 14C
+        '''
+        # irradiation#1 Front
+        nomDose = 20.05 
+        frontTop = ['0050_1F11', '0050_3F11', '0050_1F13', '0050_3F13', '0100_1F15', '0050_1F16', 'F_3R24']
+        frontMid = ['0100_3F22', '0100_1F22', '0140_1F23', 'F_1F24'   , '0100_3F15', '0050_3F16', '0100_1F27']
+        frontBot = ['0140_1F31', '1000_3F37', '0140_3F23', '1000_1F34', '1000_3F34', '1000_1F36', '1000_1F37']
+        all = []
+        all.extend(frontTop)
+        all.extend(frontMid)
+        all.extend(frontBot)
+        self.NSRL14Ccampaign['Irr1_Front'] = all
+        for x in all:
+            self.NSRL14Cdoses[x] = nomDose
+        
+        # irradiation#1 Rear
+        nomDose = 20.05 * 2.4
+        rearTop  = ['0050_1R11', '0050_3R11', '0050_1R13', '0050_3R13', '0100_1R15', '0050_1R16', 'F_3F24']
+        rearMid  = ['0100_3R22', '0100_1R22', '0140_1R23', 'F_1R24'   , '0100_3R15', '0050_3R16', '0100_1R27']
+        rearBot  = ['0140_1R31', '1000_3R37', '0140_3R23', '1000_1R34', '1000_3R34', '1000_3R36', '1000_1R37']
+        all = []
+        all.extend(rearTop)
+        all.extend(rearMid)
+        all.extend(rearBot)
+        self.NSRL14Ccampaign['Irr1_Rear'] = all
+        for x in all:
+            if x in self.NSRL14Cdoses:
+                words = 'ls6500.setNSRL14Cdoses: ERROR ' + x + ' already exists in dict with dose ' + str(self.NSRL14Cdoses[x])
+                sys.exit(words)
+            self.NSRL14Cdoses[x] = nomDose
+
+        # irradiation#2 Front
+        nomDose = 48.01
+        frontTop = ['0050_2F11', '0050_4F11', '0050_2F13', '0050_4F13', '0100_2F15', '0050_2F16', 'F_4F24']
+        frontMid = ['0100_4F22', '0100_2F22', '0140_2F23', 'F_2F24'   , '0100_4F15', '0050_4F16', '0100_2F27']
+        frontBot = ['0140_2F31', '1000_4F37', '0140_4F23', '1000_2F34', '1000_4F34', '1000_2F36', '1000_2F37']
+        all = []
+        all.extend(frontTop)
+        all.extend(frontMid)
+        all.extend(frontBot)
+        self.NSRL14Ccampaign['Irr2_Front'] = all
+        for x in all:
+            if x in self.NSRL14Cdoses:
+                words = 'ls6500.setNSRL14Cdoses: ERROR ' + x + ' already exists in dict with dose ' + str(self.NSRL14Cdoses[x])
+                sys.exit(words)
+            self.NSRL14Cdoses[x] = nomDose
+        
+        # irradiation#2 Rear
+        nomDose = 48.01 * 2.4
+        rearTop  = ['0500_2R11', '0050_4R11', '0050_2R13', '0050_4R13', '0100_2R15', '0050_2R16', 'F_4R24']
+        rearMid  = ['0100_4R22', '0100_2R22', '0140_2R23', 'F_2R24'   , '0100_4R15', '0050_4R16', '0100_2R27']
+        rearBot  = ['0140_2R31', '1000_4R37', '0140_4R23', '1000_2R34', '1000_4R34', '1000_2R36', '1000_2R37']
+        all = []
+        all.extend(rearTop)
+        all.extend(rearMid)
+        all.extend(rearBot)
+        self.NSRL14Ccampaign['Irr2_Rear'] = all
+        for x in all:
+            if x in self.NSRL14Cdoses:
+                words = 'ls6500.setNSRL14Cdoses: ERROR ' + x + ' already exists in dict with dose ' + str(self.NSRL14Cdoses[x])
+                sys.exit(words)
+            self.NSRL14Cdoses[x] = nomDose
+        print 'ls6500.setNSRL14Cdoses: Initialization complete'
+        return 
+    def matchNSRL14C(self,sample1,sample2):
+        '''
+        determine if two samples have same WbLS formulation and if they have the same
+        nominal dose in NSRL14C
+        '''
+        if len(self.NSRL14Cdoses)<1: self.setNSRL14Cdoses()
+        suffix = ''
+        nMatch = sample1[:4]==sample2[:4]
+        if not nMatch: return nMatch,suffix
+        for suffix in self.NSRL14Ccampaign:
+            nMatch = (sample1 in self.NSRL14Ccampaign[suffix]) and (sample2 in self.NSRL14Ccampaign[suffix])
+            if nMatch:
+                if 0: print 'ls6500.matchNSRL14C: sample1,sample2',sample1,sample2,'suffix',suffix,'NSRL14Ccampaign[suffix]',self.NSRL14Ccampaign[suffix]
+                return nMatch,suffix
+        suffix = ''
+        return nMatch,suffix
     def matchSamples(self,sample1,sample2):
         '''
         return True and common sample name, if sample1 and sample2 are a good match;
@@ -167,9 +269,14 @@ class ls6500():
         
         n = len(s)
         u = s.find('_')
-        nMatch = sample1[:n]==sample2[:n]
+        suffix = ''
+        nMatch = False
+        if self.mergeType=='NSRL_1':
+            nMatch,suffix = self.matchNSRL14C(sample1,sample2)
+        if suffix=='' and not nMatch: 
+            nMatch = sample1[:n]==sample2[:n]
         uMatch = sample1[u]==sample2[u]
-
+            
         # define common sample name, taking into account special treatment
         # for different exposures.
         # Deal with variable length string in gamma exposure sample names
@@ -179,6 +286,7 @@ class ls6500():
         if nMatch and uMatch:
             if self.mergeType=='NSRL_1':
                 commonSampleName = sample1[:n]
+                if suffix!='': commonSampleName = sample1[:4] + '_'+suffix
                 dMatch = True
                 if sample1[5:8]=='REF' : commonSampleName = sample1[:8]
                 if sample1[:5]=='EMPTY': commonSampleName = 'EMPTY'
@@ -305,6 +413,7 @@ class ls6500():
         numNoVial = 0
         while (r<self.headerSheet.nrows) and not done:
             row = self.headerSheet.row_values(r)
+            if checkPrint: print 'ls6500.processHeader: row',row
             if row[0]=='' and headerRowFound : done = True
             if not done:
                 if not headerRowFound and (row[0]==self.headerFirstRowName or (self.headerFirstRowName is None)):
@@ -518,6 +627,14 @@ class ls6500():
         '''
         produce histograms for each measurement.
         20141103 Change from position to sample name as index
+        g = graph of crossing-point vs time for each sample
+        n = normed cross-point vs time (norm to 1st entry in time)
+        c = counts vs time for each sample
+        k = K-S test wrt earliest entry vs time for each sample
+        a = averaged crossing-point vs time (norm to average of all entries)
+        Q = average(in time) of combination of `matching` samples vs time
+        D = average(in time) of combination of matching samples vs dose
+        R = normed average(in time) of combination of matching samples vs time (norm to 1st averaged entry)
         '''
         debugMG = False
         doKS    = False
@@ -529,7 +646,7 @@ class ls6500():
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
         if 1 or debugMG: print 'ls.Analyze: kinds',kinds
-        part1, part2 = ['', 'n', 'c', 'a','Q','D'], ['g', 'n', 'c', 'a','Q','D']
+        part1, part2 = ['', 'n', 'c', 'a','Q','D','R'], ['g', 'n', 'c', 'a','Q','D','R']
         if plotKS:
             part1.append('k')
             part2.append('k')
@@ -569,12 +686,8 @@ class ls6500():
             title = sample + ' total counts'
             name = 'c' + sample
             g = self.makeTGraph(T,C,title,name)
-            self.fixTimeDisplay( g )
-            Graphs.append(g)
             kind = 'c' + self.getKind(title)
-            MultiGraphs[ kind ].Add(g)
-            if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
-            self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
+            self.addNewGraph(g,Graphs,kind,MultiGraphs,' total counts')
         print ''
                 
         # perform root's KS test to compare first msmt with others of same sample
@@ -603,11 +716,8 @@ class ls6500():
                     name = 'k' + sample
                     title = sample + ' KS test vs time difference in hours'
                     g = self.makeTGraph(T,KS,title,name)
-                    Graphs.append(g)
                     kind = 'k' + self.getKind(title)
-                    MultiGraphs[ kind ].Add(g)
-                    if debugMG: print 'Add graph',g.GetName(),'to MultiGraphs. kind=',kind
-                    self.color(g, MultiGraphs[ kind ].GetListOfGraphs().GetSize() )
+                    self.addNewGraph(g,Graphs,kind,MultiGraphs,' KS test vs time diff in hrs')
                                 
         # plot data from multiple hists or tgraphs
         for sample in self.sampleMsmts:
@@ -622,35 +732,18 @@ class ls6500():
             Hists[htg.GetName()] = htg
             
             kind = self.getKind( tg.GetTitle() )
-            MultiGraphs[ kind ].Add(tg)
-            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-            if debugMG: print 'Add graph',tg.GetName(),'to MultiGraphs. kind=',kind
-            ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
-            self.color(tg,ngraphs)
-            Graphs.append( tg )
+            self.addNewGraph(tg,Graphs,kind,MultiGraphs,' thres='+str(thres))
 
             kind = 'n' + kind
-            MultiGraphs[ kind ].Add(ntg)
-            if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-            if debugMG: print 'Add graph',ntg.GetName(),'to MultiGraphs. kind=',kind
-            self.color(ntg,ngraphs)
-            Graphs.append( ntg )
+            self.addNewGraph(ntg,Graphs,kind,MultiGraphs,' thres='+str(thres))
 
             if atg is not None:
                 kind = 'a' + self.getKind( atg.GetTitle() )
-                MultiGraphs[kind].Add(atg)
-                if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                    MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' threshold='+str(thres) )
-                if debugMG: print 'Add graph',atg.GetName(),'to MultiGraphs. kind=',kind
-                ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
-                self.color(atg,ngraphs)
-                Graphs.append( atg )
+                self.addNewGraph(atg,Graphs,kind,MultiGraphs,' thres='+str(thres))
                 
         self.combineCommonSamples(Graphs, MultiGraphs)
         self.plotSampleVsDose(Graphs)
-        #self.doseGraphs(Graphs, MultiGraphs)
+        self.doseGraphs(Graphs, MultiGraphs) # only for gamma
 
 
         # output of hists, graphs.
@@ -666,6 +759,7 @@ class ls6500():
             if debugMG: print 'kind',kind,'MultiGraphs[kind]',MultiGraphs[kind]
             if MultiGraphs[kind].GetListOfGraphs():  # not empty
                 self.multiGraph(MultiGraphs[kind])
+                if kind[0] in ['n','R']: self.multiGraph(MultiGraphs[kind],ordinateRange=0.1)
                 outfile.WriteTObject( MultiGraphs[kind] )
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
@@ -703,9 +797,26 @@ class ls6500():
             mg.Add(gpp)
             mg.Add(self.getGraph('e'+sample,Graphs))
         return
+    def getDose(self,name):
+        '''
+        return nominal dose in Gray given sample name
+        '''
+        if self.mergeType == 'Gamma_1':
+            dose = name.split('_')[1]
+        elif self.mergeType =='NSRL_1':
+            # initialize if necessary
+            if len(self.NSRL14Cdoses)<1: self.setNSRL14Cdoses()
+            dose = 0.
+            if name in self.NSRL14Cdoses:
+                dose = self.NSRL14Cdoses[name]
+        else:
+            dose = None
+        print 'ls6500.getDose:name',name,'dose',dose
+        return dose
     def plotSampleVsDose(self,Graphs):
         '''
-        plot sample light yield vs dose taking into account the irradiation date.
+        plot sample light yield vs dose taking into account the irradiation date for
+        combined, average measurements
         Treat measurements of samples prior to irradiation date as having received no dose
         '''
         for cSN in self.matchingSamples:
@@ -713,11 +824,13 @@ class ls6500():
             kind = 'D' + sam
             gSN = 'A' + sam
             lgk = len(gSN)
+            print 'ls6500.plotSampleVsDose: cSN',cSN,'sam',sam,'kind',kind,'gSN',gSN
             x,y,dx,dy = [],[],[],[]
             z,dz = [],[] # zero dose data
             for g in Graphs:
+                print 'ls6500.plotSampleVsDose: g.GetName()',g.GetName()
                 if gSN==g.GetName()[:lgk] and ('_' in g.GetName()):
-                    d = g.GetName().split('_')[1]
+                    d = self.getDose(g.GetName()) # g.GetName().split('_')[1]
                     try:
                         dose = float(d)
                         u,v,du,dv = self.getPoints(g,getErrors=True)
@@ -775,6 +888,7 @@ class ls6500():
         '''
         make new graphs of averaged crossing point data from input list of
         graphs.
+        also make new graphs of averaged crossing point data normed to earliest averaged entry.
         The new graphs are appended to the end of the input list.
         New graphs are also added to multigraphs
         '''
@@ -784,7 +898,9 @@ class ls6500():
 
         for cSN in self.matchingSamples:
             gList = []
-            kind = 'Q' + self.parseSam(cSN)
+            pS = self.parseSam(cSN)
+            kind = 'Q' + pS
+            rkind= 'R' + pS
             for SN in self.matchingSamples[cSN]:
                 #print 'SN',SN
                 gSN = 'g'+SN
@@ -822,18 +938,32 @@ class ls6500():
                    '\nx-x[0](hours)=',self.pList(x,x[0],c=oneHour),'dx=',self.pList(dx,0.,c=oneHour),\
                    '\ny=',self.pList(y,0.),'dy=',self.pList(dy,0.)
                 newg = self.makeTGraph(x,y,cSN + ' ' + str(hours)+ ' hour avg','A'+cSN,ex=dx,ey=dy)
-                newg.SetMarkerStyle(20)
-                self.fixTimeDisplay(newg)
-                Graphs.append(newg)
-                
-                if kind in MultiGraphs:
-                    MultiGraphs[kind].Add(newg)
-                    if MultiGraphs[kind].GetTitle()==MultiGraphs[kind].GetName():
-                        MultiGraphs[kind].SetTitle( MultiGraphs[kind].GetName() + ' averaged over '+str(hours)+' hours' )
-                    if 1: print 'Add graph',newg.GetName(),'to MultiGraphs. kind=',kind
-                    ngraphs =  MultiGraphs[ kind ].GetListOfGraphs().GetSize()
-                    self.color(newg,ngraphs)
+                self.addNewGraph(newg, Graphs, kind,MultiGraphs,' ave over '+str(hours)+' hrs')
+
+                # average normed to earliest entry
+                y0 = y[0]
+                y = [float(a)/float(y0) for a in y]
+                dy= [float(a)/float(y0) for a in dy]
+                newg = self.makeTGraph(x,y,cSN + ' normed ' + str(hours) + ' hr avg','B'+cSN,ex=dx,ey=dy)
+                self.addNewGraph(newg,Graphs,rkind,MultiGraphs,' normed avg over '+str(hours)+' hrs')
                  
+        return
+    def addNewGraph(self,g,Graphs,kind,MultiGraphs,titleSuffix,fixTime=True):
+        '''
+        for input graph g:
+        set marker style, fix time display (optional), append to list of Graphs, set line color
+        add to multigraph, set multigraph title, 
+        '''
+        g.SetMarkerStyle(20)
+        if fixTime: self.fixTimeDisplay(g)
+        Graphs.append(g)
+        if kind in MultiGraphs:
+            MGs = MultiGraphs[kind]
+            MGs.Add(g)
+            if MGs.GetTitle()==MGs.GetName():
+                MGs.SetTitle( MGs.GetName() + titleSuffix)
+            ng = MGs.GetListOfGraphs().GetSize()
+            self.color(g,ng)
         return
     def pList(self,u,u0,c=1.):
         ''' compact format for printing list of floats '''
@@ -1002,6 +1132,7 @@ class ls6500():
     def fixTimeDisplay(self,g):
         '''
         set time axis to display nicely
+        Add vertical dashed lines showing irradiation interval
         '''
         if g:
             g.GetXaxis().SetTimeDisplay(1)
@@ -1010,6 +1141,7 @@ class ls6500():
             lx = g.GetXaxis().GetLabelSize()
             g.GetXaxis().SetLabelSize(0.5*lx)
             g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
+            self.drawIrradInterval(g)
         else:
             print 'ls6500.fixTimeDisplay: WARNING Null pointer passed to fixTimeDisplay?????'
         return
@@ -1021,11 +1153,12 @@ class ls6500():
         sample = w[0]
         if 'EMPTY' in sample: sample += '_' + w[1]
         return sample
-    def multiGraph(self,TMG,truncT=30):
+    def multiGraph(self,TMG,truncT=30,ordinateRange=None):
         '''
         draw TMultiGraph with legend and output as pdf
         Default is that abscissa is calendar time.
         truncT is the number of initial characters in title to use in legend
+        if ordinateRange is a float, then set ordinate range to 1+-ordinateRange
         '''
         debugMG = False
         if not TMG.GetListOfGraphs(): return  # empty
@@ -1034,13 +1167,20 @@ class ls6500():
         if debugMG: print 'ls6500.multiGraph',title,name,'TMG.GetListOfGraphs()',TMG.GetListOfGraphs(),'TMG.GetListOfGraphs().GetSize()',TMG.GetListOfGraphs().GetSize()
 
 
-        pdf = self.figuresDir + name + '.pdf'
-        ps  = self.figuresDir + name + '.ps'
+        suffix = ''
+        if type(ordinateRange) is float: suffix = '_ordRange_'+str(ordinateRange).replace('.','_')
+
+        pdf = self.figuresDir + name + suffix + '.pdf'
+        ps  = self.figuresDir + name + suffix + '.ps'
         xsize,ysize = 1100,850 # landscape style
         noPopUp = True
         if noPopUp : gROOT.ProcessLine("gROOT->SetBatch()")
         canvas = TCanvas(pdf,title,xsize,ysize)
-        lg = TLegend(.15,.15, .3,.35)
+        x1 = 0.90
+        x2 = x1 + 0.1
+        y1 = 0.12
+        y2 = y1 + 0.5
+        lg = TLegend(x1,y1,x2,y2) #.15,.15, .3,.35)
         for g in TMG.GetListOfGraphs():
             t = g.GetTitle()
             if truncT>0: t = t[:min(len(t),truncT)]
@@ -1050,7 +1190,13 @@ class ls6500():
         dOption = "apl"
         if name[0]=='D': dOption = "ap"
         TMG.Draw(dOption)
-        if not (name[0]=='k' or name[0]=='D'): self.fixTimeDisplay(TMG) 
+        if type(ordinateRange) is float:
+            ymi = 1. - abs(ordinateRange)
+            yma = 1. + abs(ordinateRange)
+            TMG.GetYaxis().SetRangeUser(ymi,yma)
+        self.fitLegend(TMG)
+        if not (name[0]=='k' or name[0]=='D'):
+            self.fixTimeDisplay(TMG)
         lg.Draw()
         canvas.Draw()
         canvas.SetGrid(1)
@@ -1065,6 +1211,48 @@ class ls6500():
             os.system('ps2pdf ' + ps + ' ' + pdf)
             if os.path.exists(pdf): os.system('rm ' + ps)
         return
+    def fitLegend(self,graph,f=0.10):
+        '''
+        stretch x-axis on graph to make room for legend
+        '''
+        if not graph: return
+        xaxis = graph.GetXaxis()
+        if not xaxis: return
+        xmi,xma = xaxis.GetXmin(),xaxis.GetXmax()
+        vmi = xmi
+        vma = xma + f*(xma-xmi)
+        xaxis.SetRangeUser(vmi,vma)
+        return
+        
+    def drawIrradInterval(self,graph):
+        '''
+        indicate when irradiation was done on graph of quantity (e.g. light yield) vs time
+        Does not work.....Why?
+        '''
+        if 0: print 'ls6500.drawIrradInterval: graph',graph
+        if not graph: return # no graph
+        xaxis = graph.GetXaxis()
+        if not xaxis: return # no axis defined
+        xmi = xaxis.GetXmin()
+        xma = xaxis.GetXmax()
+        if self.irradIntervalTDatime is None:
+            self.irradIntervalTDatime = [self.getTDatime(self.irradInterval[0]), self.getTDatime(self.irradInterval[1])]
+        tmi = self.irradIntervalTDatime[0]
+        tma = self.irradIntervalTDatime[1]
+        if 0: print 'ls6500.drawIrradInterval: tmi,tma',tmi,tma,'xmi,xma',xmi,xma
+        if (xmi<=tmi and tmi<=xma) or (xmi<=tma and tma<=xma) : # interval within limits
+            ymi = graph.GetYaxis().GetXmin()
+            yma = graph.GetYaxis().GetXmax()
+            lmi = TLine(tmi,ymi,tmi,yma)
+            lma = TLine(tma,ymi,tma,yma)
+            lmi.SetLineStyle(2) # dashed
+            lma.SetLineStyle(2) # dashed
+            lmi.SetLineColor(2) # red
+            lma.SetLineColor(4) # blue
+            lmi.Draw()
+            lma.Draw()
+            if 0: print 'ls6500.drawIrradInterval: graph,tmi,ymi,tma,yma=',graph,tmi,ymi,tma,yma,'lmi,lma',lmi,lma
+        return 
     def multiPlot(self,hlist):
         '''
         overlay multiple histograms on same canvas
