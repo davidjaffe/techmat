@@ -35,8 +35,10 @@ class ls6500():
 
         # default is no irradiation. Set to arbitrary date in future
         self.irradDate = '2020/04/01 01:23:45'
-        self.irradInterval = ['2020/04/01 01:23:44', '2020/04/01 01:23:46']
+        self.irradInterval = ['2020/04/01 01:23:44', '2020/04/01 01:23:46']  # time when irradiation occurred
+        self.irradNearby   = ['2029/03/31 12:34:56', '2020/04/02 02:46:42']  # interval near irrad period
         self.irradIntervalTDatime = None
+        self.irradNearbyTDatime   = None
 
         self.dataSubDir = None
         # list of possible subdirectories
@@ -60,11 +62,13 @@ class ls6500():
                 self.mergeType = 'Gamma_1'
                 self.irradDate = '2014/10/20 16:00:00'
                 self.irradInterval = ['2014/10/20 16:00:00', '2014/10/21 10:00:00']
+                self.irradNearby   = ['2014/10/18 08:00:00', '2014/10/23 18:00:00']
             if ml=='mergensrl':
                 firstWord = ['Pre-irrad_','Post-irrad']
                 self.mergeType = 'NSRL_1'
                 self.irradDate = '2014/11/17 18:00:00'
                 self.irradInterval = ['2014/11/17 18:54:00', '2014/11/17 20:11:00']
+                self.irradNearby   = ['2014/11/10 00:00:01', '2014/11/24 23:59:59']
             for d in dD:
                 suffix = d.split('/')[-2]
                 for fw in firstWord:
@@ -635,6 +639,7 @@ class ls6500():
         Q = average(in time) of combination of `matching` samples vs time
         D = average(in time) of combination of matching samples vs dose
         R = normed average(in time) of combination of matching samples vs time (norm to 1st averaged entry)
+        X = ratio of average(in time) of combination of matching samples to reference sample vs time
         '''
         debugMG = False
         doKS    = False
@@ -646,7 +651,7 @@ class ls6500():
         MultiGraphs = {}
         kinds = self.kindsOfSamples()
         if 1 or debugMG: print 'ls.Analyze: kinds',kinds
-        part1, part2 = ['', 'n', 'c', 'a','Q','D','R'], ['g', 'n', 'c', 'a','Q','D','R']
+        part1, part2 = ['', 'n', 'c', 'a','Q','D','R','X'], ['g', 'n', 'c', 'a','Q','D','R', 'X']
         if plotKS:
             part1.append('k')
             part2.append('k')
@@ -744,7 +749,7 @@ class ls6500():
         self.combineCommonSamples(Graphs, MultiGraphs)
         self.plotSampleVsDose(Graphs)
         self.doseGraphs(Graphs, MultiGraphs) # only for gamma
-
+        self.ratioToRef(Graphs, MultiGraphs,keyBlah='_Irr') # ratio of each (time-averaged) sample to approprate reference sample
 
         # output of hists, graphs.
         # processing of multigraphs
@@ -759,7 +764,10 @@ class ls6500():
             if debugMG: print 'kind',kind,'MultiGraphs[kind]',MultiGraphs[kind]
             if MultiGraphs[kind].GetListOfGraphs():  # not empty
                 self.multiGraph(MultiGraphs[kind])
-                if kind[0] in ['n','R']: self.multiGraph(MultiGraphs[kind],ordinateRange=0.1)
+                self.multiGraph(MultiGraphs[kind],restrictAbscissa=True)
+                if kind[0] in ['n','R']:
+                    self.multiGraph(MultiGraphs[kind],ordinateRange=0.1)
+                    self.multiGraph(MultiGraphs[kind],ordinateRange=0.1,restrictAbscissa=True)
                 outfile.WriteTObject( MultiGraphs[kind] )
         outfile.Close()
         print 'ls6500.Analyze: Wrote hists to',outname
@@ -824,11 +832,11 @@ class ls6500():
             kind = 'D' + sam
             gSN = 'A' + sam
             lgk = len(gSN)
-            print 'ls6500.plotSampleVsDose: cSN',cSN,'sam',sam,'kind',kind,'gSN',gSN
+            if 0: print 'ls6500.plotSampleVsDose: cSN',cSN,'sam',sam,'kind',kind,'gSN',gSN
             x,y,dx,dy = [],[],[],[]
             z,dz = [],[] # zero dose data
             for g in Graphs:
-                print 'ls6500.plotSampleVsDose: g.GetName()',g.GetName()
+                if 0: print 'ls6500.plotSampleVsDose: g.GetName()',g.GetName()
                 if gSN==g.GetName()[:lgk] and ('_' in g.GetName()):
                     d = self.getDose(g.GetName()) # g.GetName().split('_')[1]
                     try:
@@ -884,6 +892,61 @@ class ls6500():
             wxsum += w*a
         if wsum>0.: wxsum = wxsum/wsum
         return wxsum
+    def ratioToRef(self,Graphs,MultiGraphs,keyBlah=''):
+        '''
+        take ratio of averaged sample response to appropriate reference sample
+        First make list of reference graphs for averaged response
+        Then, for each reference graph, take the ratio with the appropriate samples.
+        The name of the appropriate samples must contain the string keyBlah
+        '''
+        refGraphs = []
+        for g in Graphs:
+            name = g.GetName()
+            if name[0]=='A':  # averages
+                if 'REF' in name:
+                    if g in refGraphs:
+                        print 'ls.ratioToRef: WARNING Found same reference graph to graph named',name
+                    else:
+                        refGraphs.append(g)
+        for refG in refGraphs:
+            refName = refG.GetName()
+            kind = 'X' + refName[1:5]
+            xref,yref,dxref,dyref = self.getPoints(refG,getErrors=True)
+            for g in Graphs:
+                name = g.GetName()
+                if g!=refG and name[:5]==refName[:5] and (keyBlah in name):
+                    x,y,dx,dy = self.getPoints(g,getErrors=True)
+                    hours = 6.
+                    u,v,du,dv = self.makeRatio(xref,yref,dxref,dyref, x,y,dx,dy, maxSep=hours*60.*60.)
+                    if 0: print 'ls6500.ratioToRef: ref,pts=',refName,len(xref),'graph,pts=',name,len(x),'ratio pts',len(u)
+                    if len(u)>0:
+                        newName = name.replace('A','N')
+                        newTitle= 'Ratio of ' + name + ' to ' + refName + ' max time diff ' + str(hours) + ' hrs'
+                        newg = self.makeTGraph(u,v,newTitle,newName,ex=du,ey=dv)
+                        self.addNewGraph(newg,Graphs,kind,MultiGraphs,'Ratio of avg over time to REF. Max time diff '+str(hours)+' hrs')
+        return
+    def makeRatio(self,xref,yref,dxref,dyref, x,y,dx,dy, maxSep=6.*60.*60.):
+        '''
+        return ratio between a sample and reference sample for all measurements
+        within maxSep seconds
+        '''
+        u,v,du,dv = [],[],[],[]
+        #print 'xref:',self.pList(xref,xref[0],c=60.*60.)
+        #print 'x   :',self.pList(x,xref[0],c=60.*60.)
+        for i,a in enumerate(x):
+            val = min(xref, key=lambda q : abs(a-q))
+            #print 'i,a,val,maxSep',i,a,val,maxSep
+            if abs(val-a)<=maxSep:
+                j = xref.index(val)
+                q = 0.5*(val+a)
+                dq= 0.5*abs(val-a)
+                r = y[i]/yref[j]
+                dr= r*math.sqrt( dy[i]*dy[i]/y[i]/y[i] + dyref[j]*dyref[j]/yref[j]/yref[j])
+                u.append(q)
+                du.append(dq)
+                v.append(r)
+                dv.append(dr)
+        return u,v,du,dv
     def combineCommonSamples(self,Graphs, MultiGraphs):
         '''
         make new graphs of averaged crossing point data from input list of
@@ -954,19 +1017,30 @@ class ls6500():
         set marker style, fix time display (optional), append to list of Graphs, set line color
         add to multigraph, set multigraph title, 
         '''
+        debug = False
+        
         g.SetMarkerStyle(20)
         if fixTime: self.fixTimeDisplay(g)
         Graphs.append(g)
-        if kind in MultiGraphs:
-            MGs = MultiGraphs[kind]
-            MGs.Add(g)
-            if MGs.GetTitle()==MGs.GetName():
-                MGs.SetTitle( MGs.GetName() + titleSuffix)
-            ng = MGs.GetListOfGraphs().GetSize()
-            self.color(g,ng)
+        if kind is not None:
+            if kind in MultiGraphs:
+                MGs = MultiGraphs[kind]
+                MGs.Add(g)
+                if MGs.GetTitle()==MGs.GetName():
+                    MGs.SetTitle( MGs.GetName() + titleSuffix)
+                ng = MGs.GetListOfGraphs().GetSize()
+                self.color(g,ng)
+
+        if debug:
+            words = 'ls6500.addNewGraph: '+g.GetName()
+            if kind is not None: words += ' kind '+kind+' titleSuffix '+titleSuffix +' fixTime='+str(fixTime)
+            print words
+
         return
     def pList(self,u,u0,c=1.):
-        ''' compact format for printing list of floats '''
+        '''
+        compact format for printing list of floats with respect to reference with optional normalization
+        '''
         return ', '.join(map('{0:.2f}'.format,[(a-u0)/c for a in u]))
     def averagePoints(self,u,v,deltaT=24.*60.*60.):
         '''
@@ -1138,8 +1212,8 @@ class ls6500():
             g.GetXaxis().SetTimeDisplay(1)
             g.GetXaxis().SetTimeFormat("#splitline{%H:%M}{%y/%m/%d}")
             g.GetXaxis().SetNdivisions(-409)
-            lx = g.GetXaxis().GetLabelSize()
-            g.GetXaxis().SetLabelSize(0.5*lx)
+            #lx = g.GetXaxis().GetLabelSize()
+            g.GetXaxis().SetLabelSize(0.025) #0.5*lx)
             g.GetXaxis().SetTimeOffset(0,"gmt") # using gmt option gives times that are only off by 1 hour on tgraph
             self.drawIrradInterval(g)
         else:
@@ -1153,12 +1227,14 @@ class ls6500():
         sample = w[0]
         if 'EMPTY' in sample: sample += '_' + w[1]
         return sample
-    def multiGraph(self,TMG,truncT=30,ordinateRange=None):
+    def multiGraph(self,TMG,truncT=30,ordinateRange=None,restrictAbscissa=False):
         '''
         draw TMultiGraph with legend and output as pdf
         Default is that abscissa is calendar time.
         truncT is the number of initial characters in title to use in legend
-        if ordinateRange is a float, then set ordinate range to 1+-ordinateRange
+        if ordinateRange is a float, then set ordinate range to 1+-ordinateRange.
+        if restrictAbscissa is True, restrict abscissa range to nearby times
+        
         '''
         debugMG = False
         if not TMG.GetListOfGraphs(): return  # empty
@@ -1166,9 +1242,12 @@ class ls6500():
         name  = TMG.GetName()
         if debugMG: print 'ls6500.multiGraph',title,name,'TMG.GetListOfGraphs()',TMG.GetListOfGraphs(),'TMG.GetListOfGraphs().GetSize()',TMG.GetListOfGraphs().GetSize()
 
+        abscissaIsTime = True
+        if name[0] in ['k','D'] : abscissaIsTime = False
 
         suffix = ''
-        if type(ordinateRange) is float: suffix = '_ordRange_'+str(ordinateRange).replace('.','_')
+        if type(ordinateRange) is float: suffix += '_ordRange_'+str(ordinateRange).replace('.','_')
+        if restrictAbscissa and abscissaIsTime: suffix += '_restrictTime'
 
         pdf = self.figuresDir + name + suffix + '.pdf'
         ps  = self.figuresDir + name + suffix + '.ps'
@@ -1185,8 +1264,7 @@ class ls6500():
             t = g.GetTitle()
             if truncT>0: t = t[:min(len(t),truncT)]
             lg.AddEntry(g, t, "l" )
-            if not (name[0]=='k' or name[0]=='D'):
-                self.fixTimeDisplay(g)
+            if abscissaIsTime : self.fixTimeDisplay(g)
         dOption = "apl"
         if name[0]=='D': dOption = "ap"
         TMG.Draw(dOption)
@@ -1194,9 +1272,14 @@ class ls6500():
             ymi = 1. - abs(ordinateRange)
             yma = 1. + abs(ordinateRange)
             TMG.GetYaxis().SetRangeUser(ymi,yma)
+        if restrictAbscissa:
+            XMI,XMA = TMG.GetXaxis().GetXmin(), TMG.GetXaxis().GetXmax()
+            if self.irradNearbyTDatime is None:
+                self.irradNearbyTDatime = [self.getTDatime(self.irradNearby[0]), self.getTDatime(self.irradNearby[1])]
+            xmi,xma = self.irradNearbyTDatime
+            TMG.GetXaxis().SetRangeUser(xmi,xma)
         self.fitLegend(TMG)
-        if not (name[0]=='k' or name[0]=='D'):
-            self.fixTimeDisplay(TMG)
+        if abscissaIsTime : self.fixTimeDisplay(TMG)
         lg.Draw()
         canvas.Draw()
         canvas.SetGrid(1)
@@ -1210,6 +1293,7 @@ class ls6500():
             canvas.Print(ps,'Landscape')
             os.system('ps2pdf ' + ps + ' ' + pdf)
             if os.path.exists(pdf): os.system('rm ' + ps)
+        if restrictAbscissa: TMG.GetXaxis().SetRangeUser(XMI,XMA) # restore abscissa. is this needed?
         return
     def fitLegend(self,graph,f=0.10):
         '''
@@ -1333,6 +1417,7 @@ class ls6500():
         self.vialPosition = vP
         self.vialMsmts    = vM
         self.vialData     = vD
+        print '\n *** merge complete *** \n'
         return
     def putOrGet(self,mode='put'):
         '''

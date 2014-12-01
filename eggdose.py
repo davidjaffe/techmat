@@ -8,7 +8,7 @@ read and process egg counter data for dose per spill for NSRL14C run on 17 Nov
 import os
 import datetime
 import sys
-from ROOT import TGraph, TGraphErrors, TDatime, TFile, TH1D
+from ROOT import TGraph, TGraphErrors, TDatime, TFile, TH1D, gROOT, TTree, AddressOf
 from array import array
 
 class eggdose():
@@ -16,6 +16,16 @@ class eggdose():
         self.parentDir = '/Users/djaffe/work/GIT/TECHMAT/'
         self.subDir = 'NSRL14C/jaffe_p200.dat.txt'
         self.histDir = self.parentDir + 'Histograms/'
+
+        gROOT.ProcessLine("struct MyStruct{Double_t dose; Int_t spill; Long_t dt;}:")
+        self.outfile = TFile(self.histDir+'eggtree.root',"RECREATE","egg")
+        self.outfile.cd()
+        from ROOT import MyStruct
+        self.struct = MyStruct()
+        self.tree   = TTree("egg","NSRL14C egg ctr dose in cGy")
+        self.tree.Branch('dose',AddressOf(self.struct,'dose'),'dose/D')
+        self.tree.Branch('spill',AddressOf(self.struct,'spill'),'spill/I')
+        self.tree.Branch('dt',AddressOf(self.struct,'dt'),'dt/L')
         return
     def readFile(self):
         '''
@@ -68,13 +78,19 @@ class eggdose():
         T = []
         S = []
         for i,date in enumerate(timeStamp):
-            T.append( TDatime( date.strftime('%Y-%m-%d %H:%M:%S') ).Convert() )
+            tobj = TDatime( date.strftime('%Y-%m-%d %H:%M:%S') ).Convert() 
+            T.append( tobj )
             S.append( float(i) )
             h = hno
             if spillRange[0][0]<=i and i<=spillRange[0][1]: h = hi1
             if spillRange[1][0]<=i and i<=spillRange[1][1]: h = htun
             if spillRange[2][0]<=i and i<=spillRange[2][1]: h = hi2
             h.Fill(eggData[i])
+            self.struct.dose = eggData[i]
+            self.struct.spill = i
+            #print 'tobj',tobj,'type(tobj)',type(tobj)
+            self.struct.dt    = tobj
+            self.tree.Fill()
         gT = self.makeTGraph(T,eggData,title,name)
         gT.GetXaxis().SetTimeDisplay(1)
         gT.GetXaxis().SetTimeOffset(0.,"gmt")
@@ -95,6 +111,9 @@ class eggdose():
     def Main(self):
         timeStamp, eggData = self.readFile()
         self.plotData( timeStamp, eggData)
+        self.outfile.cd()
+        self.tree.Write()
+        self.outfile.Close()
         return
 if __name__ == '__main__' :
     ed = eggdose()
