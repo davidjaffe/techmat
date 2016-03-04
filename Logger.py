@@ -15,4 +15,7 @@ class Logger(object):
 
     def write(self, message):
         self.terminal.write(message)
-        self.log.write(message)  
+        self.log.write(message)
+        self.log.flush() # 20160303 addition
+    def flush(self): # 20160303 addition
+        pass
